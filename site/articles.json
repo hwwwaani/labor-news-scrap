@@ -1,5 +1,5 @@
 {
-"updated":"2026-11-08T01:17+09:00",
+"updated":"2026-11-08T01:19+09:00",
 "chapters":[
 {
 "num":1,
@@ -12625,6 +12625,37 @@
 }
 },
 {
+"id":"c6f0cf8f6d",
+"title":"대리운전노조: “밤새 일해도 최저임금도 못 받는 현실을 바꾸자”",
+"url":"https://news.google.com/rss/articles/CBMiREFVX3lxTE5HQWZHZWc4Q3AtWmVXSzdJRGVXaVNFRE9ZOUx2NER0OTJNanhIeXdja056bllNcFB2Yy1XRWFDMVhuLU9p?oc=5",
+"outlet":"노동자 연대",
+"via":"google",
+"date":"2026-11-04T22:39+09:00",
+"seen":"2026-11-08",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
+]
+},
+{
+"ch":2,
+"kw":[
+"대리운전"
+]
+}
+],
+"ai":{
+"link":"2장 · 플랫폼 노동과 대리운전 노동자의 최저임금 적용",
+"qs":[
+"대리운전 노동자의 노동자성과 최저임금 적용 여부는 어떤 기준으로 판단해야 한다고 생각하는가?",
+"플랫폼이나 호출 중개 구조에서 원청 또는 중개업체에게 사용자 책임을 물을 수 있는 범위는 어디까지여야 하는가?",
+"대리운전 노동자의 최저임금 보장을 위해 노조 교섭, 법 개정, 행정 감독 중 어떤 수단이 가장 효과적이라고 보는가?"
+]
+}
+},
+{
 "id":"d5a10706eb",
 "title":"HD현대중공업, 사내하청 노조와 첫 단체교섭 상견례",
 "url":"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5uZzdDRkdOdm1oZUthUjczSEVxUXA1TlAtcFVwMWVUcEstODJCR1VfMWwxSkdTTHBQWWd2RUVJRjg1bXZ2QVFVRW8yNWNEOEU5YlE?oc=5",
@@ -17356,6 +17387,31 @@
 "공무직위원회를 상설화하는 것이 공공부문 비정규직 차별 해소에 효과적인가?",
 "공공부문 비정규직의 차별 시정은 임금, 복리후생, 고용안정 중 무엇을 우선해야 하는가?",
 "공공기관 노사 교섭에서 정부와 기관장의 책임 범위는 어디까지여야 하는가?"
+]
+}
+},
+{
+"id":"0e1c96d251",
+"title":"AI·바이오·로봇 등 미래산업 기업 100여 곳 한자리에…서울시, 11월 9일 일자리박람회 개최",
+"url":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE5Sb2EtcVcyX1FKVkZaZlJPNGI3a2prRTJ2SF8yNlJoN0o3ajhIN0x6R1JEeDRKWFFQSlFNU1F6czdHWl9xUHNrOWFCUXFpM1c5c01nbnJGX01IaWJTQUE?oc=5",
+"outlet":"한국방송뉴스",
+"via":"google",
+"date":"2026-11-03T16:10+09:00",
+"seen":"2026-11-08",
+"tags":[
+{
+"ch":1,
+"kw":[
+"로봇"
+]
+}
+],
+"ai":{
+"link":"1장 · 미래산업 전환이 고용관계와 일자리 구조에 미치는 영향",
+"qs":[
+"AI, 바이오, 로봇 등 미래산업의 채용 확대는 기존 노동자의 고용 안정과 고용관계에 어떤 변화를 가져온다고 보는가?",
+"미래산업 일자리 박람회처럼 기업과 구직자를 연결하는 공공 행사는 산업 전환기의 고용 문제를 얼마나 해결할 수 있는가?",
+"산업 전환 과정에서 노사가 함께 준비해야 할 재교육이나 직무 전환 과제는 무엇이라고 생각하는가?"
 ]
 }
 },
