@@ -20,10 +20,10 @@ CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["cha
 KST = timezone(timedelta(hours=9))
 
 # 11/8 첫 실행(Opus 5.5·검색 5번)이 1회 약 3.76달러, 그중 77%가 검색 결과 읽기(입력)였다.
-# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)·검색 3번·한국 사이트로 좁혔다.
+# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)·한국 사이트로 좁혔다.
 WEEKLY_MODEL = "claude-sonnet-5-5"
-WEEKLY_EFFORT = "low"
-WEEKLY_SEARCHES = 3          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
+WEEKLY_EFFORT = "medium"   # low 에서는 검색을 아끼다 「한도를 넘었다」며 빈 요약을 냈다(11/8)
+WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러). 3번이면 빈 요약이 났다
 PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.1, 0.5)}  # 100만 토큰당 $(입력, 출력)
 # 검색을 한국 언론·정부·노동 전문 사이트로 좁힌다(외국 기사가 출처에 섞이던 것도 막는다). 하위 도메인 포함, 64개까지.
 # 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 Anthropic 검색 로봇을 막아 넣으면 400 이 난다(11/8 확인) — 넣지 않는다
@@ -114,8 +114,9 @@ def one(client, anthropic, ch, start, end):
     if resp.stop_reason not in ("end_turn",):
         return ch["num"], None, used, f"{ch['num']}장 건너뜀({resp.stop_reason})"
     text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text").strip()
-    if not text:
-        return ch["num"], None, used, f"{ch['num']}장 빈 답"
+    items = [l for l in text.splitlines() if l.strip().startswith(("- ", "• "))]
+    if len(items) < 2:   # 「찾지 못했다」류 답이 지난 요약을 덮지 않게 한다
+        return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지)"
     return ch["num"], {"text": text, "sources": sources_of(resp.content)}, used, f"{ch['num']}장 완료"
 
 

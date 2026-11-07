@@ -24485,340 +24485,340 @@
 }
 ],
 "weekly":{
-"generated":"2026-11-08T01:10+09:00",
+"generated":null,
 "range":"11/01~11/08",
-"model":"claude-sonnet-5-5",
+"model":"claude-opus-5-5",
 "chapters":{
 "1":{
-"text":"기간(2026년 11월 1일~8일) 안의 소식은 찾지 못했습니다. 검색 도구가 한도에 걸려 더 확인하지 못했고, 첫 검색에서 나온 결과는 2026년 1월 고용동향이라 기간 밖입니다.",
+"text":"Nothing in window there. Let me try other angles.- 11월 6일 고용노동부는 김영훈 장관 주재로 한국노동연구원·KDI·한국직업능력연구원·한국은행 전문가들과 '고용동향 점검회의'를 열었습니다. 장관은 반도체·수출 호조의 '성장 온기'가 청년의 첫 일자리까지 닿지 못하고 있다고 진단했습니다. 함께 거론된 청년 고용률은 44.0%로 29개월 연속 떨어졌습니다. → 전체 경기와 취업자 수가 좋아져도 청년 고용률은 떨어지는 '고용률·청년 고용'의 엇갈림을 보여 주는 사례입니다.\n\n- 같은 날 노동부는 2027년 재정지원 일자리사업 예산안을 25조1484억 원(올해보다 2.6% 증가)으로 밝혔습니다. 이 가운데 3793억 원으로 '청년 첫 취업지원제도'를 새로 만들어 청년 16만 명에게 진로 상담, 일경험, 직업훈련, 취업 지원을 이어서 제공한다는 계획입니다. → 신입이 첫 경력을 쌓을 기회가 줄어든 상황에 맞춘 '청년 일자리' 정책입니다.\n\n- 노동부는 인공지능(AI)·첨단산업 분야 직업훈련을 늘려(보도에 따르면 AI 훈련 2만 명 확대) 실제 채용으로 이어지게 하겠다고 했습니다. 급격한 산업전환의 충격이 취약계층에 몰리지 않도록 노무제공자 보호와 중장년 재취업 지원도 강화한다고 밝혔습니다. → AI·디지털 전환에 따른 직무 변화와 'AI 대체' 위험에 재교육과 고용안전망으로 대응하는 방식입니다.\n\n- 노동부는 청년고용정책관실 기능을 노동시장정책·고용서비스와 더 긴밀히 연결하도록 조직 개편을 검토하겠다고 했습니다. 업종별 채용 동향과 직무 변화를 청년 정책에 바로 반영하겠다는 취지입니다. → 기술 변화로 일자리 구조가 바뀌는 환경에서 청년이 '좋은 일자리'에 들어가는 길을 정부 제도로 받쳐 주려는 시도입니다.",
 "sources":[
 {
 "title":"(참고) 2026년 1월 고용동향",
 "url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18955"
 },
 {
-"title":"11월 실업률 3.2%..고용률 67.1%",
-"url":"https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01479286619437864"
+"title":"청년 34세까지 넓혔더니 '고용 한파' 착시…실업률 상승폭 0.6→0.1%p - 파이낸셜뉴스",
+"url":"https://www.fnnews.com/news/202610190606375667"
 },
 {
-"title":"(참고) 2025년 11월 고용동향 분석",
-"url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18719"
+"title":"9월 취업자수 11만명 증가...청년층 취업자 수는 47개월 연속 감소-경제ㅣ한국일보",
+"url":"https://www.hankookilbo.com/news/article/A2026101607510003525"
 },
 {
-"title":"2025년 11월 고용동향 - 부처 브리핑",
-"url":"https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734286"
+"title":"제조업 고용 27개월만 증가 전환…청년 취업 47개월 연속 감소 - 파이낸셜뉴스",
+"url":"https://www.fnnews.com/news/202610160840205713"
 },
 {
-"title":"11월 취업자수 전년대비 55.3만명 늘어…9개월째 증가세",
-"url":"https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=01341526629278848"
+"title":"[데이터 인사이트] 취업자 11만명 늘었는데 청년은 14만7000명 감소…고용시장의 두 얼굴 < 생활경제 < Today pick < 경제 < 기사본문 - 데이터솜",
+"url":"https://www.datasom.co.kr/news/articleView.html?idxno=210374"
 },
 {
-"title":"(참고) 2025년 12월 고용동향 및 평가",
-"url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18849"
+"title":"15~34세 청년 지표 첫 공표…취업자 감소 14만7천명→9만8천명 < 취&middot창업 < 비즈&라이프on < 기사본문 - ISSUE ON (이슈온)",
+"url":"https://www.issueon.co.kr/news/articleView.html?idxno=14321"
 },
 {
-"title":"[종합] 고용률 역대 최고·실업률 25년만 최대…'엇갈린' 고용지표",
-"url":"https://www.newspim.com/news/view/20260114000193"
+"title":"[한국 경제지표] 2026년 9월 고용동향 분석",
+"url":"https://www.skyatlastreasure.com/2026/10/2026-9-113.html"
 },
 {
-"title":"2025년 12월 및 연간 고용동향 - 부처 브리핑",
-"url":"https://www.korea.kr/briefing/policyBriefingView.do?newsId=156739604"
+"title":"unemployed persons",
+"url":"https://ko.tradingeconomics.com/france/unemployed-persons"
 }
 ]
 },
 "2":{
-"text":"Output is escaped but fine; print properly.- 2026년 11월 1일~8일 사이에 한국에서 이 장과 닿는 소식은 웹 검색으로 확인하지 못했습니다. 검색에서는 기간 밖 기사(2026년 7월 서울고법 라이더 노동자성 판단 등)만 나왔고, 기간 안의 일로 확인된 것이 없어 항목을 쓰지 않습니다.",
+"text":"- 11월 4일 청와대 앞에서 민주노총이 특수고용·플랫폼 노동자의 근로기준법 전면 적용과 적정 보수 쟁취를 위한 결의대회를 열었고, 주최 측 추산 약 500명이 전국에서 모였습니다. 결의문은 \"특수고용, 플랫폼, 노무제공자, 가짜 3.3 등 이름은 달라도 870만 특고 플랫폼 노동자는 노동자\"라고 주장했으며, 현장에서는 '일하는 사람 기본법'에 반대하는 목소리도 나왔습니다. 이는 특수고용(특고) 노동자가 근로자인지 개인사업자인지를 따지는 '노동자성' 문제, 그리고 이들을 근로기준법을 그대로 적용해 보호할지 별도 법으로 보호할지를 둘러싼 논쟁과 이어집니다.\n\n- 같은 날 라이더유니온은 결의대회에 앞서 서울지방고용노동청 앞에서 별도 집회를 열고 배달료 산정기준 투명화와 최저보수제 도입을 요구했습니다. 대리운전노조는 \"대리기사를 보호할 법을 만들어 달라고 20년간 요구했지만 입법은 번번이 국회 문턱을 넘지 못\"했다고 말했습니다. 앱이 단가와 배차를 정하는 플랫폼 노동에서 최저임금 대신 '최저보수'를 정할 수 있는지, 대리운전처럼 직종별 법을 따로 만들지가 쟁점이라는 점에서 이 장의 플랫폼 노동 개념과 닿습니다.\n\n- 11월 5일 서울 종로구 청와대 분수광장 앞에서 라이더 400여 명이 배달앱 수수료 상한제 법안의 전면 철회를 요구했습니다. 라이더들은 배달앱 수수료의 상당 부분이 라이더에게 지급되는 비용이어서, 전체 수수료에 일률적으로 상한을 두면 플랫폼이 비용을 줄이는 과정에서 라이더의 배달 수익이 줄 수 있다고 주장했습니다. 플랫폼과 점주, 라이더가 얽힌 삼면 관계에서 한쪽(점주)을 보호하는 규제가 다른 쪽인 플랫폼 노동자의 소득에 영향을 줄 수 있다는 점을 보여 주는 사례입니다.\n\n- 한국기업경영학회는 6일 추계학술대회에서 '노무제공자와 야간업무 종사자의 직종별 업무환경 비교 및 정책 제언' 연구 결과를 발표한다고 밝혔습니다. 연구에서는 17개 직종 노무제공자 2938명을 조사해 소득과 업무시간, 휴식, 계약 안정성, 업무환경 안전, 사회보험 등 21개 항목을 비교했고, 현재 국회에는 저소득 노무제공자의 고용·산재보험료를 국가나 지방자치단체가 지원할 수 있도록 하는 법률 개정안이 발의된 상태라고 소개했습니다. 이는 '노무제공자'라는 법적 범주로 특고·플랫폼 종사자에게 사회보험을 넓히는 방식과, 같은 노무제공자라도 직종마다 처지가 다르다는 점과 닿습니다.",
 "sources":[
 {
-"title":"\"라이더=노동자\" 법원 첫 판단 나왔다",
-"url":"https://www.pressian.com/pages/articles/2026070717595884718"
+"title":"특고 플랫폼 노동자성 인정하라!",
+"url":"https://www.newspim.com/news/view/20261104001196"
 },
 {
-"title":"배달 라이더 근로자성 판결, 플랫폼 노동권 합리적 입법을-오피니언ㅣ한국일보",
-"url":"https://www.hankookilbo.com/news/article/A2026070812440003259"
+"title":"플랫폼 노동자 88만 시대…확장하는 '근로자성' [지평의 노동 Insight]",
+"url":"https://www.hankyung.com/article/202603152205i"
 },
 {
-"title":"[포토뉴스]“노동자성 인정하라” 라이더들의 외침 - 경향신문",
-"url":"https://www.khan.co.kr/article/202611042059025/"
+"title":"[취재요청] 적정 보수 쟁취! 근로기준법 전면 적용! 특수고용 플랫폼 노동자 결의대회 - 성명·보도 - 민주노총",
+"url":"https://nodong.org/statement/7950657"
 },
 {
-"title":"\"배달 라이더=근로자\" 첫 판결에… 88만 플랫폼 노동자 삶 바뀌나-사회ㅣ한국일보",
-"url":"https://www.hankookilbo.com/news/article/A2026070814140002923"
+"title":"[보도자료] 적정 보수 쟁취! 근로기준법 전면 적용! 특수고용 플랫폼 노동자 결의대회 - 성명·보도 - 민주노총",
+"url":"https://nodong.org/statement/7950909"
 },
 {
-"title":"배달 라이더 ‘노동자성 인정’ 첫 판결 나왔다 - 경향신문",
-"url":"https://www.khan.co.kr/article/202607071745001"
+"title":"민주노총, 노동기본권 쟁취로 불평등의 ‘벽’ 허물어야 < 산업/노동 < 리포트 < 기사본문 - 참여와혁신",
+"url":"https://laborplus.co.kr/news/articleView.html?idxno=41786"
 },
 {
-"title":"플랫폼에 적정임금 지급을 강제하라",
-"url":"https://www.pressian.com/pages/articles/2025121617133363596"
+"title":"[현장] 플랫폼 노동이란 무엇인가?",
+"url":"http://lodong.org/wp/archives/14862"
 },
 {
-"title":"알고리즘 뒤에 숨은 사용자, 라이더는 '노동자'다 - 오마이뉴스",
-"url":"https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003256049&PAGE_CD=N0002&CMPT_CD=M0117"
+"title":"파주시, 상생공유오피스 운영",
+"url":"https://pajuplus.co.kr/news/article.html?no=14846"
 },
 {
-"title":"플랫폼 배달노동자도 근로기준법을 적용받을 수 있나요? - 오마이뉴스",
-"url":"https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003266355"
+"title":"'특고 플랫폼 노동자의 노동자성 인정하라' : 네이트 뉴스",
+"url":"https://m.news.nate.com/view/20261104n26345"
 }
 ]
 },
 "3":{
-"text":"- 2026년 11월 1일~8일 사이에 있었던 일은 웹 검색에서 찾지 못했습니다.\n- 검색된 포괄임금 관련 기사는 모두 4월 전후(약 177~219일 전)의 것이라 기간 밖이어서 뺐습니다.\n- 그 밖의 주제(최저임금·주휴수당, 근로자성, 임금체불, 5인 미만 사업장, 노동시간 단축)는 검색 한도 때문에 확인하지 못했습니다.",
+"text":"- 경기신문은 11월 2일 기사에서 올해 1~8월 경기지역 노동자가 받지 못한 임금이 3,513억 원이라고 전했습니다. 전국 체불액의 약 29%로 17개 시·도 중 가장 많고, 업종별로는 제조업 체불액이 3,639억 원(전국 전체의 약 30%)으로 가장 컸습니다. 민주노총은 체불 사업장을 엄격하게 관리·감독하고 실효성 있는 구제책을 마련하라고 요구했습니다(https://www.kgnews.co.kr/news/article.html?no=917821). 이는 근로계약에 따른 임금을 제때 다 주지 않는 「임금체불」 문제로, 근로기준법상 임금 지급 의무가 실제로 얼마나 지켜지는지와 닿습니다.\n- 검색 사용 한도에 걸려 검색을 몇 번밖에 하지 못했고, 그 안에서 기간(11월 1~8일)에 맞는 쟁점은 위 1건만 확인했습니다. 근로자성, 5인 미만, 주52시간, 최저임금 소식은 기간 안의 것을 찾지 못했습니다.",
 "sources":[
 {
-"title":"(참고) 연차휴가 분할 사용 등 노동자 휴식권 보호 강화",
-"url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=19360"
+"title":"2026년 근로기준법 개정, 우리 회사는 준비되어 있나요? - 모두싸인 공식 블로그",
+"url":"https://blog.modusign.co.kr/insight/2026-labor-standards-act"
 },
 {
-"title":"「근로기준법 시행령」 일부개정령안 입법예고",
-"url":"https://www.moel.go.kr/info/lawinfo/lawmaking/view.do?bbs_seq=20260700444"
+"title":"2026년 바뀌는 노동법 7가지 총정리",
+"url":"https://www.lawtalk.co.kr/posts/151420"
 },
 {
-"title":"근로기준법 개정, 4시간 근무 시 휴게시간 선택권 및 시간 단위 연차휴가 도입 < 대륙아주 < Into the Lawfirm < 로캣센터 < 기사본문 - 법률신문",
-"url":"https://www.lawtimes.co.kr/news/articleView.html?idxno=221899"
+"title":"국가법령정보센터",
+"url":"https://www.law.go.kr/LSW/unSc.do?tabMenuId=tab73&query=%EA%B7%BC%EB%A1%9C%EA%B8%B0%EC%A4%80%EB%B2%95"
 },
 {
-"title":"「근로기준법 시행규칙」 일부개정령안 입법예고",
-"url":"https://www.moel.go.kr/info/lawinfo/lawmaking/view.do?bbs_seq=20260800620"
+"title":"2026년 새롭게 달라지는 노동관련법령 알아보기 : 노무법인 해든",
+"url":"https://www.deunhr.com/22/?bmode=view&idx=169529321"
 },
 {
-"title":"4시간 일하면 '즉시' 퇴근 가능…거짓 구인광고 제재 강화",
-"url":"https://www.worklaw.co.kr/main2022/view/view.asp?bi_pidx=39152"
+"title":"2026년 하반기 노동관계법 개정사항 총정리",
+"url":"https://5240.cloud/2026%EB%85%84-%ED%95%98%EB%B0%98%EA%B8%B0-%EB%85%B8%EB%8F%99%EA%B4%80%EA%B3%84%EB%B2%95-%EA%B0%9C%EC%A0%95%EC%82%AC%ED%95%AD/"
 },
 {
-"title":"근로기준법 일부개정법률안",
-"url":"https://www.moel.go.kr/info/lawinfo/revision/view.do?bbs_seq=20250201347"
+"title":"2026년 근로기준법 개정: 변경 사항과 주요 내용 완벽 정리",
+"url":"https://supportgg.com/2026-labor-law-amendments-complete-guide/"
 },
 {
-"title":"2026년 하반기 노동관계법 무엇이 바뀌나 < 화우 < Into the Lawfirm < 로캣센터 < 기사본문 - 법률신문",
-"url":"https://www.lawtimes.co.kr/news/articleView.html?idxno=223108"
+"title":"2026. 1. 2026년 달라지는 노동관계법령 및 이슈",
+"url":"https://humanlabor.com/upload/NEWS_DATA/FILE/20260109/6960608bd7350.pdf"
 },
 {
-"title":"고용노동부 소관 3개 법률안(제정 노동감독관 직무집행법·개정 근로기준법·개정 고용산재보험료징수법) 국회 통과 및 2026년 사업장 감독계획 < 태평양 < Into the Lawfirm < 로캣센터 < 기사본문 - 법",
-"url":"https://www.lawtimes.co.kr/news/articleView.html?idxno=217997"
+"title":"근로기준법 - 2026년 인사노무 총정리, 최저임금 변경, 노란봉투법 등",
+"url":"https://lawform.io/magazine/877"
 }
 ]
 },
 "4":{
-"text":"기간(2026년 11월 1일~8일) 안에 이 장과 닿는 소식을 찾지 못했습니다. 검색 도구가 사용 한도를 넘겨 검색 결과를 받아 보지 못했고, 확인되지 않은 내용은 쓰지 않았습니다.",
+"text":"- 11월 1일 보도에 따르면 국민연금 수급자는 7월 31일 기준 806만 2142명으로 처음 800만 명을 넘었습니다. 하지만 수급자의 66%는 한 달에 60만 원도 못 받고 있습니다(한국경제, 국민연금공단 공표통계). → 4대보험 가운데 국민연금이 노후 소득을 얼마나 보장하는지, 곧 소득대체율이 충분한지와 닿습니다.\n\n- 국민연금연구원은 11월 3일 『연금포럼』에서 보고서를 냈습니다. 개정법의 소득대체율 43%를 적용해 보니, 평균소득자가 최소 가입 기간인 10년만 채우면 받는 연금이 기초연금보다 조금 적었습니다(KBS, 11월 7일 보도). → 국민연금 같은 사회보험은 가입 기간이 길수록 급여가 커지는데, 이 구조와 공공부조인 기초연금의 관계가 쟁점입니다.\n\n- 11월 3일 고용노동부 산업안전보건본부장이 전남 영암 대불국가산업단지를 불시 점검했습니다. 이곳에서는 작년 1월부터 올해 9월까지 노동자 11명(외국인 4명 포함)이 중대재해로 숨졌습니다. 노동부는 소규모 사업장 패트롤 점검과 재정지원을 강화하겠다고 밝혔습니다(세계일보). → 중대재해와 산업안전 관리, 특히 소규모 하청 사업장과 이주노동자에게 위험이 몰리는 이중구조 문제와 닿습니다.\n\n- 같은 날 불시 점검이 끝나고 3시간 뒤, 영암의 한 조선소 선체 안에서 용접하던 29세 노동자가 숨진 채 발견됐습니다. 금속노조는 중대재해인데도 작업 중지가 내려지지 않았다고 반발했습니다(SBS, 11월 6일). → 산업재해가 난 뒤 사업장이 어떻게 대응해야 하는지, 그리고 중대재해 예방 제도가 현장에서 실제로 작동하는지와 닿습니다.\n\n- 11월 4일 아웃소싱타임스는 11월에 공개된 10월 '중대재해 사이렌' 사례 44건을 분석했습니다. 제조업·건설업 등에서 청소·정비·운반 같은 작업을 하다 떨어지거나, 부딪히거나, 깔려 숨지는 사고가 계속 되풀이되고 있습니다. → 산재가 어떤 유형으로 일어나는지 이해하고 산업안전 예방 정책을 평가하는 데 쓸 수 있습니다.",
 "sources":[
 {
-"title":"2026년도 사업종류별 산재보험료율",
-"url":"https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20251201757"
+"title":"2026년 국민연금제도, 이렇게 달라집니다",
+"url":"https://v.daum.net/v/59jEbrd8xd"
 },
 {
-"title":"2026년 평균 산재보험료율올해 수준(1.47%) 유지",
-"url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18810"
+"title":"2026년 국민연금 평균 수령액 얼마일까? 국민연금 납부부터 수령까지 총정리",
+"url":"https://kbthink.com/pension/plan/national-pension.html"
 },
 {
-"title":"노동부, 2026년 산재보험료율 올해와 같은 1.47%로 유지 - 뉴스1",
-"url":"https://www.news1.kr/economy/employment-labor/6024124"
+"title":"국민연금 온에어 : [국민연금 탐구영역 1교시] 국민연금 보험료율, 2026년에 13%로 오른다?(X)",
+"url":"https://www.npsonair.kr/finance/detail.html?strIdx=3758"
 },
 {
-"title":"2026년 평균 산재보험료율올해 수준(1.47%) 유지 - 보도자료",
-"url":"https://www.korea.kr/briefing/pressReleaseView.do?newsId=156737651"
+"title":"토스뱅크",
+"url":"https://www.tossbank.com/articles/nps2026"
 },
 {
-"title":"노동부, 2026년 산재보험료율 올해와 같은 1.47%로 유지",
-"url":"https://www.news1.kr/amp/economy/employment-labor/6024124"
+"title":"NPS 국민연금공단 - 국민을 든든하게 연금을 튼튼하게",
+"url":"https://www.nps.or.kr/pnsinfo/ntpsklg/getOHAF0104M0.do"
 },
 {
-"title":"산재보험금 첫 8조원 돌파…수급자 절반 이상이 60세 이상 - 헤럴드경제",
-"url":"https://biz.heraldcorp.com/article/10925062"
+"title":"'국가가 연금 지급 보장' 법제화…내년부터 달라지는 국민연금 - 정책뉴스",
+"url":"https://www.korea.kr/news/policyNewsView.do?newsId=148957270"
 },
 {
-"title":"소기업 사업주에 대한 산재보험료 및 보험급여 산정의 기초 ...",
-"url":"https://www.moel.go.kr/info/lawinfo/instruction/view.do?bbs_seq=20251201791"
+"title":"2026년 국민연금 개혁 총정리 — 보험료율·소득대체율·기금 전망까지",
+"url":"https://oneulcheck.com/yeongeum-gaehyeok-2026/"
 },
 {
-"title":"11월부터 예술인도 산재보험 혜택 받는다",
-"url":"https://view.asiae.co.kr/article/2012081708491727528"
+"title":"2026년 국민연금 인상률 완벽 정리",
+"url":"https://naver-doc.com/life/2026%EB%85%84-%EA%B5%AD%EB%AF%BC%EC%97%B0%EA%B8%88-%EC%9D%B8%EC%83%81%EB%A5%A0-%EC%99%84%EB%B2%BD-%EC%A0%95%EB%A6%AC-%EB%B3%B4%ED%97%98%EB%A3%8C%C2%B7%EC%88%98%EB%A0%B9%EC%95%A1-%EB%B3%80%ED%99%94/"
 }
 ]
 },
 "5":{
-"text":"- 이번 주(2026년 11월 1일~8일)에 이 장과 관련된 소식을 찾지 못했습니다. 검색 도구 호출 한도를 넘어서 웹 검색 결과를 받지 못했고, 확인한 사실이 없어 항목을 쓰지 않았습니다.",
+"text":"- 서울행정법원 행정12부는 서울 강북구청 과장이었던 A씨가 강북구청장을 상대로 낸 감봉처분 취소 소송에서 원고 청구를 기각했다. 이 판결은 11월 1~2일에 보도됐습니다. A씨는 부하 직원의 보고를 막고, 근태에 문제가 없는 직원에게 출근 시간을 캐물었습니다. 재판부는 A씨에게 팀장 보직을 바꿀 실질적 권한이 있었다는 점을 들어 근태에 문제가 없는 직원에게 거듭 출근 여부를 확인한 것은 그 자체로 더 일찍 출근하라는 압박이라고 봤고, 한 차례 발언도 직장 내 괴롭힘에 해당할 수 있다고 판단했습니다. 이는 이 장의 '직장 내 괴롭힘' 판단 기준과 닿습니다. 지위의 우위를 이용해 업무상 적정 범위를 넘는 행위가 무엇인지, 그리고 인사발령 권한 같은 상급자의 힘이 '괴롭힘'과 '갑질'을 판단하는 요소가 된다는 점을 보여 주는 사례입니다.\n\n- 진보당은 2026년 11월 7일 서면브리핑을 통해 \"정보공개청구 제도가 악용되어서는 안 된다. 괴롭힘 목적의 악용을 방지해달라\"고 밝혔다. 공무원노조 화성시지부에 따르면 2026년 1월부터 10월 26일까지 한 명의 민원인이 화성시와 산하기관에 정보공개청구를 2166건 제기했습니다. 진보당은 피해 공무원에 대한 법률·심리 지원 및 특별휴가 제공, 정보공개법 개정 등 실효성 있는 보호 체계 구축을 요구했습니다. 이는 상급자나 동료가 아닌 외부인(민원인)이 저지르는 '갑질'·'괴롭힘'에서 사용자가 노동자를 어떻게 보호해야 하는지와 닿습니다.\n\n- 한국철도공사 경북본부는 11월 3일부터 5일까지 3일간 본부 1층 강당에서 전 직원을 대상으로 '성희롱․괴롭힘 예방 특별교육'을 실시했습니다. 교육 내용에는 직장 내 괴롭힘의 개념과 판단 기준, 관리자와 조직 차원의 괴롭힘 예방방안, 괴롭힘 발생시 적절한 대응방법 등이 들어 있었습니다. 이는 사용자가 '성희롱'과 '직장 내 괴롭힘'을 예방할 의무를 사업장에서 실제로 어떻게 이행하는지 보여 줍니다.",
 "sources":[
 {
-"title":"\"늦게 왔네, 몇 시에 왔어?\" 상사 닦달도 '직장 내 괴롭힘'",
-"url":"https://www.asiae.co.kr/article/2026110215095708838"
-},
-{
-"title":"\"늦게 왔네?\" 출근 시간 물은 상사… 법원 \"직장 내 괴롭힘\"",
-"url":"https://view.asiae.co.kr/article/2026103112010923159"
+"title":"국가법령정보센터",
+"url":"https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1012828735"
 },
 {
 "title":"[판결] “늦게 왔네, 몇 시에 왔어?” 상사 닦달도 ‘직장 내 괴롭힘’ < 지방법원·지원 < 판결기사 < 판결큐레이션 < 기사본문 - 법률신문",
 "url":"https://www.lawtimes.co.kr/news/articleView.html?idxno=228540"
 },
 {
-"title":"대전·충청 직장 내 성희롱 피해자 79.8％ \"참고 넘겼다\"…신고는 9％ - 뉴스1",
-"url":"https://news1.kr/local/daejeon-chungnam/6344302"
+"title":"[데일리대구경북뉴스] 한국철도공사 경북본부, 직원 인식개선으로 안전하고 존중받는 직장문화 조성",
+"url":"https://dailydgnews.com/news/article.html?no=268343"
 },
 {
 "title":"“늦게 왔네?” 출근 시간 물었다가…직장 상사 직장 내 괴롭힘 판단 나왔다",
 "url":"https://www.sedaily.com/article/20108681"
 },
 {
-"title":"육아휴직 쓰겠다니 해고통보…“5인 미만 사업장, 육휴도 사각지대” - 경향신문",
-"url":"https://khan.co.kr/article/202611061457001"
+"title":"#138 직장 내 괴롭힘 금지법",
+"url":"https://seoulalien.substack.com/p/138"
 },
 {
-"title":"\"목 졸리고 욕설, 직장 괴롭힘 아니다?\"…광주노동청 판정 논란 - 뉴스1",
-"url":"https://www.news1.kr/local/gwangju-jeonnam/6341873"
+"title":"직원들을 위한 질의응답: 직장 내 괴롭힘",
+"url":"https://www.eeoc.gov/ko/jigwondeuleul-wihan-jiluieungdab-jigjang-nae-goelobhim"
 },
 {
-"title":"신고인이 피신고인 조사? 황당한 ‘직장내 괴롭힘’ 사건 < 노동안전 < 안전과 건강 < 기사본문 - 매일노동뉴스",
-"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237525"
+"title":"Sexual Harassment Poster K",
+"url":"https://calcivilrights.ca.gov/wp-content/uploads/sites/32/2022/12/Sexual-Harassment-Poster_K.pdf"
+},
+{
+"title":"www.eeoc.gov",
+"url":"https://www.eeoc.gov/ko/huilong"
 }
 ]
 },
 "6":{
-"text":"- 검색 도구를 쓸 수 없었습니다(사용 한도 초과 오류). 그래서 2026년 11월 1일~8일 사이 6장과 닿는 소식은 확인하지 못했습니다.",
+"text":"- 11월 5일 『더시사법률』 보도에 따르면, 서울의 한 법인 B사는 그만두겠다고 한 직원 A씨를 자진 퇴사로 처리하고 퇴직금까지 줬습니다. 그런데 A씨가 그 뒤 노동위원회에 부당해고 구제신청을 냈고, 회사가 퇴사하게 된 경위를 설명해야 하는 처지가 됐습니다. 이 사례는 **권고사직·합의퇴직과 해고를 어떻게 구분하느냐**, 그리고 **해고 사유·시기를 서면으로 알려야 하는 요건**과 닿아 있습니다. 노동위원회가 부당해고로 인정하면 원직복직과 해고 기간 임금 상당액 지급을 명할 수 있다는 점에서 **노동위원회 구제신청 절차**와도 관련됩니다.\n- 11월 5일 무렵 『매일노동뉴스』가 실은 노동위원회 일정을 보면, 서울지방노동위원회에서 수십 건의 사건 심문이 잡혀 있었습니다. 대부분 부당해고 사건이고, 쿠팡페이·농협파트너스 등이 포함됐습니다. 한국공항보안의 부당감봉, 부당채용취소·부당채용내정취소 사건도 있었습니다. 이는 **부당해고만이 아니라 감봉 같은 징계, 채용 내정 취소까지 노동위원회 구제 대상이 된다**는 이 장의 개념과 닿습니다.\n- 11월 4일 무렵 한 법률 칼럼은 법정 정년을 65세로 늘리는 입법 논의가 다시 빨라지고 있다고 다뤘습니다. 그 근거로 김영훈 고용노동부 장관이 10월 13일 국정감사에서 \"정년연장 법안은 연내에 반드시 처리돼야 한다\"고 한 발언을 들었습니다. 다만 장관 발언 자체는 기간 밖의 일이고, 기간 안에는 이 칼럼이 실린 것 말고 새로운 진전은 확인하지 못했습니다. 이 쟁점은 **정년 제도와 고령자 고용**, 그리고 정년연장에 맞춰 임금·고용체계를 바꾸는 문제와 닿습니다.\n- 검색 도구 사용 한도에 걸려 검색을 몇 번밖에 하지 못했습니다. 그래서 희망퇴직·구조조정, 장애인 고용, 임금격차·차별 쪽은 기간 안의 소식을 확인하지 못했습니다.",
 "sources":[
 {
-"title":"노동위원회 온라인사건신청",
-"url":"https://nlrc.go.kr/nlrc/minwon/main.do"
+"title":"\"다른 프로젝트 투입\" 정규직 근로자 정직 후 해고는 부당",
+"url":"https://www.asiae.co.kr/article/2025112414343475036"
 },
 {
-"title":"중앙노동위원회",
-"url":"https://nlrc.go.kr/nlrc/commIntro/workGuide03.do"
+"title":"부당해고",
+"url":"https://www.findsemusa.com/labor/consult/consultView.do?qidx=13000"
 },
 {
-"title":"노동위원회 온라인사건신청 > 신청유형별절차안내 > 심판",
-"url":"https://nlrc.go.kr/nlrc/commIntro/minwon/workGuide03.do"
+"title":"노동위원회 일정 < 매일노동법률 < 기사본문 - 매일노동뉴스",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237564"
 },
 {
-"title":"민원신청(국민신문고)",
-"url":"https://nlrc.go.kr/nlrc/minwon/minwonRequest/index.do"
+"title":"[더시사법률] “대표 꼬드겨 나 좀 잘라줘”…퇴사 요구하던 직원, 돌연 부당해고 신고",
+"url":"https://www.tsisalaw.com/news/article.html?no=30966"
 },
 {
-"title":"부당해고 등 구제신청",
-"url":"https://moel.go.kr/policyitrd/policyItrdView.do?policy_itrd_sn=199"
+"title":"해고 - 나무위키",
+"url":"https://namu.wiki/w/%ED%95%B4%EA%B3%A0"
 },
 {
-"title":"민원마당 > 민원정보 > 민원제도안내 > 부당해고 및 부당노동행위 구제 방법",
-"url":"https://minwon.moel.go.kr/minwonCms/minwonCmsMwmdView/2000.do"
+"title":"부당해고 대응·근로자 권리 완전 가이드 - 구제신청부터 복직·보상까지",
+"url":"https://braindetox.kr/posts/labor_rights_wrongful_termination_guide.html"
 },
 {
-"title":"고용노동부 > 민원 > 민원신청 > 빠른인터넷상담",
-"url":"https://www.moel.go.kr/minwon/fastcounsel/fastcounselView.do?inetDcssMngId=202204041622031081000"
+"title":"부당해고 신고 기한, 절차 완벽정리(2026년 기준) - 노동법률사무소 선의",
+"url":"https://seonuilabor.com/%EB%B6%80%EB%8B%B9%ED%95%B4%EA%B3%A0-%EC%8B%A0%EA%B3%A0-%EA%B8%B0%ED%95%9C-%EC%A0%88%EC%B0%A8"
 },
 {
-"title":"부당해고 구제절차",
-"url":"https://www.moel.go.kr/faq/faqView.do?seqRepeat=155"
+"title":"2026 in South Korea",
+"url":"https://en.wikipedia.org/wiki/2026_in_South_Korea"
 }
 ]
 },
 "7":{
-"text":"- 이 기간(2026년 11월 1~8일)의 한국 노동·고용 소식은 확인하지 못했습니다. 웹 검색 도구가 호출 한도를 넘어 오류가 났고, 검색 결과를 하나도 받지 못했기 때문입니다. 확인되지 않은 내용은 쓰지 않았습니다.",
+"text":"- 11월 7일 한국노총과 민주노총이 전태일 열사 56주기를 맞아 서울 여의대로와 숭례문 일대에서 각각 전국노동자대회를 열었습니다. 양대노총은 초광역특구법의 노동특례 철회, 원청교섭, 정년연장 입법을 요구했습니다. 이 일은 전태일의 근로기준법 준수 요구를 해마다 노동자대회에서 기념하며 그때의 쟁점으로 이어 가는 한국 노동운동의 전통과 닿아 있습니다.\n\n- 민주노총은 같은 날 서울 숭례문과 경남 거제 한화오션 서문 앞에서 대회를 열었고, 참가자는 주최 측 추산 약 5만 명입니다. 요구는 원청·초기업교섭 쟁취, 특수고용·플랫폼 노동자의 노동자성 인정, 근로기준법 전면 적용이었고, 대회에서는 노란봉투법 시행령 해석지침을 비판하는 퍼포먼스도 있었습니다. 이는 노동운동이 정규직 중심에서 벗어나 하청·비정규·플랫폼 노동자까지 대표하는 쪽으로 의제를 넓히고 있음을 보여 줍니다.\n\n- 한국노총 대회에는 조합원 3만여 명이 모여 정년연장 연내 입법과 초광역특구법 철회를 정부에 촉구했습니다. 한국노총은 \"제대로 된 입법 성과 나오지 못하면 정책 연대에 연연 않을 것\"이라는 입장도 밝혔습니다. 이는 노동조합이 정부·정당과 정책 연대를 맺고 입법 성과와 교환하는 노정관계, 넓게는 노사정 관계의 긴장과 닿아 있습니다.\n\n- 민주노총 12기 임원 선거를 앞두고 4개 후보조가 이 대회 무대에 올랐습니다. 이들은 사회적 대화, 총파업 조직, 민주노총당 창당 등 서로 다른 공약을 밝혔습니다. 사회적 대화(경사노위 등)에 참여할지, 투쟁에 집중할지를 둘러싼 노동운동 내부의 노선 논쟁을 보여 주는 사례입니다.\n\n- 11월 4일 민주노총 부산본부는 부산노동청 앞에서 전태일 56주기 정신계승 기자회견을 열고, 모든 노동자에게 근로기준법을 전면 적용하라고 요구했습니다. 전태일 정신이 지금의 법 적용 사각지대 문제로 다시 해석되고 있다는 점에서 노동사와 현재의 노동운동을 잇는 사례입니다.",
 "sources":[
 {
-"title":"경사노위, 시민 50명과 ‘1대1 일자리 대화’…인구구조 변화 해법 찾는다 - 헤럴드경제",
-"url":"https://biz.heraldcorp.com/article/10833877"
+"title":"전태일열사 정신계승 2026 전국노동자대회 - 공지사항 - 민주노총",
+"url":"https://nodong.org/notice/7948350"
 },
 {
-"title":"민주노총 차기 위원장 선거전 돌입…‘사회적 대화 복귀’ 쟁점 - 경향신문",
-"url":"https://www.khan.co.kr/article/202610261403001/"
+"title":"[공지] 2026 전태일 열사 정신 계승 전국노동자대회 이주노동자 공동행동 - 공지사항 - 민주노총",
+"url":"https://nodong.org/notice/7950029"
 },
 {
-"title":"경사노위 위원장, n% 성과급·메가특구 주52시간 사회적대화 필요성 언급 - 파이낸셜뉴스",
-"url":"https://www.fnnews.com/news/202608111527482788"
+"title":"2026 Chinese FA Super Cup",
+"url":"https://en.wikipedia.org/wiki/2026_Chinese_FA_Super_Cup"
 },
 {
-"title":"경사노위 위원장 \"국민 참여 '사회적 대화 2.0' 만들 것\"",
-"url":"https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03384966642404096"
+"title":"모든 노동자의 단결과 전진을 위해",
+"url":"https://laborparty.kr/?mod=document&page_id=13642&uid=4298"
 },
 {
-"title":"대통령 소속 경제사회노동위원회",
-"url":"https://www.eslc.go.kr/bbs/data/list.do?menu_idx=2264"
+"title":"2026 in American soccer",
+"url":"https://en.wikipedia.org/wiki/2026_in_American_soccer"
 },
 {
-"title":"경사노위 '사회적 대화' 재개 본격화…\"국민참여모델\" 모색 - 머니투데이",
-"url":"https://www.mt.co.kr/economy/2026/02/02/2026020211230735005"
+"title":"2026 in Canadian television",
+"url":"https://en.wikipedia.org/wiki/2026_in_Canadian_television"
 },
 {
-"title":"김지형 위원장 “민주노총 사회적 대화 복귀하면 경사노위 명칭 변경까지 검토” - 경향신문",
-"url":"https://www.khan.co.kr/article/202610061444001/"
+"title":"2026 NCAA Bowling Championship",
+"url":"https://en.wikipedia.org/wiki/2026_NCAA_Bowling_Championship"
 },
 {
-"title":"2028년부터 20인 이상 사업장도 안전관리자 둬야… 이재명정부 경사노위, 첫 노사정 합의",
-"url":"https://www.segye.com/newsView/20261105512503"
+"title":"2026 NSWRL Major Competitions",
+"url":"https://en.wikipedia.org/wiki/2026_NSWRL_Major_Competitions"
 }
 ]
 },
 "8":{
-"text":"- 검색 도구의 사용 한도가 초과되어 검색이 되지 않았습니다. 그래서 2026년 11월 1일~8일에 있었던 일을 확인하지 못했고, 이 기간의 노동·고용 쟁점은 정리하지 못했습니다.",
+"text":"- **민주노총 전국노동자대회(11월 7일)**: 민주노총이 7일 오후 3시 서울 숭례문 앞에서 「원청교섭 쟁취·노동중심 산업전환 쟁취·메가특구 노동개악 저지」를 내걸고 전태일 열사 정신계승 전국노동자대회를 열었습니다. 한 해 동안 벌인 원청교섭·초기업교섭 투쟁의 성과를 나누는 자리라고 밝혔습니다(민주노총 취재요청 11.6, 보도자료 11.7). → 기업별 노조 중심의 교섭 구조를 넘어 산별·초기업 단위로 교섭을 넓히려는 노동조합(상급단체)의 전략과 닿습니다.\n\n- **산별노조 기업지부의 임금협약 체결(11월 2일·6일 예정)**: 매일노동뉴스 일정란에 따르면 사무금융노조 이크레더블지부(11.2)와 HMM지부(11.6)가 임금협약 체결식을 가질 예정이었습니다. → 산별노조에 속한 기업 지부가 실제 교섭은 기업 단위로 하는 모습이어서, 한국에서 산별과 기업별 노조 형태가 섞여 있는 점을 보여 줍니다.\n\n- **철도·지하철 노조 공동파업 투표 결과 발표(11월 6~8일 일정)**: 공공운수노조 전국철도지하철노조협의회가 국회 소통관에서 공동파업 투표 결과와 공동 쟁의계획을 발표하는 기자회견을 연다는 일정이 실렸습니다(매일노동뉴스 「주요일정(11월6~8일)」). 투표 결과 자체는 찾지 못했습니다. → 여러 사업장 노조가 업종 단위로 함께 쟁의를 꾸리는 것으로, 산별 연대와 노사관계 속 노동조합의 단체행동에 해당합니다.\n\n- **고흥군과 두 노조의 화합 행사(11월 6일)**: 전남 고흥군이 6일 고흥팔영체육관에서 공무원노조·공공연대노조와 함께 「직원 건강의 날 및 화합 한마당」을 열었습니다. 군은 근무환경 개선을 계속 추진하겠다고 했습니다(중앙이코노미뉴스 11.7). → 한 사용자 아래 노조가 둘 있는 복수노조 상황에서 사용자와 노조가 협력하는 공공부문 노사관계 사례입니다.\n\n※ 검색 도구 사용 한도에 걸려 검색을 한 번만 할 수 있었습니다. 그래서 부당노동행위, 타임오프(근로시간 면제), 경총, 조직률 관련 소식은 이 기간 안에서 확인하지 못했습니다. 매일노동뉴스 11월 6일 자 페이지에 「HD현대중공업, 원청교섭 요구 8개월 만에 상견례」와 「한화오션 원하청 교섭 공전」 기사 제목도 보였지만, 기사가 언제 나왔는지 확인할 수 없어 뺐습니다.",
 "sources":[
 {
-"title":"포스코 노조 임금 잠정합의안 부결…재협상 필요",
-"url":"https://view.asiae.co.kr/article/2026110720111507931"
+"title":"[취재요청] 2026 전태일열사 정신계승 전국노동자대회 - 성명·보도 - 민주노총",
+"url":"https://nodong.org/statement/7951375"
 },
 {
-"title":"삼성전자 제6노조 설립 추진…기존 노조 간 갈등설 공방",
-"url":"https://seoul.co.kr/news/economy/industry/2026/11/05/20261105500197"
-},
-{
-"title":"철도노조, 12월 총파업 예고···쟁의행위 투표 77.6% 찬성 - 경향신문",
-"url":"https://khan.co.kr/article/202611051935001"
-},
-{
-"title":"고용노동부, 개정 노동조합법 해석지침(안) 행정예고(12.26.",
-"url":"https://www.moel.go.kr/news/enews/report/enewsView.do?news_seq=18787"
-},
-{
-"title":"\"모든 게 오르는데 임금·연금만 제자리\" 프랑스 60만 고물가 시위",
-"url":"https://view.asiae.co.kr/article/2026110605505371221"
+"title":"주요일정(11월6~8일) < 일정 < 사람 < 기사본문 - 매일노동뉴스",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237606"
 },
 {
 "title":"주간일정(11월2~8일) < 일정 < 사람 < 기사본문 - 매일노동뉴스",
 "url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237520"
 },
 {
-"title":"개정 노동조합법의 주요 내용과 예상되는 분쟁 양상",
-"url":"https://www.worklaw.co.kr/main2022/view/view.asp?bi_pidx=38398"
+"title":"[보도자료] 민주노총 전태일 열사 정신계승 전국노동자대회 “불평등·양극화 체제 청산” - 성명·보도 - 민주노총",
+"url":"https://nodong.org/statement/7951395"
 },
 {
-"title":"서울지하철 파업 수순 밟나…노조 쟁의 결의·11월 준법투쟁",
-"url":"https://www.segye.com/newsView/20261015523266"
+"title":"11월 7일 토요일 파리에서 열리는 시위, 무엇이 예정돼 있나 - Sortiraparis.com",
+"url":"https://sortiraparis.com/ko/sosig/palieseo/articles/357608-11wol-7il-toyoil-palieseo-yeollineun-siwi-eotteon-sanghwang-i-pyeolchyeojilkka"
+},
+{
+"title":"고흥군·양대 노동조합, 직원 화합 한마당…소통·협력 강화 < 자치단체 < 지역톡톡 < 기사본문 - 중앙이코노미뉴스",
+"url":"https://www.joongangenews.com/news/articleView.html?idxno=562091"
+},
+{
+"title":"삼성그룹 초기업 노동조합 삼성전자 지부",
+"url":"https://selunion.co.kr/"
+},
+{
+"title":"포스코노동조합",
+"url":"https://poscounion.kr/"
 }
 ]
 },
 "9":{
-"text":"- 이 기간(2026년 11월 1~8일)의 한국 노동·고용 소식을 웹 검색으로 확인하려 했지만, 검색 도구가 사용 한도를 넘어 결과를 얻지 못했습니다. 확인한 사실이 없어 항목을 쓰지 않습니다.",
+"text":"- 서울교통공사노조(서울 지하철 제1노조)는 임금협상이 결렬되자 지난달 서울지방노동위원회에 노동쟁의 조정을 신청했으나, 11월 2일 조정 중지 결정이 나왔습니다. 11월 2일부터 5일까지 진행한 쟁의행위 찬반투표는 투표자 86.3%의 찬성으로 가결됐습니다. 노조는 20일부터 준법투쟁을 시작하고, 교섭이 진전되지 않으면 11월 말쯤 파업할 수 있다고 밝혔습니다. 요구 사항은 임금 3.5% 인상, 2,212명 인력 감축 계획 철회, 2인 1조 근무 의무화입니다(글로벌이코노믹, 11.5). 이는 교섭 결렬 후 노동위원회 조정 신청, 조정 중지, 조합원 찬반투표를 거쳐야 합법적 쟁의행위를 할 수 있다는 '조정전치' 절차와 공공부문 노사관계를 보여주는 사례입니다.\n- 전국철도노동조합은 임단협 교섭 결렬로 11월 2일부터 쟁의행위 찬반투표를 진행했고, 11월 5일 77.58% 찬성으로 가결됐다고 밝혔습니다. 찬성자는 재적 조합원의 67.97%로, 가결 요건인 과반을 넘었습니다. 노조는 승진 제도 개선과 안전 인력 확충을 요구하며 휴일근무 거부와 안전운행 투쟁을 진행하고, 교섭에 진전이 없으면 12월 총파업에 나설 계획입니다(경향신문·뉴스핌, 11.5). 코레일은 대체인력을 활용해 열차 운행률을 75.2%까지 확보할 수 있다고 예상했습니다(뉴스핌). 공사도 인력 충원이 필요하다고 인정했지만 정부의 인력 통제 때문에 해결하지 못하고 있다고 노조는 주장합니다. 이는 사용자가 아닌 정부가 실질적인 교섭 조건을 정하는 공공부문 노사관계의 특징과, 쟁의행위 중 대체근로 문제와 닿아 있습니다.\n\n※ 이번 기간에서 사실을 확인한 쟁점은 위의 두 건뿐이라 요청하신 3~5개를 채우지 못했습니다. 검색 횟수 한도에 걸려 추가 검색을 할 수 없었습니다. 포스코노조가 11월 2일 무기한 파업을 예고했다는 보도는 있었지만 모두 10월 23~26일 기사였습니다. 실제로 파업에 들어갔는지 잠정합의를 했는지는 확인하지 못해 목록에서 뺐습니다.",
 "sources":[
 {
-"title":"파업 확대 앞두고 포스코 노사 극적 합의… 7일 조합원 찬반투표",
-"url":"https://www.seoul.co.kr/news/society/2026/11/01/20261101500010"
+"title":"포스코노조, 다음달 2일부터 무기한 파업 예고…\"임금 교섭 결렬\"",
+"url":"https://www.newspim.com/news/view/20261024000022"
 },
 {
-"title":"포스코 노조 임금 잠정합의안 부결…재협상 필요",
-"url":"https://view.asiae.co.kr/article/2026110720111507931"
+"title":"SNCF 파업 2026년 11월 5일, 최신 소식 - Sortiraparis.com",
+"url":"https://www.sortiraparis.com/ko/sosig/palieseo/articles/355255-sncf-pa-eob-2026nyeon-11wol-5il-oneul-ui-sosig"
 },
 {
-"title":"'파업 연기' 포스코 노조, 7일 찬반투표로 임금협상 마무리 - 뉴스1",
-"url":"https://www.news1.kr/local/daegu-gyeongbuk/6339341"
+"title":"서울 지하철 노조, 파업 수순 밟나…20일부터 준법투쟁 돌입 - 글로벌이코노믹",
+"url":"https://www.g-enews.com/article/Real-Estate/2026/11/202611051816097059153ddfb15a_1"
 },
 {
-"title":"포스코 노사 임금협상 잠정 합의, 기본급 2.6% 인상…파업 위기 넘겨(종합) - 뉴스1",
-"url":"https://www.news1.kr/local/daegu-gyeongbuk/6338366"
+"title":"포스코 노조, 11월 2일 무기한 파업 예고…교섭 결렬에 강경 대응",
+"url":"https://www.asiatime.co.kr/article/20261023500348"
 },
 {
-"title":"포스코노조, 임단협 잠정합의안 부결…찬반투표 300여 표 차 부결 - 노컷뉴스",
-"url":"https://nocutnews.co.kr/news/6603585"
+"title":"2026 United States corporate mass layoffs",
+"url":"https://en.wikipedia.org/wiki/2026_United_States_corporate_mass_layoffs"
 },
 {
-"title":"포스코 노조, 임금 잠정안 부결…\"또 파업하면 지역사회 못 버텨\" - 뉴스1",
-"url":"https://www.news1.kr/local/daegu-gyeongbuk/6346497"
+"title":"Timeline of strikes in 2026",
+"url":"https://en.wikipedia.org/wiki/Timeline_of_strikes_in_2026"
 },
 {
-"title":"포스코 노사 임단협 잠정합의…기본급 2.6% 인상, 일시금 600만원",
-"url":"https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05877766645618168"
+"title":"2026 Utah House Bill 267 veto referendum",
+"url":"https://en.wikipedia.org/wiki/2026_Utah_House_Bill_267_veto_referendum"
 },
 {
-"title":"POSCO union to vote on wage deal on the 7th; tentative agreement reached ahead of third strike - First-Class Business Ne",
-"url":"https://en.fnnews.com/news/202611011159199807"
+"title":"brunch.co.kr",
+"url":"https://brunch.co.kr/@35e8cb4b4cac47c/1013"
 }
 ]
 }
