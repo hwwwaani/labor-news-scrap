@@ -107,7 +107,7 @@ def one(client, anthropic, ch, start, end):
     except anthropic.RateLimitError:
         return ch["num"], None, used, f"{ch['num']}장 실패(요청 한도)"
     except anthropic.APIStatusError as e:
-        return ch["num"], None, used, f"{ch['num']}장 실패({e.status_code})"
+        return ch["num"], None, used, f"{ch['num']}장 실패({e.status_code}: {str(getattr(e, 'message', e))[:300]})"
     except anthropic.APIConnectionError:
         return ch["num"], None, used, f"{ch['num']}장 실패(연결)"
     if resp.stop_reason not in ("end_turn",):
