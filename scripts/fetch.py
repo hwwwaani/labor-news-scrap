@@ -325,6 +325,9 @@ def main():
         print(f"새 기사 {added}건 · 전체 {len(arts)}건 (질문 후보는 --dry-run 에서 만들지 않음)")
         return
     annotate(arts, descs, now, log)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import weekly   # 장별 주간 쟁점 요약(주 1회만 실제로 돈다)
+    weekly_data = weekly.maybe_run(now, log, old.get("weekly"))
     print(" · ".join(log))
     print(f"새 기사 {added}건 · 전체 {len(arts)}건 · 질문 후보 있는 기사 {sum(1 for a in arts if 'ai' in a)}건")
     out = {
@@ -332,6 +335,7 @@ def main():
         "chapters": [{"num": c["num"], "title": c["title"]} for c in CHAPTERS],
         "sources": [f for f, _ in FEEDS] + ["구글 뉴스 검색"],
         "articles": arts,
+        "weekly": weekly_data,
     }
     STORE.parent.mkdir(parents=True, exist_ok=True)
     STORE.write_text(json.dumps(out, ensure_ascii=False, indent=0, separators=(",", ":")) + "\n", encoding="utf-8")

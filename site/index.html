@@ -56,6 +56,16 @@
   .chtitle { margin: 14px 0 0; font-size: 15px; color: var(--sub); min-height: 1.6em; }
   .chtitle b { color: var(--ink); }
 
+  .weekly { margin-top: 18px; background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 10px; padding: 14px 16px; }
+  .weekly h2 { font-size: 15px; margin: 0 0 8px; }
+  .weekly h2 small { font-weight: 400; color: var(--faint); margin-left: 6px; }
+  .weekly ul { background: none; border: 0; border-radius: 0; padding-left: 18px; list-style: disc; }
+  .weekly ul > li { padding: 3px 0; border: 0; }
+  .weekly ul > li:hover { background: none; }
+  .weekly p { margin: 0 0 6px; }
+  .weekly .src { margin-top: 8px; font-size: 13px; color: var(--faint); }
+  .weekly .src a { color: var(--sub); }
+  .weekly .hint { color: var(--faint); font-size: 14px; margin: 0; }
   .day { margin-top: 26px; }
   .day h2 { font-size: 14px; font-weight: 600; color: var(--faint); margin: 0 0 6px; letter-spacing: .02em; }
   ul { list-style: none; margin: 0; padding: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
@@ -107,11 +117,13 @@
     <p class="chtitle" id="chtitle"></p>
   </div>
 
+  <section id="weekly" aria-live="polite"></section>
   <main id="list"><p class="loading">기사 목록을 불러오는 중입니다.</p></main>
 
   <footer>
     <p>기사의 저작권은 각 언론사에 있습니다. 이 페이지는 제목과 원문 링크만 모으며, 본문은 원문 사이트에서 읽어 주세요.</p>
     <p id="sources">출처: 매일노동뉴스·참여와혁신 RSS, 구글 뉴스 검색. 장 표시는 제목과 요약에 나온 낱말로 기계가 붙인 것이라 틀릴 수 있습니다.</p>
+    <p>「이번 주 쟁점」은 AI(Claude)가 일주일에 한 번 웹을 검색해 장마다 정리한 요약입니다. 출처 링크로 원문을 확인해 주세요.</p>
     <p>「질문 후보」는 AI(Claude)가 기사 제목과 짧은 요약만 보고 만든 참고용입니다. 원문으로 사실을 확인하고, 토론과제에 쓰면 AI 활용 내역에 밝혀 주세요.</p>
   </footer>
 </div>
@@ -123,6 +135,7 @@ const DATA_URLS = [
   'https://raw.githubusercontent.com/hwwwaani/labor-news-scrap/main/site/articles.json',
   'articles.json'
 ];
+let WEEKLY = null;   // articles.json 의 weekly 칸
 const PAGE = 150;
 const HUES = { 1: 205, 2: 25, 3: 145, 4: 340, 5: 265, 6: 5, 7: 45, 8: 185, 9: 225 };
 const dark = matchMedia('(prefers-color-scheme: dark)');
@@ -195,8 +208,37 @@ function renderChips(base) {
     : state.ch === 'none' ? '어느 장 낱말에도 걸리지 않은 노동 기사입니다.' : '';
 }
 
+function renderWeekly() {
+  const box = $('weekly');
+  const w = WEEKLY && WEEKLY.chapters && WEEKLY.chapters[state.ch];
+  if (!WEEKLY || !/^[0-9]+$/.test(state.ch)) {
+    box.className = WEEKLY ? 'weekly' : '';
+    box.innerHTML = WEEKLY ? '<p class="hint">장을 고르면 그 장의 「이번 주 쟁점」 요약이 여기에 나옵니다.</p>' : '';
+    return;
+  }
+  box.className = 'weekly';
+  if (!w) { box.innerHTML = `<p class="hint">${state.ch}장의 이번 주 쟁점 요약이 아직 없습니다.</p>`; return; }
+  const lines = w.text.replace(/\*\*/g, '').split('\n').map((l) => l.trim()).filter(Boolean);
+  let body = '', open = false;
+  for (const l of lines) {
+    if (/^[-•·]\s*/.test(l)) {
+      if (!open) { body += '<ul>'; open = true; }
+      body += `<li>${esc(l.replace(/^[-•·]\s*/, ''))}</li>`;
+    } else {
+      if (open) { body += '</ul>'; open = false; }
+      body += `<p>${esc(l)}</p>`;
+    }
+  }
+  if (open) body += '</ul>';
+  const src = (w.sources || []).map((s) =>
+    `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`).join(' · ');
+  box.innerHTML = `<h2>이번 주 ${state.ch}장 쟁점<small>AI 웹 검색 요약 · ${esc(WEEKLY.range || '')}</small></h2>${body}`
+    + (src ? `<div class="src">출처: ${src}</div>` : '');
+}
+
 function render() {
   if (!DATA) return;
+  renderWeekly();
   for (const b of $('period').querySelectorAll('button')) b.setAttribute('aria-pressed', Number(b.dataset.p) === state.p);
   const base = DATA.articles.filter(inPeriodAndQuery);
   renderChips(base);
@@ -260,6 +302,7 @@ load().then((d) => {
   DATA = d;
   const u = new Date(d.updated);
   $('stamp').textContent = `마지막 갱신 ${u.getMonth() + 1}월 ${u.getDate()}일 ${timeLabel(d.updated)} · 모은 기사 ${d.articles.length.toLocaleString()}건`;
+  WEEKLY = d.weekly && d.weekly.chapters ? d.weekly : null;
   render();
 }).catch(() => {
   $('stamp').textContent = '';

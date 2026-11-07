@@ -1,0 +1,152 @@
+"""장별 주간 쟁점 요약 — Claude 가 웹을 검색해 지난 7일 쟁점을 장마다 정리한다. site/articles.json 의 "weekly" 칸에 들어간다.
+
+fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 때만 실제로 돈다(사실상 주 1회).
+손으로 돌리기: ANTHROPIC_API_KEY 가 있는 곳에서 python3 scripts/weekly.py --force
+
+- 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번. 거절되면 대체 모델로 다시 돈다(fallbacks).
+- 저장하는 것: 요약 글(모델이 쓴 것)과 출처 제목·주소. 검색 결과 본문이나 인용 구절은 저장하지 않는다.
+- 한 장이 실패하면 그 장은 지난주 요약을 그대로 둔다.
+"""
+import json
+import os
+import sys
+from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+STORE = ROOT / "site" / "articles.json"
+CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["chapters"]
+KST = timezone(timedelta(hours=9))
+
+WEEKLY_MODEL = "claude-opus-5-5"
+WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
+WEEKLY_EVERY = timedelta(days=6, hours=12)
+MAX_CONTINUE = 3             # pause_turn 이어 돌리기 상한
+WORKERS = 3                  # 동시에 도는 장 수
+
+SYSTEM = ("너는 대학 「고용관계론」 수업을 듣는 학생의 주간 리서치를 돕는다. "
+          "웹 검색으로 한국의 최근 노동·고용 소식을 찾아 수업의 장 하나에 맞춰 짧게 정리한다. "
+          "확인한 사실만 쓰고, 한국어로 쓴다.")
+
+
+def prompt(ch, start, end):
+    return f"""기간: {start:%Y년 %m월 %d일}부터 {end:%m월 %d일}까지(지난 7일)
+장: {ch['num']}장 {ch['title']}
+이 장의 주요 낱말: {', '.join(ch['keywords'][:14])}
+
+이 기간에 한국에서 이 장과 닿는 노동·고용 쟁점을 웹에서 찾아 3~5개로 정리해 줘.
+- 항목마다 「- 」로 시작하고, 무슨 일이 있었는지 한두 문장과 이 장의 어떤 개념과 닿는지 한 문장을 쓴다.
+- 기간 밖의 일은 넣지 않는다. 기간 안에 찾지 못했으면 그렇다고 한 줄로만 쓴다.
+- 머리말이나 맺음말 없이 항목만 쓴다."""
+
+
+def sources_of(content):
+    """인용된 글을 먼저, 없으면 검색 결과에서 출처 제목·주소를 모은다(중복 제거, 최대 8개)."""
+    seen, out = set(), []
+
+    def add(url, title):
+        if url and url not in seen and len(out) < 8:
+            seen.add(url)
+            out.append({"title": (title or url)[:120], "url": url})
+
+    for b in content:
+        if getattr(b, "type", "") == "text":
+            for c in getattr(b, "citations", None) or []:
+                add(getattr(c, "url", None), getattr(c, "title", None))
+    if not out:
+        for b in content:
+            if getattr(b, "type", "") == "web_search_tool_result" and isinstance(getattr(b, "content", None), list):
+                for r in b.content:
+                    add(getattr(r, "url", None), getattr(r, "title", None))
+    return out
+
+
+def one(client, anthropic, ch, start, end):
+    """장 하나를 요약한다. (장 번호, 결과 dict 또는 None, 쓴 양, 로그 한 줄)"""
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES}]
+    messages = [{"role": "user", "content": prompt(ch, start, end)}]
+    used = {"in": 0, "out": 0, "search": 0}
+    try:
+        for _ in range(MAX_CONTINUE + 1):
+            req = dict(model=WEEKLY_MODEL, max_tokens=16000, system=SYSTEM,
+                       output_config={"effort": "medium"}, tools=tools, messages=messages)
+            try:
+                resp = client.beta.messages.create(
+                    **req, betas=["server-side-fallback-2026-07-01"], fallbacks="default")
+            except TypeError:   # 설치된 SDK 가 fallbacks 를 모르면 대체 모델 없이 보낸다
+                resp = client.beta.messages.create(**req)
+            u = resp.usage
+            used["in"] += (u.input_tokens or 0) + (getattr(u, "cache_read_input_tokens", 0) or 0)
+            used["out"] += u.output_tokens or 0
+            stu = getattr(u, "server_tool_use", None)
+            used["search"] += (getattr(stu, "web_search_requests", 0) or 0) if stu else 0
+            if resp.stop_reason == "pause_turn":
+                messages = [messages[0], {"role": "assistant", "content": resp.content}]
+                continue
+            break
+    except anthropic.AuthenticationError:
+        return ch["num"], None, used, f"{ch['num']}장 실패(키가 틀림)"
+    except anthropic.RateLimitError:
+        return ch["num"], None, used, f"{ch['num']}장 실패(요청 한도)"
+    except anthropic.APIStatusError as e:
+        return ch["num"], None, used, f"{ch['num']}장 실패({e.status_code})"
+    except anthropic.APIConnectionError:
+        return ch["num"], None, used, f"{ch['num']}장 실패(연결)"
+    if resp.stop_reason not in ("end_turn",):
+        return ch["num"], None, used, f"{ch['num']}장 건너뜀({resp.stop_reason})"
+    text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text").strip()
+    if not text:
+        return ch["num"], None, used, f"{ch['num']}장 빈 답"
+    return ch["num"], {"text": text, "sources": sources_of(resp.content)}, used, f"{ch['num']}장 완료"
+
+
+def maybe_run(now, log, old, force=False):
+    """old 는 지난 요약(dict). 새로 만들었으면 새 요약을, 아니면 old 를 그대로 돌려준다."""
+    old = old or {}
+    last = old.get("generated")
+    if not force and last and now - datetime.fromisoformat(last) < WEEKLY_EVERY:
+        return old
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        log.append("주간 요약 건너뜀(키 없음)")
+        return old
+    try:
+        import anthropic
+    except ImportError:
+        log.append("주간 요약 건너뜀(anthropic 미설치)")
+        return old
+    client = anthropic.Anthropic()
+    start, end = now - timedelta(days=7), now
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end), CHAPTERS))
+    chapters = dict(old.get("chapters", {}))
+    total = {"in": 0, "out": 0, "search": 0}
+    notes, ok = [], 0
+    for num, res, used, note in results:
+        for k in total:
+            total[k] += used[k]
+        notes.append(note)
+        if res:
+            chapters[str(num)] = res
+            ok += 1
+    # 대략 비용(Opus 5.5 입력 $4·출력 $20 /100만 토큰, 검색 $10/1,000번). 기록용 추정이다
+    cost = total["in"] / 1e6 * 4 + total["out"] / 1e6 * 20 + total["search"] / 1000 * 10
+    log.append(f"주간 요약 {ok}/{len(CHAPTERS)}장 (입력 {total['in']:,} · 출력 {total['out']:,} 토큰 · 검색 {total['search']}번 · 약 ${cost:.2f})")
+    if any("완료" not in n for n in notes):
+        log.append("주간 요약 문제: " + ", ".join(n for n in notes if "완료" not in n))
+    if not ok:
+        return old
+    return {
+        "generated": now.isoformat(timespec="minutes"),
+        "range": f"{start:%m/%d}~{end:%m/%d}",
+        "model": WEEKLY_MODEL,
+        "chapters": chapters,
+    }
+
+
+if __name__ == "__main__":
+    data = json.loads(STORE.read_text(encoding="utf-8"))
+    log = []
+    data["weekly"] = maybe_run(datetime.now(KST), log, data.get("weekly"), force="--force" in sys.argv)
+    STORE.write_text(json.dumps(data, ensure_ascii=False, indent=0, separators=(",", ":")) + "\n", encoding="utf-8")
+    print(" · ".join(log) or "할 일 없음(지난 요약이 아직 최근)")
