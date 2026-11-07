@@ -6,14 +6,17 @@ python3 scripts/fetch.py --dry-run  # 저장하지 않고 몇 건 들어오는�
 
 - 깃허브 Actions 가 매일 아침 7시(한국)에 돌리고, 바뀐 site/articles.json 을 커밋한다.
   화면(site/index.html)은 그 파일을 깃허브에서 바로 읽으므로 Netlify 는 다시 배포하지 않는다.
-- 표준 라이브러리만 쓴다. Actions 에서 아무것도 설치하지 않고 돈다.
+- 기사 모으기는 표준 라이브러리만 쓴다. 질문 후보만 anthropic SDK 를 쓰고, Actions 가 설치한다.
 - 기사 본문과 RSS 요약은 저장하지 않는다(저작권). 제목·언론사·날짜·링크·장 표시만 남긴다.
-  요약은 장을 고를 때만 읽고 버린다.
+  요약은 장을 고르고 질문 후보를 만들 때만 읽고 버린다.
 - 장 핵심어와 구글뉴스 검색어는 chapters.json 에서 고친다. 이미 쌓인 기사는 다시 나누지 않는다.
+- 질문 후보: 환경변수 ANTHROPIC_API_KEY 가 있을 때만, 최근 AI_DAYS 일 기사 가운데 아직 없는 것에
+  Claude(AI_MODEL)로 「몇 장과 닿는지」 한 줄과 토론 질문 셋을 붙인다(기사의 "ai" 칸). 키가 없으면 건너뛴다.
 """
 import html
 import hashlib
 import json
+import os
 import re
 import sys
 import time
@@ -30,7 +33,32 @@ CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["cha
 KST = timezone(timedelta(hours=9))
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
-KEEP_DAYS = 150          # 이보다 오래된 기사는 목록에서 뺀다(한 학기 + 여유). 늘리면 화면이 그만큼 무거워진다
+KEEP_DAYS = 45           # 이보다 오래된 기사는 목록에서 뺀다. 하루 120건 안팎이 쌓여 늘리면 화면이 무거워진다
+
+AI_MODEL = "claude-haiku-5-5"   # 질문 후보용 작은 모델(사용자가 받아들인 안, 2026-11-07)
+AI_DAYS = 10             # 이보다 오래된 기사에는 질문 후보를 붙이지 않는다
+AI_MAX = 200             # 한 번 돌 때 질문 후보를 붙이는 기사 수 상한(비용 상한)
+AI_BATCH = 20            # 한 번 요청에 넣는 기사 수
+AI_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {"type": "string"},
+                    "link": {"type": "string"},
+                    "questions": {"type": "array", "items": {"type": "string"}},
+                },
+                "required": ["id", "link", "questions"],
+                "additionalProperties": False,
+            },
+        }
+    },
+    "required": ["items"],
+    "additionalProperties": False,
+}
 # 구글뉴스가 한국어로 번역해 끼워 넣는 외국 매체(베트남 노동조합 기사 등). 출처 주소에 이 글자가 있으면 뺀다
 BLOCK_SOURCES = (".vn/", ".vn", "vietnam", "laodong", "mezha.net", "indexbox")
 MAX_TAGS = 3             # 기사 하나에 붙이는 장 수
@@ -123,10 +151,12 @@ def collect():
                 link = text_of(it, "link")
                 if not title or not link:
                     continue
+                desc = strip_tags(text_of(it, "description"))
                 got.append({
                     "title": title, "url": link, "outlet": outlet, "via": "rss",
                     "date": parse_date(text_of(it, "pubDate")),
-                    "tags": classify(title, strip_tags(text_of(it, "description"))),
+                    "tags": classify(title, desc),
+                    "desc": desc[:400],   # 질문 후보 만들 때만 쓰고 저장하지 않는다
                 })
                 n += 1
             log.append(f"{outlet} {n}건")
@@ -174,11 +204,89 @@ def merge_tags(a, b):
     return [out[c] for c in order][:MAX_TAGS]
 
 
+def ai_system():
+    chapters = "\n".join(f"{c['num']}장 {c['title']}" for c in CHAPTERS)
+    return f"""너는 대학 「고용관계론」 수업의 토론 준비를 돕는다. 수업은 다음 장으로 이뤄진다.
+{chapters}
+
+학생들은 장마다 그 장과 관련된 최근 신문기사 하나를 골라 질문 세 개를 만들고 스스로 답하는 토론과제를 한다.
+여기서 만드는 것은 학생이 기사를 고를 때 참고할 후보이고, 학생이 고쳐 쓰거나 버린다.
+
+기사마다 두 가지를 만든다.
+- link: 이 기사가 몇 장의 어떤 개념과 닿는지 한 줄. 예: "9장 · 원청의 사용자성과 하청 교섭"
+- questions: 조별 토론에서 다룰 만한 질문 세 개. 한 문장씩 쓰고, 여러 입장이 나올 수 있게 열어 둔다.
+  기사에 나온 사실에 기대어 묻고, 답이나 한쪽 입장은 쓰지 않는다.
+
+제목과 짧은 요약만 보고 쓰므로 요약에 없는 사실을 지어내지 않는다. 기사 id 는 받은 그대로 돌려준다. 한국어로 쓴다."""
+
+
+def annotate(arts, descs, now, log):
+    """최근 기사 가운데 질문 후보가 없는 것에 Claude 로 link·질문 셋을 붙인다. 붙인 건수를 돌려준다."""
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        log.append("질문 후보 건너뜀(키 없음)")
+        return 0
+    try:
+        import anthropic
+    except ImportError:
+        log.append("질문 후보 건너뜀(anthropic 미설치)")
+        return 0
+    cutoff = (now - timedelta(days=AI_DAYS)).isoformat()
+    todo = [a for a in arts if "ai" not in a and a["date"] >= cutoff][:AI_MAX]   # arts 는 최신순
+    client = anthropic.Anthropic()
+    system = ai_system()
+    done = 0
+    for i in range(0, len(todo), AI_BATCH):
+        batch = todo[i:i + AI_BATCH]
+        payload = [{"id": a["id"], "title": a["title"], "outlet": a["outlet"], "summary": descs.get(a["id"], "")}
+                   for a in batch]
+        try:
+            resp = client.messages.create(
+                model=AI_MODEL,
+                max_tokens=16000,
+                system=system,
+                output_config={"effort": "low", "format": {"type": "json_schema", "schema": AI_SCHEMA}},
+                messages=[{"role": "user", "content": "기사 목록(JSON):\n" + json.dumps(payload, ensure_ascii=False)}],
+            )
+        except anthropic.AuthenticationError:
+            log.append("질문 후보 중단(키가 틀림)")
+            break
+        except anthropic.RateLimitError:
+            log.append("질문 후보 중단(요청 한도)")
+            break
+        except anthropic.APIStatusError as e:
+            log.append(f"질문 후보 묶음 실패({e.status_code})")
+            if e.status_code < 500:
+                break
+            continue
+        except anthropic.APIConnectionError:
+            log.append("질문 후보 묶음 실패(연결)")
+            continue
+        if resp.stop_reason != "end_turn":
+            log.append(f"질문 후보 묶음 건너뜀({resp.stop_reason})")
+            continue
+        text = next((b.text for b in resp.content if b.type == "text"), "")
+        try:
+            items = json.loads(text)["items"]
+        except (ValueError, KeyError, TypeError):
+            log.append("질문 후보 묶음 해석 실패")
+            continue
+        by_id = {a["id"]: a for a in batch}
+        for it in items:
+            a = by_id.get(it.get("id"))
+            qs = [q.strip() for q in it.get("questions", []) if q.strip()][:3]
+            if a is not None and qs:
+                a["ai"] = {"link": it.get("link", "").strip()[:80], "qs": qs}
+                done += 1
+    log.append(f"질문 후보 {done}건(대상 {len(todo)}건)")
+    return done
+
+
 def main():
     dry = "--dry-run" in sys.argv
     now = datetime.now(KST)
     old = json.loads(STORE.read_text(encoding="utf-8")) if STORE.exists() else {"articles": []}
     by_key = {title_key(a["title"]): a for a in old["articles"]}
+    descs = {}   # 기사 id → 이번에 받은 RSS 요약. 질문 후보 만들 때만 쓰고 저장하지 않는다
 
     got, log = collect()
     if not got:
@@ -198,22 +306,27 @@ def main():
             a["tags"] = merge_tags(a["tags"], g["tags"])
             if a["via"] == "google" and g["via"] == "rss":   # 언론사 원문 주소가 있으면 그쪽을 쓴다
                 a.update(url=g["url"], outlet=g["outlet"], via="rss")
-            continue
-        by_key[key] = {
-            "id": hashlib.sha1(key.encode()).hexdigest()[:10],
-            "title": g["title"], "url": g["url"], "outlet": g["outlet"], "via": g["via"],
-            "date": date.isoformat(timespec="minutes"),
-            "seen": now.date().isoformat(),
-            "tags": g["tags"],
-        }
-        added += 1
+        else:
+            by_key[key] = {
+                "id": hashlib.sha1(key.encode()).hexdigest()[:10],
+                "title": g["title"], "url": g["url"], "outlet": g["outlet"], "via": g["via"],
+                "date": date.isoformat(timespec="minutes"),
+                "seen": now.date().isoformat(),
+                "tags": g["tags"],
+            }
+            added += 1
+        if g.get("desc"):
+            descs[by_key[key]["id"]] = g["desc"]
 
     cutoff = (now - timedelta(days=KEEP_DAYS)).isoformat()
     arts = sorted((a for a in by_key.values() if a["date"] >= cutoff), key=lambda a: a["date"], reverse=True)
-    print(" · ".join(log))
-    print(f"새 기사 {added}건 · 전체 {len(arts)}건")
     if dry:
+        print(" · ".join(log))
+        print(f"새 기사 {added}건 · 전체 {len(arts)}건 (질문 후보는 --dry-run 에서 만들지 않음)")
         return
+    annotate(arts, descs, now, log)
+    print(" · ".join(log))
+    print(f"새 기사 {added}건 · 전체 {len(arts)}건 · 질문 후보 있는 기사 {sum(1 for a in arts if 'ai' in a)}건")
     out = {
         "updated": now.isoformat(timespec="minutes"),
         "chapters": [{"num": c["num"], "title": c["title"]} for c in CHAPTERS],
