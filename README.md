@@ -6,6 +6,7 @@
 
 - 주소: https://labor-news-scrap.netlify.app (장을 골라 공유하려면 `…/#ch=8` 처럼 붙입니다)
 - 저장소: https://github.com/hwwwaani/labor-news-scrap (공개. 화면이 목록 파일을 여기서 읽어서 공개여야 합니다)
+  hwwwaan 이 아니라 hwwwaani 계정입니다. 크롬 깃허브가 hwwwaani 로 로그인돼 있어 실행 설정 파일을 웹으로 올리려고 옮겼습니다(2026-11-07 사용자 결정).
 - Netlify: 개인 계정(dlwnghks9456)의 `labor-news-scrap`, 깃허브와 잇지 않고 CLI 로만 올립니다
 
 ## 어떻게 돌아가나요
@@ -44,6 +45,20 @@ SSL_CERT_FILE=/etc/ssl/cert.pem python3 scripts/fetch.py --dry-run
 
 이 맥의 python.org 파이썬에는 인증서 묶음이 없어서 `SSL_CERT_FILE` 를 붙여야 합니다. 깃허브 서버에서는 필요 없습니다.
 `--dry-run` 을 빼면 `site/articles.json` 에 저장합니다. 저장한 것을 푸시하면 Actions 가 다음에 그 위에 이어 쌓습니다.
+
+## 고친 것을 깃허브에 올리기
+
+Actions 가 매일 아침 목록을 커밋하므로 **먼저 받아 온 뒤** 올립니다. 이 맥의 gh 기본 계정은 hwwwaan 이라 hwwwaani 토큰을 잠깐 빌려 씁니다.
+
+```bash
+export GH_TOKEN="$(gh auth token -u hwwwaani)"
+git -c credential.helper= -c 'credential.helper=!gh auth git-credential' pull --ff-only
+git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push
+unset GH_TOKEN
+```
+
+`.github/workflows/` 안의 파일은 이 맥에서 푸시할 수 없습니다(gh 토큰에 workflow 권한이 없음). 실행 설정을 고칠 때는 깃허브 웹 편집기에서 고칩니다.
+손으로 한 번 돌리려면 저장소 Actions 탭 › 기사 모으기 › Run workflow 를 누르거나 `gh workflow run update.yml -R hwwwaani/labor-news-scrap` (위 GH_TOKEN 을 건 채로).
 
 ## 화면 다시 올리기
 
