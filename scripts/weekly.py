@@ -3,7 +3,7 @@
 fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 때만 실제로 돈다(사실상 주 1회).
 손으로 돌리기: ANTHROPIC_API_KEY 가 있는 곳에서 python3 scripts/weekly.py --force
 
-- 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번. 거절되면 대체 모델로 다시 돈다(fallbacks).
+- 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번(DOMAINS 사이트만). 거절되면 대체 모델로 다시 돈다(fallbacks).
 - 저장하는 것: 요약 글(모델이 쓴 것)과 출처 제목·주소. 검색 결과 본문이나 인용 구절은 저장하지 않는다.
 - 한 장이 실패하면 그 장은 지난주 요약을 그대로 둔다.
 """
@@ -19,8 +19,24 @@ STORE = ROOT / "site" / "articles.json"
 CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["chapters"]
 KST = timezone(timedelta(hours=9))
 
-WEEKLY_MODEL = "claude-opus-5-5"
-WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
+# 11/8 첫 실행(Opus 5.5·검색 5번)이 1회 약 3.76달러, 그중 77%가 검색 결과 읽기(입력)였다.
+# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)·검색 3번·한국 사이트로 좁혔다.
+WEEKLY_MODEL = "claude-sonnet-5-5"
+WEEKLY_EFFORT = "low"
+WEEKLY_SEARCHES = 3          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
+PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.1, 0.5)}  # 100만 토큰당 $(입력, 출력)
+# 검색을 한국 언론·정부·노동 전문 사이트로 좁힌다(외국 기사가 출처에 섞이던 것도 막는다). 하위 도메인 포함, 64개까지
+DOMAINS = [
+    "labortoday.co.kr", "laborplus.co.kr", "worklaw.co.kr", "lawtimes.co.kr",
+    "yna.co.kr", "newsis.com", "news1.kr", "newspim.com", "nocutnews.co.kr",
+    "hani.co.kr", "khan.co.kr", "ohmynews.com", "pressian.com", "vop.co.kr",
+    "kbs.co.kr", "imbc.com", "sbs.co.kr", "ytn.co.kr", "jtbc.co.kr",
+    "chosun.com", "joongang.co.kr", "donga.com", "hankookilbo.com", "seoul.co.kr",
+    "segye.com", "kmib.co.kr", "munhwa.com", "hankyung.com", "mk.co.kr",
+    "sedaily.com", "mt.co.kr", "edaily.co.kr", "fnnews.com", "asiae.co.kr",
+    "heraldcorp.com", "news.naver.com",
+    "moel.go.kr", "korea.kr", "nlrc.go.kr", "kli.re.kr", "eslc.go.kr",
+]
 WEEKLY_EVERY = timedelta(days=6, hours=12)
 MAX_CONTINUE = 3             # pause_turn 이어 돌리기 상한
 WORKERS = 3                  # 동시에 도는 장 수
@@ -64,13 +80,14 @@ def sources_of(content):
 
 def one(client, anthropic, ch, start, end):
     """장 하나를 요약한다. (장 번호, 결과 dict 또는 None, 쓴 양, 로그 한 줄)"""
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES,
+              "allowed_domains": DOMAINS}]
     messages = [{"role": "user", "content": prompt(ch, start, end)}]
     used = {"in": 0, "out": 0, "search": 0}
     try:
         for _ in range(MAX_CONTINUE + 1):
             req = dict(model=WEEKLY_MODEL, max_tokens=16000, system=SYSTEM,
-                       output_config={"effort": "medium"}, tools=tools, messages=messages)
+                       output_config={"effort": WEEKLY_EFFORT}, tools=tools, messages=messages)
             try:
                 resp = client.beta.messages.create(
                     **req, betas=["server-side-fallback-2026-07-01"], fallbacks="default")
@@ -129,8 +146,9 @@ def maybe_run(now, log, old, force=False):
         if res:
             chapters[str(num)] = res
             ok += 1
-    # 대략 비용(Opus 5.5 입력 $4·출력 $20 /100만 토큰, 검색 $10/1,000번). 기록용 추정이다
-    cost = total["in"] / 1e6 * 4 + total["out"] / 1e6 * 20 + total["search"] / 1000 * 10
+    # 대략 비용(모델 표값 + 검색 $10/1,000번). 기록용 추정이다
+    pin, pout = PRICE.get(WEEKLY_MODEL, (4, 20))
+    cost = total["in"] / 1e6 * pin + total["out"] / 1e6 * pout + total["search"] / 1000 * 10
     log.append(f"주간 요약 {ok}/{len(CHAPTERS)}장 (입력 {total['in']:,} · 출력 {total['out']:,} 토큰 · 검색 {total['search']}번 · 약 ${cost:.2f})")
     if any("완료" not in n for n in notes):
         log.append("주간 요약 문제: " + ", ".join(n for n in notes if "완료" not in n))

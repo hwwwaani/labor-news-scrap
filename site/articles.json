@@ -20262,7 +20262,7 @@
 }
 ],
 "weekly":{
-"generated":"2026-11-08T00:03+09:00",
+"generated":null,
 "range":"11/01~11/08",
 "model":"claude-opus-5-5",
 "chapters":{
