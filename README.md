@@ -5,7 +5,7 @@
 사이트는 후보만 보여 주고, 어떤 기사를 쓸지와 입장은 사람이 정합니다.
 
 - 주소: https://labor-news-scrap.netlify.app (장을 골라 공유하려면 `…/#ch=8` 처럼 붙입니다)
-- 저장소: https://github.com/hwwwaan/labor-news-scrap (공개. 화면이 목록 파일을 여기서 읽어서 공개여야 합니다)
+- 저장소: https://github.com/hwwwaani/labor-news-scrap (공개. 화면이 목록 파일을 여기서 읽어서 공개여야 합니다)
 - Netlify: 개인 계정(dlwnghks9456)의 `labor-news-scrap`, 깃허브와 잇지 않고 CLI 로만 올립니다
 
 ## 어떻게 돌아가나요
