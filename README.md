@@ -15,7 +15,7 @@
 2. 매일노동뉴스·참여와혁신 RSS 전체와, 장마다 정한 검색어로 구글 뉴스 최근 7일치를 받습니다.
 3. 제목이 같은 기사는 하나로 합치고, 제목·요약에 나온 낱말로 장을 최대 셋까지 붙여 `site/articles.json` 에 쌓습니다.
 4. 최근 10일 기사 가운데 아직 없는 것에 Claude(Haiku 5.5)로 「몇 장과 닿는지」 한 줄과 토론 질문 셋을 붙입니다(한 번에 최대 200건).
-5. 지난 요약이 6일 반보다 오래됐으면(사실상 주 1회) Claude(Opus 5.5)가 웹을 검색해 장마다 「이번 주 쟁점」을 3~5개로 정리하고 출처를 붙입니다. `scripts/weekly.py`, 결과는 `articles.json` 의 `weekly` 칸.
+5. 지난 요약이 6일 반보다 오래됐으면(사실상 주 1회) Claude(Opus 5.5)가 웹을 검색해 **최근 3개 장**의 「이번 주 쟁점」을 3~5개씩 정리하고 한국 사이트 출처를 붙입니다. 지난 장은 마지막 요약을 그대로 두고, 장마다 기간이 따로 표시됩니다. 항목이 둘 미만인 답(「못 찾았다」류)은 버리고 지난 요약을 지킵니다. `scripts/weekly.py`, 결과는 `articles.json` 의 `weekly` 칸.
 6. 바뀐 목록을 저장소에 커밋합니다.
 7. Netlify 에 올린 화면(`site/index.html`)은 그 파일을 깃허브에서 바로 읽습니다.
 
@@ -35,7 +35,7 @@
 | 외국 매체가 섞여 들어올 때 | `scripts/fetch.py` 의 `BLOCK_SOURCES` |
 | 언론사 RSS 늘리기 | `scripts/fetch.py` 의 `FEEDS` |
 | 오래 남기는 기간 | `scripts/fetch.py` 의 `KEEP_DAYS` |
-| 주간 쟁점 모델·검색 수·주기 | `scripts/weekly.py` 의 `WEEKLY_MODEL`·`WEEKLY_SEARCHES`·`WEEKLY_EVERY`, 지시문은 `prompt()` |
+| 주간 쟁점 모델·검색 수·주기 | `scripts/weekly.py` 의 `WEEKLY_MODEL`·`WEEKLY_RECENT`·`WEEKLY_SEARCHES`·`WEEKLY_EVERY`, 지시문은 `prompt()` |
 | 질문 후보 모델·건수·대상 기간 | `scripts/fetch.py` 의 `AI_MODEL`·`AI_MAX`·`AI_DAYS`, 지시문은 `ai_system()` |
 | 화면 모양 | `site/index.html` → 고친 뒤 아래 「화면 다시 올리기」 |
 
@@ -46,7 +46,8 @@
 - 키는 저장소 비밀값 `ANTHROPIC_API_KEY` 에 있습니다. 개인 Claude 콘솔(「Juhwan's Individual Org」)에서 사용자가 만든 `labor-news-scrap` 키입니다.
 - 키가 없거나 만료되면 질문 후보만 건너뛰고 기사 모으기는 그대로 돕니다. Actions 기록에 「질문 후보 건너뜀」이나 「키가 틀림」이 찍힙니다.
 - 키를 바꿀 때는 콘솔에서 새 키를 만들어 저장소 Settings › Secrets and variables › Actions 의 같은 이름 비밀값을 고칩니다.
-- **비용은 Actions 기록에 찍힙니다.** 「주간 요약 9/9장 (… 약 $3.76)」처럼 나옵니다. 2026-11-08 첫 실행이 약 3.76달러(웹 검색 41번, 입력 72만 토큰)였으니 한 달에 15달러 안팎입니다. 질문 후보는 그보다 훨씬 적습니다.
+- **비용은 Actions 기록에 찍힙니다.** 「주간 요약 3/3장 (… 약 $1.25)」처럼 나옵니다. 9개 장을 다 만든 첫 실행이 약 3.76달러였고, 최근 3개 장만이면 주 1.25달러 안팎(한 달 5달러 안팎)으로 봅니다(3장 실행은 11/14 첫 회에서 실측). 질문 후보는 그보다 훨씬 적습니다.
+- **Sonnet 5.5 로는 안 됐습니다**(11/8, 시험 4번 약 4달러). 검색 수·노력 수준·사이트 제한을 바꿔도 장 대부분에서 「기간 안 소식을 못 찾았다」고 답했습니다. 또 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 검색 로봇을 막아 `allowed_domains` 에 넣으면 400 이 납니다.
 - 주간 요약을 지금 한 번 더 돌리려면 키가 있는 곳에서 `python3 scripts/weekly.py --force` 를 돌리거나, 저장소의 `weekly.generated` 를 지우고 Actions 를 돌립니다.
 - 질문 후보는 제목과 RSS 요약만 보고 만든 참고용입니다. 화면 아래에 「원문 확인, 과제에 쓰면 AI 활용 내역에 밝히기」 안내를 달아 두었습니다.
 
