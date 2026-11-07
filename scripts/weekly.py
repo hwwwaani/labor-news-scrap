@@ -3,7 +3,7 @@
 fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 때만 실제로 돈다(사실상 주 1회).
 손으로 돌리기: ANTHROPIC_API_KEY 가 있는 곳에서 python3 scripts/weekly.py --force
 
-- 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번(DOMAINS 사이트만). 거절되면 대체 모델로 다시 돈다(fallbacks).
+- 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번. 출처는 한국 사이트만 보여 준다. 거절되면 대체 모델로 다시 돈다(fallbacks).
 - 저장하는 것: 요약 글(모델이 쓴 것)과 출처 제목·주소. 검색 결과 본문이나 인용 구절은 저장하지 않는다.
 - 한 장이 실패하면 그 장은 지난주 요약을 그대로 둔다.
 """
@@ -20,14 +20,16 @@ CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["cha
 KST = timezone(timedelta(hours=9))
 
 # 11/8 첫 실행(Opus 5.5·검색 5번)이 1회 약 3.76달러, 그중 77%가 검색 결과 읽기(입력)였다.
-# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)·한국 사이트로 좁혔다.
+# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)로 바꿨다. 검색 범위를 한국 사이트로 좁히면(allowed_domains)
+# 9장 중 7장이 결과 부족으로 빈 요약이 나서(11/8) 범위는 풀고, 화면에 보이는 출처만 한국 사이트로 거른다.
 WEEKLY_MODEL = "claude-sonnet-5-5"
 WEEKLY_EFFORT = "medium"   # low 에서는 검색을 아끼다 「한도를 넘었다」며 빈 요약을 냈다(11/8)
 WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러). 3번이면 빈 요약이 났다
 PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.1, 0.5)}  # 100만 토큰당 $(입력, 출력)
-# 검색을 한국 언론·정부·노동 전문 사이트로 좁힌다(외국 기사가 출처에 섞이던 것도 막는다). 하위 도메인 포함, 64개까지.
-# 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 Anthropic 검색 로봇을 막아 넣으면 400 이 난다(11/8 확인) — 넣지 않는다
-DOMAINS = [
+# 출처로 보여 줄 한국 사이트(.kr 은 따로 통과). 검색 범위 제한(allowed_domains)에는 쓰지 않는다 —
+# 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 Anthropic 검색 로봇을 막아 allowed_domains 에 넣으면 400 이 났다(11/8)
+KOREAN_SITES = [
+    "chosun.com", "donga.com", "joongang.co.kr", "daum.net", "naver.com", "g-enews.com",
     "labortoday.co.kr", "laborplus.co.kr", "worklaw.co.kr", "lawtimes.co.kr",
     "newsis.com", "news1.kr", "newspim.com", "nocutnews.co.kr",
     "khan.co.kr", "ohmynews.com", "pressian.com", "vop.co.kr",
@@ -63,7 +65,9 @@ def sources_of(content):
     seen, out = set(), []
 
     def add(url, title):
-        if url and url not in seen and len(out) < 8:
+        host = (url or "").split("/")[2].lower() if (url or "").count("/") >= 2 else ""
+        korean = host.endswith(".kr") or any(host == d or host.endswith("." + d) for d in KOREAN_SITES)
+        if url and korean and url not in seen and len(out) < 8:
             seen.add(url)
             out.append({"title": (title or url)[:120], "url": url})
 
@@ -81,8 +85,7 @@ def sources_of(content):
 
 def one(client, anthropic, ch, start, end):
     """장 하나를 요약한다. (장 번호, 결과 dict 또는 None, 쓴 양, 로그 한 줄)"""
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES,
-              "allowed_domains": DOMAINS}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES}]
     messages = [{"role": "user", "content": prompt(ch, start, end)}]
     used = {"in": 0, "out": 0, "search": 0}
     try:

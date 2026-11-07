@@ -24510,7 +24510,7 @@
 }
 ],
 "weekly":{
-"generated":"2026-11-08T01:14+09:00",
+"generated":null,
 "range":"11/01~11/08",
 "model":"claude-sonnet-5-5",
 "chapters":{
