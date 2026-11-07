@@ -1,5 +1,5 @@
 {
-"updated":"2026-11-07T19:19+09:00",
+"updated":"2026-11-07T22:31+09:00",
 "chapters":[
 {
 "num":1,
@@ -44,6 +44,95 @@
 "구글 뉴스 검색"
 ],
 "articles":[
+{
+"id":"5edf4f5744",
+"title":"한춘옥 특별시의원 “세금 먹는 소통 플랫폼, 8년간 채택률 1.9%에 불과” > 뉴스",
+"url":"https://news.google.com/rss/articles/CBMickFVX3lxTFBiSzdQV1RUUTFxWTd5QVMyWEhzZGFLMVZnejBYLWxDOV9OQ3FXNURsQ19MYVZNZk9OU2ZwME1tZUd6UjZ0Y1FxS0JwenZRV2UybUVVb0N1VUc1em1OM0pNbVF1WmtjYXhobjFlcFNBMWlmQQ?oc=5",
+"outlet":"더코리아",
+"via":"google",
+"date":"2026-11-07T21:54+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"플랫폼 노동"
+]
+}
+]
+},
+{
+"id":"ba399aa74a",
+"title":"‘첫 파업’ 포스코 노조, 잠정합의안 ‘부결’…찬반 311표 차",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BZjQ4b0dlR1pwYV93emROT2ZNWjhpbGswVWY0WlVaeGcza2dycldfT2I0QldkX0V3THhZQlY0Um9JRzhEOHBhUVpzTldVNEo4VUVJWndiMXpQZFlMVkZsYw?oc=5",
+"outlet":"뉴스토마토",
+"via":"google",
+"date":"2026-11-07T21:13+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":9,
+"kw":[
+"잠정합의",
+"파업"
+]
+}
+]
+},
+{
+"id":"54a3079f16",
+"title":"[달라지는 것] 육아기 근로시간 단축 통지 의무화... 직장 내 성희롱 과태료 대상 확대",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTFBxdDI4d1poSDZESEtqa2pEcXo2X1I1b1pMS3BIMXNHRnRzTkRuNnlneDJzQUtMVkFJbWJrRHVERE1IR3RCMnAzNHRFMENTRW5mX29hNHpjOU9kZF9DSjdnOU9GSHNId3NqWVJBSw?oc=5",
+"outlet":"베이비뉴스",
+"via":"google",
+"date":"2026-11-07T21:08+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":5,
+"kw":[
+"성희롱"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로시간"
+]
+}
+]
+},
+{
+"id":"c3e56a39d0",
+"title":"민주노총, 노동기본권 쟁취로 불평등의 ‘벽’ 허물어야",
+"url":"https://www.laborplus.co.kr/news/articleView.html?idxno=41786",
+"outlet":"참여와혁신",
+"via":"rss",
+"date":"2026-11-07T20:51+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":7,
+"kw":[
+"노동자대회",
+"전태일",
+"노동운동"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+},
+{
+"ch":6,
+"kw":[
+"차별"
+]
+}
+]
+},
 {
 "id":"17a75a18b2",
 "title":"[포토] 양대노총 ‘온전한 노동기본권 보장’ 한목소리",
@@ -95,6 +184,25 @@
 "ch":7,
 "kw":[
 "노동자대회"
+]
+}
+]
+},
+{
+"id":"687556b3c8",
+"title":"포스코 노조, 임단협 잠정합의안 부결…노사 재교섭 불가피",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTFAyUm5OZGtpa1V3QmpGQy1td0MxMGhaMTkzVDlHaTBmN0Y5Z3JTMnJzNVVOQzdHcTJmQ3haN1hFWjBtR25VQ0M2eE5WRDI4SVo0dFNkaFhJcW9SZ0M1THNWbzBIRkQ?oc=5",
+"outlet":"디지털데일리",
+"via":"google",
+"date":"2026-11-07T18:55+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":9,
+"kw":[
+"잠정합의",
+"임단협",
+"교섭"
 ]
 }
 ]
@@ -167,6 +275,23 @@
 "ch":7,
 "kw":[
 "노동자대회"
+]
+}
+]
+},
+{
+"id":"7e025fc75f",
+"title":"정년연장 지연에 노동특례 추진까지…한국노총 “정책연대 파기” 거론",
+"url":"https://news.google.com/rss/articles/CBMiS0FVX3lxTFBISmlNa19mcC1CRy1YR3BvaXV5T0ZMb2c5LXZVcEJTaXFWcHM0RnBzcVhZUDBmTkxNSkNuM1ZBNnE2bF81TU5URnh2RQ?oc=5",
+"outlet":"민중의소리",
+"via":"google",
+"date":"2026-11-07T18:19+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
 ]
 }
 ]
@@ -273,6 +398,29 @@
 "ch":4,
 "kw":[
 "고용보험"
+]
+}
+]
+},
+{
+"id":"0653c5cc91",
+"title":"'정년 65세·AI 고용안정' 촉구…양대 노총, 도심 노동자대회 개최",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GWWI1SjVadmZYWllpejlfLUlkekFLZGZMbkpud0F4NGhaMmg1ZzM0SnNfY3M3MmVuZG1tSmRNb2ZzbHMySHFQSGhqYWRUOVR4enBsNGJRSXMzZDQyWHN5SFpaRXl6Z2NM?oc=5",
+"outlet":"한국NGO신문",
+"via":"google",
+"date":"2026-11-07T16:34+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+},
+{
+"ch":7,
+"kw":[
+"노동자대회"
 ]
 }
 ]
@@ -559,6 +707,40 @@
 ]
 },
 {
+"id":"5cf13f5af9",
+"title":"'피자에 파인애플 토핑' 거부한 이탈리아 셰프, 호주서 해고당해",
+"url":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE5KYWRJWUNtaW9QbTZLTTV4d1diLTFBMVhoM3lncnFmc1BlSlRrUUsyeFl3UDZnMjV3ajI3ekcwSkVOR1dWdjd1QTBwTk1JWEhJdG5hTXFpV3ZvOXRkMXfSAWNBVV95cUxOREFHdHdnVmV0MWJTWThnWFBjTEZ1QVNDTXNFMW40WnJGOGFEeFJCbVJ1VFBRcmFDMlFpV3ZqZVhIdnp3c2FGcFh3TVAyaXhyc1Z6bDFjNVozM2ZFcXkweVpWTmc?oc=5",
+"outlet":"BBC",
+"via":"google",
+"date":"2026-11-07T10:04+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":6,
+"kw":[
+"해고"
+]
+}
+]
+},
+{
+"id":"7e8b21b989",
+"title":"김영훈 \"중대재해 반복 기업, 특별감독 수준으로 대응\"",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9kRC1zVkNOeUNxcENQSzJVbDZTRXZnNmc4M05mbmotVTA0d19iSGZCb1ZvM0NaZm1PdHdKZnFJcVZaNVVLQ0ZhMmVRcXR6Y0pRQTVEYnd4bmlISGdhYW5TQ9IBeEFVX3lxTFBTdGZ1Z0ktcDhFNTk0RDdXdjhnMklQN3l5YWZrM3NsZi1lVDJVRFo4eXBIcHhfeDUwSHVoQzRJRm5KRU1oRjNXWGtFOEJyYXZVZ2o5S2gtV1JmNV93TTYxenRlMEd1Skx0a0EzQ2lFZFhkbEtMTnM2ag?oc=5",
+"outlet":"뉴시스",
+"via":"google",
+"date":"2026-11-07T10:01+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+]
+},
+{
 "id":"3395d11bbc",
 "title":"김영훈 노동장관, 산업안전 불시 재점검 지시…중대재해 반복 기업 감독 강화",
 "url":"https://news.google.com/rss/articles/CBMiVkFVX3lxTE92WXgtcjV3TmNILWNjNF9sWEw1UlJkRWVteUEyZUduSVNaRVVhLV9xUVdhcjhHbW8zaXZlTUV1a1NGUFItNkFaZ0p4RFA5OEgxTEZpbUh3?oc=5",
@@ -647,6 +829,24 @@
 "ch":7,
 "kw":[
 "노동운동"
+]
+}
+]
+},
+{
+"id":"af2367ea34",
+"title":"삼성바이오로직스 노조, 400명 규모 2차 파업 돌입…교섭 갈등 지속돼",
+"url":"https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWU9HQ2U5d0JhU3c4YWFiTEJhcnYzdEVGMml1aDZuNlp3by1LT0Z4N01wd3hMRjFTU1g3V0NOX2hEbmZQZWdSX3VqZi1wLWNNSFJZSTBwc2gxLTBaeFNjOXNiZXZtUUU2bi15WmhOZGxob1JNOG5rSHpiZDlYR3ZoQ3RzcjJCMXRD?oc=5",
+"outlet":"글로벌이코노믹",
+"via":"google",
+"date":"2026-11-07T08:00+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":9,
+"kw":[
+"교섭",
+"파업"
 ]
 }
 ]
@@ -1430,6 +1630,29 @@
 ]
 },
 {
+"id":"8c3d8c0706",
+"title":"노사정, 초광역특구 정주지원 논의…다음주 ‘노동특례’ 본격 논의",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTFBwaUE5aFBSRjBTbTNQRTA1TkYxY2g1d2ZETndSNG9hc3c0LVgzVHF1eXhTM2VzenZnQUlHYVl3eEtZX0N1SDk1dGl3eHVYaDdURG1VNUo2dS1RRUlOMldFcXdhbGc?oc=5",
+"outlet":"한겨레",
+"via":"google",
+"date":"2026-11-06T16:50+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":7,
+"kw":[
+"노사정"
+]
+},
+{
+"ch":2,
+"kw":[
+"비정규직"
+]
+}
+]
+},
+{
 "id":"b590487640",
 "title":"정년 뒤 계약직 재고용 요청했는데 답 없이 퇴직 처리…대법원 \"부당해고와 마찬가지\"",
 "url":"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBVaFpfRmpjVEpQanVGcUFleUVBdHpTLU9ZU1dtUGZuY3pLdjFQUU5uUVpjdTRqcmJjYzExakI3Zkk0VndBU0ZWZVRabVlHSGM2cV9aUWdQMG9MZw?oc=5",
@@ -1535,6 +1758,23 @@
 "ch":4,
 "kw":[
 "중대재해"
+]
+}
+]
+},
+{
+"id":"fd04b4e54a",
+"title":"광진구 인공지능(AI)으로 자기소개서부터 면접까지 … 중장년 취업 자신감 키운다",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE4tMjJfaUtoSmhGdFFWa2tkMjdXS3lUWlhIc0wxcGJLaTlwamtqQ2NLM1VVUlFqMDBRY1dPcTllckw4ODc5OVRvX2UzVFZwYWZ5OFV5bzdlQVl3Yk01eWZvUXFJRF90V1Zab2dfYQ?oc=5",
+"outlet":"서울동북신문",
+"via":"google",
+"date":"2026-11-06T16:27+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":1,
+"kw":[
+"인공지능"
 ]
 }
 ]
@@ -2325,6 +2565,23 @@
 "ch":9,
 "kw":[
 "파업"
+]
+}
+]
+},
+{
+"id":"2d515f226d",
+"title":"광산구, 시민참여형 일자리 정책 전국 확산 모색",
+"url":"https://news.google.com/rss/articles/CBMia0FVX3lxTE1pMzVhVzREVGlYZWh3enFlOGx1SE54c1lJbVZUOWdxR1dFMkgyRDMxSmRrdDVLV0JaYkRrWlkzaHFLQk1WM0RjZW9RWGIxbEttaktYNWxZVlhyOXQtS3ZvWGZIVDNnS3FTOHFz?oc=5",
+"outlet":"대로미디어",
+"via":"google",
+"date":"2026-11-06T11:53+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":1,
+"kw":[
+"좋은 일자리"
 ]
 }
 ]
@@ -3427,7 +3684,8 @@
 "ch":9,
 "kw":[
 "교섭",
-"파업 노조"
+"파업 노조",
+"단체교섭"
 ]
 }
 ]
@@ -4119,6 +4377,23 @@
 "교섭",
 "파업",
 "쟁의"
+]
+}
+]
+},
+{
+"id":"c94c51b839",
+"title":"[알고지냅시다] 2027년부터 적용되는 최저임금",
+"url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9odkhUZjgwV215R3hhTVJMMmZwQzB0V2hzWVVxdS1tWFRjdHQ3WmVmZTdhd3loWWZjUWdCLUtYU1h6dExuVzVoMEFiRkVVNG5iZmthOHVJZEUycjZVRjBNLVpwUlJ1b2s?oc=5",
+"outlet":"제민일보",
+"via":"google",
+"date":"2026-11-05T19:24+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
 ]
 }
 ]
@@ -7114,6 +7389,23 @@
 ]
 },
 {
+"id":"5e904c335f",
+"title":"\"타이어 산재 30%가 1년이상 요양…추가상병 등 관리 강화해야\"",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9kb1c2Z2tjUnliWHVIYWxuRnU3SVFvNHU1bFJmWEdRMkpYTXJGOVVfTDc4R0VuOFNrbUZ3ck5zSzl1ZzQ3TjM0c1Jta3VqQnU2aXVVTWYtal8wcmsxblVFaU1KN04?oc=5",
+"outlet":"뉴스1",
+"via":"google",
+"date":"2026-11-05T11:00+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+]
+},
+{
 "id":"cdb68a65af",
 "title":"삼성전자에 6번째 노조 추진…’유니온샵’ 설립 신고",
 "url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xX3p2S2x6RUVSbTd3cGtTY1JYUzZqVG1lVUNmOXRhMkRzNzZNUklybTRyRzAzY1V1WjJwMDlQNTFLRDlyYlhSbDd1MHFNeWFvZGJ6Mks1SE9HU21ELVhES0xZSTZ0M28?oc=5",
@@ -8226,6 +8518,23 @@
 ]
 },
 {
+"id":"483d737652",
+"title":"65세 정년연장 ‘지지부진’ 지적…“상반기 중 입법하라” [쿡 정치포토]",
+"url":"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wTFpNUWU5ZGFlREdidlFxWXNZelNLdFR2blZQYzlrQ3dDUHFSMmxrYlNaVHoxVG5acnU4QTVnQU5LcXNyalZvd0k0V3doVkVYZk5keHNYLUtDOTN0OXhBT0RHdw?oc=5",
+"outlet":"쿠키뉴스",
+"via":"google",
+"date":"2026-11-05T05:22+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+]
+},
+{
 "id":"4b9e9e9919",
 "title":"“열등감을 이긴 것은 노동운동이었다” - 87년 남양냉동 노조에서 나비문고까지, 이영도",
 "url":"https://news.google.com/rss/articles/CBMic0FVX3lxTE5rdy1iY2l5RFRRekp1VUJzZ2tQbGFPSUYxaDV5WWxoSWMwMEhiVDVKWllCSEUxSU1TTVQ3eGdLWFp2NXVfZE5QaGlMMnhfZmV1SkFIeE1iRVd6RGdwMFlkMHRLeGRyMEhPWU4wM3NiTE9jUG8?oc=5",
@@ -9096,6 +9405,23 @@
 ]
 },
 {
+"id":"10c818343f",
+"title":"\"철은 산업의 쌀\"..당진서 노동자 주도 '정의로운 전환' 포럼 제안",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VUmFycjRMaUpBa2o2dF9IZ0lWMFYzWVR6TVY3WWc5dDJsdVJXQ21ESDd2d1kyLUhXRWdjMDBfVFFRenFiMEZSMk1oRktua195SUc1UzJiTFBJY2hManJtalF3TV9mbmk3?oc=5",
+"outlet":"당진신문",
+"via":"google",
+"date":"2026-11-04T17:00+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"비정규직"
+]
+}
+]
+},
+{
 "id":"354c4c4666",
 "title":"[참사의 재구성에서 내일의 안전으로] ⑨ \"처벌 강화보다 중요한 건 예방…현장 위험 개선이 핵심\"",
 "url":"https://news.google.com/rss/articles/CBMibEFVX3lxTFBuRGZvMFF5RHFFbS1ZdzE5NkRfeVF5V3BZWE9Vc1hqUHdYejQ2cEVGQU9HcG9DRVlyd2NZOU1QQjFoaEotblJNY2RfbnNKSGZnUjk5VGF1bEJRQlRlaFRrUnU0cXJlQkpTRmRyd9IBcEFVX3lxTFBPMnEwRXQ5bmZadkMtczRqWFJSVEJHZ3NSOFpIdjlkTmNpTHFtbS1NRVg3WHpTLWt4aHRUcXNPVGEtQkpjZEZfWkZMcFpTWWw4WEp4Z1FwamNaUEN4SlhneFhHZWJ6d01oT1NPNHlaeHc?oc=5",
@@ -9193,6 +9519,52 @@
 "ch":9,
 "kw":[
 "교섭"
+]
+}
+]
+},
+{
+"id":"d709a6f7bd",
+"title":"구호 외치는 특수고용 노동자들",
+"url":"https://news.google.com/rss/articles/CBMiXEFVX3lxTFBMZjRicnVCOWJGZko0VUw1Zk9XOVl2bGJjbEFDblJwYllXMUdkRVhNMTBoaWcyQk1zdzg0d09JV2MteVh6dTZSeHNGOHJid1ZuaENBMHlkQzZPSUpl?oc=5",
+"outlet":"뉴스핌",
+"via":"google",
+"date":"2026-11-04T16:23+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"특수고용"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+}
+]
+},
+{
+"id":"fe1d9e6387",
+"title":"특수고용 노동자 적정보수 위해 투쟁하는 노동자들",
+"url":"https://news.google.com/rss/articles/CBMiXEFVX3lxTE9TbEYyZUc5ODBsYnBFbDhJMTJKSUhmOVdDVk1VNFJKdTJWc0FqMElreFBiWkdOM1JxRVlCN1lLOWFoREc3Sk5XZ0xTUHhuT1RXZEZfaDl0MkpmWjlN?oc=5",
+"outlet":"뉴스핌",
+"via":"google",
+"date":"2026-11-04T16:22+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"특수고용"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로기준법"
 ]
 }
 ]
@@ -9464,6 +9836,30 @@
 "ch":4,
 "kw":[
 "산재"
+]
+}
+]
+},
+{
+"id":"93127e958a",
+"title":"민주노총 특수고용 플랫폼 노동자 결의대회",
+"url":"https://news.google.com/rss/articles/CBMieEFVX3lxTE91dlBEbXluY3Z5dDZ4QWtSWC03SzRZQ21Rb0UwQjVsRVdFbjBueUNsYUUxTFNkbDg4ZXZYVXZKUk84SWxlR3pqekdBM3R5RTc1QXd4WWZyVW4zMXR5QlZsZ2ZUbkh6YzM5ZjZNM0NsTWJPZ2gzd0R2Q9IBeEFVX3lxTE91dlBEbXluY3Z5dDZ4QWtSWC03SzRZQ21Rb0UwQjVsRVdFbjBueUNsYUUxTFNkbDg4ZXZYVXZKUk84SWxlR3pqekdBM3R5RTc1QXd4WWZyVW4zMXR5QlZsZ2ZUbkh6YzM5ZjZNM0NsTWJPZ2gzd0R2Qw?oc=5",
+"outlet":"뉴시스",
+"via":"google",
+"date":"2026-11-04T15:50+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"플랫폼 노동",
+"특수고용"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로기준법"
 ]
 }
 ]
@@ -10136,6 +10532,23 @@
 ]
 },
 {
+"id":"04e222aef8",
+"title":"\"세금보다 당장 EI 줄여달라\" 캐나다 소기업들 지원 호소",
+"url":"https://news.google.com/rss/articles/CBMid0FVX3lxTE1ndUhySjRid1JWNGN0c1Q4aG1JS0hlTlotTDMzM2FVS19pakVLMUhFWUh5bEhzaU5GVVRQVWJJTE5BU0gxa1ZQQzdOR0xWdFQ4V3cxYnFZdEJyTnNKV3F4Rk9hbmZqTkRKR0pkd09FLW5wblJoTm1v?oc=5",
+"outlet":"밴쿠버 중앙일보",
+"via":"google",
+"date":"2026-11-04T10:42+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+]
+},
+{
 "id":"e9b1e0643e",
 "title":"김기홍의 세상돋보기 - 전태일, 2026년",
 "url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ROWMwZ01BY3JOR2JLakZaeGs1b1pHN3FNbVlYZW5WeTIwOTFtWFAwOU9KckxlRnBudExrWEFxTXppQU5fM2pKd3YyVUlpeUY3TXRKeUQ3cExoUkFCb1pwZ0RYZC16YknSAWtBVV95cUxONkRVMVI0cXZxM25kam9PZWNTOVlyb3hwSUVGaWEyYW00TG0xY05MZ2ZLcHFPdnZUYTd4Q2piZU1BaGV6ZGh6NHpQQ1BNaWN2dTB5b1VlQW51bGlZSEwtNF94NEMzaDlyeDJZNA?oc=5",
@@ -10409,6 +10822,23 @@
 "ch":6,
 "kw":[
 "정년"
+]
+}
+]
+},
+{
+"id":"e008752fcb",
+"title":"학교급식법 개정 10개월, 적정인력 기준 논란…세종은 전국 평균보다 낮아",
+"url":"https://news.google.com/rss/articles/CBMiTEFVX3lxTFBOcXhQWkFjcUwwcHJueG9NLXd3QmlHcWZ4MkxaREZ4dEJHT0F0NGc2Q0hGT1I2emVlQUx0bXhlMkJJRU9UTUlNRUY3YlY?oc=5",
+"outlet":"대전인터넷신문",
+"via":"google",
+"date":"2026-11-04T06:39+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":2,
+"kw":[
+"비정규직"
 ]
 }
 ]
@@ -15026,6 +15456,23 @@
 ]
 },
 {
+"id":"087535e8e4",
+"title":"취약계층 사회보험 지원 줄이는 노동부 예산안",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE9UcFFjUm8yRXU4NWs4dmNfSGRCeGplOHRxbnRCZGdpZ2pGMlVWclBsdEsybEJ4ZldLaEUwX0VmNTJBWVNsdWRmTHpBSWV0RUY5cmFYZjVpVExVY05MMXp5MllRWE82UjZXWlVMbkV0aTE?oc=5",
+"outlet":"매일노동뉴스",
+"via":"google",
+"date":"2026-11-02T06:30+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+]
+},
+{
 "id":"780b66bfb0",
 "title":"정년 후 연금까지 3년 '소득 절벽'…재취업 60% 임시·일용직",
 "url":"https://news.google.com/rss/articles/CBMiW0FVX3lxTFBSdjhlM0JiaTY0UjJOaEs0QS1YY3pENWFwQUEwLVRqWXhKRzB5SGdqSFhCSUFLWWVtSGxTdGVIVlgxYk9PMDJTM3NqZHp1UFhEWGNkbTg3SnItMVHSAWBBVV95cUxORUlVVHFBVHBVRVRYNEtLbk85NnY5NnZtSHRfc0VTWmRSMVRCMEhlZVpkMUkxblZVbV9PWDljSHdvaXJ0M0UzWEtkQzVqNWVGUTd2ZXduTU00RGw0TllNZWw?oc=5",
@@ -15511,6 +15958,23 @@
 ]
 },
 {
+"id":"fb8862eb63",
+"title":"전국노총(제3노총) \"노사정위원회 참석 반드시 관철 시킬 것\"",
+"url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE11OWVvQzRGY05hN2d4blNzVnZTeGxER09RcHlGNGNHd3UtclVLUWlvRkVsUkNJVUpuU0w1R3luTGVqYWY5cUhUcEVTRThIOEwxZzUtdjE0VnNSQkZ0QVNRcnZEbkdpcnM?oc=5",
+"outlet":"전국구직노조신문",
+"via":"google",
+"date":"2026-11-01T13:01+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":7,
+"kw":[
+"노사정"
+]
+}
+]
+},
+{
 "id":"33b8864145",
 "title":"“원청이 단체교섭 나서라”…한화오션 하청 노동자, 고공농성 돌입",
 "url":"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRSWFtdUJCUEQwZzhSV3BVRHpCRjNDNHNTWE4tUFdoaDkwZG50NGdwS2F4cHJHNmN0Qk1ORWZuekR3R3RjOVJvck4xX0J5Y1lxOEs1dTBleDNQdXVYdmpCZ1RBRQ?oc=5",
@@ -15613,6 +16077,29 @@
 "kw":[
 "직장 내 괴롭힘",
 "괴롭힘"
+]
+}
+]
+},
+{
+"id":"0a73044bf0",
+"title":"제조로봇 도입 '효과' 광주시 중소기업 생산성↑ 산업재해↓…경기도의회 지원 확대 논의",
+"url":"https://news.google.com/rss/articles/CBMia0FVX3lxTE5JcnZDMXBqMklIVkJHUzRXY1dMV3R5UzNtMzdETXNrUUNvUXBiclhxbzRlSHRwUHlzMHZvUndpWEd4RXdjMjFQQ3diNmZaMXFiRXppdFdKVzQ2ZlhRMFRrVDQyNnZWckpZSk5R?oc=5",
+"outlet":"팔당유역신문",
+"via":"google",
+"date":"2026-11-01T10:22+09:00",
+"seen":"2026-11-07",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+},
+{
+"ch":1,
+"kw":[
+"로봇"
 ]
 }
 ]
