@@ -119,7 +119,7 @@ def one(client, anthropic, ch, start, end):
     text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text").strip()
     items = [l for l in text.splitlines() if l.strip().startswith(("- ", "• "))]
     if len(items) < 2:   # 「찾지 못했다」류 답이 지난 요약을 덮지 않게 한다
-        return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지)"
+        return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지): {text[:160]!r}"
     return ch["num"], {"text": text, "sources": sources_of(resp.content)}, used, f"{ch['num']}장 완료"
 
 
