@@ -25,14 +25,15 @@ WEEKLY_MODEL = "claude-sonnet-5-5"
 WEEKLY_EFFORT = "low"
 WEEKLY_SEARCHES = 3          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
 PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.1, 0.5)}  # 100만 토큰당 $(입력, 출력)
-# 검색을 한국 언론·정부·노동 전문 사이트로 좁힌다(외국 기사가 출처에 섞이던 것도 막는다). 하위 도메인 포함, 64개까지
+# 검색을 한국 언론·정부·노동 전문 사이트로 좁힌다(외국 기사가 출처에 섞이던 것도 막는다). 하위 도메인 포함, 64개까지.
+# 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 Anthropic 검색 로봇을 막아 넣으면 400 이 난다(11/8 확인) — 넣지 않는다
 DOMAINS = [
     "labortoday.co.kr", "laborplus.co.kr", "worklaw.co.kr", "lawtimes.co.kr",
-    "yna.co.kr", "newsis.com", "news1.kr", "newspim.com", "nocutnews.co.kr",
-    "hani.co.kr", "khan.co.kr", "ohmynews.com", "pressian.com", "vop.co.kr",
-    "kbs.co.kr", "imbc.com", "sbs.co.kr", "ytn.co.kr", "jtbc.co.kr",
-    "chosun.com", "joongang.co.kr", "donga.com", "hankookilbo.com", "seoul.co.kr",
-    "segye.com", "kmib.co.kr", "munhwa.com", "hankyung.com", "mk.co.kr",
+    "newsis.com", "news1.kr", "newspim.com", "nocutnews.co.kr",
+    "khan.co.kr", "ohmynews.com", "pressian.com", "vop.co.kr",
+    "imbc.com", "sbs.co.kr", "ytn.co.kr", 
+    "hankookilbo.com", "seoul.co.kr",
+    "segye.com", "kmib.co.kr", "munhwa.com", "hankyung.com", 
     "sedaily.com", "mt.co.kr", "edaily.co.kr", "fnnews.com", "asiae.co.kr",
     "heraldcorp.com", "news.naver.com",
     "moel.go.kr", "korea.kr", "nlrc.go.kr", "kli.re.kr", "eslc.go.kr",
