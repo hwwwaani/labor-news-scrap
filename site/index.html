@@ -232,7 +232,7 @@ function renderWeekly() {
   if (open) body += '</ul>';
   const src = (w.sources || []).map((s) =>
     `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`).join(' · ');
-  box.innerHTML = `<h2>이번 주 ${state.ch}장 쟁점<small>AI 웹 검색 요약 · ${esc(WEEKLY.range || '')}</small></h2>${body}`
+  box.innerHTML = `<h2>이번 주 ${state.ch}장 쟁점<small>AI 웹 검색 요약 · ${esc(w.range || WEEKLY.range || '')}</small></h2>${body}`
     + (src ? `<div class="src">출처: ${src}</div>` : '');
 }
 

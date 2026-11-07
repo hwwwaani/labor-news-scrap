@@ -1,6 +1,6 @@
 """장별 주간 쟁점 요약 — Claude 가 웹을 검색해 지난 7일 쟁점을 장마다 정리한다. site/articles.json 의 "weekly" 칸에 들어간다.
 
-fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 때만 실제로 돈다(사실상 주 1회).
+fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 때만 실제로 돈다(사실상 주 1회). 최근 WEEKLY_RECENT 개 장만.
 손으로 돌리기: ANTHROPIC_API_KEY 가 있는 곳에서 python3 scripts/weekly.py --force
 
 - 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번. 출처는 한국 사이트만 보여 준다. 거절되면 대체 모델로 다시 돈다(fallbacks).
@@ -19,12 +19,14 @@ STORE = ROOT / "site" / "articles.json"
 CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["chapters"]
 KST = timezone(timedelta(hours=9))
 
-# 11/8 첫 실행(Opus 5.5·검색 5번)이 1회 약 3.76달러, 그중 77%가 검색 결과 읽기(입력)였다.
-# 사용자가 「더 싸게」를 골라 Sonnet 5.5(값 절반)로 바꿨다. 검색 범위를 한국 사이트로 좁히면(allowed_domains)
-# 9장 중 7장이 결과 부족으로 빈 요약이 나서(11/8) 범위는 풀고, 화면에 보이는 출처만 한국 사이트로 거른다.
-WEEKLY_MODEL = "claude-sonnet-5-5"
-WEEKLY_EFFORT = "medium"   # low 에서는 검색을 아끼다 「한도를 넘었다」며 빈 요약을 냈다(11/8)
-WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러). 3번이면 빈 요약이 났다
+# 11/8 첫 실행(Opus 5.5·검색 5번, 9개 장)이 1회 약 3.76달러, 그중 77%가 검색 결과 읽기(입력)였다.
+# 사용자가 「더 싸게」를 골라 시험한 결과: Sonnet 5.5 는 검색 3~5번·low/medium·사이트 제한 유무를 바꿔도
+# 장 대부분에서 「기간 안 소식을 못 찾았다」고 답했다(4번 시험, 합계 약 4달러). 그래서 모델은 Opus 5.5 로 두고
+# 매주 최근 WEEKLY_RECENT 개 장만 새로 만든다. 지난 장은 마지막 요약을 그대로 둔다(장마다 기간이 따로 붙는다).
+WEEKLY_MODEL = "claude-opus-5-5"
+WEEKLY_EFFORT = "medium"
+WEEKLY_SEARCHES = 5          # 장 하나에 웹 검색 상한(검색 1,000번에 10달러)
+WEEKLY_RECENT = 3            # chapters.json 의 마지막 몇 개 장만 매주 새로 만든다
 PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.1, 0.5)}  # 100만 토큰당 $(입력, 출력)
 # 출처로 보여 줄 한국 사이트(.kr 은 따로 통과). 검색 범위 제한(allowed_domains)에는 쓰지 않는다 —
 # 조선·동아·한겨레·중앙·JTBC·KBS·매경·연합은 Anthropic 검색 로봇을 막아 allowed_domains 에 넣으면 400 이 났다(11/8)
@@ -119,7 +121,7 @@ def one(client, anthropic, ch, start, end):
     text = "".join(getattr(b, "text", "") for b in resp.content if getattr(b, "type", "") == "text").strip()
     items = [l for l in text.splitlines() if l.strip().startswith(("- ", "• "))]
     if len(items) < 2:   # 「찾지 못했다」류 답이 지난 요약을 덮지 않게 한다
-        return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지): {text[:160]!r}"
+        return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지): {text[:120]!r}"
     return ch["num"], {"text": text, "sources": sources_of(resp.content)}, used, f"{ch['num']}장 완료"
 
 
@@ -139,8 +141,9 @@ def maybe_run(now, log, old, force=False):
         return old
     client = anthropic.Anthropic()
     start, end = now - timedelta(days=7), now
+    targets = CHAPTERS[-WEEKLY_RECENT:]
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end), CHAPTERS))
+        results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end), targets))
     chapters = dict(old.get("chapters", {}))
     total = {"in": 0, "out": 0, "search": 0}
     notes, ok = [], 0
@@ -149,12 +152,12 @@ def maybe_run(now, log, old, force=False):
             total[k] += used[k]
         notes.append(note)
         if res:
-            chapters[str(num)] = res
+            chapters[str(num)] = dict(res, range=f"{start:%m/%d}~{end:%m/%d}", model=WEEKLY_MODEL)
             ok += 1
     # 대략 비용(모델 표값 + 검색 $10/1,000번). 기록용 추정이다
     pin, pout = PRICE.get(WEEKLY_MODEL, (4, 20))
     cost = total["in"] / 1e6 * pin + total["out"] / 1e6 * pout + total["search"] / 1000 * 10
-    log.append(f"주간 요약 {ok}/{len(CHAPTERS)}장 (입력 {total['in']:,} · 출력 {total['out']:,} 토큰 · 검색 {total['search']}번 · 약 ${cost:.2f})")
+    log.append(f"주간 요약 {ok}/{len(targets)}장 (입력 {total['in']:,} · 출력 {total['out']:,} 토큰 · 검색 {total['search']}번 · 약 ${cost:.2f})")
     if any("완료" not in n for n in notes):
         log.append("주간 요약 문제: " + ", ".join(n for n in notes if "완료" not in n))
     if not ok:
