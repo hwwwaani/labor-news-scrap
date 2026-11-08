@@ -81,8 +81,10 @@ unset GH_TOKEN
 `site/index.html` 을 고쳤을 때만 합니다. 한 번에 Netlify 크레딧이 듭니다.
 
 ```bash
-npx netlify-cli deploy --dir site --prod --site labor-news-scrap
+npx netlify-cli deploy --dir site --prod --site 6fda9cbc-ca9d-4030-8715-b932656dd44d
 ```
+
+`--site labor-news-scrap` 처럼 이름으로 주면 「Not Found」 가 납니다(11/8). 사이트 ID 로 줍니다.
 
 ## 알아 둘 것
 
