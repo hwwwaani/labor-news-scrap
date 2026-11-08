@@ -101,6 +101,7 @@
   .cpt b { font-weight: 600; margin-left: 4px; }
   .cpt .why { color: var(--sub); }
   .members { margin-top: 8px; }
+  .sortbar[hidden] { display: none; }
   .sortbar { margin: 18px 0 0; font-size: 14px; color: var(--faint); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
   .day { margin-top: 26px; }
   .day h2 { font-size: 14px; font-weight: 600; color: var(--faint); margin: 0 0 6px; letter-spacing: .02em; }
@@ -340,7 +341,8 @@ function renderWeekly() {
     }
   }
   if (open) body += '</ul>';
-  const src = (w.sources || []).map((s) =>
+  // 한국 사이트 출처만 보여 준다(제목에 한글이 없는 외국 위키·법안 문서가 섞여 올 때가 있다)
+  const src = (w.sources || []).filter((s) => /[가-힣]/.test(s.title || '') && !/sortiraparis/i.test(s.url + s.title)).map((s) =>
     `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a>`).join(' · ');
   box.innerHTML = `<h2>이번 주 ${state.ch}장 쟁점<small>AI 웹 검색 요약 · ${esc(w.range || WEEKLY.range || '')}</small></h2>${body}`
     + (src ? `<div class="src">출처: ${src}</div>` : '');
