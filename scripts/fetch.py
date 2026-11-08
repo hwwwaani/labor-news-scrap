@@ -118,6 +118,65 @@ def title_key(t):
     return re.sub(r"[\W_]+", "", t).lower()
 
 
+# 같은 기사로 보는 제목 유사도(두 글자 묶음 자카드). 11/8 실데이터 60쌍을 보고 정했다.
+# 같은 언론사는 「오늘부터」「6일부터」처럼 고쳐 다시 낸 제목이 0.68~0.93, 다른 기사는 0.62 아래였다.
+# 다른 언론사는 같은 통신·보도자료를 옮긴 제목이 0.85 이상이었다(0.75~0.84 에는 다른 기사도 섞인다).
+DUP_SAME_OUTLET = 0.66
+DUP_OTHER_OUTLET = 0.85
+DUP_HOURS_SAME, DUP_HOURS_OTHER = 48, 24
+TAIL_WORDS = ("보도자료 | 기사", "뉴스")
+
+
+def clean_title(t, outlet=""):
+    """구글 뉴스 제목 끝에 붙어 오는 언론사·주소 꼬리를 뗀다(「… - 머니투데이」, 「… - www.ebn.co.kr」, 「… By EBN」)."""
+    t = re.sub(r"\s+", " ", t).strip()
+    t = re.sub(r"\s+By\s+[A-Z][A-Za-z0-9]{1,15}$", "", t)
+    m = re.search(r"\s(?:-|–|>)\s+([^-–>]{1,40})$", t)
+    if m:
+        tail = m.group(1).strip()
+        flat = lambda x: re.sub(r"[\W_]+", "", x).lower().removeprefix("www")
+        domainy = re.fullmatch(r"(?:https?://)?(?:www\.)?[\w.-]+\.(?:com|net|kr|co\.kr|org)/?", tail) is not None
+        same = outlet and flat(tail) and (flat(tail) in flat(outlet) or flat(outlet) in flat(tail))
+        if domainy or same or tail in TAIL_WORDS:
+            t = t[:m.start()].strip()
+    return t
+
+
+def _bigrams(t):
+    k = title_key(t)
+    return {k[i:i + 2] for i in range(len(k) - 1)}
+
+
+def dedupe(arts):
+    """제목이 거의 같은 기사를 하나로 합친다. (남긴 기사 목록, {지운 id: 남긴 id})를 돌려준다.
+    남기는 쪽은 언론사 RSS 기사 → 질문 후보가 있는 기사 → 먼저 나온 기사 순이다."""
+    arts = sorted(arts, key=lambda a: (a["via"] != "rss", "ai" not in a, a["date"]))
+    grams = [_bigrams(a["title"]) for a in arts]
+    times = [datetime.fromisoformat(a["date"]).timestamp() for a in arts]
+    keep, remap = [], {}
+    for i, a in enumerate(arts):
+        hit = None
+        for j in keep:
+            b = arts[j]
+            same = a["outlet"] == b["outlet"]
+            if abs(times[i] - times[j]) > 3600 * (DUP_HOURS_SAME if same else DUP_HOURS_OTHER):
+                continue
+            u = len(grams[i] | grams[j])
+            if u and len(grams[i] & grams[j]) / u >= (DUP_SAME_OUTLET if same else DUP_OTHER_OUTLET):
+                hit = j
+                break
+        if hit is None:
+            keep.append(i)
+            continue
+        b = arts[hit]
+        b["tags"] = merge_tags(b["tags"], a["tags"])
+        if "orig" not in b and a.get("orig"):
+            b["orig"] = a["orig"]
+        remap[a["id"]] = b["id"]
+    out = sorted((arts[i] for i in keep), key=lambda a: a["date"], reverse=True)
+    return out, remap
+
+
 def classify(title, body, hint=None):
     """장마다 걸린 말을 세어 점수가 높은 장부터 MAX_TAGS 개. 제목에 걸리면 2점, 요약에만 걸리면 1점.
     hint 는 구글뉴스 검색어를 건 장 — 본문에서 걸렸을 수 있어 1점을 더하고, 걸린 말이 없으면 검색어를 대신 적는다."""
@@ -175,8 +234,7 @@ def collect():
                         continue
                     outlet = (src.text or "").strip() if src is not None and src.text else ""
                     outlet = re.sub(r"^https?://|^www\.|/$", "", outlet).removeprefix("www.").rstrip("/")
-                    if outlet and title.endswith(" - " + outlet):
-                        title = title[: -len(" - " + outlet)].strip()
+                    title = clean_title(title, outlet)
                     link = text_of(it, "link")
                     if not title or not link:
                         continue
@@ -286,7 +344,15 @@ def main():
     dry = "--dry-run" in sys.argv
     now = datetime.now(KST)
     old = json.loads(STORE.read_text(encoding="utf-8")) if STORE.exists() else {"articles": []}
-    by_key = {title_key(a["title"]): a for a in old["articles"]}
+    by_key, remap = {}, {}
+    for a in old["articles"]:   # 쌓인 기사도 제목 꼬리를 떼고, 그래서 같아진 제목은 하나로 합친다
+        a["title"] = clean_title(a["title"], a["outlet"])
+        k = title_key(a["title"])
+        if k in by_key:
+            by_key[k]["tags"] = merge_tags(by_key[k]["tags"], a["tags"])
+            remap[a["id"]] = by_key[k]["id"]
+        else:
+            by_key[k] = a
     descs = {}   # 기사 id → 이번에 받은 RSS 요약. 질문 후보 만들 때만 쓰고 저장하지 않는다
 
     got, log = collect()
@@ -320,15 +386,23 @@ def main():
             descs[by_key[key]["id"]] = g["desc"]
 
     cutoff = (now - timedelta(days=KEEP_DAYS)).isoformat()
-    arts = sorted((a for a in by_key.values() if a["date"] >= cutoff), key=lambda a: a["date"], reverse=True)
+    arts = [a for a in by_key.values() if a["date"] >= cutoff]
+    arts, more = dedupe(arts)
+    remap.update(more)
+    remap = {k: more.get(v, v) for k, v in remap.items()}
+    log.append(f"비슷한 제목 합침 {len(remap)}건")
     if dry:
         print(" · ".join(log))
         print(f"새 기사 {added}건 · 전체 {len(arts)}건 (질문 후보는 --dry-run 에서 만들지 않음)")
         return
+    old_events = old.get("events")
+    if old_events and remap:   # 합쳐서 사라진 기사 id 는 남긴 기사 id 로 바꿔 사건에 그대로 둔다
+        for e in old_events.get("items", []):
+            e["ids"] = list(dict.fromkeys(remap.get(i, i) for i in e["ids"]))
     annotate(arts, descs, now, log)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import events   # 사건 묶음·사건 요약·키워드 요약(매일)
-    events_data, keywords_data = events.run(now, arts, descs, old.get("events"), old.get("keywords"), log)
+    events_data, keywords_data = events.run(now, arts, descs, old_events, old.get("keywords"), log)
     import weekly   # 장별 주간 쟁점 요약(주 1회만 실제로 돈다)
     weekly_data = weekly.maybe_run(now, log, old.get("weekly"), arts)
     print(" · ".join(log))

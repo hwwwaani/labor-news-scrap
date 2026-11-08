@@ -3,6 +3,9 @@
 1. 묶기: 최근 EVENT_DAYS 일 기사 가운데 아직 사건에 들지 않은 것을 장 순서로 줄 세워 EVENT_CHUNK 건씩 Claude(EVENT_MODEL)에
    보내고, 같은 사건을 다룬 기사를 기존 사건에 붙이거나 2건 이상이면 새 사건으로 묶는다. 한 번 묶인 기사는 다시 묶지 않는다.
 2. 요약: 새로 생겼거나 기사가 늘어난 사건만, 원문을 최대 BODY_PER_EVENT 건 받아 2~3문장으로 요약한다.
+   같은 요청에서 「노사 입장·숫자 표」(당사자별 요구·제시안, 줄마다 나온 언론사)와 「강의 개념」(chapters.json 의
+   장별 concepts 목록에서 0~3개)을 함께 받는다. 표의 숫자가 받은 글에 없으면 그 줄을 버리고, 목록에 없는 개념은 버린다.
+   요약 방식이 바뀌면 SUM_VERSION 을 올린다. 그러면 다음 회차에 모든 사건을 한 번 다시 요약한다.
    - 원문 본문은 요약할 때만 읽고 저장하지 않는다. 저장하는 것은 모델이 쓴 요약과 묶인 기사 id 뿐이다.
    - robots.txt 가 이 도구나 Anthropic 로봇(anthropic-ai·ClaudeBot·Claude-User)을 막은 언론사는 본문을 받지 않고 제목만 쓴다.
      연합·한겨레·KBS 가 여기에 든다(2026-11-08 확인).
@@ -34,17 +37,20 @@ from urllib.robotparser import RobotFileParser
 ROOT = Path(__file__).resolve().parent.parent
 STORE = ROOT / "site" / "articles.json"
 CHAPTERS = json.loads((ROOT / "chapters.json").read_text(encoding="utf-8"))["chapters"]
+CONCEPTS = {c["num"]: c.get("concepts", []) for c in CHAPTERS}   # 장별 강의 개념 [{name, hint}]
 KST = timezone(timedelta(hours=9))
 
 EVENT_MODEL = "claude-haiku-5-5"   # 100만 토큰당 입력 0.1달러·출력 0.5달러(지시문 10만 토큰 이하일 때)
 EVENT_DAYS = 7           # 이 기간 기사만 묶는다
 EVENT_KEEP = 14          # 마지막 기사가 이보다 오래된 사건은 뺀다
 EVENT_CHUNK = 250        # 한 번 묶기 요청에 넣는 기사 수
-EVENT_SUM_MAX = 60       # 한 번 돌 때 요약하는 사건 수 상한(기사가 많은 사건부터)
+EVENT_SUM_MAX = 120      # 한 번 돌 때 요약하는 사건 수 상한(기사가 많은 사건부터)
 EVENT_SUM_BATCH = 8      # 한 번 요약 요청에 넣는 사건 수
-BODY_PER_EVENT = 2       # 사건 하나에 받아 읽는 원문 수
-BODY_TRIES = 4           # 원문을 받으려고 시도하는 기사 수 상한
-BODY_CHARS = 1500        # 원문에서 앞부분 몇 자만 넘기나
+SUM_VERSION = 2          # 2: 노사 입장·숫자 표와 강의 개념을 함께 받는다(2026-11-08)
+BODY_PER_EVENT = 3       # 사건 하나에 받아 읽는 원문 수(표에 넣을 숫자가 언론사마다 달라서 2→3)
+BODY_TRIES = 5           # 원문을 받으려고 시도하는 기사 수 상한
+BODY_CHARS = 2500        # 원문에서 앞부분 몇 자만 넘기나(숫자가 둘째 문단에 많아서 1500→2500)
+TABLE_ROWS = 5           # 노사 입장 표 줄 수 상한
 GOOGLE_MAX = 40         # 한 회차에 구글 뉴스 주소를 푸는 횟수 상한
 GOOGLE_GAP = 1.2        # 구글 뉴스 주소 풀기 사이 간격(초)
 KW_DAYS = 7
@@ -80,8 +86,22 @@ SUM_SCHEMA = {
     "type": "object",
     "properties": {"items": {"type": "array", "items": {
         "type": "object",
-        "properties": {"id": {"type": "string"}, "summary": {"type": "string"}},
-        "required": ["id", "summary"], "additionalProperties": False}}},
+        "properties": {
+            "id": {"type": "string"},
+            "summary": {"type": "string"},
+            "parties": {"type": "array", "items": {"type": "string"}},
+            "rows": {"type": "array", "items": {
+                "type": "object",
+                "properties": {"issue": {"type": "string"},
+                               "cells": {"type": "array", "items": {"type": "string"}},
+                               "from": {"type": "string"}},
+                "required": ["issue", "cells", "from"], "additionalProperties": False}},
+            "concepts": {"type": "array", "items": {
+                "type": "object",
+                "properties": {"ch": {"type": "integer"}, "name": {"type": "string"}, "why": {"type": "string"}},
+                "required": ["ch", "name", "why"], "additionalProperties": False}},
+        },
+        "required": ["id", "summary", "parties", "rows", "concepts"], "additionalProperties": False}}},
     "required": ["items"], "additionalProperties": False,
 }
 KW_SCHEMA = {
@@ -104,9 +124,17 @@ CLUSTER_SYSTEM = f"""너는 대학 「고용관계론」 수업용 노동 기사
 - 새 사건(new)은 기사가 2건 이상일 때만 만든다. name 은 누가 무엇을 했는지 15~30자로 쓴다.
 - 어느 사건에도 들지 않는 기사는 돌려주지 않는다. 기사 하나는 한 사건에만 넣는다.
 - id 는 받은 그대로 쓴다. 한국어로 쓴다."""
-SUM_SYSTEM = """너는 대학 「고용관계론」 수업을 듣는 학생에게 노동 사건을 짧게 정리해 준다.
-사건마다 묶인 기사 제목들과, 받을 수 있었던 원문 앞부분(texts)이 온다. texts 가 비어 있으면 제목만 보고 쓴다.
+SUM_SYSTEM = """너는 대학 「고용관계론」 수업을 듣는 학생에게 노동 사건을 짧게 정리해 준다. 학생은 이것으로 토론과제에 쓸 기사를 고른다.
+사건마다 묶인 기사 제목들(titles, 괄호 안은 언론사와 날짜), 받을 수 있었던 원문 앞부분(texts, from 은 언론사와 날짜),
+이 사건이 걸린 장의 강의 개념 목록(concepts, 장 번호별 「이름: 설명」)이 온다. texts 가 비어 있으면 제목만 보고 쓴다.
 - summary 는 2~3문장이다. 누가, 무엇을, 왜(쟁점)를 쓴다. 날짜나 숫자는 받은 글에 있을 때만 쓴다.
+- parties 와 rows 는 노사 입장 표다. parties 는 맞서는 당사자 2~3곳의 짧은 이름이다(예: "노조", "회사", "정부", "원청", "하청노조").
+  rows 는 2~5줄이다. issue 는 쟁점 이름 10자 안팎(예: "임금 인상률", "파업 규모", "교섭 의제"),
+  cells 는 parties 와 같은 순서로 그 당사자의 요구·입장·제시안을 30자 안팎 한 줄로 쓰고, 숫자가 있으면 숫자를 넣는다.
+  그 당사자의 입장이 받은 글에 없으면 그 칸은 빈 문자열이다. from 은 그 줄의 내용이 나온 글의 언론사 이름을 texts 의 from 이나 titles 괄호에서 그대로 옮긴다.
+  행사 소식, 통계 발표처럼 맞서는 당사자가 없거나 받은 글에 입장이 없으면 parties 와 rows 를 빈 배열로 둔다. 짐작해서 채우지 않는다.
+- concepts 는 이 사건이 수업의 어떤 개념과 닿는지 0~3개다. 받은 concepts 목록의 이름 가운데서만 고르고 name 은 목록 그대로 쓴다.
+  ch 는 그 개념이 있던 장 번호, why 는 이 사건의 어느 대목이 그 개념에 해당하는지 40자 안팎이다. 억지로 고르지 않는다.
 - 받은 글에 없는 사실, 평가, 전망은 쓰지 않는다. 원문 문장을 길게 옮기지 말고 네 말로 줄인다.
 - id 는 받은 그대로 돌려준다. 한국어로 쓴다."""
 KW_SYSTEM = """너는 대학 「고용관계론」 수업을 듣는 학생에게 이번 주 노동 소식을 낱말별로 짧게 정리해 준다.
@@ -230,11 +258,12 @@ def bodies_for(event, by_id, descs):
         except Exception:
             continue
         if len(text) >= 200:
-            texts.append(text[:BODY_CHARS])
+            texts.append({"from": f"{a['outlet']} {a['date'][5:10]}", "text": text[:BODY_CHARS]})
             seen_outlets.add(a["outlet"])
         time.sleep(0.3)
     if not texts:   # 원문을 하나도 못 받았으면 이번에 받은 RSS 요약이라도
-        texts = [descs[i] for i in event["ids"] if descs.get(i)][:BODY_PER_EVENT]
+        texts = [{"from": f"{by_id[i]['outlet']} {by_id[i]['date'][5:10]}", "text": descs[i]}
+                 for i in event["ids"] if descs.get(i) and i in by_id][:BODY_PER_EVENT]
     return texts
 
 
@@ -329,10 +358,53 @@ def cluster(client, anthropic, arts, events, now, used, log):
     log.append(f"사건 묶기: 대상 {len(todo)}건 → 기존 사건에 {joined}건, 새 사건 {made}개")
 
 
+NUM = re.compile(r"\d+(?:[.,]\d+)*")
+
+
+def clean_table(it, corpus, outlets):
+    """모델이 준 노사 입장 표를 거른다. 숫자가 받은 글에 없는 줄은 버린다. (표 또는 None, 버린 줄 수)"""
+    parties = [p.strip()[:20] for p in it.get("parties") or [] if p and p.strip()]
+    if not 2 <= len(parties) <= 3:
+        return None, 0
+    flat = corpus.replace(",", "")
+    rows, dropped = [], 0
+    for r in it.get("rows") or []:
+        cells = [(c or "").strip()[:80] for c in r.get("cells") or []]
+        issue = (r.get("issue") or "").strip()[:24]
+        if len(cells) != len(parties) or not issue or sum(1 for c in cells if c) < 1:
+            continue
+        nums = [n.replace(",", "") for c in cells for n in NUM.findall(c)]
+        if any(n not in flat for n in nums):
+            dropped += 1
+            continue
+        src = (r.get("from") or "").strip()
+        src = next((o for o in outlets if o and o in src), "")
+        rows.append({"issue": issue, "cells": cells, "from": src})
+        if len(rows) >= TABLE_ROWS:
+            break
+    if not rows:
+        return None, dropped
+    return {"parties": parties, "rows": rows}, dropped
+
+
+def clean_concepts(items, chs):
+    """목록에 있는 개념만 남긴다(장 번호와 이름이 맞아야 한다). 최대 3개."""
+    out, seen = [], set()
+    for c in items:
+        ch, name = c.get("ch"), (c.get("name") or "").strip()
+        names = {k["name"] for k in CONCEPTS.get(ch, [])}
+        if ch in chs and name in names and (ch, name) not in seen:
+            seen.add((ch, name))
+            out.append({"ch": ch, "name": name, "why": (c.get("why") or "").strip()[:80]})
+    return out[:3]
+
+
 def summarize(client, anthropic, events, by_id, descs, used, log):
-    first = sorted((e for e in events if e.get("sumN") != len(e["ids"])), key=lambda e: -len(e["ids"]))
+    first = sorted((e for e in events if e.get("sumN") != len(e["ids"]) or e.get("sv") != SUM_VERSION),
+                   key=lambda e: -len(e["ids"]))
     # 원문 없이 제목만으로 요약된 사건은 한 번 더 원문을 시도한다(첫날은 구글 주소 풀기 상한에 걸리므로)
-    again = sorted((e for e in events if e.get("sumN") == len(e["ids"]) and e.get("src") == 0 and not e.get("again")),
+    again = sorted((e for e in events if e.get("sumN") == len(e["ids"]) and e.get("sv") == SUM_VERSION
+                    and e.get("src") == 0 and not e.get("again")),
                    key=lambda e: -len(e["ids"]))
     for e in again:
         e["again"] = True
@@ -342,24 +414,34 @@ def summarize(client, anthropic, events, by_id, descs, used, log):
     with ThreadPoolExecutor(max_workers=6) as pool:
         texts = dict(zip((e["id"] for e in todo), pool.map(lambda e: bodies_for(e, by_id, descs), todo)))
     got = sum(1 for e in todo if texts[e["id"]])
-    done = 0
+    done = tables = bad_rows = 0
     for i in range(0, len(todo), EVENT_SUM_BATCH):
         batch = todo[i:i + EVENT_SUM_BATCH]
         payload = [{
             "id": e["id"], "name": e["name"],
             "titles": [f"{by_id[x]['title']} ({by_id[x]['outlet']}, {by_id[x]['date'][5:10]})" for x in e["ids"][:15]],
             "texts": texts[e["id"]],
+            "concepts": {str(c): [f"{k['name']}: {k['hint']}" for k in CONCEPTS.get(c, [])] for c in e.get("chs", [])},
         } for e in batch]
-        data = ask(client, anthropic, SUM_SYSTEM, payload, SUM_SCHEMA, "low", used, log, "사건 요약")
+        data = ask(client, anthropic, SUM_SYSTEM, payload, SUM_SCHEMA, "medium", used, log, "사건 요약")
         if not data:
             continue
         by_ev = {e["id"]: e for e in batch}
         for it in data.get("items", []):
             e, s = by_ev.get(it.get("id")), (it.get("summary") or "").strip()
             if e is not None and s:
-                e.update(summary=s[:500], sumN=len(e["ids"]), src=len(texts[e["id"]]))
+                e.update(summary=s[:500], sumN=len(e["ids"]), src=len(texts[e["id"]]), sv=SUM_VERSION)
+                corpus = " ".join([x["text"] for x in texts[e["id"]]] + [by_id[x]["title"] for x in e["ids"] if x in by_id])
+                outlets = {by_id[x]["outlet"] for x in e["ids"] if x in by_id}
+                table, dropped = clean_table(it, corpus, outlets)
+                e.pop("table", None)
+                if table:
+                    e["table"] = table
+                e["concepts"] = clean_concepts(it.get("concepts") or [], e.get("chs", []))
+                tables += bool(table)
+                bad_rows += dropped
                 done += 1
-    log.append(f"사건 요약 {done}개(원문을 받은 사건 {got}/{len(todo)})")
+    log.append(f"사건 요약 {done}개(원문을 받은 사건 {got}/{len(todo)} · 노사 입장 표 {tables}개, 숫자가 원문에 없어 버린 줄 {bad_rows})")
 
 
 # ---------- 키워드 ----------
@@ -446,6 +528,6 @@ if __name__ == "__main__" and "--probe" in sys.argv:
     with ThreadPoolExecutor(max_workers=6) as pool:
         res = list(pool.map(lambda e: bodies_for(e, by_id, {}), fake))
     for e, r in zip(fake, res):
-        print(len(r), [len(x) for x in r], " / ".join(f"{by_id[i]['outlet']}" for i in e["ids"]))
+        print(len(r), [len(x["text"]) for x in r], " / ".join(f"{by_id[i]['outlet']}" for i in e["ids"]))
     print(f"원문을 하나라도 받은 사건 {sum(1 for r in res if r)}/{len(fake)} · {time.time() - t0:.0f}초")
     print("막힌 곳:", sorted(h for h, rp in _robots.items() if rp is None or (rp is not True and not all(rp.can_fetch(a, f'https://{h}/') for a in ROBOT_AGENTS))))
