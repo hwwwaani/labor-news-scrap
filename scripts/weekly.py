@@ -6,8 +6,11 @@ fetch.py 가 매일 부르고, 마지막 요약이 6일 반보다 오래됐을 �
 - 모델은 WEEKLY_MODEL, 장 하나에 웹 검색 최대 WEEKLY_SEARCHES 번. 출처는 한국 사이트만 보여 준다. 거절되면 대체 모델로 다시 돈다(fallbacks).
 - 저장하는 것: 요약 글(모델이 쓴 것)과 출처 제목·주소. 검색 결과 본문이나 인용 구절은 저장하지 않는다.
 - 한 장이 실패하면 그 장은 지난주 요약을 그대로 둔다.
+- 검색 로봇을 막은 언론사(BLOCKED_OUTLETS)는 웹 검색으로 안 열린다. 대신 매일 모은 그 언론사 기사 제목을
+  지시문에 넣고, 쓴 제목은 [번호]로 받아 출처에 붙인다. 제목만 보내고 본문은 보내지 않는다.
 """
 import json
+import re
 import os
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -42,6 +45,9 @@ KOREAN_SITES = [
     "heraldcorp.com", "news.naver.com",
     "moel.go.kr", "korea.kr", "nlrc.go.kr", "kli.re.kr", "eslc.go.kr",
 ]
+# 이 언론사들은 robots.txt 로 Anthropic 검색 로봇을 막는다. 이름은 articles.json 의 outlet 앞부분과 맞춘다
+BLOCKED_OUTLETS = ("연합뉴스", "한겨레", "KBS", "JTBC", "동아일보", "매일경제", "조선일보", "중앙일보")
+WEEKLY_HEADLINES = 60        # 장 하나에 넣는 막힌 언론사 제목 상한(최근 것부터). 9장이 한 주 50건 안팎
 WEEKLY_EVERY = timedelta(days=6, hours=12)
 MAX_CONTINUE = 3             # pause_turn 이어 돌리기 상한
 WORKERS = 3                  # 동시에 도는 장 수
@@ -51,7 +57,35 @@ SYSTEM = ("너는 대학 「고용관계론」 수업을 듣는 학생의 주간
           "확인한 사실만 쓰고, 한국어로 쓴다.")
 
 
-def prompt(ch, start, end):
+def headlines(articles, ch, start):
+    """이번 기간에 모은 기사 가운데 이 장이 붙은 막힌 언론사 기사(최근 것부터)."""
+    out = []
+    for a in articles or []:
+        if not a.get("outlet", "").startswith(BLOCKED_OUTLETS):
+            continue
+        if not any(t.get("ch") == ch["num"] for t in a.get("tags", [])):
+            continue
+        try:
+            if datetime.fromisoformat(a["date"]) < start:
+                continue
+        except (KeyError, ValueError):
+            continue
+        out.append(a)
+    out.sort(key=lambda a: a["date"], reverse=True)
+    return out[:WEEKLY_HEADLINES]
+
+
+def prompt(ch, start, end, heads=()):
+    extra = ""
+    if heads:
+        rows = "\n".join(f"[{i}] {a['title']} · {a['outlet']} · {a['date'][5:10].replace('-', '/')}"
+                         for i, a in enumerate(heads, 1))
+        extra = f"""
+
+아래는 이 기간에 모은 기사 제목이다. 웹 검색으로 열리지 않는 언론사라 제목만 있고 본문은 없다.
+{rows}
+- 쟁점을 고를 때 이 제목들도 함께 본다. 제목에 적힌 것보다 자세한 내용은 웹 검색으로 확인한 것만 쓴다.
+- 이 목록의 기사를 쓴 항목은 끝에 [번호]를 붙인다(여럿이면 [2][5])."""
     return f"""기간: {start:%Y년 %m월 %d일}부터 {end:%m월 %d일}까지(지난 7일)
 장: {ch['num']}장 {ch['title']}
 이 장의 주요 낱말: {', '.join(ch['keywords'][:14])}
@@ -59,7 +93,7 @@ def prompt(ch, start, end):
 이 기간에 한국에서 이 장과 닿는 노동·고용 쟁점을 웹에서 찾아 3~5개로 정리해 줘.
 - 항목마다 「- 」로 시작하고, 무슨 일이 있었는지 한두 문장과 이 장의 어떤 개념과 닿는지 한 문장을 쓴다.
 - 기간 밖의 일은 넣지 않는다. 기간 안에 찾지 못했으면 그렇다고 한 줄로만 쓴다.
-- 머리말이나 맺음말 없이 항목만 쓴다."""
+- 머리말이나 맺음말 없이 항목만 쓴다.{extra}"""
 
 
 def sources_of(content):
@@ -85,10 +119,31 @@ def sources_of(content):
     return out
 
 
-def one(client, anthropic, ch, start, end):
+MARK = re.compile(r"\s*((?:\[\d+(?:\s*,\s*\d+)*\])+)")
+
+
+def take_marks(text, heads):
+    """본문의 [번호] 표시를 걷어 내고, 가리킨 제목을 출처 dict 목록으로 돌려준다."""
+    used = []
+
+    def drop(m):
+        nums = [int(n) for n in re.findall(r"\d+", m.group(1))]
+        if not nums or not all(1 <= n <= len(heads) for n in nums):
+            return m.group(0)          # 목록 번호가 아니면 그대로 둔다
+        for n in nums:
+            if n not in used:
+                used.append(n)
+        return ""
+
+    text = MARK.sub(drop, text)
+    return text, [{"title": f"{heads[n - 1]['title']} · {heads[n - 1]['outlet']}"[:120], "url": heads[n - 1]["url"]}
+                  for n in used]
+
+
+def one(client, anthropic, ch, start, end, heads=()):
     """장 하나를 요약한다. (장 번호, 결과 dict 또는 None, 쓴 양, 로그 한 줄)"""
     tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": WEEKLY_SEARCHES}]
-    messages = [{"role": "user", "content": prompt(ch, start, end)}]
+    messages = [{"role": "user", "content": prompt(ch, start, end, heads)}]
     used = {"in": 0, "out": 0, "search": 0}
     try:
         for _ in range(MAX_CONTINUE + 1):
@@ -122,10 +177,12 @@ def one(client, anthropic, ch, start, end):
     items = [l for l in text.splitlines() if l.strip().startswith(("- ", "• "))]
     if len(items) < 2:   # 「찾지 못했다」류 답이 지난 요약을 덮지 않게 한다
         return ch["num"], None, used, f"{ch['num']}장 항목 부족(지난 요약 유지): {text[:120]!r}"
-    return ch["num"], {"text": text, "sources": sources_of(resp.content)}, used, f"{ch['num']}장 완료"
+    text, from_heads = take_marks(text, heads)
+    sources = (from_heads[:4] + sources_of(resp.content))[:10]
+    return ch["num"], {"text": text, "sources": sources}, used, f"{ch['num']}장 완료(제목 {len(heads)}건 중 {len(from_heads)}건 씀)"
 
 
-def maybe_run(now, log, old, force=False):
+def maybe_run(now, log, old, articles=None, force=False):
     """old 는 지난 요약(dict). 새로 만들었으면 새 요약을, 아니면 old 를 그대로 돌려준다."""
     old = old or {}
     last = old.get("generated")
@@ -143,7 +200,7 @@ def maybe_run(now, log, old, force=False):
     start, end = now - timedelta(days=7), now
     targets = CHAPTERS[-WEEKLY_RECENT:]
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end), targets))
+        results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end, headlines(articles, ch, start)), targets))
     chapters = dict(old.get("chapters", {}))
     total = {"in": 0, "out": 0, "search": 0}
     notes, ok = [], 0
@@ -173,6 +230,6 @@ def maybe_run(now, log, old, force=False):
 if __name__ == "__main__":
     data = json.loads(STORE.read_text(encoding="utf-8"))
     log = []
-    data["weekly"] = maybe_run(datetime.now(KST), log, data.get("weekly"), force="--force" in sys.argv)
+    data["weekly"] = maybe_run(datetime.now(KST), log, data.get("weekly"), data.get("articles"), force="--force" in sys.argv)
     STORE.write_text(json.dumps(data, ensure_ascii=False, indent=0, separators=(",", ":")) + "\n", encoding="utf-8")
     print(" · ".join(log) or "할 일 없음(지난 요약이 아직 최근)")

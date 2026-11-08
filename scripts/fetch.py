@@ -327,7 +327,7 @@ def main():
     annotate(arts, descs, now, log)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import weekly   # 장별 주간 쟁점 요약(주 1회만 실제로 돈다)
-    weekly_data = weekly.maybe_run(now, log, old.get("weekly"))
+    weekly_data = weekly.maybe_run(now, log, old.get("weekly"), arts)
     print(" · ".join(log))
     print(f"새 기사 {added}건 · 전체 {len(arts)}건 · 질문 후보 있는 기사 {sum(1 for a in arts if 'ai' in a)}건")
     out = {
