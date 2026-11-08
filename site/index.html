@@ -66,6 +66,25 @@
   .weekly .src { margin-top: 8px; font-size: 13px; color: var(--faint); }
   .weekly .src a { color: var(--sub); }
   .weekly .hint { color: var(--faint); font-size: 14px; margin: 0; }
+  .kwbox { margin-top: 18px; }
+  .kwbox h2 { font-size: 14px; font-weight: 600; color: var(--faint); margin: 0 0 8px; }
+  .kwbox h2 small { font-weight: 400; margin-left: 6px; }
+  .kwbox .chips { flex-wrap: wrap; overflow: visible; }
+  .kwsum { margin-top: 10px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+  .kwsum p { margin: 0; }
+  .kwsum .hint { color: var(--faint); font-size: 14px; }
+  .badge { font-size: 11px; font-weight: 600; border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; margin-left: 6px; color: var(--accent); opacity: .85; vertical-align: 1px; }
+  .ev-name { font-weight: 700; }
+  .ev-sum { margin: 6px 0 0; }
+  .ev-sum.none { color: var(--faint); font-size: 14px; }
+  .ev details { margin-top: 6px; font-size: 14px; }
+  .ev details summary { cursor: pointer; color: var(--accent); width: fit-content; }
+  .ev details ol { margin: 6px 0 0; padding-left: 20px; background: none; border: 0; border-radius: 0; }
+  .ev details ol li { padding: 3px 0; border: 0; }
+  .ev details ol li:hover { background: none; }
+  .ev details ol a { font-weight: 400; }
+  .ev details ol span { color: var(--faint); font-size: 13px; margin-left: 4px; }
+  .note { margin-top: 14px; font-size: 14px; color: var(--faint); }
   .day { margin-top: 26px; }
   .day h2 { font-size: 14px; font-weight: 600; color: var(--faint); margin: 0 0 6px; letter-spacing: .02em; }
   ul { list-style: none; margin: 0; padding: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
@@ -112,11 +131,15 @@
       <div class="seg" id="period" role="group" aria-label="기간">
         <button data-p="3">3일</button><button data-p="7">7일</button><button data-p="30">30일</button><button data-p="0">전체</button>
       </div>
+      <div class="seg" id="view" role="group" aria-label="보기">
+        <button data-v="a">기사별</button><button data-v="e">사건별</button>
+      </div>
     </div>
     <div class="row"><div class="chips" id="chips" role="group" aria-label="장 고르기"></div></div>
     <p class="chtitle" id="chtitle"></p>
   </div>
 
+  <section id="kwbox" class="kwbox" aria-live="polite"></section>
   <section id="weekly" aria-live="polite"></section>
   <main id="list"><p class="loading">기사 목록을 불러오는 중입니다.</p></main>
 
@@ -124,6 +147,7 @@
     <p>기사의 저작권은 각 언론사에 있습니다. 이 페이지는 제목과 원문 링크만 모으며, 본문은 원문 사이트에서 읽어 주세요.</p>
     <p id="sources">출처: 매일노동뉴스·참여와혁신 RSS, 구글 뉴스 검색. 장 표시는 제목과 요약에 나온 낱말로 기계가 붙인 것이라 틀릴 수 있습니다.</p>
     <p>「이번 주 쟁점」은 AI(Claude)가 일주일에 한 번 웹을 검색해 장마다 정리한 요약입니다. 출처 링크로 원문을 확인해 주세요.</p>
+    <p>「사건별」 묶음과 사건 요약, 낱말 요약은 AI(Claude)가 매일 만듭니다. 사건 요약은 원문 앞부분을 받을 수 있으면 그것을, 아니면 제목만 보고 씁니다. robots.txt 로 AI 로봇을 막은 언론사(연합·한겨레·KBS 등)는 원문을 받지 않고 제목만 씁니다.</p>
     <p>「질문 후보」는 AI(Claude)가 기사 제목과 짧은 요약만 보고 만든 참고용입니다. 원문으로 사실을 확인하고, 토론과제에 쓰면 AI 활용 내역에 밝혀 주세요.</p>
   </footer>
 </div>
@@ -141,7 +165,8 @@ const HUES = { 1: 205, 2: 25, 3: 145, 4: 340, 5: 265, 6: 5, 7: 45, 8: 185, 9: 22
 const dark = matchMedia('(prefers-color-scheme: dark)');
 const $ = (id) => document.getElementById(id);
 
-const state = { ch: 'all', p: 7, q: '', shown: PAGE };
+const state = { ch: 'all', p: 7, q: '', kw: '', v: 'a', shown: PAGE };
+let EVENTS = [], EVENT_OF = {}, KW = null, ALIAS = {};
 let DATA = null;
 
 function readHash() {
@@ -149,6 +174,8 @@ function readHash() {
   state.ch = h.get('ch') || 'all';
   state.p = h.has('p') ? Number(h.get('p')) || 0 : 7;
   state.q = h.get('q') || '';
+  state.kw = h.get('kw') || '';
+  state.v = h.get('v') === 'e' ? 'e' : 'a';
   state.shown = PAGE;
 }
 function writeHash() {
@@ -156,6 +183,8 @@ function writeHash() {
   if (state.ch !== 'all') h.set('ch', state.ch);
   if (state.p !== 7) h.set('p', state.p);
   if (state.q) h.set('q', state.q);
+  if (state.kw) h.set('kw', state.kw);
+  if (state.v === 'e') h.set('v', 'e');
   const s = h.toString();
   history.replaceState(null, '', s ? '#' + s : location.pathname + location.search);
 }
@@ -187,6 +216,32 @@ function inPeriodAndQuery(a) {
   }
   return true;
 }
+function kwsOf(a) {
+  const out = new Set();
+  for (const t of a.tags) for (const k of t.kw) out.add(ALIAS[k] || k);
+  return out;
+}
+function inKw(a) { return !state.kw || kwsOf(a).has(state.kw); }
+function link(a) { return a.orig || a.url; }
+function short(iso) { const d = new Date(iso); return `${d.getMonth() + 1}/${d.getDate()}`; }
+function chTag(ch, kw) {
+  return `<span class="tag" style="${tagStyle(ch)}"${kw ? ` title="걸린 말: ${esc(kw.join(', '))}"` : ''}>${ch}장${kw ? `<i>${esc(kw.slice(0, 2).join('·'))}</i>` : ''}</span>`;
+}
+
+function renderKw() {
+  const box = $('kwbox');
+  if (!KW || !KW.items || !KW.items.length) { box.innerHTML = ''; return; }
+  const chips = KW.items.map((it) =>
+    `<button class="chip" data-kw="${esc(it.kw)}" aria-pressed="${state.kw === it.kw}">${esc(it.kw)}<span class="n">${it.n}</span></button>`).join('');
+  const cur = KW.items.find((it) => it.kw === state.kw);
+  let sum = '';
+  if (cur) sum = `<div class="kwsum">${cur.summary
+    ? `<p>${esc(cur.summary)}<span class="badge">AI 요약</span></p>`
+    : '<p class="hint">이 낱말의 요약은 아직 없습니다. 아래 목록이 이 낱말이 붙은 기사로 걸러졌습니다.</p>'}</div>`;
+  else if (state.kw) sum = `<div class="kwsum"><p class="hint">「${esc(state.kw)}」 낱말로 걸러 보는 중입니다.</p></div>`;
+  box.innerHTML = `<h2>이번 주 많이 나온 낱말<small>${esc(KW.range || '')} · 누르면 요약과 그 낱말 기사만</small></h2><div class="chips">${chips}</div>${sum}`;
+}
+
 function inChapter(a) {
   if (state.ch === 'all') return true;
   if (state.ch === 'none') return a.tags.length === 0;
@@ -239,10 +294,13 @@ function renderWeekly() {
 function render() {
   if (!DATA) return;
   renderWeekly();
+  renderKw();
   for (const b of $('period').querySelectorAll('button')) b.setAttribute('aria-pressed', Number(b.dataset.p) === state.p);
-  const base = DATA.articles.filter(inPeriodAndQuery);
+  for (const b of $('view').querySelectorAll('button')) b.setAttribute('aria-pressed', b.dataset.v === state.v);
+  const base = DATA.articles.filter((a) => inPeriodAndQuery(a) && inKw(a));
   renderChips(base);
   const rows = base.filter(inChapter);
+  if (state.v === 'e') { renderEvents(rows); return; }
   if (!rows.length) {
     $('list').innerHTML = '<p class="empty">조건에 맞는 기사가 없습니다. 기간을 늘리거나 검색어를 바꿔 보세요.</p>';
     return;
@@ -254,16 +312,52 @@ function render() {
       html += (day ? '</ul></section>' : '') + `<section class="day"><h2>${d}</h2><ul>`;
       day = d;
     }
-    const tags = a.tags.map((t) =>
-      `<span class="tag" style="${tagStyle(t.ch)}" title="걸린 말: ${esc(t.kw.join(', '))}">${t.ch}장<i>${esc(t.kw.slice(0, 2).join('·'))}</i></span>`
-    ).join('');
+    const tags = a.tags.map((t) => chTag(t.ch, t.kw)).join('');
+    const ev = EVENT_OF[a.id];
+    const evsum = ev && ev.summary ? `<details class="ai"><summary>사건 요약 · 같은 사건 기사 ${ev.ids.length}건<span class="ai-badge">AI</span></summary>
+      <div class="ai-body"><p class="ai-link">${esc(ev.name)}</p>${esc(ev.summary)}</div></details>` : '';
     const ai = a.ai ? `<details class="ai"><summary>질문 후보<span class="ai-badge">AI</span></summary>
       <div class="ai-body">${a.ai.link ? `<p class="ai-link">${esc(a.ai.link)}</p>` : ''}<ol>${a.ai.qs.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></div></details>` : '';
-    html += `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>
-      <div class="meta"><span>${esc(a.outlet)} · ${timeLabel(a.date)}</span>${tags}</div>${ai}</li>`;
+    html += `<li><a href="${esc(link(a))}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>
+      <div class="meta"><span>${esc(a.outlet)} · ${timeLabel(a.date)}</span>${tags}</div>${evsum}${ai}</li>`;
   }
   html += '</ul></section>';
   if (rows.length > state.shown) html += `<button class="more" id="more">${rows.length - state.shown}건 더 보기</button>`;
+  $('list').innerHTML = html;
+  const more = $('more');
+  if (more) more.onclick = () => { state.shown += PAGE; render(); };
+}
+
+function renderEvents(rows) {
+  if (!EVENTS.length) {
+    $('list').innerHTML = '<p class="empty">사건 묶음이 아직 없습니다. 다음 날 아침 갱신부터 생깁니다.</p>';
+    return;
+  }
+  const hit = new Set(rows.map((a) => a.id));
+  const byId = Object.fromEntries(DATA.articles.map((a) => [a.id, a]));
+  const evs = EVENTS.filter((e) => e.ids.some((i) => hit.has(i)));
+  const loose = rows.filter((a) => !EVENT_OF[a.id]).length;
+  if (!evs.length) {
+    $('list').innerHTML = `<p class="empty">조건에 맞는 사건이 없습니다. 사건으로 묶이지 않은 기사 ${loose}건은 「기사별」에서 볼 수 있습니다.</p>`;
+    return;
+  }
+  let html = '<ul>';
+  for (const e of evs.slice(0, state.shown)) {
+    const mem = e.ids.map((i) => byId[i]).filter(Boolean).sort((x, y) => (x.date < y.date ? 1 : -1));
+    const outlets = [...new Set(mem.map((a) => a.outlet))];
+    const range = short(e.first) === short(e.last) ? short(e.last) : `${short(e.first)}~${short(e.last)}`;
+    const sum = e.summary
+      ? `<p class="ev-sum">${esc(e.summary)}<span class="badge">${e.src ? 'AI 요약' : 'AI 요약 · 제목만 보고 씀'}</span></p>`
+      : '<p class="ev-sum none">요약은 다음 갱신 때 붙습니다.</p>';
+    html += `<li class="ev"><div class="ev-name">${esc(e.name)}</div>
+      <div class="meta"><span>기사 ${mem.length}건 · ${range} · ${esc(outlets.slice(0, 3).join('·'))}${outlets.length > 3 ? ` 외 ${outlets.length - 3}곳` : ''}</span>${(e.chs || []).map((c) => chTag(c)).join('')}</div>
+      ${sum}
+      <details><summary>기사 ${mem.length}건 보기</summary><ol>${mem.map((a) =>
+        `<li><a href="${esc(link(a))}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a><span>${esc(a.outlet)} · ${short(a.date)}</span></li>`).join('')}</ol></details></li>`;
+  }
+  html += '</ul>';
+  if (evs.length > state.shown) html += `<button class="more" id="more">사건 ${evs.length - state.shown}개 더 보기</button>`;
+  html += `<p class="note">사건 ${evs.length}개 · 사건으로 묶이지 않은 기사 ${loose}건은 「기사별」에서 볼 수 있습니다.</p>`;
   $('list').innerHTML = html;
   const more = $('more');
   if (more) more.onclick = () => { state.shown += PAGE; render(); };
@@ -291,6 +385,14 @@ $('period').addEventListener('click', (e) => {
   const b = e.target.closest('button'); if (!b) return;
   state.p = Number(b.dataset.p); state.shown = PAGE; writeHash(); render();
 });
+$('view').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  state.v = b.dataset.v; state.shown = PAGE; writeHash(); render();
+});
+$('kwbox').addEventListener('click', (e) => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  state.kw = state.kw === b.dataset.kw ? '' : b.dataset.kw; state.shown = PAGE; writeHash(); render();
+});
 $('chips').addEventListener('click', (e) => {
   const b = e.target.closest('.chip'); if (!b) return;
   state.ch = b.dataset.ch; state.shown = PAGE; writeHash(); render();
@@ -303,6 +405,11 @@ load().then((d) => {
   const u = new Date(d.updated);
   $('stamp').textContent = `마지막 갱신 ${u.getMonth() + 1}월 ${u.getDate()}일 ${timeLabel(d.updated)} · 모은 기사 ${d.articles.length.toLocaleString()}건`;
   WEEKLY = d.weekly && d.weekly.chapters ? d.weekly : null;
+  EVENTS = (d.events && d.events.items) || [];
+  EVENT_OF = {};
+  for (const e of EVENTS) for (const i of e.ids) EVENT_OF[i] = e;
+  KW = d.keywords || null;
+  ALIAS = (KW && KW.alias) || {};
   render();
 }).catch(() => {
   $('stamp').textContent = '';

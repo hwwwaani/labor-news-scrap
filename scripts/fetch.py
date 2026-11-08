@@ -12,6 +12,7 @@ python3 scripts/fetch.py --dry-run  # 저장하지 않고 몇 건 들어오는�
 - 장 핵심어와 구글뉴스 검색어는 chapters.json 에서 고친다. 이미 쌓인 기사는 다시 나누지 않는다.
 - 질문 후보: 환경변수 ANTHROPIC_API_KEY 가 있을 때만, 최근 AI_DAYS 일 기사 가운데 아직 없는 것에
   Claude(AI_MODEL)로 「몇 장과 닿는지」 한 줄과 토론 질문 셋을 붙인다(기사의 "ai" 칸). 키가 없으면 건너뛴다.
+- 사건 묶음·사건 요약·키워드 요약은 scripts/events.py, 주 1회 장별 쟁점은 scripts/weekly.py 가 맡는다.
 """
 import html
 import hashlib
@@ -326,6 +327,8 @@ def main():
         return
     annotate(arts, descs, now, log)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import events   # 사건 묶음·사건 요약·키워드 요약(매일)
+    events_data, keywords_data = events.run(now, arts, descs, old.get("events"), old.get("keywords"), log)
     import weekly   # 장별 주간 쟁점 요약(주 1회만 실제로 돈다)
     weekly_data = weekly.maybe_run(now, log, old.get("weekly"), arts)
     print(" · ".join(log))
@@ -336,6 +339,8 @@ def main():
         "sources": [f for f, _ in FEEDS] + ["구글 뉴스 검색"],
         "articles": arts,
         "weekly": weekly_data,
+        "events": events_data,
+        "keywords": keywords_data,
     }
     STORE.parent.mkdir(parents=True, exist_ok=True)
     STORE.write_text(json.dumps(out, ensure_ascii=False, indent=0, separators=(",", ":")) + "\n", encoding="utf-8")
