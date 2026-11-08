@@ -203,20 +203,22 @@ def maybe_run(now, log, old, articles=None, force=False):
         results = list(pool.map(lambda ch: one(client, anthropic, ch, start, end, headlines(articles, ch, start)), targets))
     chapters = dict(old.get("chapters", {}))
     total = {"in": 0, "out": 0, "search": 0}
-    notes, ok = [], 0
+    problems, ok = [], 0
     for num, res, used, note in results:
         for k in total:
             total[k] += used[k]
-        notes.append(note)
         if res:
+            log.append(note)
             chapters[str(num)] = dict(res, range=f"{start:%m/%d}~{end:%m/%d}", model=WEEKLY_MODEL)
             ok += 1
+        else:
+            problems.append(note)
     # 대략 비용(모델 표값 + 검색 $10/1,000번). 기록용 추정이다
     pin, pout = PRICE.get(WEEKLY_MODEL, (4, 20))
     cost = total["in"] / 1e6 * pin + total["out"] / 1e6 * pout + total["search"] / 1000 * 10
     log.append(f"주간 요약 {ok}/{len(targets)}장 (입력 {total['in']:,} · 출력 {total['out']:,} 토큰 · 검색 {total['search']}번 · 약 ${cost:.2f})")
-    if any("완료" not in n for n in notes):
-        log.append("주간 요약 문제: " + ", ".join(n for n in notes if "완료" not in n))
+    if problems:
+        log.append("주간 요약 문제: " + ", ".join(problems))
     if not ok:
         return old
     return {
