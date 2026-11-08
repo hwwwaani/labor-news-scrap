@@ -12,6 +12,10 @@
    - 구글 뉴스 주소는 구글 뉴스 내부 주소 풀기(batchexecute)로 원문 주소를 얻는다. 구글이 바꾸면 깨질 수 있고, 깨지면 제목만으로 요약한다.
      몰아서 부르면 구글이 429 로 막으므로(11/8 시험에서 60번쯤에 막힘) 하나씩 GOOGLE_GAP 초 간격, 한 회차 GOOGLE_MAX 번까지,
      429 가 나면 그 회차는 더 풀지 않는다. 푼 원문 주소는 기사의 "orig" 칸에 적어 다시 풀지 않는다(화면 링크도 이 주소).
+2-1. 원문 주소·대표 사진: 최근 RESOLVE_DAYS 일 기사마다 한 번(chk 표시) 원문 주소(orig)를 풀고, robots.txt 가 허락하면
+   원문 머리의 og:image(언론사가 링크 미리보기용으로 내놓은 대표 사진) 주소를 img 칸에 적는다. 그림은 저장하지 않고
+   화면이 언론사 서버에서 바로 불러온다. 여러 기사에 똑같이 붙는 사진(언론사 기본 그림·로고)은 noimg 로 걸러 낸다.
+   사건 요약이 구글 주소 풀기 몫을 먼저 쓰고, 남은 몫과 RESOLVE_SECONDS 초 안에서만 돈다. 키가 없어도 돈다.
 3. 키워드: 최근 KW_DAYS 일 기사의 장 낱말을 세어 상위 KW_TOP 개에 「이번 주 무슨 일이 있었나」 2~3문장을 붙인다(매일 새로).
    순위는 키가 없어도 계산하고, 요약만 키가 있을 때 만든다.
 
@@ -30,7 +34,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError
-from urllib.parse import urlencode, urlparse
+from urllib.parse import urlencode, urljoin, urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 
@@ -51,8 +55,11 @@ BODY_PER_EVENT = 3       # 사건 하나에 받아 읽는 원문 수(표에 넣�
 BODY_TRIES = 5           # 원문을 받으려고 시도하는 기사 수 상한
 BODY_CHARS = 2500        # 원문에서 앞부분 몇 자만 넘기나(숫자가 둘째 문단에 많아서 1500→2500)
 TABLE_ROWS = 5           # 노사 입장 표 줄 수 상한
-GOOGLE_MAX = 40         # 한 회차에 구글 뉴스 주소를 푸는 횟수 상한
+GOOGLE_MAX = 100        # 한 회차에 구글 뉴스 주소를 푸는 횟수 상한(11/8 Actions 에서 40번 연속 429 없음 → 대표 사진·원문 링크용으로 100)
 GOOGLE_GAP = 1.2        # 구글 뉴스 주소 풀기 사이 간격(초)
+RESOLVE_DAYS = 3         # 원문 주소·대표 사진을 찾아 두는 기사 범위
+RESOLVE_SECONDS = 150    # 구글 주소 풀기에 쓰는 시간 상한. 사진 찾기는 여기에 90초를 더한 데까지(Actions 제한 20분 안에 끝나게)
+BAD_IMG = re.compile(r"logo|default|no_?image|noimg|blank|placeholder", re.I)
 KW_DAYS = 7
 KW_TOP = 10
 KW_MIN = 3               # 이보다 적게 나온 낱말은 순위에 넣지 않는다
@@ -209,7 +216,7 @@ def decode_google(gurl):
 
 def _decode(gurl):
     gid = urlparse(gurl).path.rsplit("/", 1)[-1]
-    page = _get(f"https://news.google.com/articles/{gid}", timeout=10, ua=GOOGLE_UA)
+    page = _get(f"https://news.google.com/articles/{gid}", timeout=8, ua=GOOGLE_UA)
     sg = re.search(r'data-n-a-sg="([^"]+)"', page).group(1)
     ts = re.search(r'data-n-a-ts="([^"]+)"', page).group(1)
     inner = ["garturlreq", [["X", "X", ["X", "X"], None, None, 1, 1, "US:en", None, 1, None, None, None, None, None, 0, 1],
@@ -217,7 +224,7 @@ def _decode(gurl):
     freq = json.dumps([[["Fbv4je", json.dumps(inner), None, "generic"]]])
     body = _get("https://news.google.com/_/DotsSplashUi/data/batchexecute",
                 data=urlencode({"f.req": freq}).encode(),
-                headers={"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"}, timeout=10, ua=GOOGLE_UA)
+                headers={"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"}, timeout=8, ua=GOOGLE_UA)
     url = json.loads(json.loads(body.split("\n\n", 1)[1])[0][2])[1]
     return url if isinstance(url, str) and url.startswith("http") else None
 
@@ -232,6 +239,18 @@ def page_text(page):
         if m:
             text = html.unescape(re.sub(r"<[^>]+>", " ", m.group(3)))
     return re.sub(r"\s+", " ", text).strip()
+
+
+def page_image(page, url):
+    """기사 머리의 og:image 주소. 없거나 로고·기본 그림처럼 보이면 None."""
+    for tag in re.findall(r"<meta\b[^>]*>", page[:200_000], re.I):
+        if re.search(r"""(?:property|name)\s*=\s*["']og:image(?::url|:secure_url)?["']""", tag, re.I):
+            m = re.search(r"""content\s*=\s*["']([^"']+)["']""", tag, re.I)
+            if m:
+                img = urljoin(url, html.unescape(m.group(1)).strip())
+                if img.startswith("http") and len(img) < 600 and not BAD_IMG.search(img):
+                    return img
+    return None
 
 
 def bodies_for(event, by_id, descs):
@@ -254,9 +273,14 @@ def bodies_for(event, by_id, descs):
             _blocked.add(a["outlet"])
             continue
         try:
-            text = page_text(_get(url))
+            page = _get(url)
         except Exception:
             continue
+        a["chk"] = 1
+        img = page_image(page, url)
+        if img:
+            a["img"] = img
+        text = page_text(page)
         if len(text) >= 200:
             texts.append({"from": f"{a['outlet']} {a['date'][5:10]}", "text": text[:BODY_CHARS]})
             seen_outlets.add(a["outlet"])
@@ -483,6 +507,63 @@ def keywords(client, anthropic, arts, events, now, old, used, log):
             "alias": KW_ALIAS, "items": items}
 
 
+# ---------- 원문 주소·대표 사진 ----------
+
+def resolve(arts, now, log):
+    """최근 기사의 원문 주소(orig)와 대표 사진(img)을 찾아 둔다. 기사마다 한 번만 시도하고 chk 로 표시한다.
+    1) 구글 뉴스 주소는 하나씩 푼다(구글이 몰아서 부르면 막는다). 2) 대표 사진은 여러 언론사를 동시에 본다."""
+    t0 = time.time()
+    cutoff = (now - timedelta(days=RESOLVE_DAYS)).isoformat()
+    todo = sorted((a for a in arts if a["date"] >= cutoff and not a.get("chk")), key=lambda a: a["date"], reverse=True)
+    links = 0
+    for a in todo:
+        if a["via"] == "rss" or a.get("orig"):
+            continue
+        if time.time() - t0 > RESOLVE_SECONDS or _google["off"] or _google["used"] >= GOOGLE_MAX:
+            break                   # 못 푼 기사는 chk 없이 남겨 다음 회차에 다시
+        url = decode_google(a["url"])
+        if url:
+            a["orig"] = url
+            links += 1
+        elif not _google["off"]:
+            a["chk"] = 1            # 이 기사만 안 풀리는 것이면 다시 시도하지 않는다
+
+    def photo(a):
+        if time.time() - t0 > RESOLVE_SECONDS + 90:
+            return 0                # 시간이 다 되면 chk 없이 남겨 다음 회차에
+        url = a["url"] if a["via"] == "rss" else a["orig"]
+        a["chk"] = 1
+        if a["outlet"] in _blocked or a["outlet"].startswith(SKIP_OUTLETS):
+            return 0
+        if not robots_ok(url):
+            _blocked.add(a["outlet"])
+            return 0
+        try:
+            img = page_image(_get(url, limit=300_000, timeout=8), url)
+        except Exception:
+            return 0
+        if img:
+            a["img"] = img
+            return 1
+        return 0
+
+    cand = [a for a in todo if not a.get("chk") and (a["via"] == "rss" or a.get("orig"))]
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        imgs = sum(pool.map(photo, cand))
+    left = sum(1 for a in todo if not a.get("chk"))
+    log.append(f"원문 주소 {links}건·대표 사진 {imgs}건 찾음(대상 {len(todo)}건, 남은 {left}건{', 구글 429' if _google['off'] else ''}, {time.time() - t0:.0f}초)")
+
+
+def drop_shared_images(arts, noimg):
+    """두 기사 이상에 똑같이 붙은 사진은 언론사 기본 그림으로 보고 뺀다. 뺀 주소는 noimg 에 쌓아 다음에도 뺀다."""
+    count = Counter(a["img"] for a in arts if a.get("img"))
+    noimg = set(noimg) | {u for u, n in count.items() if n >= 2}
+    for a in arts:
+        if a.get("img") in noimg:
+            del a["img"]
+    return sorted(noimg)[-300:]
+
+
 # ---------- 한 회차 ----------
 
 def run(now, arts, descs, old_events, old_keywords, log):
@@ -509,13 +590,15 @@ def run(now, arts, descs, old_events, old_keywords, log):
         kw = keywords(client, anthropic, arts, events, now, old_keywords, used, log)
     except Stop:
         pass
+    resolve(arts, now, log)
+    noimg = drop_shared_images(arts, (old_events or {}).get("noimg", []))
     if kw is None:
         kw = keywords(None, None, arts, events, now, old_keywords, used, log)
     if client:
         cost = used["in"] / 1e6 * PRICE[0] + used["out"] / 1e6 * PRICE[1]
         log.append(f"사건·키워드 (입력 {used['in']:,} · 출력 {used['out']:,} 토큰 · 약 ${cost:.3f})")
     events.sort(key=lambda e: e.get("last", ""), reverse=True)
-    return {"generated": now.isoformat(timespec="minutes"), "items": events}, kw
+    return {"generated": now.isoformat(timespec="minutes"), "items": events, "noimg": noimg}, kw
 
 
 if __name__ == "__main__" and "--probe" in sys.argv:
