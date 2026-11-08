@@ -58,6 +58,8 @@ TOOL_UA = "Mozilla/5.0 (compatible; labor-news-scrap/1.0; +https://github.com/hw
 # 구글 뉴스 주소 풀기만 브라우저 UA 로 한다(도구 이름으로는 구글이 풀 값을 주지 않는다). fetch.py 의 RSS 받기와 같은 UA
 GOOGLE_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
              "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
+# robots.txt 로 막힌 언론사는 구글 주소를 풀지도 않는다(풀기 상한을 아낀다). 회차 안에서 새로 막힌 곳은 _blocked 에 더해진다
+SKIP_OUTLETS = ("연합뉴스", "한겨레", "KBS", "JTBC", "동아일보", "매일경제", "조선일보", "중앙일보", "Chosunbiz")
 ROBOT_AGENTS = ("labor-news-scrap", "anthropic-ai", "ClaudeBot", "Claude-User")   # 하나라도 막혔으면 받지 않는다
 
 CLUSTER_SCHEMA = {
@@ -117,6 +119,7 @@ KW_SYSTEM = """너는 대학 「고용관계론」 수업을 듣는 학생에게
 
 _robots, _robots_lock = {}, threading.Lock()
 _google = {"lock": threading.Lock(), "last": 0.0, "used": 0, "off": False}
+_blocked = set()   # 이번 회차에 robots.txt 로 막힌 것을 본 언론사 이름
 
 
 def _get(url, data=None, headers=None, timeout=12, limit=1_500_000, ua=TOOL_UA):
@@ -211,13 +214,16 @@ def bodies_for(event, by_id, descs):
     for a in members:
         if len(texts) >= BODY_PER_EVENT or tries >= BODY_TRIES:
             break
-        if a["outlet"] in seen_outlets:
+        if a["outlet"] in seen_outlets or a["outlet"] in _blocked or a["outlet"].startswith(SKIP_OUTLETS):
             continue
         tries += 1
         url = a["url"] if a["via"] == "rss" else a.get("orig") or decode_google(a["url"])
         if url and a["via"] != "rss":
             a["orig"] = url
-        if not url or not robots_ok(url):
+        if not url:
+            continue
+        if not robots_ok(url):
+            _blocked.add(a["outlet"])
             continue
         try:
             text = page_text(_get(url))
@@ -373,12 +379,16 @@ def keywords(client, anthropic, arts, events, now, old, used, log):
         payload = []
         for it in items:
             mem = [a for a in recent if it["kw"] in kws_of(a)]
-            evs = list({ev_of[a["id"]]["id"]: ev_of[a["id"]] for a in mem if a["id"] in ev_of}.values())
-            evs.sort(key=lambda e: -len(e["ids"]))
+            # 낱말이 붙은 기사가 사건 안에 2건 이상, 사건의 30% 이상일 때만 그 낱말의 사건으로 본다
+            # (11/8 첫 회에 「산재」 요약에 기사 한 건만 걸친 고용보험 부정수급 사건이 섞였다)
+            hits = Counter(ev_of[a["id"]]["id"] for a in mem if a["id"] in ev_of)
+            evd = {e["id"]: e for e in events}
+            evs = [evd[x] for x, c in hits.most_common() if c >= 2 and c >= 0.3 * len(evd[x]["ids"])]
+            in_evs = {i for e in evs for i in e["ids"]}
             payload.append({
                 "kw": it["kw"], "count": it["n"],
                 "events": [{"name": e["name"], "summary": e.get("summary", ""), "articles": len(e["ids"])} for e in evs[:8]],
-                "other_titles": [a["title"] for a in mem if a["id"] not in ev_of][:20],
+                "other_titles": [a["title"] for a in mem if a["id"] not in in_evs][:20],
             })
         data = ask(client, anthropic, KW_SYSTEM, payload, KW_SCHEMA, "low", used, log, "키워드 요약")
         if data:
