@@ -1,5 +1,5 @@
 {
-"updated":"2026-11-08T18:56+09:00",
+"updated":"2026-11-09T10:24+09:00",
 "chapters":[
 {
 "num":1,
@@ -44,6 +44,1965 @@
 "구글 뉴스 검색"
 ],
 "articles":[
+{
+"id":"e8be0afe39",
+"title":"AI로 자소서 쓰고 면접까지…광진구, 중장년 취업 돕는다",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE5vU1I4YXRPUUhRVzlVM2NPbDNveGtJbVd1V29mZ1BrTVRiZlR3V3hETHd5eDJObEM0NG5yRmNFSWRUdXpiaHNYR0JBV240WFFrbXQwSlBLVUJaREZYS1IyNmNtbnRnWEtOa3JtOWNkV0Q?oc=5",
+"outlet":"SK브로드밴드 회사소개",
+"via":"google",
+"date":"2026-11-09T10:03+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · AI 확산과 중장년 고용 기회",
+"qs":[
+"AI를 활용한 자기소개서 작성과 모의면접 같은 취업 지원은 중장년 구직자의 고용 기회를 넓힌다고 볼 수 있는가?",
+"취업 지원 서비스가 디지털 기술에 기대는 정도가 커질 때 기술 접근성이 낮은 중장년 근로자는 어떤 불이익을 겪게 되는가?",
+"지방자치단체가 주도하는 중장년 취업 지원은 기업의 채용 관행을 바꾸는 데 얼마나 효과적인가?"
+]
+}
+},
+{
+"id":"ea479fe83c",
+"title":"연말까지 '고용보험 부정수급' 자진신고…추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMib0FVX3lxTFBRZWdPN2xaRWRLUTNFVnRxemk2bWVRUm1aVzd6c2s5SkFaWWE4MjFENHAxanRnWDlLb2hUVmZvTGlGanM5U3J0Qk1vaXVTbnN3T1A2eE9Gak55WS13SHp0ODZyYXp1cE00NTR1VWZ4UQ?oc=5",
+"outlet":"보험저널",
+"via":"google",
+"date":"2026-11-09T09:53+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급과 보험료 추가징수",
+"qs":[
+"고용보험 부정수급을 자진신고하면 추가징수를 면제하는 제도는 부정수급 예방과 보험 재정 안정 중 어느 쪽에 더 기여하는가?",
+"자진신고 기간을 한시적으로 운영하는 방식은 사업주와 근로자의 신고 행태를 어떻게 바꾸는가?",
+"부정수급 적발과 자진신고 면제가 함께 쓰일 때 성실하게 신고한 사업주와 근로자 사이의 형평성은 어떻게 확보할 수 있는가?"
+]
+},
+"orig":"https://www.insjournal.co.kr/news/articleView.html?idxno=33826",
+"chk":1,
+"img":"https://cdn.insjournal.co.kr/news/thumbnail/202611/33826_36458_5314_v150.jpg"
+},
+{
+"id":"4851da289a",
+"title":"고용보험 부정수급 연말까지 자진신고…추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE83U2xQRmY3RVcweVJOT0tUY1lyekFaYWt4U0pyWnNraFZnWExDTlVMVlo5T0dsUGxfa21QaE11cmJlR1F1MkcyOUp0Y3UyZW9QcXN3cjZhcmRhVE5SeHBfSGZLNDd3Z1ZyUFJNTXdB?oc=5",
+"outlet":"간호사신문",
+"via":"google",
+"date":"2026-11-09T09:51+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급과 보험료 추가징수",
+"qs":[
+"고용보험 부정수급 자진신고 면제 조치는 보험 재정 관리의 실효성을 높이는 수단인가?",
+"자진신고 기간이 정해져 있을 때 정책 효과는 기간 종료 이후에도 지속될 수 있는가?",
+"부정수급으로 받은 급여를 되돌려 받는 방식과 추가징수 방식 중 어느 쪽이 근로자와 사업주 모두에게 공정한가?"
+]
+},
+"orig":"https://www.nursenews.co.kr/news/articleView.html?idxno=46340",
+"chk":1,
+"img":"https://cdn.nursenews.co.kr/news/photo/202611/46340_38330_4041.jpg"
+},
+{
+"id":"8f04bc0312",
+"title":"서울시, 직장 내 괴롭힘 지침 개정…기관장 배제 근거 마련",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qSzFGVWVsUXdKWS02c0E5b3pKVXB4Xy11VUUxRjlJN3pnNHdIdWc1X2xrV01Sa0tHVXBiaWpEekZnazhIVGxGelpqQm5HOHRQRFI1T1UwYlEzWUt3d3E3LdIBeEFVX3lxTE1xNjJhZGdxc3RKR1NpeVJiNF8zZGFUdlB0LWtfREZpcy1JdE41YXd4WlpQZDdJVy1nSGhiWXVyUlZwc1NxcldoOFNWa3NtRU8xeC1OdnNJUjdfazBuUWMxX2JqbTd3ZTFoblBjYnRhemdzb1RLd08zTw?oc=5",
+"outlet":"뉴시스",
+"via":"google",
+"date":"2026-11-09T09:51+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"직장 내 괴롭힘",
+"괴롭힘"
+]
+}
+],
+"ai":{
+"link":"6장 · 직장 내 괴롭힘 판단과 조사 주체의 중립성",
+"qs":[
+"기관장이 괴롭힘 사건 조사에서 배제되는 규정은 조사의 공정성을 높이는가, 아니면 조직 내 위계에 따른 책임 회피를 낳는가?",
+"직장 내 괴롭힘 지침을 개정할 때 피해 근로자의 보호와 피신고인의 방어권은 어떻게 균형을 맞출 수 있는가?",
+"공공기관의 괴롭힘 대응 지침은 민간 사업장의 괴롭힘 예방에도 참고가 될 수 있는가?"
+]
+}
+},
+{
+"id":"b46dec7acd",
+"title":"\"신입사원 대신 AI 뽑는다?\"···흔들리는 일자리 공식",
+"url":"https://news.google.com/rss/articles/CBMiakFVX3lxTFBuTVBiVUFLbHBDbnlKQ3RFYVZCb043aExhVkVkaFN0TEdWX1N1enhTN0hvWVpxdW5MRzZUblVSNjkwRWI2enhUamFKYldKTWVjWnFaa2drdTlmQU5ZMzdPTnlKa245UmFOMEE?oc=5",
+"outlet":"뉴스웨이",
+"via":"google",
+"date":"2026-11-09T09:48+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · AI 도입과 신입 채용 감소",
+"qs":[
+"기업이 신입사원 채용 대신 AI 도입을 선택할 때 청년 근로자의 고용 기회와 직무 경력 형성에는 어떤 영향이 미치는가?",
+"AI 도입으로 사라지는 일자리와 새로 생기는 일자리 중 노사가 함께 대응해야 할 우선순위는 무엇인가?",
+"채용 방식의 변화가 고용관계에서 노동조합의 역할을 강화하는가, 약화하는가?"
+]
+}
+},
+{
+"id":"282e0fc16b",
+"title":"노동계 손잡았던 이재명 정부, 1년여 만에 노정관계 시험대",
+"url":"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTbmoyUVlEblRJWnFXQWJibDMtcW42M2h3UFRWY0k5TF9rUVB3SllmbWJ0RGxaVklJRU9zOWZDWVhjN0NDWTl4c3BWOERXaUFWWXdBRVJ3?oc=5",
+"outlet":"헤럴드경제",
+"via":"google",
+"date":"2026-11-09T09:47+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년 연장"
+]
+}
+],
+"ai":{
+"link":"7장 · 정부와 노동계의 관계와 노동운동의 교섭 경로",
+"qs":[
+"노동계와 협력 관계를 맺은 정부가 일정 기간 뒤 노정관계에서 갈등에 직면하는 이유는 무엇이라고 볼 수 있는가?",
+"노정관계가 긴장 국면에 들어설 때 노동운동이 택할 수 있는 현실적인 대응 방식은 무엇인가?",
+"정부와 노동조합이 사회적 대화를 통해 정책을 조율하는 방식은 고용관계시스템의 안정에 얼마나 기여하는가?"
+]
+}
+},
+{
+"id":"bb2a92c2ef",
+"title":"저소득 노동자 산재 신청 무료로 돕는다…내년 3월 대리인 제도 시행",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE9uUURuS1o5cG5Ya19URjZxTFdUYnRjcG1LYkpkUVhqUmZmazdLR3AybDVkZmJFOGRuRmoyOVhVeDBpc0RuemlnOXlFQTF3RVU3M3VYclhmYXhZcUUwaFd3TEJhZF9BblBKdWNVTmpR?oc=5",
+"outlet":"간호사신문",
+"via":"google",
+"date":"2026-11-09T09:46+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재보험 신청 지원과 대리인 제도",
+"qs":[
+"저소득 노동자에게 산재 신청 대리인을 무료로 지원하는 제도는 산재보험 사각지대를 줄이는 데 충분한 수단인가?",
+"산재 신청 과정에서 대리인이 개입하면 사업주와 근로자 사이의 관계나 분쟁 양상은 어떻게 달라지는가?",
+"산재 신청 절차에서 근로자가 혼자 대응하기 어려운 이유를 제도적으로 줄이려면 어떤 방식이 필요한가?"
+]
+},
+"orig":"https://www.nursenews.co.kr/news/articleView.html?idxno=46337",
+"chk":1,
+"img":"https://cdn.nursenews.co.kr/news/photo/202611/46337_38327_3111.jpg"
+},
+{
+"id":"487b55446a",
+"title":"'자발적 퇴사' 청년에 月100만원 검토…\"도덕적 해이 우려 적어\"",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yNFpoU3IwLWxWeVZzSl9XWmhFRFVyaUdMQkhkTldjaXF6UE9wWU02MnE3OERJVjl6RkRleUVncmN0dHlJSXdUZnI2U1VjZ0ZscGs2bnBoYWRFbmlfdXBUMtIBeEFVX3lxTE16Z1lsWW42Zl9HWEpFVkdNQzNwOUV3bkFmTjU5OFVlN21HTFdOTFp2c0tpODZfalkxTFlOSGpSbFRGejhxRl8yX2Z2c1JGVDNLVzI4emR2OE1qNjFKOFIyUW50ZmRPT1BnbVFxdTdjT2VDTk9EVlYwcA?oc=5",
+"outlet":"뉴시스",
+"via":"google",
+"date":"2026-11-09T09:46+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 자발적 퇴사자의 고용보험 급여와 도덕적 해이",
+"qs":[
+"자발적으로 퇴사한 청년에게 구직급여를 지급하는 방안은 고용보험의 취지와 어떻게 조화를 이룰 수 있는가?",
+"자발적 퇴사자에 대한 급여 지급이 도덕적 해이를 낳을지에 대해 어떤 근거로 판단해야 하는가?",
+"청년의 이직과 퇴사 결정이 늘어나는 상황에서 고용보험 제도는 어떤 역할을 맡아야 하는가?"
+]
+}
+},
+{
+"id":"268a149bc7",
+"title":"경기도, '2026 대한민국 일자리 어워드' 과기정통부 장관상 수상",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTFAtN04tR2xDSXNQWFFaUjNoTi1lMUxKbU9iQXFVMHhTU0lQbFhPVm5lamhia2xMM0phdjFoYmc2RWJXNzk5dkVxcVl2NDNhYWJIQ2g0UExNU1hMbWlscDI2SnVnVTE?oc=5",
+"outlet":"매일일보",
+"via":"google",
+"date":"2026-11-09T09:43+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 지자체의 일자리 정책과 고용 환경 변화",
+"qs":[
+"지방자치단체의 일자리 정책 성과를 평가하는 어워드는 실제 고용 환경 개선을 얼마나 잘 반영하는가?",
+"지역 단위의 일자리 정책은 산업 구조 변화에 대응하는 데 어떤 한계와 가능성을 가지는가?",
+"중앙정부와 지방정부가 일자리 정책을 나눠 맡을 때 고용관계의 주체들은 어떤 역할을 하게 되는가?"
+]
+}
+},
+{
+"id":"3dab5990ac",
+"title":"고용보험 부정수급 연말까지 집중신고…자진신고 땐 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMiWEFVX3lxTE94VFFrb2FQdlRaOXQ0MTNrbGdCR19aekd1akVGd3Jva0lnb2R5d21zQTRJR19kTVRZYmpEeDVUUWczNHNDbkJHTFUtR2dvMEJUTy02bXUwMHE?oc=5",
+"outlet":"포커스타임즈",
+"via":"google",
+"date":"2026-11-09T09:41+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급과 자진신고 면제",
+"qs":[
+"집중신고 기간에 자진신고를 하면 추가징수를 면제하는 방식은 부정수급을 줄이는 데 효과적인가?",
+"단속과 자진신고 유도 중 어느 방식이 사업주의 부정수급 동기를 더 크게 낮출 수 있는가?",
+"부정수급 문제를 해결할 때 행정 제재와 신뢰 회복 중 무엇을 우선해야 하는가?"
+]
+},
+"orig":"https://focustimes.co.kr/View.aspx?No=4303112",
+"chk":1
+},
+{
+"id":"8fc3ec92d8",
+"title":"월급 300만원 미만 산재 노동자, 변호사·노무사 도움 무료로 받는다",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTFA2OTdZTWpDdEpPRUMwZDZIQUxqWTZfX29NZDdqTk4zRWxGN1JkOFhEbjRnNjFDbW96SkxwR1pCX2pVQlZkY2RyUDg0UmZ2a0dhRzlhRG9aaHFiUDNEbVp4eTV0VjdBOUhvWHBYbTJQa3Y?oc=5",
+"outlet":"안전신문",
+"via":"google",
+"date":"2026-11-09T09:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재 노동자의 법률 조력 접근성",
+"qs":[
+"월급이 일정 수준 미만인 산재 노동자에게 변호사와 노무사의 무료 조력을 제공하는 것은 산재 피해 구제의 형평성을 높이는가?",
+"산재 피해 노동자가 법률 조력을 받을 수 있는 범위를 넓히면 사업주와의 분쟁 해결 방식은 어떻게 바뀌는가?",
+"소득 기준으로 지원 대상을 나누는 방식은 산재 노동자 보호에 어떤 장단점을 가지는가?"
+]
+},
+"orig":"https://www.safetynews.co.kr/news/articleView.html?idxno=251427",
+"chk":1,
+"img":"https://cdn.safetynews.co.kr/news/thumbnail/202611/251427_251981_3227_v150.jpg"
+},
+{
+"id":"d706654af2",
+"title":"베트남 최저임금 올해 205.3달러로 14년 만에 4.5배 급등…베트남 진출 韓기업 92% '철수 안 해'",
+"url":"https://news.google.com/rss/articles/CBMie0FVX3lxTFBDb0xOc1o2d3pmZ3hCY1pvUy00WklXaUc4MjRLX2g0VjNfdHF4N2NFRnRzZU1ETDNaeGd0b0I4cE81VExnaE1sSkdZb0Q2RG9WWHZnbW1xN21WZV9PcGNiajJYeHF0a3F4MExqcTVDdVZVMzVqdjJYcXFHdw?oc=5",
+"outlet":"데일리매거진",
+"via":"google",
+"date":"2026-11-09T09:35+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
+]
+}
+],
+"ai":{
+"link":"1장 · 해외 최저임금 변화와 다국적 기업의 고용 선택",
+"qs":[
+"해외 진출 한국 기업이 현지 최저임금 상승에도 철수하지 않는 이유는 무엇이라고 볼 수 있는가?",
+"최저임금이 빠르게 오를 때 현지 근로자의 고용 조건과 기업의 고용 전략은 어떻게 달라지는가?",
+"국제 고용환경 변화 속에서 한국의 노사는 해외 사업장의 고용관계에 어떤 책임을 져야 하는가?"
+]
+},
+"orig":"http://www.dailymagazine.co.kr/news/newsview.php?ncode=1065567138654879",
+"chk":1
+},
+{
+"id":"20f5ea60f9",
+"title":"[사회뉴스] 고용보험 부정수급 집중단속...지금 자진신고 시 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMickFVX3lxTE9TeTlqMzkwNWhXc19rSFRfSnQyREFQTFI1azJBOHRoeEF3RUk2cUFTcFVTWlFFSjExeWNMbDQ1dEdUR0dGUnNiMjJwQkpOSk9Hd3hCX2JmNUw0RnZQN1Z5eFZ3bmtQaTc4Ty1tWFVqUVIxdw?oc=5",
+"outlet":"아웃소싱타임스",
+"via":"google",
+"date":"2026-11-09T09:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 단속과 자진신고 제도",
+"qs":[
+"부정수급 집중단속과 자진신고 추가징수 면제를 병행하는 방식은 사업주의 자발적 신고를 이끌어내는 데 효과가 있는가?",
+"단속 강화가 사업주와 근로자 사이의 신뢰 관계에 어떤 영향을 미치는가?",
+"고용보험 재정을 지키면서도 성실 납부자의 부담을 줄이려면 어떤 제도 설계가 필요한가?"
+]
+},
+"orig":"https://www.outsourcing.co.kr/news/articleView.html?idxno=204280",
+"chk":1,
+"img":"https://cdn.outsourcing.co.kr/news/photo/202611/204280_56852_2936.jpg"
+},
+{
+"id":"b9d6020a96",
+"title":"고용노동부 플랫폼노동자 지원기구 이름 공모한다",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9Bc3BiYnVJcW9MVkE4aFN6NTNuRTlyeXVUbEZJdEhSTzhNSFBPSUtEbUg2RUlWWUU1bEJia2p5VmZZYTRnNjFpZUQ3dW5LY3FSNnlNQTRVNXAwSnU1S0xvd0VSVXk1Rm5f?oc=5",
+"outlet":"공감신문",
+"via":"google",
+"date":"2026-11-09T09:29+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":2,
+"kw":[
+"플랫폼노동"
+]
+}
+],
+"ai":{
+"link":"2장 · 플랫폼 노동자 지원기구와 정부의 역할",
+"qs":[
+"플랫폼노동자를 지원하는 기구의 이름을 공모로 정하는 방식은 플랫폼노동자의 정체성과 참여를 높이는 데 도움이 되는가?",
+"플랫폼노동자 지원기구는 근로자성이 불분명한 노동자의 보호에 어떤 역할을 맡을 수 있는가?",
+"플랫폼 기업과 정부, 노동자 단체 중 누가 플랫폼노동자 지원 체계를 주도해야 하는가?"
+]
+}
+},
+{
+"id":"7988c0982c",
+"title":"내년 일자리 예산 25조1484억원…청년 첫 취업지원제 신설",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE5GdFRWNjJNdFc4WUF0V3pkSFhCVTJIVWd4WWIyaFBwT3dwQVgwSm1tRVJ1T1RLUEF0a3RPY20tRXJBLUwtNE5CclVHaXhjeXpaTUpOcFM2cDRLeG5QMkt1M0hxME1kcFY3YkQ1NzJnYng?oc=5",
+"outlet":"thedailyeconomy.kr",
+"via":"google",
+"date":"2026-11-09T09:24+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 정부 고용정책 예산과 청년 취업 지원",
+"qs":[
+"청년 첫 취업을 지원하는 제도를 신설하는 정책은 청년 고용 문제를 해결하는 데 충분한 수단인가?",
+"대규모 일자리 예산이 실제 고용 성과로 이어지기 위해 확인해야 할 조건은 무엇인가?",
+"청년 취업지원과 기존 근로자 보호 정책 사이에서 정부 예산은 어떻게 배분되어야 하는가?"
+]
+},
+"orig":"https://www.thedailyeconomy.kr/news/articleView.html?idxno=6661",
+"chk":1,
+"img":"https://cdn.thedailyeconomy.kr/news/thumbnail/202611/6661_10400_1938_v150.jpg"
+},
+{
+"id":"173cf500a0",
+"title":"[경제, 알고 보면] 정년이 65세로 늘어나면 청년 일자리는 줄어들까",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE9IWk1ZVHFNU2NqLVJ1R21ReGNfdXFCYkJ3cFltSjF1OEdHTl9mbVpKY0lfa1RQdmpYY0hvdDJDOFZfdHAtSFJNcE1PRnIyaWFnVmo2S0dsRTBaVXY5cFJnUjkyUmlheVBmbUdFQ2tR?oc=5",
+"outlet":"폴리뉴스 Polinews",
+"via":"google",
+"date":"2026-11-09T09:23+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+},
+{
+"ch":1,
+"kw":[
+"청년 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 정년 연장과 청년 고용의 관계",
+"qs":[
+"정년이 연장되면 청년 신규 채용이 줄어든다는 우려는 실제 고용 구조에서 어떤 조건에서 성립하는가?",
+"정년 연장 논의에서 고령 근로자의 임금 체계와 고용 안정은 어떻게 함께 고려되어야 하는가?",
+"정년 연장이 청년 고용에 미치는 영향을 판단할 때 노사와 정부가 어떤 자료와 기준을 공유해야 하는가?"
+]
+}
+},
+{
+"id":"047498cd43",
+"title":"\"인천항 화물노동자들에 중대재해처벌법 적용하라”",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE11NkVUWlNPcmpVaHNubk9rWkdNUzlwMTRIeVppUzhhZmRObFJHQXhST0ExazFld2lJeklqd084RGRhOGotd29CNnZwRlp5a3JxdDBNaHpoUk53YkhfT292Qw?oc=5",
+"outlet":"해양통신",
+"via":"google",
+"date":"2026-11-09T09:22+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+],
+"ai":{
+"link":"2장 · 화물노동자와 중대재해처벌법 적용 범위",
+"qs":[
+"화물노동자에게 중대재해처벌법을 적용해야 하는지는 근로자성과 원청의 책임을 어떻게 판단하느냐에 따라 달라지는가?",
+"항만이나 물류 현장의 특수형태 노동자에게 산업안전 책임을 누구에게 물어야 하는가?",
+"원청과 하청, 특수형태 노동자 사이에서 안전 책임을 나누는 기준은 어떻게 마련되어야 하는가?"
+]
+},
+"orig":"https://oceanpress.co.kr/news/article.html?no=31727",
+"chk":1,
+"img":"https://www.oceanpress.co.kr/data/photos/20261146/art_17941837139482_43c04d.jpg"
+},
+{
+"id":"ed15881bf5",
+"title":"김영훈 노동장관, 주말 긴급 기관장회의… 산재 감독 강화 지시",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTFBLT21MSXlZZXVudlVnRFNaOEpiZlFTclVXb2hyS1ZxVUVTODNtZktxTnpab2hrX0FGRy11T2ZmVEVjYmVuVDJuN0h2V3pxdjZNS3NlWEU1MFlaZ0FNS2dCR3FQcksyVTBmQTE0S3BCOW4?oc=5",
+"outlet":"안전신문",
+"via":"google",
+"date":"2026-11-09T09:22+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재예방 감독 강화와 노동행정의 역할",
+"qs":[
+"노동부 장관이 주말에 긴급회의를 열어 산재 감독을 강화하도록 지시하는 방식은 산재 예방에 효과적인가?",
+"산재 감독을 강화할 때 감독의 대상과 방식은 사업장 규모와 업종에 따라 어떻게 달라져야 하는가?",
+"산재 예방에서 행정 감독과 사업장 자율 안전관리 중 어느 쪽에 더 무게를 두어야 하는가?"
+]
+}
+},
+{
+"id":"8b04a32fb7",
+"title":"고용보험 부정수급 집중신고 11월 9일부터···자진신고 땐 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE5hZEJuT1dmOTBqb2FiemdoUVlLblRIdHhOcmpaYmJzLWpMam8tcldqV19hQlh6d052el9CZl82eW9VMkRjOHdNNVVTazU0S0g2dWMtcjBFbHljTVg0amlDSkFkWTRFVDlGbG5YdQ?oc=5",
+"outlet":"사이드뷰 인터넷신문사",
+"via":"google",
+"date":"2026-11-09T09:14+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 집중신고와 추가징수 면제",
+"qs":[
+"집중신고 기간을 정해 자진신고를 받는 방식은 부정수급 근절과 제도 신뢰 중 어느 쪽에 더 큰 영향을 미치는가?",
+"자진신고 면제 조치가 끝난 뒤에도 부정수급을 줄일 수 있는 방법은 무엇인가?",
+"고용보험 부정수급에 대해 추가징수 면제를 허용하는 정책의 정당성은 어떤 기준으로 판단할 수 있는가?"
+]
+}
+},
+{
+"id":"bee87e0536",
+"title":"노동부, 고용보험 부정수급 집중신고…자진신고시 최대 5배 추가징수 '면제'",
+"url":"https://news.google.com/rss/articles/CBMia0FVX3lxTE5IY1JJNnVoZWc5M2k0YXBab2JWY1kxOE0xRVVERUd3YVA5N3RfUHVBSUxxTzFDU3BsSURPSWRpak0zcWlsOW41cVA1M2c1c0otTEpZT0RTRU5leEpwSFVqOVpDVU9ZUzZnZW80?oc=5",
+"outlet":"BBS불교방송",
+"via":"google",
+"date":"2026-11-09T09:10+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 자진신고와 추가징수",
+"qs":[
+"자진신고 시 추가징수를 면제하는 방식은 부정수급을 줄이는 데 실효성이 있는가?",
+"추가징수 금액의 크기가 사업주의 신고 결정에 어떤 영향을 주는가?",
+"부정수급 문제를 해결하는 데 있어 제재 강화와 자진 신고 유도 중 어느 쪽이 더 바람직한가?"
+]
+}
+},
+{
+"id":"b9e1d82015",
+"title":"청년부터 중장년까지 '취업 연결'…경기도, 일자리 정책 또 수상",
+"url":"https://news.google.com/rss/articles/CBMiTkFVX3lxTE5LSmZCNDVfU19FaVZSTzVadlhTbHR5OXd0V3pwS1pCLWRaMmIzRVlIeGNWZ2NLMUtyWXRxT19IOWtWbVpVdTNXYm5nOWVsZw?oc=5",
+"outlet":"전자신문",
+"via":"google",
+"date":"2026-11-09T09:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 환경 변화에 따른 고용 서비스와 지자체 일자리 정책",
+"qs":[
+"지자체의 취업 연결 정책은 청년과 중장년의 고용 환경 변화에 어떻게 대응할 수 있을까요?",
+"일자리 정책의 성과를 수상이나 실적으로 평가하는 방식은 노동자의 실제 고용 안정을 잘 보여줄까요?",
+"취업 연결 정책은 개인의 직업 이동을 돕는 것과 노동시장 구조를 바꾸는 것 중 어디에 더 무게를 두어야 할까요?"
+]
+}
+},
+{
+"id":"3e77723e51",
+"title":"한국노총, 정년 연장 연내 입법 촉구…정책연대 파기 경고",
+"url":"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XWFExc3h1UFVHRXFqVERSVG9mVTl1d0Zyc1hzYV93VWRDamxzdDg0OXFJRHMzZUFaRWFmamRBSVlNV1VneXU1VlBJeGMtTmdkSXJQT2Z6Q2tOdFBKZG5sTzZ3?oc=5",
+"outlet":"cwn.kr",
+"via":"google",
+"date":"2026-11-09T09:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+],
+"ai":{
+"link":"8장 · 노동조합의 정치적 교섭력과 정년 연장 입법",
+"qs":[
+"정년 연장 입법을 노동조합이 정책연대와 연결해 요구하는 것은 노사정 관계에서 어떤 의미를 가질까요?",
+"정년 연장은 고령 노동자의 고용 보장과 청년 고용 기회 중 어느 쪽에 더 큰 영향을 미칠까요?",
+"노동조합이 입법 과정에서 정치적 압박을 사용하는 것은 고용관계 시스템을 건강하게 만들까요?"
+]
+}
+},
+{
+"id":"52956de6e8",
+"title":"“인천항 잇단 산재, 터미널 운영사 책임 물어야”…중처법 적용 촉구",
+"url":"https://news.google.com/rss/articles/CBMia0FVX3lxTFBLS1lsanc2N2NEd0t6UjA5WnBOcHBYdk10VV9JclBIaDVFQ2FlWkIxdzFoUG1LRElSWGJuUG1qYU9OY1YwWHpIdGZKNlJ2ak94SjVDTWhCZDllWEktYTMxU0xrdzNzNG5HdXY4?oc=5",
+"outlet":"해사신문",
+"via":"google",
+"date":"2026-11-09T08:59+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"6장 · 산업재해 책임의 범위와 원청·운영사의 책임",
+"qs":[
+"터미널 운영사처럼 직접 고용하지 않은 노동자의 산재에도 사업주 책임을 물어야 할까요?",
+"중대재해처벌법의 적용 범위를 넓히는 것은 현장 안전을 높이는 데 어떤 효과와 부작용을 가져올까요?",
+"항만 현장의 잇단 산재를 줄이기 위해 원청, 하청, 노동조합은 각각 어떤 역할을 맡아야 할까요?"
+]
+},
+"orig":"http://www.haesanews.com/news/articleView.html?idxno=152573",
+"chk":1,
+"img":"http://www.haesanews.com/news/thumbnail/202611/152573_83988_5843_v150.jpg"
+},
+{
+"id":"20cbe88ac5",
+"title":"음성군, 외국인 근로자 산업재해 예방 다국어 스티커 보급",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTFBkV1lvWi1zSV9RdHBEcUd0anZnQ1VnSjhJejRsOWJHVV9WWUYyaUdDdkVYU0p1OGZxV3J5ZzR4NDJ4dHd0UWdPOWYyallGRlpZMkdrN3RwT3VNYkhTUlJWZnhVZGx5RnY2aC1LV1h3?oc=5",
+"outlet":"국제뉴스",
+"via":"google",
+"date":"2026-11-09T08:47+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 외국인 근로자의 산업안전과 복리후생 지원",
+"qs":[
+"외국인 근로자에게 다국어 안전 정보를 제공하는 것은 산업재해 예방에 충분한 수단일까요?",
+"안전 정보 제공을 넘어 사업주가 외국인 근로자에게 어떤 의무를 더 져야 할까요?",
+"지자체가 외국인 근로자 안전 사업을 주도하는 것은 중앙정부 정책과 비교해 어떤 장단점이 있을까요?"
+]
+}
+},
+{
+"id":"6b70eea3ba",
+"title":"[연재] 산업현장 안전에 미래 달렸다 – 매니폴드 커플러 혼용에 따른 화재",
+"url":"https://news.google.com/rss/articles/CBMiakFVX3lxTFBOSkl6ZGhBUlVlZFhlYUhwNHJGZmNsdmxBX3RCMU9uSmVkNTRtTFVXMFZRaDZjSzNzZUJ4NTVVZy1icVY0Mm1SbmpnR093azRxdE5HLWwxQ0lIb0dSczd1bHBSdk9wb3YxckE?oc=5",
+"outlet":"철강금속신문",
+"via":"google",
+"date":"2026-11-09T08:42+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 산업안전 관리 책임과 작업장 안전 체계",
+"qs":[
+"서로 다른 규격의 부품을 혼용해 사고가 날 때 사용자와 작업자 중 누구에게 1차 책임이 있을까요?",
+"현장 작업자가 설비 안전을 스스로 점검하도록 하는 것은 안전관리에 도움이 될까요?",
+"산업현장 안전을 높이기 위해 작업 기준과 교육 중 무엇을 먼저 강화해야 할까요?"
+]
+}
+},
+{
+"id":"bc2d7625c1",
+"title":"국회입법조사처, 자발적 퇴사 청년에 생애 한 차례 구직급여 지급 검토...“도덕적 해이 우려 크지 않아”",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE02NnNubmxRQi1nRUNad0NJVk1kTHpQTjIwbW1SSVZwRlI5OEVEd3E4RkRNWHk5TEpKcHF6M281ZHhvNEk4MEkxeVBad1NoTzhnRlh1Y2lSUHVsOG1xY1VtLXRhSFZCZHI2SXJBSQ?oc=5",
+"outlet":"everynews.co.kr",
+"via":"google",
+"date":"2026-11-09T08:28+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 구직급여 제도와 자발적 퇴사자 보호",
+"qs":[
+"자발적 퇴사 청년에게 구직급여를 한 차례 지급하는 것은 고용보험의 사회안전망 기능을 강화할까요?",
+"도덕적 해이 우려가 크지 않다는 판단은 제도 설계에서 어떤 근거로 검토되어야 할까요?",
+"구직급여 수급 요건을 넓히는 것과 재취업 지원을 강화하는 것 중 어느 쪽이 청년 고용에 더 효과적일까요?"
+]
+}
+},
+{
+"id":"fd3f7e6f1b",
+"title":"\"AI가 사라지게 한 취업 사다리, 함께 새 길 찾자\"… 광고계 선배들이 전한 생존법",
+"url":"https://news.google.com/rss/articles/CBMifkFVX3lxTE00OU5OM1BsZTVvQ1pDejlpOW1wUzJaMmYwTG56dWw4b0ptcUhEZk9jSEk0WnNEMktpcFpXNHctS19CWkNtY0tnc1pjdXNTd3NFZ0p4eFhYRWx5NkhYdi0zN2lLS1FYbHhEQzkzdTZRMWUzQ2xxOXg4MEZaWVdHQQ?oc=5",
+"outlet":"브랜드브리프",
+"via":"google",
+"date":"2026-11-09T08:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"2장 · AI 확산과 고용형태 변화 속 청년 노동 진입 경로",
+"qs":[
+"AI 도입으로 신입 직무가 줄어드는 상황에서 청년이 경력을 쌓을 새로운 경로는 무엇이 될 수 있을까요?",
+"기업은 AI 도입과 신입 채용 사이에서 어떤 책임을 져야 할까요?",
+"선배 세대의 경험 공유는 노동시장 전환기의 청년에게 실질적인 도움이 될까요?"
+]
+}
+},
+{
+"id":"0cacc66c62",
+"title":"양산노일센터 \"노년의 행복은 일자리에서 시작\"",
+"url":"https://news.google.com/rss/articles/CBMib0FVX3lxTFBIRGkwMTBzZ3lqbW5WZ2hKV2Z3YmdlVVhMME55M01Kcm5Ta2hVb0hyVFBKRW1WNUl4UmozQ1J6RkdNMXhJTU56RVJUUUpnOUdCcG9zOGN1TzdlZUNPbWRNWFFaTW9pNVR1YWFFbUNHMA?oc=5",
+"outlet":"양산신문",
+"via":"google",
+"date":"2026-11-09T07:40+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"좋은 일자리"
+]
+}
+],
+"ai":{
+"link":"7장 · 고령 노동자의 일자리 보장과 지역 사회 노동운동",
+"qs":[
+"고령자 일자리를 공공이 제공하는 것과 민간 고용 확대를 유도하는 것 중 어느 방식이 더 지속 가능할까요?",
+"노년의 일자리는 생계 수단과 사회 참여 중 어떤 가치에 더 가깝게 설계되어야 할까요?",
+"지역 단위 고령자 일자리 사업에서 노동조합이나 시민단체는 어떤 역할을 할 수 있을까요?"
+]
+}
+},
+{
+"id":"dc8cabbde3",
+"title":"학교 비정규직 노동자들 27일 총파업 예고",
+"url":"https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsVUFKUXh3TnJVVmNWVUFfNld4bVNaVk1iTzE2emZPM2pJMFgyZ3JBT0RQWUFSbFRwclRieFkxRlctbXJFb2l3akhCNXZEVlU?oc=5",
+"outlet":"제주MBC",
+"via":"google",
+"date":"2026-11-09T07:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"총파업",
+"파업"
+]
+},
+{
+"ch":2,
+"kw":[
+"비정규직"
+]
+}
+],
+"ai":{
+"link":"9장 · 공공부문 비정규직 노사관계와 총파업 쟁의",
+"qs":[
+"학교 비정규직 노동자의 총파업은 공공부문 교섭에서 어떤 의미를 가질까요?",
+"쟁의행위가 학생 교육권과 충돌할 때 노사는 어떻게 균형을 찾아야 할까요?",
+"공공부문 비정규직의 처우 개선은 누가 교섭 상대가 되어야 실효성이 있을까요?"
+]
+},
+"orig":"https://jejumbc.com/NewsArticle/872131",
+"chk":1
+},
+{
+"id":"578a4c7ce0",
+"title":"한 달 내내 야근했는데 월급은 그대로…이게 맞나요?”",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9TZC15bEZzdm1VZHlUMHlvVklpYmZqMlVXUW9qOTBHZ0xnSy0yclNyaGV0QlhKYTV4enhVR1BSZF83bWYwT3NRbmR1TGl3aE41TzRKLXVnbXFKS2hBV2c2d2Vvc1NFYUxq?oc=5",
+"outlet":"신동아",
+"via":"google",
+"date":"2026-11-09T07:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+}
+],
+"ai":{
+"link":"5장 · 연장근로 수당과 임금명세서 관련 근로계약 이슈",
+"qs":[
+"야근이 계속되는데 월급이 그대로인 경우 노동자는 어떤 근거로 임금 계산을 확인해야 할까요?",
+"포괄임금제 관행은 노동시간 관리와 임금 보호 중 어느 쪽에 더 기여한다고 볼 수 있을까요?",
+"사업주가 임금 산정 방식을 설명하지 않을 때 노사 간 갈등은 어떤 절차로 해결하는 것이 좋을까요?"
+]
+}
+},
+{
+"id":"5b41308346",
+"title":"저소득 산재노동자에 무료 법률 지원···내년 3월 '산재보상 대리인 제도' 시행",
+"url":"https://news.google.com/rss/articles/CBMic0FVX3lxTE5ob3pTSzk0RWJSZVpUT1RtUnBaWnNwV0xyN09sMWFVbFUwanluWU10cThyQVExcFhQaTdkVUl5U2lJZEdwME54eWRSMFl2a2d5RERjeVNOd1QyZFU3d2JpN19JSG9jZjdobjRSQXZXNGt6b3PSAXdBVV95cUxOMkpoeHBkZW03V3RVYWYzY3A4Y0JkTUVnSV81SmtNaGhfWFRjNnAyUzREMnh6cmFJYzlBbUwzLVJZLTRHeEhLMXB3TXgyTFNIZTNWYnNkekNhUUZkVGo2bEVBNDczYjZJME4zSTlsTFpveGFZeHpjOA?oc=5",
+"outlet":"뉴스프리존",
+"via":"google",
+"date":"2026-11-09T06:58+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재보험 급여 청구와 취약계층 권리 보장",
+"qs":[
+"저소득 산재노동자에게 무료 법률 지원을 제공하는 것은 산재보험 급여 접근성을 얼마나 높일까요?",
+"산재보상 대리인 제도는 근로자와 공단의 관계를 어떻게 바꿀 수 있을까요?",
+"법률 지원을 공공이 맡는 것과 노동단체가 맡는 것 중 어느 쪽이 취약계층에게 더 적합할까요?"
+]
+}
+},
+{
+"id":"80a1a121e5",
+"title":"[고용노동] 고용노동부, 하반기 고용보험 부정수급 집중단속... \"자진신고하면 추가징수 면제\"",
+"url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xbVFCemQ3eFdoSkpERFpXRG53YjN6U19DcWhQMHJqZEtCVkVRU3NodUZRWWtValRscVozak5uUHI1bWxxaXprRVNReUVOLUNVWmlXbDdIcER4SjVTSnpXWXRSYkJUQ00?oc=5",
+"outlet":"CBC뉴스",
+"via":"google",
+"date":"2026-11-09T06:35+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 단속과 보험료 추가 징수",
+"qs":[
+"자진신고 시 추가 징수를 면제하는 제도는 부정수급 예방에 효과적일까요?",
+"부정수급 단속 강화가 정당한 수급자의 권리 행사를 위축시키지는 않을까요?",
+"고용보험 부정수급을 줄이기 위해 사업주와 노동자 각각에게 어떤 책임을 나눠야 할까요?"
+]
+}
+},
+{
+"id":"bc0f96cc5e",
+"title":"이주노동자의 언어",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237631",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"임금체불",
+"체불"
+]
+}
+],
+"ai":{
+"link":"3장 · 미등록 이주노동자의 근로계약과 임금·퇴직금 청구",
+"qs":[
+"미등록 이주노동자가 임금을 현금으로 받기 위해 사업장에 방문하고 서명해야 하는 상황은 근로계약의 자율성 측면에서 어떻게 볼 수 있을까요?",
+"언어 장벽이 임금체불 진정이나 합의서 작성에서 노동자에게 어떤 불리함을 만들까요?",
+"미등록 신분의 노동자도 임금과 퇴직금을 보호받기 위해 어떤 제도적 장치가 필요할까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237631_115875_0836_v150.jpg"
+},
+{
+"id":"8d209336cc",
+"title":"AI와 필란트로피의 미래",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237630",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"인공지능"
+]
+}
+],
+"ai":{
+"link":"7장 · 기록과 지식의 사회적 활용을 둘러싼 AI 시대의 노동 가치",
+"qs":[
+"AI가 개인의 기록이나 경험을 학습하는 과정에서 기여자에게 어떤 권리와 보상이 돌아가야 할까요?",
+"공익을 위한 기술 기부는 노동의 가치를 약화시킬까요, 아니면 새로운 참여 기회를 열까요?",
+"AI 시대에 사회적 기여를 평가하는 기준은 누가 정해야 할까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237630_115874_0835_v150.jpg"
+},
+{
+"id":"adb5adb6aa",
+"title":"주간일정(11월9~15일)",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237629",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"괴롭힘",
+"갑질"
+]
+},
+{
+"ch":7,
+"kw":[
+"노사정"
+]
+}
+],
+"ai":{
+"link":"8장 · 노동조합 간부 활동과 노사 공동 대응 과제",
+"qs":[
+"직장 내 괴롭힘 근절을 위한 노사 공동 선언은 실제 현장 변화를 이끌 수 있을까요?",
+"노동조합 간부의 일상적 교섭과 조직 활동은 조합원의 권익 보호에 어떤 역할을 할까요?",
+"노사정 협의와 연맹 차원의 대정부 활동은 현장 노조의 요구를 얼마나 잘 반영할까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237629_115876_913_v150.jpg"
+},
+{
+"id":"c3e20d11a5",
+"title":"[정부 암묵지 사업] 숙련 뺏고 보상은 ‘AI 관리 직무 재배치 검토’?",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237628",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"인공지능"
+]
+}
+],
+"ai":{
+"link":"1장 · 기술 변화에 따른 숙련 노동자의 고용 안정과 직무 재배치",
+"qs":[
+"노동자의 숙련 지식을 AI 모델 개발에 활용할 때 소유권과 동의 절차는 어떻게 정해져야 할까요?",
+"AI 관리 직무로의 재배치는 기존 숙련 노동자의 고용 안정을 보장할 수 있을까요?",
+"정부 사업에서 참여자 보상을 설계할 때 노동조합은 어떤 역할을 해야 할까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237628_115873_0835_v150.jpg"
+},
+{
+"id":"81c771d3d6",
+"title":"산재보상 대리인 준비 ‘착착’ 내년 예산 39억원 반영",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237627",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재",
+"산재보험",
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재보상 대리인 제도와 사회취약계층 보험급여 접근",
+"qs":[
+"산재보상 대리인 제도 도입을 위해 필요한 예산과 인력은 충분히 준비되었다고 볼 수 있을까요?",
+"대리인 제도가 보험급여 청구 과정에서 노동자의 권리를 실제로 강화할 수 있을까요?",
+"대리인의 자격과 역할을 어떻게 관리해야 부작용을 막을 수 있을까요?"
+]
+},
+"chk":1
+},
+{
+"id":"6614698e19",
+"title":"올해 공공기관 경영평가 키워드 “국정과제·안전사고”",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237626",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"공공기관"
+]
+}
+],
+"ai":{
+"link":"9장 · 공공기관 경영평가와 노사 공동 대응 과제",
+"qs":[
+"공공기관 경영평가에서 국정과제 이행과 안전사고 개선을 함께 평가하는 것은 적절할까요?",
+"경영평가 준비 과정에 노동조합이 참여하면 어떤 효과와 한계가 있을까요?",
+"공공기관의 성과 평가가 노동자의 근로조건 개선과 연결되려면 어떤 기준이 필요할까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237626_115872_0834_v150.jpg"
+},
+{
+"id":"dc806bae93",
+"title":"임금피크제 들어가면 성과급도 줄어드나요",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237625",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금",
+"포괄임금",
+"통상임금"
+]
+},
+{
+"ch":8,
+"kw":[
+"성과급"
+]
+}
+],
+"ai":{
+"link":"5장 · 임금피크제와 성과급·퇴직금 등 임금체계 변화",
+"qs":[
+"임금피크제가 적용되면 성과급과 임금 수준을 어떻게 조정해야 노동자가 납득할 수 있을까요?",
+"대법원의 통상임금 판단 변화는 수당과 퇴직금 계산에서 노사 갈등을 줄일까요, 늘릴까요?",
+"포괄임금제와 최저임금 산입범위 논쟁에서 노동자와 사용자의 이해는 어떻게 다를까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237625_115871_0834_v150.jpg"
+},
+{
+"id":"f7688ddbce",
+"title":"“결혼이주여성 노동자로 호명하고 노동정책으로 접근해야”",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237624",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[],
+"ai":{
+"link":"6장 · 결혼이주여성 노동자의 차별과 노동정책 편입",
+"qs":[
+"결혼이주여성을 노동자로 호명하면 이들이 받는 차별과 권리 보장은 어떻게 달라질까요?",
+"결혼이주여성의 취업 지원을 노동정책의 일부로 두는 것과 가족·복지정책으로 두는 것은 어떤 차이를 만들까요?",
+"노동시장에서 이주 여성이 겪는 차별을 줄이기 위해 사업주와 노동조합은 무엇을 할 수 있을까요?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237624_115870_0833_v150.jpg"
+},
+{
+"id":"ef4263d3c6",
+"title":"[중대재해 리포트 ⑪ 좌담회] 중대재해에 집행유예 반복 ‘벽’에 부딪힌 중대재해법",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237623",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+],
+"ai":{
+"link":"1장 · 고용관계 법제 환경 변화와 사용자 책임",
+"qs":[
+"중대재해처벌법상 경영책임자 처벌이 집행유예에 머무는 현상은 법의 실효성을 높이는가, 낮추는가?",
+"처벌 수위를 높이는 것과 기업의 안전 투자 및 예방 체계를 강화하는 것 중 무엇이 현장 재해 감소에 더 효과적인가?",
+"무죄 판결이 쌓이는 상황에서 중대재해처벌법의 적용 기준과 사용자 책임 범위는 어떻게 정비되어야 하는가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237623_115867_0832_v150.jpg"
+},
+{
+"id":"dd2a771c4c",
+"title":"“여성 의제는 교섭에서 가장 먼저 양보하는 카드”",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237622",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"교섭"
+]
+},
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+],
+"ai":{
+"link":"9장 · 단체교섭 의제 설정과 여성 의제",
+"qs":[
+"임금·정년 같은 의제와 여성 의제가 교섭에서 우선순위 경쟁을 할 때, 노조는 의제 배분을 어떤 기준으로 정해야 하는가?",
+"작업복 규격이나 모성보호 사용 제약 같은 현장 문제는 단체협약에 어떤 방식으로 담아야 실효성이 있는가?",
+"육아기 단축근무의 불이익을 줄이기 위해 노사 교섭과 법·제도 개선 중 어느 쪽이 더 중요한가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237622_115865_0832_v150.jpg"
+},
+{
+"id":"ab85d2c713",
+"title":"현대식 지역정보개발원노조 위원장 취임",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237621",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":8,
+"kw":[
+"노사관계"
+]
+},
+{
+"ch":9,
+"kw":[
+"교섭"
+]
+}
+],
+"ai":{
+"link":"8장 · 노동조합 집행부와 노사관계 이해관계자",
+"qs":[
+"새 노조 집행부가 강조하는 '노사 상생'은 조합원 신뢰를 얻는 데 어떤 역할을 하는가?",
+"교섭대표노조로서 노조 위원장이 사용자와 조합원 사이에서 조율해야 할 이해관계는 무엇이며 어떻게 균형을 잡아야 하는가?",
+"노조 창립 기념과 집행부 출범이 노사관계 안정에 실제로 기여하려면 어떤 후속 조치가 필요한가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237621_115864_0831_v150.jpg"
+},
+{
+"id":"70d665e62c",
+"title":"플랫폼·프리랜서 37% 최소 한 달 일감 끊겼다",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237620",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":2,
+"kw":[
+"프리랜서",
+"노동공제회"
+]
+},
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"2장 · 플랫폼·프리랜서 고용형태와 사회보험 공백",
+"qs":[
+"일감 단절에 대비하는 제도로 실업부조와 상해·질병공제 중 어느 쪽에 우선순위를 두어야 하는가?",
+"플랫폼·프리랜서 노동자의 재해 비용을 누가 분담해야 하는가: 노동자, 플랫폼 사업자, 국가 중 어디인가?",
+"직군별로 요구가 다른 노동공제회는 하나의 제도로 운영하는 것이 나은가, 직군별로 나누는 것이 나은가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237620_115863_0831_v150.jpg"
+},
+{
+"id":"edf0b952d1",
+"title":"[민주노총 위원장 후보 연쇄인터뷰 ① 엄길용 후보] “뒤통수 맞고도 대화? 정부 일대일로 상대하겠다”",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237619",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":7,
+"kw":[
+"사회적 대화",
+"사회적 대화 노동"
+]
+}
+],
+"ai":{
+"link":"7장 · 노동운동과 사회적 대화",
+"qs":[
+"사회적 대화는 노동운동에 실질적 성과를 주는가, 아니면 투쟁 동력을 약화시키는가?",
+"정부와의 대화를 '일대일' 방식으로 할지 여부는 노동운동의 교섭력에 어떤 영향을 미치는가?",
+"사회적 대화를 이미 하고 있다면 그 방식과 내용을 어떻게 바꿔야 한다고 보는가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237619_115861_0830_v150.jpg"
+},
+{
+"id":"86172042cd",
+"title":"거리로 나온 양대 노총, 노정관계 ‘이상기류’",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237618",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":7,
+"kw":[
+"노동자대회"
+]
+},
+{
+"ch":9,
+"kw":[
+"교섭"
+]
+}
+],
+"ai":{
+"link":"9장 · 노정관계와 정책 교섭",
+"qs":[
+"노정교섭이 열렸다가 경색되는 상황에서, 노동계와 정부 중 어느 쪽이 먼저 소통 방식을 바꿔야 하는가?",
+"정책연대를 유지하는 것과 대규모 집회로 압박하는 것 중 노동계의 요구를 관철하는 데 어느 쪽이 더 유효한가?",
+"정책 추진 과정에서 노동계 의견이 반영되는 절차는 어떻게 제도화되어야 하는가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237618_115859_0829_v150.jpg"
+},
+{
+"id":"1739af4ca4",
+"title":"[70년 넘은 구시대 유물] 일방중재 피하려 ‘위장 해산’에 ‘단협 실효’ 감수하는 노조들",
+"url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237617",
+"outlet":"매일노동뉴스",
+"via":"rss",
+"date":"2026-11-09T06:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"단협",
+"파업",
+"쟁의"
+]
+},
+{
+"ch":6,
+"kw":[
+"노동위원회"
+]
+},
+{
+"ch":8,
+"kw":[
+"노동조합"
+]
+}
+],
+"ai":{
+"link":"9장 · 쟁의행위와 중재 제도",
+"qs":[
+"일방중재 제도는 노사 충돌을 줄이는 장치인가, 노조의 쟁의권을 제약하는 장치인가?",
+"노조가 일방중재를 피하려고 위장 해산을 택하는 상황은 노사관계의 신뢰에 어떤 영향을 주는가?",
+"단체협약 효력이 소멸하는 위험을 감수하더라도 노조가 택할 수 있는 현실적 대안은 무엇인가?"
+]
+},
+"chk":1,
+"img":"https://cdn.labortoday.co.kr/news/thumbnail/202611/237617_115857_0829_v150.jpg"
+},
+{
+"id":"4010b3c672",
+"title":"고용보험 부정수급 자진신고, 추가징수 2배 면제 기회와 현장 기록 관리의 실제",
+"url":"https://news.google.com/rss/articles/CBMiSkFVX3lxTFBXRlVQSUhYVEwxcG1GdGZSUEpQMFJiOGsxU0RvbmpuSUZNT0hva1l5LXAyRDVyem5IU0h0ZzZDd3FGb3FqeGo0dXFR?oc=5",
+"outlet":"얼리어답터뉴스",
+"via":"google",
+"date":"2026-11-09T06:02+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험과 복리후생 부정수급",
+"qs":[
+"자진신고에 대해 추가징수를 면제하는 제도는 부정수급 예방과 근로자 보호 중 무엇에 더 기여하는가?",
+"사업장이 현장 기록을 어떻게 관리해야 부정수급 문제를 줄일 수 있는가?",
+"부정수급 단속 강화와 자진신고 유도 중 어느 방식이 사업주의 행동을 더 바꿀 수 있는가?"
+]
+}
+},
+{
+"id":"c2f82998ae",
+"title":"초광역특구 사회적 대화 본격화…연내 합의는 미지수",
+"url":"https://news.google.com/rss/articles/CBMieEFVX3lxTFBycmZ0QXJIZUh0T0d4ajZvanN3SzdBOUN4c3hBZHRhTTlBNF9SWWlfeWkxQU5CejhIUlZHZ2ZxZ2c5dVRDUnpqSWYtbW1KOGh4T0E4UFplTFdlYTA1YnhzNTZTY3BhbTNIRGQ5YldHWW9PRjFyVnMtRNIBeEFVX3lxTFBycmZ0QXJIZUh0T0d4ajZvanN3SzdBOUN4c3hBZHRhTTlBNF9SWWlfeWkxQU5CejhIUlZHZ2ZxZ2c5dVRDUnpqSWYtbW1KOGh4T0E4UFplTFdlYTA1YnhzNTZTY3BhbTNIRGQ5YldHWW9PRjFyVnMtRA?oc=5",
+"outlet":"뉴시스",
+"via":"google",
+"date":"2026-11-09T06:01+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":7,
+"kw":[
+"사회적 대화"
+]
+}
+],
+"ai":{
+"link":"7장 · 사회적 대화와 지역 단위 노사 합의",
+"qs":[
+"초광역 단위의 사회적 대화는 중앙 단위 대화와 비교해 어떤 장점과 한계를 갖는가?",
+"연내 합의가 어려운 상황에서 대화를 지속하는 것은 노사관계에 어떤 의미가 있는가?",
+"지역 사회적 대화에서 노동계가 주장해야 할 핵심 의제는 무엇이라고 보는가?"
+]
+}
+},
+{
+"id":"cd851d7030",
+"title":"AI 인재 양성, 기본소득 창업 지원… 지자체·공공기관, 일자리 창출 눈에 띄네 [2026 대한민국 일자리 어워드]",
+"url":"https://news.google.com/rss/articles/CBMic0FVX3lxTFBxZFByanYwdnVadVFkaV80QUREcFVvWlZQd3pneWk4M282ejBiOENtNF9xSnZPdV9MZHJrZ3NoMFZ0WlBkZm1OUVVKWUpCZ2hCX2t3RGtOUkxXbWdfU3VsYkFDd1I2WTM1bk95VDFEVTROakXSAXNBVV95cUxQcWRQcmp2MHZ1WnVRZGlfNEFERHBVb1pWUHd6Z3lpODNvNnowYjhDbTRfcUp2T3VfTGRya2dzaDBWdFpQZGZtTlFVSllKQmdoQl9rd0RrTlJMV21nX1N1bGJBQ3dSNlkzNW5PeVQxRFU0TmpF?oc=5",
+"outlet":"한국일보",
+"via":"google",
+"date":"2026-11-09T06:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"공공기관"
+]
+},
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 일자리 정책과 지자체 역할",
+"qs":[
+"지자체와 공공기관이 AI 인재 양성이나 창업 지원을 통해 일자리를 만드는 방식은 지역 고용의 질을 높이는가?",
+"기본소득형 창업 지원은 일자리 창출 정책으로서 어떤 효과와 한계를 갖는가?",
+"일자리 정책 평가에서 창출된 일자리의 질과 지속성을 어떻게 측정해야 하는가?"
+]
+}
+},
+{
+"id":"7aeb560db6",
+"title":"지자체·공공기관 94곳, 일자리 정책 겨뤘다… \"일자리 창출 동기부여 되길\" [2026 대한민국 일자리 어워드]",
+"url":"https://news.google.com/rss/articles/CBMic0FVX3lxTE9fY0doUUUyRG9KTlB3aDVEbFRDS1dxVDBteGxfcUNGRndwNlgyVmJfcEdhZTZIZEl1WW11TU5NSGI3aDljNXdHZVpaazA2Y3JLRW5UR0J1SDZ3T0dYWGRwXzE5VWxkMzBKM20zd3FxZkRpdHPSAXNBVV95cUxPX2NHaFFFMkRvSk5Qd2g1RGxUQ0tXcVQwbXhsX3FDRkZ3cDZYMlZiX3BHYWU2SGRJdVltdU1OTUhiN2g5YzV3R2VaWmswNmNyS0VuVEdCdUg2d09HWFhkcF8xOVVsZDMwSjNtM3dxcWZEaXRz?oc=5",
+"outlet":"한국일보",
+"via":"google",
+"date":"2026-11-09T06:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"공공기관"
+]
+},
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 공공부문 일자리 정책 경쟁과 고용 환경",
+"qs":[
+"지자체와 공공기관 사이의 일자리 정책 경쟁은 실질적 고용 개선으로 이어지는가?",
+"일자리 어워드 같은 평가 제도가 정책 동기부여에 주는 효과와 부작용은 무엇인가?",
+"공공부문 일자리 정책에서 정규직 전환이나 고용 안정은 어떤 위치에 있어야 하는가?"
+]
+}
+},
+{
+"id":"75e05f4020",
+"title":"[노무, 톡!] ‘직장내 괴롭힘’과 셀프조사 방지",
+"url":"https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xdTN2ZEgzR244a1VrRVFoSWFPbDRuUG1TQ0pHM19OZHdJVDhfNTZTTjZjdTlSd2dmMEtBRkk5cDQ2bVNkazZ0enI4SHR3bE8tQ1RUaw?oc=5",
+"outlet":"이투데이",
+"via":"google",
+"date":"2026-11-09T06:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"괴롭힘"
+]
+}
+],
+"ai":{
+"link":"6장 · 직장 내 괴롭힘 조사와 징계",
+"qs":[
+"직장 내 괴롭힘 조사를 사용자가 직접 맡을 때 생기는 공정성 문제는 어떻게 해결해야 하는가?",
+"외부 기관이나 제3자 조사는 셀프조사 문제를 얼마나 줄일 수 있는가?",
+"조사 결과에 따른 징계 결정 과정에서 피해자와 가해자의 절차적 권리는 어떻게 보장되어야 하는가?"
+]
+}
+},
+{
+"id":"1b04121f89",
+"title":"고용노동부, 11월 9일부터 '고용보험 부정수급 집중신고기간' 운영…자진신고하면 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9tWXZYenpsRUxPM2lfOFFGTmV4MnEzSkxrejdaNndHcnh5NmF1dVZUQkJmRlFKQWVITEFiR0xYUXN2d3ZsUXNJZnBQdEthTmoza0pzRklHY1hJdWRFZGk1MEJsOXY4bnM?oc=5",
+"outlet":"씨원뉴스",
+"via":"google",
+"date":"2026-11-09T05:54+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험과 복리후생 부정수급 신고",
+"qs":[
+"집중신고기간 운영은 부정수급 예방에 실제로 효과가 있는가, 아니면 일시적 조치에 그치는가?",
+"자진신고 시 추가징수를 면제하는 방식은 사업주의 자진 신고를 얼마나 유도하는가?",
+"고용보험 부정수급을 줄이기 위해 사업장 기록 관리와 행정 점검 중 무엇을 강화해야 하는가?"
+]
+}
+},
+{
+"id":"3a41816f71",
+"title":"강원연구원 직장 내 괴롭힘·인사위 파행…강원도 책임론 확산",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE04cjl1bnhQYXBqZTlxcTNiWEZQNFZtaHU3UmMxWTBIU0FPNE82VWhNaTI2QnhUT1NhQ3hzNG1DUzFSMG5nTXlBOEVrY3ZELWNxdDVXMF93UEZIVWRNVV9GLXJKc0RhTmRy?oc=5",
+"outlet":"강원신문",
+"via":"google",
+"date":"2026-11-09T05:42+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"직장 내 괴롭힘",
+"괴롭힘"
+]
+}
+],
+"ai":{
+"link":"6장 · 직장 내 괴롭힘 조사와 인사위원회 공정성",
+"qs":[
+"인사위원회가 파행하면 직장 내 괴롭힘 사건의 징계 결정은 어떤 영향을 받는가?",
+"공공기관 인사 절차에서 기관장이나 상급기관의 책임은 어디까지인가?",
+"직장 내 괴롭힘 사건의 처리 절차를 공정하게 만들기 위해 인사위원회 구성은 어떻게 바뀌어야 하는가?"
+]
+},
+"orig":"https://www.gwnews.org/news/articleView.html?idxno=272520",
+"chk":1,
+"img":"https://cdn.gwnews.org/news/photo/202611/272520_290743_416.jpg"
+},
+{
+"id":"659980abc6",
+"title":"노동자 추정제 입법 요구, 구인 사업주의 계약·증빙 관행을 바꾼다",
+"url":"https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9mQVdzc2xISFBhQnNiRkJ3VXduYUp6VEZvQ2l1bmFiMmo5REZHUml2TlFzbVppTmhZOHRZekVDbWt6S1k?oc=5",
+"outlet":"knpp.co.kr",
+"via":"google",
+"date":"2026-11-09T05:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+}
+],
+"ai":{
+"link":"2장 · 노동자 추정제와 특수형태 근로",
+"qs":[
+"노동자 추정제를 도입하면 구인 사업주의 계약 및 증빙 관행은 어떻게 달라질 것인가?",
+"노동자성을 추정하는 방식은 플랫폼·프리랜서 노동자의 보호 범위를 넓히는가, 좁히는가?",
+"노동자 추정제 도입에 대해 사업주와 노동자가 각각 우려할 수 있는 지점은 무엇인가?"
+]
+}
+},
+{
+"id":"b9ea43fd46",
+"title":"삼성바이오로직스 노조, 2차 파업 돌입…QC·QA·물류 등 400명 참여",
+"url":"https://news.google.com/rss/articles/CBMidEFVX3lxTE1rMVpsbzYyMzAweEt0N3Y5VmgzVXdPNFJRMEtyOS1HMlFiekNIX29TU2YzYlNOYlhkQ0FmRTRQbUp3QVhQZFZpQ09RN0lZQzlSNmRkUTEzYmFhMlN3UWt1RDhtRWp5MHRqNm9UbGgzd3lOTmxM?oc=5",
+"outlet":"대한경제",
+"via":"google",
+"date":"2026-11-09T05:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"파업"
+]
+}
+],
+"ai":{
+"link":"9장 · 쟁의행위와 단체교섭 (파업 참여 범위)",
+"qs":[
+"QC·QA·물류 등 다양한 직무의 노동자가 함께 파업에 나설 때 교섭 의제는 어떻게 조정되어야 하는가?",
+"2차 파업과 같은 반복적 쟁의행위는 교섭 과정에서 어떤 효과와 비용을 낳는가?",
+"파업 참여 노동자의 범위를 넓히는 것이 사업장 교섭력에 주는 영향은 무엇인가?"
+]
+},
+"orig":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611060855041960925",
+"chk":1
+},
+{
+"id":"34e56d5daa",
+"title":"車-조선 노조도 N% 성과급 요구 줄파업… “근로손실일 1.5배로 늘어”",
+"url":"https://news.google.com/rss/articles/CBMidkFVX3lxTE5ZSmw4dUVUTVdqV3JhRUxjbW1uVkJVMFVuQVhpOUpSNXpzZmhES2xtM0F0SlhFTW1aUG9kd2NhMC12SC02emRVdjJ1OTJVdHRTUXNuMUI2QTJHMndMNkI1dC1YdmVTSzlfVTdSZVFpYTEtekJ4YnfSAWZBVV95cUxPVTZmbU9CanhGQnp5cmg1dUs1QjVRTHMxT2JNaldkMlY4OVRUbFdSMWhVZ09VbkdrUUdkbmc3SldVWFFaRWt1SW94VUJ6VWc5WXZHbnpVV0hPQW55OUE3Qjk2cnJuUWc?oc=5",
+"outlet":"동아일보",
+"via":"google",
+"date":"2026-11-09T04:30+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"파업"
+]
+},
+{
+"ch":8,
+"kw":[
+"성과급"
+]
+}
+],
+"ai":{
+"link":"9장 · 성과급 교섭과 쟁의행위",
+"qs":[
+"성과급 요구를 중심으로 한 연쇄 파업은 노사 간 임금 교섭의 방식을 어떻게 바꿀 수 있는가?",
+"근로손실일이 늘어나는 상황에서 파업의 정당성은 어떤 기준으로 평가해야 하는가?",
+"성과급 배분 기준을 노사가 합의하려면 어떤 정보 공유와 제도가 필요한가?"
+]
+}
+},
+{
+"id":"cee1090d98",
+"title":"'개인사업자 계약서'를 쥔 경비원·간병인…고령층 위장고용, 사회안전망을 허문다",
+"url":"https://news.google.com/rss/articles/CBMiQ0FVX3lxTE15NG1LRzNzSG55TGdXWGhrU2EzQ2xlaFpWTWEtd19yaXZFN2hQOUFQVzF0aHVrRmgtbkhBbWNzeVlOSk0?oc=5",
+"outlet":"한국공공정책신문",
+"via":"google",
+"date":"2026-11-09T02:51+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"고령"
+]
+},
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+}
+],
+"ai":{
+"link":"2장 · 위장 개인사업자와 고용형태 다양화",
+"qs":[
+"경비원이나 간병인을 개인사업자 계약으로 맺는 관행은 고용형태 다양화의 어떤 문제를 드러내는가?",
+"고령층 노동자의 위장고용은 사회안전망의 공백을 어떻게 키우는가?",
+"위장 개인사업자 계약의 실질을 판단할 때 어떤 기준이 가장 중요하다고 보는가?"
+]
+}
+},
+{
+"id":"a5e7a4b468",
+"title":"일자리 불안에 미 AI 반감 확산, 주(州)별 여건에 맞춤 대응해야",
+"url":"https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2dW5Zd2MyUzR1MWRSVnhBazZQV0w1NEp2Um5sblREcTFnNmRxb1hHMjVwZHQ5WmE2RFFqbFp2cU0tOUI3SGlOUV8xak4zQ2tWZVRhejBsbDhDSl9xQWc?oc=5",
+"outlet":"동행미디어 시대",
+"via":"google",
+"date":"2026-11-09T01:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 기술 변화와 고용관계 환경",
+"qs":[
+"AI 도입에 대한 일자리 불안은 노사관계에서 어떤 갈등 요인으로 나타나는가?",
+"AI 전환에 대응하는 방식은 지역별 여건에 따라 달라져야 하는가, 전국 단일 기준이 나은가?",
+"AI로 인한 고용 변화에 대비해 노동조합과 사용자가 교섭에서 다룰 의제는 무엇인가?"
+]
+}
+},
+{
+"id":"6f357a0d08",
+"title":"실업급여·육아휴직급여 부정수급 집중신고 9일 시작…자진신고 시 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE51MWoyNWczbHdQWXkyam9zbXN3Z0Zpc2pEaDVnLXR1Z0hvMEF2R0dJTEhmSUxMVERXQks3Q0ZuNWowYVJJVHdtX1N1T2RnaG1GUmdtWk4waWJzTjV4ZElod3BsbUQ1bmxi?oc=5",
+"outlet":"CBC뉴스",
+"via":"google",
+"date":"2026-11-09T00:05+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"실업급여",
+"육아휴직"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 신고와 급여 제도",
+"qs":[
+"실업급여와 육아휴직급여의 부정수급 집중신고는 사회보험 제도에 대한 신뢰를 높이는가, 낮추는가?",
+"자진신고에 대한 추가징수 면제가 수급 제도의 공정성 논란을 줄이는 데 충분한가?",
+"부정수급을 줄이면서도 정당한 수급자의 권리를 보호하려면 어떤 절차가 필요한가?"
+]
+}
+},
+{
+"id":"dba7b14a02",
+"title":"AI가 일자리 위협?…고용시장 영향 아직 불확실",
+"url":"https://news.google.com/rss/articles/CBMiYkFVX3lxTFA1NkFXQzNBeG9sNzVTWGFGekF0TWRYdGpNeUVValV0aWJrVzZUR3Q3UFI5NFV0NTBXU2FDMUdoODY1aUYxUHE4OF9faGFGSjZLMHY1LVFEcmtYZnIyVEV0VjN3?oc=5",
+"outlet":"미주중앙일보",
+"via":"google",
+"date":"2026-11-09T00:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · AI 등 기술 변화가 고용관계에 미치는 영향",
+"qs":[
+"AI 도입이 일자리 감소로 이어질지, 직무 재편으로 이어질지 근로자와 사용자는 각각 어떻게 판단할 수 있는가?",
+"고용 영향이 불확실한 상황에서 정부와 노사는 어떤 준비를 먼저 해야 하는가?",
+"기술 변화로 줄어드는 일자리와 새로 생기는 일자리의 질 차이를 고용관계 제도는 어떻게 다뤄야 하는가?"
+]
+}
+},
+{
+"id":"d0f7873521",
+"title":"[포스코 임단협⑰] 잠정합의안 51.69% 반대로 부결…교섭·쟁의 재개",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE1EX0hVUGJvWlNSYURwdHcwMHRPOU1DN1ZJaUFTVkxaNTlrLXJPMVpHUThRaVQ3cGVGeVRReXVta19oY2Zsdnpzd3EtZ09oV3VSVWNaWVFpMFp6aWVSWVZEdmZEZVJFczJTNnVDYQ?oc=5",
+"outlet":"페로타임즈",
+"via":"google",
+"date":"2026-11-09T00:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"잠정합의",
+"임단협",
+"교섭"
+]
+}
+],
+"ai":{
+"link":"9장 · 잠정합의안 부결 이후의 단체교섭과 쟁의행위 / 8장 · 조합원 의사와 노조 대표성",
+"qs":[
+"잠정합의안이 조합원 투표에서 부결되었을 때, 교섭 대표와 조합원 중 누구의 판단을 더 존중해야 하는가?",
+"부결 이후 교섭과 쟁의를 재개하는 것이 노사 관계의 신뢰에 어떤 영향을 미치는가?",
+"잠정합의안 부결 사례는 노조 내부의 의사결정 구조에 관해 어떤 과제를 보여주는가?"
+]
+},
+"orig":"https://www.ferrotimes.com/news/articleView.html?idxno=51372",
+"chk":1,
+"img":"http://www.ferrotimes.com/news/thumbnail/202611/51372_57073_462_v150.jpg"
+},
+{
+"id":"800c41602e",
+"title":"고용보험 부정수급 자진신고·제보 접수…추가징수 면제 혜택",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE96QTlwT2ItLVVURHBkZDJHVndFSTJfSXZobFVPaXhIdVc3elBjeXQ1dGVjdWZVWkZoSGlJbHlhb0NZcTZab3UwblNKQWZScnB2NV9ST3gtYXZ5Zk51b191UlRWd25SUWtIUHhRQzFB?oc=5",
+"outlet":"newfilenews.com",
+"via":"google",
+"date":"2026-11-08T23:35+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급과 사회보험 관리",
+"qs":[
+"부정수급 자진신고에 추가징수를 면제하는 방식은 부정수급 예방에 효과적인가?",
+"자진신고 제도가 근로자와 사업주의 책임 구분에 어떤 영향을 줄 수 있는가?",
+"사회보험 부정수급을 줄이기 위해 제도 설계와 신고 장려 중 무엇을 더 우선해야 하는가?"
+]
+}
+},
+{
+"id":"08b409a8b1",
+"title":"\"산재 신청부터 이의제기까지 무료\"···내년 3월부터 저소득층 전문가 대리인제 시행",
+"url":"https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BYWc4RHhZQ2hxaFk2aDhwUldMZG5vRXctdjMtaFRkRGt3TlN1M1dUcjdmc3RaUjJObkw0dVRMVTBDQ1pyNm9GZHFnWm1odDAyM0djeA?oc=5",
+"outlet":"더경남뉴스",
+"via":"google",
+"date":"2026-11-08T23:22+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"4장 · 산재보험 절차와 노동자 권리 보장",
+"qs":[
+"산재 신청과 이의제기 과정에서 전문가 대리인 제도가 필요한 근로자의 범위는 어디까지여야 하는가?",
+"무료 대리인 제도는 산재 인정 절차의 공정성을 높이는가, 아니면 다른 부작용을 낳는가?",
+"산재 분쟁 절차에서 노동자와 사업주의 정보 격차를 줄이기 위해 어떤 제도가 필요한가?"
+]
+}
+},
+{
+"id":"56f23653fa",
+"title":"[안전한 일터] 경사로서 지게차 넘어져 노동자 사망…무자격 운전·작업계획 부재",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTFBYRXFhbHQtLWJUcGZQTFBMMXVRTFFVSDFNbEU1bWxpTjQ0S1hCSENSZXpzSV93Rkp2VElpa0YtVnBrVFM5RGFxdG1uVnMtazRQUEZxZDZfazE1cDU0ZEpyckVKMkZLWUljMlRjWHdzNlI?oc=5",
+"outlet":"비즈중앙",
+"via":"google",
+"date":"2026-11-08T22:34+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 산업재해와 사업주의 안전보건 책임",
+"qs":[
+"무자격 운전과 작업계획 부재가 사고의 원인이었다면, 원청과 하청 중 누가 어느 정도 책임을 져야 하는가?",
+"현장 안전 관리는 법적 의무 준수와 현장 자율 중 무엇을 중심으로 해야 하는가?",
+"작업계획 수립과 자격 관리를 실효성 있게 하려면 사업장에는 어떤 장치가 필요한가?"
+]
+}
+},
+{
+"id":"51a9538303",
+"title":"광주 북구, 중대 재해 예방 총력...사고는 막고 안전은 높이고",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XTEZyUy1ORFpJN0gwSGxkOEFGWTBrYWk5cUFadjloSnZhYmMtb3N1QVkwWFp1dHdWbkctY25iNjZiU25VQ253bkc3OElVVGJrSFl5SHJveEw4U0N1aFJxdXI2X3k?oc=5",
+"outlet":"지이코노미",
+"via":"google",
+"date":"2026-11-08T21:38+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 중대재해 예방을 위한 지방자치단체와 사업장의 역할",
+"qs":[
+"지자체가 중대재해 예방에 적극 나서는 것은 사업장 자율 관리를 보완하는가, 아니면 책임을 흐리는가?",
+"중대재해 예방 활동을 평가할 때 사고 감소와 점검 실적 중 무엇을 기준으로 삼아야 하는가?",
+"중소 사업장의 안전 관리 역량을 높이기 위해 공공 기관은 어떤 역할을 할 수 있는가?"
+]
+},
+"orig":"https://www.geconomy.co.kr/news/article.html?no=325395",
+"chk":1,
+"img":"https://www.geconomy.co.kr/data/photos/20261145/art_17941353996542_18b066.jpg"
+},
+{
+"id":"aad3defdb1",
+"title":"“외국인 근로자 산업재해 예방” … 음성군, 안전보건 픽토그램 스티커 보급",
+"url":"https://news.google.com/rss/articles/CBMiakFVX3lxTFBHRHVQMFh3SkRNLU8xa0tPRXg4NEpEVmZid0pWOEh2VmJfZFZwN3RMZE9rdDZTa3lhVDE1THNJVVZsdFpfQWozZk55TWhocG9oQUZORGdhc1B1dmVXMWFJODJfd2VyUE5jUkE?oc=5",
+"outlet":"음성타임즈",
+"via":"google",
+"date":"2026-11-08T21:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+},
+{
+"ch":5,
+"kw":[
+"전보"
+]
+}
+],
+"ai":{
+"link":"2장 · 외국인 근로자의 고용 다양화와 산업안전 / 4장 · 산업재해 예방",
+"qs":[
+"외국인 근로자의 산재를 줄이기 위해 언어 장벽을 낮추는 시각 자료 같은 방법은 충분한가?",
+"외국인 근로자 안전 교육의 책임은 고용주, 지자체, 원청 중 누구에게 있어야 하는가?",
+"고용 형태가 다양해진 상황에서 외국인 근로자의 안전 관리는 기존 제도로 충분히 포괄되는가?"
+]
+}
+},
+{
+"id":"f3aba3fbbf",
+"title":"경남도 공공 비정규직, 단체교섭 길 열렸지만…의제 놓고 대립",
+"url":"https://news.google.com/rss/articles/CBMiWkFVX3lxTE1za0lZUUlkQmk1dl9kYVg2XzJ0TTFNUk8xLUpPOVNzclQwd3VLTGxyYjJNZElBajJaWjNyNnNOQ1c4WGsydWNlNy1ld0lha2hYUlNnNGxSOGJ0QdIBX0FVX3lxTE5FNnJvQkFOQWlsd25fUUZhaDJrX0FtRVVzWjJTTUFOZ01PclZxRUd5WkdoYmV1RFpzRUcza1NnNlNGa045ejJISEpucWQ0Q3g2b1d3ejduamFlcUoyRDNV?oc=5",
+"outlet":"경향신문",
+"via":"google",
+"date":"2026-11-08T20:51+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"단체교섭",
+"교섭"
+]
+},
+{
+"ch":2,
+"kw":[
+"비정규직"
+]
+}
+],
+"ai":{
+"link":"9장 · 공공부문 비정규직의 단체교섭 의제 설정",
+"qs":[
+"공공부문 비정규직 단체교섭에서 임금과 근로조건 중 어떤 의제를 우선해야 하는가?",
+"의제를 두고 대립할 때 교섭 대상 범위를 정하는 기준은 무엇이어야 하는가?",
+"공공기관 사용자로서 지방자치단체는 교섭 과정에서 어떤 책임과 권한을 가져야 하는가?"
+]
+},
+"orig":"https://www.khan.co.kr/article/202611082051005",
+"chk":1
+},
+{
+"id":"ee82f3319e",
+"title":"노란봉투법 ‘6개월’…병원계 원청교섭 ‘지지부진’",
+"url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wNktaSjh6aDJ0dDA3cF9nNUVQYWxWd0xrZFZSTldPc1ZqMzUwQUh6TUxaMnV5dVdDeEswZkpDdWd4NFVubTVOUkNpZ3BiajhoQkp1MFJidG5oa09RNDhCVDF1TEFvSzNK?oc=5",
+"outlet":"데일리메디",
+"via":"google",
+"date":"2026-11-08T20:28+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"노란봉투법",
+"원청교섭",
+"교섭"
+]
+}
+],
+"ai":{
+"link":"9장 · 원청의 사용자성과 하청 교섭",
+"qs":[
+"원청이 하청 노동자와의 교섭에 응해야 하는 범위는 어디까지여야 하는가?",
+"법 시행 이후 교섭이 지지부진한 원인은 제도의 불명확성에 있는가, 당사자의 태도에 있는가?",
+"병원처럼 공공성이 강한 업종에서 원청 교섭은 환자 안전과 노동권 중 무엇을 더 고려해야 하는가?"
+]
+}
+},
+{
+"id":"cd66d4dba7",
+"title":"고용부, 고용보험 부정수급 집중신고기간 운영… 육아휴직급여도 대상",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE82clgyNDA4VzJZUnE2Vl9od1o1ZzFNT0pRQW95RjhDTG02M3FJQnROazZGa3ZMZHZHXzhfa0FDRmpIUnU0cUw3LU1lYlhoeDJyVzZvRDY3cTk5dG5UREVkbHZvTUhYOEN3NW10WA?oc=5",
+"outlet":"베이비뉴스",
+"via":"google",
+"date":"2026-11-08T20:01+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험",
+"육아휴직"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급과 육아휴직급여 제도",
+"qs":[
+"육아휴직급여가 부정수급 신고 대상에 포함되는 것은 제도 신뢰를 높이는가, 수급자에게 부담을 주는가?",
+"부정수급 집중신고기간 같은 한시적 조치는 상시 관리 체계를 대체할 수 있는가?",
+"부정수급 예방과 정당한 수급권 보장 사이에서 제도는 어떤 균형을 맞춰야 하는가?"
+]
+}
+},
+{
+"id":"6bfcee7d79",
+"title":"파인애플 피자 거부한 이탈리아 셰프 해고",
+"url":"https://news.google.com/rss/articles/CBMingJBVV95cUxQTk9OZVN4QzYzTXhvX3lpNWFubWw4SWx2dGZUUmVGQWJ2ekRXQ0pLcktkQlJDeEFqaTFqUW5SZllvTTl6RTFoNDQzNjhOYkVxUndsd0x5VWVvN01CVXptQ0pIZ0pqb0JqVnNNd3ktcElWd3BhSzE5b05nM2JKUlhKM0NWTGducWNudUNIaHNhX01NN3hMMFZyNGJMcU9Cbi1sT1EzMkg5X1gwZHowZS1ZNjhwSTJmazFHcDU3eTc4SW85UmxlZ1M1bG9ONXNTVUpkMFIzSjhvdnR1WTZQYzQ3TVFyQmdrZ3VIS1MtMjdPQXBhdFpuMjVNMk9fM0lmaXV5dnNWUmpHWUdCTk9pckE1X1pEb1ZBemxaQVNaU0Z3?oc=5",
+"outlet":"위클리코리아",
+"via":"google",
+"date":"2026-11-08T19:13+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"해고"
+]
+}
+],
+"ai":{
+"link":"6장 · 징계해고의 정당성과 사용자 재량",
+"qs":[
+"메뉴에 대한 개인 의견을 이유로 한 해고는 정당한 징계 사유가 될 수 있는가?",
+"업무 지시 거부에 대한 해고의 정당성은 어떤 기준으로 판단해야 하는가?",
+"해고 전 사용자가 거쳐야 할 절차와 소명 기회는 어느 정도 보장되어야 하는가?"
+]
+},
+"orig":"https://www.weeklykoreanz.com/post/%ED%8C%8C%EC%9D%B8%EC%95%A0%ED%94%8C-%ED%94%BC%EC%9E%90-%EA%B1%B0%EB%B6%80%ED%95%9C-%EC%9D%B4%ED%83%88%EB%A6%AC%EC%95%84-%EC%85%B0%ED%94%84-%ED%95%B4%EA%B3%A0",
+"chk":1,
+"img":"https://static.wixstatic.com/media/658fe5_53e80f64c2524f8c99026575cebea669~mv2.jpg/v1/fill/w_1060,h_704,al_c,q_85/658fe5_53e80f64c2524f8c99026575cebea669~mv2.jpg"
+},
 {
 "id":"4156aea725",
 "title":"'파인애플 피자'와 '해고' 맞바꾼 주방장?…\"신념에 어긋난다\" 조리 거부한 결말",
@@ -208,6 +2167,32 @@
 }
 },
 {
+"id":"96b14f8cf4",
+"title":"오늘의 카드뉴스|[카드뉴스] 노란봉투법, 넓어진 교섭 길…원청 책임 어디까지",
+"url":"https://news.google.com/rss/articles/CBMigwFBVV95cUxNT1pRRTQxNlBRQllpanItdzNWTWRYUFpHS2lLTmRHYWhuall5bm93ampLVS03VDR3akwzSU4zLXp1UGd5ZFp2VU1aaERmNUxPU2FLN0VzSDVPWm5pWTNabEtNTlBZZnRlQl9FeENjem9NcmVqZjFyZGRPZGtGS2xFY3ZLVQ?oc=5",
+"outlet":"ZUM 뉴스",
+"via":"google",
+"date":"2026-11-08T17:23+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"노란봉투법",
+"교섭"
+]
+}
+],
+"ai":{
+"link":"9장 · 노란봉투법 이후 원청의 교섭 책임 범위",
+"qs":[
+"원청의 책임이 넓어지면 하청 노동자의 교섭력은 실질적으로 높아지는가?",
+"원청 교섭 의무의 범위를 정할 때 계약 관계와 실제 지휘 관계 중 무엇을 기준으로 삼아야 하는가?",
+"법 개정이 기업의 하청 구조 자체를 바꾸게 될 가능성은 어떻게 평가할 수 있는가?"
+]
+}
+},
+{
 "id":"bf75c6ad5b",
 "title":"김영훈 장관, 중대재해 반복 기업 감독 강화…위반 개선 여부 불시 점검",
 "url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE1CeEJLdWM3Z21hNHFwWkZWbVhXbGVicE1tTGREenU0TzJHeWs1dWNBSmNqZ2xuOG0xVmVPLXJUR2pfblB6WU5OTWxHNFhnWWtMUGw3VUJMbkRxdFpWX0RuYmFqWktxWnYyNS0wbUowWEc?oc=5",
@@ -310,6 +2295,58 @@
 "요리사가 조리법 변경 지시를 따르지 않은 행위는 업무 지시 불이행으로 볼 수 있는가, 아니면 전문성에 근거한 정당한 거부로 볼 수 있는가?",
 "사용자가 근로자의 전문성을 존중하면서도 업무 질서를 유지하려면 징계 전에 어떤 절차나 소통이 필요한가?",
 "기사에서 말하는 '고집'과 '해고'의 관계를 판단할 때, 해고 사유로 볼 기준은 무엇이 되어야 하는가?"
+]
+}
+},
+{
+"id":"06b126bc3e",
+"title":"창녕군시설관리공단, 갑질·직장 내 괴롭힘 예방 교육",
+"url":"https://news.google.com/rss/articles/CBMibEFVX3lxTE1vSFBreUpRWHRWMXdhRGlWeUtyZl9nUjl6ZTZ4YkM4NVlid3pNelNONHFFcHpwTmh5WncxX3VlVEN3cWxwUXNyLWgzS2hWb0ZmSGRKeVkwUmdUczNzXzFQUnhra0NpQXMxajJCatIBb0FVX3lxTFBoTnNCaFY3b0t2VXBZTUVZd2RlTklaS1ZNTVFtZVJlajl2RkZNS1lvRlQ4RVlqejJNbktoRkRWRV9vdHRiTFhsZjdxbDZLbElLUS1faVZOSTF5VG8yMHRRaDhYUnNmWDZiQlBQaVkyVQ?oc=5",
+"outlet":"서울일보",
+"via":"google",
+"date":"2026-11-08T16:49+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"직장 내 괴롭힘",
+"괴롭힘",
+"갑질"
+]
+}
+],
+"ai":{
+"link":"6장 · 직장 내 괴롭힘과 갑질 예방 교육",
+"qs":[
+"직장 내 괴롭힘 예방 교육은 실제 행동 변화를 이끌어내는 데 충분한가?",
+"공공기관 교육을 넘어 사업장 단위의 예방 체계는 어떻게 마련되어야 하는가?",
+"괴롭힘과 정당한 업무 지시를 구분하는 기준은 교육 현장에서 어떻게 제시되어야 하는가?"
+]
+}
+},
+{
+"id":"b1ecd858d7",
+"title":"북구, 하반기 중대재해예방 이행 실태 점검 실시",
+"url":"https://news.google.com/rss/articles/CBMiV0FVX3lxTE45a3g0d3JWaldGTEl6UDZkNVI4dUtGRVJrRmMwdjd2dE9GZHVpaS10QXNkZDhpNi03cHhFREp0eDNnUlo0Smc4bDZnTDVXdVpjcEtTM2lGaw?oc=5",
+"outlet":"대한뉴스통신",
+"via":"google",
+"date":"2026-11-08T16:40+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 중대재해 예방 이행 점검과 사업주 책임",
+"qs":[
+"정기 이행 실태 점검은 사업장의 안전 문화를 바꾸는 데 효과적인가?",
+"점검 결과를 공개하거나 제재에 연결하는 방식은 어떤 장단점이 있는가?",
+"점검 인력과 예산이 부족한 지자체에서 실효성을 높이려면 무엇이 필요한가?"
 ]
 }
 },
@@ -548,6 +2585,31 @@
 },
 "orig":"https://www.khan.co.kr/article/202611081527001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=society_news",
 "chk":1
+},
+{
+"id":"8259d65f6f",
+"title":"고용노동부 안산지청, 올해말까지 부정수급 자진신고·제보 접수",
+"url":"https://news.google.com/rss/articles/CBMiW0FVX3lxTFBNWU9rVG1Xdkh4bFY4cjd1YWlyZGZ2QTJlcVNmWTAxOHZMcjVGbWhXOUNwbmtWbWFQdURjcDdQSUpXYVl2VXRLWFRaMTNQTXB6UmJWRmlRUjdyam8?oc=5",
+"outlet":"경기일보",
+"via":"google",
+"date":"2026-11-08T15:26+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 신고와 제도 관리",
+"qs":[
+"자진신고 기간을 한시적으로 운영하는 방식은 장기적인 부정수급 감소에 도움이 되는가?",
+"부정수급 제보 제도는 근로자 간 신뢰와 갈등에 어떤 영향을 줄 수 있는가?",
+"부정수급 적발 체계와 사전 안내 중 어느 쪽에 더 많은 자원을 투입해야 하는가?"
+]
+}
 },
 {
 "id":"4fd034647e",
@@ -819,6 +2881,33 @@
 }
 },
 {
+"id":"f98020cab7",
+"title":"노동 전문가 102명이 매긴 현행 근로기준법 점수는 '49.9점'",
+"url":"https://news.google.com/rss/articles/CBMiUkFVX3lxTE55VkI2RmNObUU5clBucG5wZ0JIc29XZEdDOFhSZU1Wam81WFNDNWdmTkk2bE9qcTlrdWpxanA4V3RDVzVoenZJTTl5Y3c0T1ZRV3c?oc=5",
+"outlet":"노컷뉴스",
+"via":"google",
+"date":"2026-11-08T13:29+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"근로기준법"
+]
+}
+],
+"ai":{
+"link":"3장 · 근로기준법과 근로계약 보호 수준",
+"qs":[
+"노동 전문가들이 현행 근로기준법을 낮게 평가한 이유는 무엇이며, 어떤 조항이 가장 문제인가?",
+"근로기준법의 보호 수준을 높일 때 중소기업의 부담을 어떻게 고려해야 하는가?",
+"법 평가 점수를 정책 개선으로 연결하려면 어떤 절차가 필요한가?"
+]
+},
+"orig":"https://www.nocutnews.co.kr/news/6603641",
+"chk":1
+},
+{
 "id":"45dbaeb0a0",
 "title":"울릉경찰, 직장내 성희롱·성폭력 예방 교육",
 "url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE5qUmh3NDdSc3hvRV9ZRVVnZWhFbDJ2YWtaT08tYUQzZUw2UVBSWXJmeHpHVl9uZm1OeVpmS01nMEV4MXRDSlV3dFhSZ1pHaUdjS19hOE10dC1PemVZS1pWdGs1c1NJVm930gFrQVVfeXFMUE5Wbk9mMWlRTWZNV3g1TTBlb0JZNW9wRTJUN05rQ25pV2ZNRlJWbU9QMEJwb2VMUVVQOVpIVmJjODdKOEl5Yl9SLU1zbEV2T21fODAxbUJQYXpHa0pLdUg1bGhCYlFjb3RaLWs?oc=5",
@@ -953,6 +3042,31 @@
 "img":"https://img.etnews.com/news/article/2026/11/08/news-p.v1.20261108.05b18b8c7c3f4ace85ecb615766eb590_P1.jpg"
 },
 {
+"id":"cdf0b682d7",
+"title":"고용보험 부정수급, 12월 31일까지 신고하면 추가징수 면제",
+"url":"https://news.google.com/rss/articles/CBMia0FVX3lxTE40aVNuQU0tNXcyRnhtLTJsLUMwWnB3SXQySkNyR0RFcEdqMGVwUE1uM0dTQXNZalVmOFJ1bEdReDA3UTJiWFhra1ladzQ4NlppY2xsZ2t6bi1vVTVhXzZwV2dJZHg3Y1B1UkNR?oc=5",
+"outlet":"diarypoint.com",
+"via":"google",
+"date":"2026-11-08T13:10+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"고용보험"
+]
+}
+],
+"ai":{
+"link":"4장 · 고용보험 부정수급 자진신고와 추가징수 면제",
+"qs":[
+"추가징수 면제가 부정수급자의 자진신고를 충분히 유도할 수 있는가?",
+"신고 기한을 정하는 방식은 제도 이용률과 공정성에 어떤 영향을 주는가?",
+"부정수급을 신고하지 않은 사람에 대한 제재는 어느 정도여야 적절한가?"
+]
+}
+},
+{
 "id":"fa79eddd3d",
 "title":"고용부, 실업급여 부정수급 정조준..연말까지 집중신고·특별점검",
 "url":"https://news.google.com/rss/articles/CBMiUkFVX3lxTE00ZF8xdDY4Q3QzMXdFT09IWXNNMnZxSzBTczVRVjd1Wm44YjlqZE1ldzRQcFVIYVVsQkYtOTFUazk5Z3BqdHpDcEpTMTEzWlYyOVE?oc=5",
@@ -1059,6 +3173,31 @@
 "orig":"https://www.incheontoday.com/news/articleView.html?idxno=326049",
 "chk":1,
 "img":"https://cdn.incheontoday.com/news/photo/202611/326049_332716_2731.jpg"
+},
+{
+"id":"96d888532a",
+"title":"[기획]“공장은 똑똑해지는데 일자리는?”…무인화의 두 얼굴",
+"url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vUVRQbXJ6bUkzTkFFWkQtMUN5YnhWN3JvUldJaEFTSEhHZkNwdXNsQjU5QVlrQm53bDJ4cG1BUU43ODFUbVJjWFJhUWJNSE1XTDUwbFhBekVPZXpJSllQYm9yQ1A?oc=5",
+"outlet":"매일일보",
+"via":"google",
+"date":"2026-11-08T13:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 무인화와 자동화가 고용관계에 미치는 영향",
+"qs":[
+"공장 무인화가 늘어날 때 노동자의 재교육과 배치 전환은 누가 책임져야 하는가?",
+"무인화로 줄어든 일자리에 대한 보상은 기업, 정부, 노조 중 누구의 몫이 커야 하는가?",
+"자동화의 이익을 노사가 나누는 방식은 어떤 제도로 설계할 수 있는가?"
+]
+}
 },
 {
 "id":"b8996b4309",
@@ -1661,6 +3800,31 @@
 "img":"https://img1.newsis.com/2026/08/21/NISI20260821_0021406647_web.jpg"
 },
 {
+"id":"d50f4a5945",
+"title":"광주 북구, 9일부터 하반기 중대재해 예방 이행 실태 점검",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTFA5c1hJRS1yWVJnZVl2aXNQUFY5WVpmNWc3ZjJBRjJiWFY3SF9FLVlNNXVxdWwtdzFxY216OUttRmtCb3gzUnhiY0FRaTMyNTdGNjhYUkhoSEVVOGRxektpczZWWmE0aDBzRkpYMlhvbE3SAXRBVV95cUxNaTl3WXMwMVpwUmJ6d3hxUHRzSnZvcGQ3b2RHV1c3bXdtM2kwRHU4a0c5VE55QTh0Q1h3VnFMQW1mZzhDOUFRTFlwVlFaRnB0dFJhUFlwMGoyV0lhclFVNVBoaHI4YXV1ZDZlOTJYZmJhVmp4Yw?oc=5",
+"outlet":"더페어",
+"via":"google",
+"date":"2026-11-08T11:50+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 중대재해 예방 이행 실태 점검과 지역 안전 관리",
+"qs":[
+"지자체의 중대재해 예방 점검은 사업장 사고를 줄이는 데 어떤 역할을 할 수 있는가?",
+"점검 대상과 방법을 정할 때 사고 위험도와 사업장 규모 중 무엇을 더 중시해야 하는가?",
+"점검 이후 개선이 지속되도록 사업장과 지자체는 어떤 협력 체계를 만들 수 있는가?"
+]
+}
+},
+{
 "id":"d801152612",
 "title":"전남광주통합특별시 북구, 하반기 중대재해예방 이행 실태 점검 실시",
 "url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE1PM2lJcmlJcVRjQlFnUXRaVkhITTBXWERuWDl3R0RxUnVSRTNpMWNSMUoyaTJLLU90Wm9tYTZuV3JKdkNCWWpTcE5sTGNPdWh5MW9Ta0p3c3FYREF6QlMyZ2JYYnd6bWVQZ3c4VkFsREU?oc=5",
@@ -1787,7 +3951,8 @@
 {
 "ch":1,
 "kw":[
-"노동시장"
+"노동시장",
+"AI 일자리"
 ]
 }
 ],
@@ -1998,6 +4163,59 @@
 "최저임금 인상 공약을 노동시장 전체의 관점에서 어떻게 검토할 수 있는가?",
 "정책 공약이 노사 교섭과 노동 현장에 전달되는 경로는 어떤 모습이어야 하는가?"
 ]
+},
+"orig":"https://news.jkn.co.kr/post/1077747",
+"chk":1,
+"img":"https://images.jkn.co.kr/data/images/full/110/75/1107523.jpg?v=1794092581&width=1200&height=630"
+},
+{
+"id":"1652e3c92b",
+"title":"佛 극좌 멜랑숑, 마크롱과 정반대 경기부양 공약 제시 : 국제",
+"url":"https://news.google.com/rss/articles/CBMiS0FVX3lxTE5qX25rRjU1eFFlcXIwSmJ0VExZWk1jQzFRVFFPblllTUVDVnc2RER3b2NSaG4ydzhzN1Z5QnhrTi1XdU1jZ1VxclVTVQ?oc=5",
+"outlet":"재경일보",
+"via":"google",
+"date":"2026-11-08T07:50+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
+]
+}
+],
+"ai":{
+"link":"1장 · 정책 환경 변화와 고용관계 (정치·경제 정책이 고용에 미치는 영향)",
+"qs":[
+"경기부양 공약이 고용 안정에 미치는 효과는 재정 부담과 비교해 어떻게 평가해야 하는가?",
+"정권이 바뀌며 고용정책 방향이 달라질 때 노사 관계는 어떻게 대응해야 하는가?",
+"경기 대응 정책이 노동시장의 이중구조를 완화하는지 악화하는지는 어떤 기준으로 판단할 수 있는가?"
+]
+}
+},
+{
+"id":"ddaaf1d564",
+"title":"[RTK만평] 정년 65세 논의…'저성과자 교육'은 재기의 계단인가",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE9ma3hjajVKaHVLWktoNWU4cks2bURMTl9URnVmMzBmX0VrUDlISjZJTHZOTUdzYnl1U09pQ09aY2pRNlkzM09QTThQU1d4MmVoelU5RlUxRFVwTmpRWkFCbkdXTzZORHNaNjdUMTdn?oc=5",
+"outlet":"알티케이뉴스",
+"via":"google",
+"date":"2026-11-08T07:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+],
+"ai":{
+"link":"5장 · 저성과자 교육과 인사관리 / 1장 · 고령화와 정년 연장 환경 변화",
+"qs":[
+"정년 연장 논의에서 저성과자 교육은 고용 안정을 위한 기회가 될 수 있는가, 아니면 퇴출의 전 단계가 될 수 있는가?",
+"정년 연장과 저성과자 대상 교육은 기업의 인사관리에서 어떤 방식으로 함께 설계되어야 하는가?",
+"고령 근로자의 역량 개발과 재교육은 누구의 책임이며, 그 비용은 어떻게 나누어야 하는가?"
+]
 }
 },
 {
@@ -2073,7 +4291,10 @@
 "정책 방향이 정권 교체나 선거 국면에 따라 달라질 때 노사관계의 안정성은 어떻게 유지될 수 있는가?",
 "해외 정책 사례를 국내 고용관계 맥락에 적용할 때 고려해야 할 조건은 무엇인가?"
 ]
-}
+},
+"orig":"https://www.specialtimes.co.kr/news/articleView.html?idxno=482986",
+"chk":1,
+"img":"https://cdn.specialtimes.co.kr/news/thumbnail/202611/482986_470992_1720_v150.jpg"
 },
 {
 "id":"17963d8c70",
@@ -2268,7 +4489,10 @@
 "부결 이후 사측과 노조가 재교섭 없이 쟁의로 나아갈 때 발생할 수 있는 비용과 편익은 무엇인가?",
 "쟁의행위의 수위(파업 횟수 확대 등)는 교섭의 진전을 위해 어떤 기준으로 정해야 하는가?"
 ]
-}
+},
+"orig":"https://www.viva100.com/article/20261107500203",
+"chk":1,
+"img":"https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/11/07/.cache/512/20261107500201.jpg?v=20261109102844"
 },
 {
 "id":"5edf4f5744",
@@ -3447,6 +5671,37 @@
 "img":"https://cdn.bucheonjournal.com/news/photo/202611/21798_21939_2646.jpg"
 },
 {
+"id":"0f3413ee3a",
+"title":"노동장관 \"안전보다 비용 우선순위 두는 사업주에 무거운 책임\"(종합)",
+"url":"https://news.google.com/rss/articles/CBMiYEFVX3lxTE1aWGFqcS1tY3NlaUN5SEljZXhta2M4dC1mMkp5YUtRNW1zNkJ5TUpUSFV6YTZjc3p4Si12NHlSTUM0LTYxWHhYZEFDXzVuQXBXSlBNVG1HLUxaYUl4X1JJa9IBYEFVX3lxTE1aWGFqcS1tY3NlaUN5SEljZXhta2M4dC1mMkp5YUtRNW1zNkJ5TUpUSFV6YTZjc3p4Si12NHlSTUM0LTYxWHhYZEFDXzVuQXBXSlBNVG1HLUxaYUl4X1JJaw?oc=5",
+"outlet":"연합뉴스",
+"via":"google",
+"date":"2026-11-07T10:38+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"전보"
+]
+},
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"1장 · 환경 변화 속 사업주의 안전 책임 / 6장 · 안전 관련 책임과 징계 이슈",
+"qs":[
+"안전보다 비용을 우선하는 사업주에게 무거운 책임을 묻는 방식은 산업재해 예방에 효과적인가?",
+"처벌 강화와 자율적 안전관리 체계 중 어느 쪽이 현장의 안전 문화를 더 잘 만드는가?",
+"원청과 하청이 얽힌 현장에서 안전 책임은 어디까지 나누어져야 하는가?"
+]
+}
+},
+{
 "id":"f392d59302",
 "title":"노동장관 \"중대재해 반복 땐 특별감독... 비용 앞세우다 무거운 책임\"",
 "url":"https://news.google.com/rss/articles/CBMiggFBVV95cUxObWdXQnpzc1BmcmFQUXNTamE5OV8wamRzejQzLUtnWmsyem9lU2NrcDlKOUtrX0JYVnV6MTQtc2Qyd193aUVSeDM3aEZRQXdXQ2d5TnZlTXdyX2VkTHVBOFBrSTMxOTVlcGlmajNxcVZ2NHg0V251YU5QVmdxZE1qdExn?oc=5",
@@ -4099,7 +6354,10 @@
 "괴롭힘 사건의 처리 기한을 법으로 정하는 것은 조사의 공정성을 높일까, 떨어뜨릴까?",
 "공공기관의 괴롭힘 대응에서 조직 내부 조사와 외부 기관 개입 중 어느 쪽이 더 적절할까?"
 ]
-}
+},
+"orig":"https://www.webeconomy.co.kr/news/articleView.html?idxno=2365385",
+"chk":1,
+"img":"https://cdn.webeconomy.co.kr/news/photo/202611/2365385_1175982_4238.jpg"
 },
 {
 "id":"2780fa8c8e",
@@ -4258,6 +6516,31 @@
 },
 "orig":"https://www.dnews.co.kr/uhtml/view.jsp?idxno=202611061935524570041",
 "chk":1
+},
+{
+"id":"5267656fd4",
+"title":"거제시, 11월 6일 민주노총과 노정협의",
+"url":"https://news.google.com/rss/articles/CBMiUEFVX3lxTE1mRU9kelJaQVozbDFpTjhyNXFVcTlNNG9rcTJ0Und6d0xwLS1QbUFCNk9xWVUwVHBERlA3T0U3andIYlNydGlfT2YzeFF1ZXVZ?oc=5",
+"outlet":"경남포스트",
+"via":"google",
+"date":"2026-11-06T18:50+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":2,
+"kw":[
+"비정규직"
+]
+}
+],
+"ai":{
+"link":"8장 · 노동조합과 지방정부의 이해관계 / 9장 · 공공부문 노정 협의",
+"qs":[
+"지방자치단체와 노동조합이 협의 자리를 여는 것은 공공부문 노사관계 안정에 어떤 역할을 하는가?",
+"노정협의에서 다뤄야 할 의제는 임금이나 인력 같은 노사 교섭 사항과 어디까지 구분되어야 하는가?",
+"노정협의가 실질적 합의로 이어지려면 어떤 제도적 장치가 필요한가?"
+]
+}
 },
 {
 "id":"1864c1bc4c",
@@ -4540,7 +6823,10 @@
 "피해 근로자와 행위자 모두의 권리를 보호하려면 조사 과정에서 무엇을 고려해야 할까?",
 "공공기관에서 괴롭힘 사건이 발생했을 때 기관장과 의회의 역할은 어떻게 나눠질까?"
 ]
-}
+},
+"orig":"https://biz.heraldcorp.com/article/10928937",
+"chk":1,
+"img":"https://wimg.heraldcorp.com/news/cms/2026/11/06/news-p.v1.20261106.8186111c8bbb4ce5876a709e45abd114_P1.jpg"
 },
 {
 "id":"c177a000c5",
@@ -4735,6 +7021,56 @@
 "img":"https://www.greened.kr/news/thumbnail/202611/354039_406088_5936_v150.jpg"
 },
 {
+"id":"524a07f4f2",
+"title":"오르는 최저임금, 장애인 소득 기반까지 바뀌어야",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE4wNUxKX0FpcjZ4Q0RCM0xKcjZBVzhlWlVWbzZtUlVYbmNwMm5SaHNTUkRQY1dMRHEya1lFVDYzWFJUbkhENFJKcUFaaW82a3NObFdpbjBjTTAtbHhzcXdta0g5eS1nU0dJT09IT0F30gFyQVVfeXFMTjl5TjdWTnhhaS16NlRSNDY0M2w1X3JzNUJjRGY1dHh3ejVCV0c1VktGXzM4TmtqMDdXNmFVdFFjSDdHU1lIT2theDh1OVJfc0hNcVI4d3ZSeUFLbmtjVlFUb0t0T1loTkpmdkk4SVdXbUR3?oc=5",
+"outlet":"에이블뉴스",
+"via":"google",
+"date":"2026-11-06T17:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
+]
+}
+],
+"ai":{
+"link":"3장 · 최저임금 적용과 근로조건 / 2장 · 장애인 고용형태와 소득 보장",
+"qs":[
+"최저임금이 오를 때 장애인 노동자의 소득 보장은 최저임금 제도 안에서 해결하는 것이 적절한가?",
+"최저임금 인상이 장애인 노동자의 고용 기회를 줄이는 효과와 소득을 높이는 효과 중 무엇이 더 클 수 있는가?",
+"장애인의 소득 기반을 보장하기 위해 최저임금 외에 어떤 제도가 함께 바뀌어야 하는가?"
+]
+}
+},
+{
+"id":"b811b19c1d",
+"title":"22대 국회 장애인 최저임금 적용제외 폐지 법안 7개 발의, 장애인 노동권 논의 뒷전",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE42ekoyMGhnSTlPckE5bXFBQ3hzR1RyRVRvOUhuYWlOMzFKWDQ3TVRWZVppOVVFOERZdjl4TU9UMHk1ZEpLMzBpbktoeGNMa2lqLW15dXZ0NEV1dlFsRUNjVHZqX1BnQTZETTJqdG930gFyQVVfeXFMUGc4OGluMWVyVndjdVV0anZxYXh6NUVubXFNZ0ZOYXg2NEgwSjF2UmFPREx1aEZpUWpvb1Y2ZVVhSjZjOUNnSjJaLThVVzdoWkRlekVTYVdwMGRJVGZNOG5Lc3BtWHF0Q3l2aGFsazhpNDVn?oc=5",
+"outlet":"에이블뉴스",
+"via":"google",
+"date":"2026-11-06T17:37+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":3,
+"kw":[
+"최저임금"
+]
+}
+],
+"ai":{
+"link":"3장 · 최저임금 적용 제외와 근로조건 / 5장 · 주요 근로계약 이슈",
+"qs":[
+"장애인에 대한 최저임금 적용 제외 제도는 노동권 보장과 고용 촉진 중 어느 쪽에 더 부합하는가?",
+"적용 제외 폐지 법안이 논의되는 과정에서 장애인 노동권 논의가 충분히 이뤄지고 있는가?",
+"적용 제외를 폐지할 경우 장애인 고용 현장에서 어떤 변화가 생길 수 있으며 이를 어떻게 관리해야 하는가?"
+]
+}
+},
+{
 "id":"e3c9985c1c",
 "title":"법무부장관 이용철·국세청장 안덕수·정무수석 최인호",
 "url":"https://www.labortoday.co.kr/news/articleView.html?idxno=237613",
@@ -4777,7 +7113,9 @@
 "직업훈련 예산이 늘어날 때 훈련의 실효성은 어떻게 평가되어야 하는가?",
 "정부 일자리 예산은 정규직과 비정규직, 플랫폼 노동자 등 다양한 고용형태에 어떻게 배분되어야 하는가?"
 ]
-}
+},
+"orig":"https://woorieconomy.com/View.aspx?No=4301258",
+"chk":1
 },
 {
 "id":"b2db71c8b2",
@@ -4881,6 +7219,31 @@
 "orig":"https://www.etnews.com/20261106000304",
 "chk":1,
 "img":"https://img.etnews.com/news/article/2026/11/06/news-p.v1.20261106.a5f797fa17f14468b357a002d5342a41_P1.jpg"
+},
+{
+"id":"9ef7112d72",
+"title":"‘노란봉투법’을 둘러싼 찬반논란",
+"url":"https://news.google.com/rss/articles/CBMiU0FVX3lxTE1iN2pVUTB5MW9uUmJDeUVoZ2ZITzVKQl9vR1RiMUJrSXlTSi1jZER3Qnd5SURaOFhtV2RNMGxkNGF5QTRNZi1iZVBsQjd4Tm84M0Zj?oc=5",
+"outlet":":: 위즈경제 ::",
+"via":"google",
+"date":"2026-11-06T17:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"노란봉투법"
+]
+}
+],
+"ai":{
+"link":"9장 · 쟁의행위와 원청의 교섭 책임 / 7장 · 노동운동과 고용관계시스템",
+"qs":[
+"노란봉투법을 둘러싼 찬반은 노동자의 교섭권과 기업의 경영권 중 무엇을 더 중시하는가?",
+"손해배상 청구 제한이 쟁의행위의 실효성과 노사 교섭 질서에 어떤 영향을 줄 수 있는가?",
+"하청 노동자와 원청 사이의 교섭 책임은 이 법안이 다루는 범위 안에서 어떻게 평가될 수 있는가?"
+]
+}
 },
 {
 "id":"d0393ae09a",
@@ -6693,6 +9056,34 @@
 "파업 이후 교섭을 재개할 때 노사가 신뢰를 회복하려면 무엇이 필요한가?"
 ]
 }
+},
+{
+"id":"10aacd1b21",
+"title":"\"파업 무력화\" vs \"순차 파업\"... 항고심 향한 삼성바이오 노조의 모순된 주장",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTFBCUmdNMndMQ3ZFeHNKNEF1RktWRmFBY2gxU1EwaG03RlZHMjBidk5ROW9JMnBjQ1FwbllRMUtPYWJDQnZ1QWgzWUZYSGdHM3JFMGpTQV8zeXNmOEFiUWNnNzRKamdpZm9wbWI0MzNzMTM?oc=5",
+"outlet":"시장경제신문",
+"via":"google",
+"date":"2026-11-06T10:40+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"파업"
+]
+}
+],
+"ai":{
+"link":"9장 · 쟁의행위의 방식과 정당성 / 8장 · 노동조합의 내부 전략",
+"qs":[
+"파업의 방식으로서 순차 파업은 노조의 쟁의권 행사로 정당하다고 볼 수 있는가?",
+"노조가 주장하는 파업의 목적과 실제 쟁의 방식이 일관되는지는 어떤 기준으로 판단해야 하는가?",
+"법원 판단을 기다리는 동안 노사 교섭은 어떤 방식으로 이어져야 하는가?"
+]
+},
+"orig":"https://www.meconomynews.com/news/articleView.html?idxno=203249",
+"chk":1,
+"img":"https://cdn.meconomynews.com/news/photo/202611/203249_206600_3757.jpg"
 },
 {
 "id":"cddae3d849",
@@ -9115,7 +11506,10 @@
 "공공기관 노사가 파업 이전에 합의할 수 있도록 하려면 어떤 교섭 구조가 필요할까?",
 "서울 지하철처럼 시민 생활과 밀접한 공공기관의 쟁의행위는 어떤 기준으로 제한되거나 허용되어야 할까?"
 ]
-}
+},
+"orig":"https://www.mt.co.kr/amp/policy/2026/11/05/2026110518520575693",
+"chk":1,
+"img":"https://thumb.mt.co.kr/cdn-cgi/image/w=1200,h=779,fit=cover,bg=white,f=auto,quality=high,sharpen=2,g=face/21/2026/11/2026110518520575693_1.jpg"
 },
 {
 "id":"c94c51b839",
@@ -9248,7 +11642,8 @@
 "공공서비스인 지하철 파업이 시민 생활에 미치는 영향을 노사는 어떻게 고려해야 할까?",
 "쟁의행위 찬반 결과를 놓고 노사가 교섭을 더 할 수 있는 여지는 무엇일까?"
 ]
-}
+},
+"orig":"https://imnews.imbc.com/news/2026/society/article/6863481_36918.html"
 },
 {
 "id":"7f50fd3042",
@@ -9533,6 +11928,34 @@
 "지역 고용 문제를 해결하려면 지자체와 노사가 어떻게 협력할 수 있을까?"
 ]
 }
+},
+{
+"id":"9c7f764c61",
+"title":"서울 지하철 노조, 파업 수순 밟나…20일부터 준법투쟁 돌입",
+"url":"https://news.google.com/rss/articles/CBMiigFBVV95cUxNOVctMG9MWFZHT0VpbGFqUGNWWUluWXE1UHh0X2ozZ3dBZUNvem41WVRYM0RMU3VWajdXRG5qTmpWZ3dycG5SQ1JtZldhd2tPVkxKX3ZKbElTOFp3LWFxdnZ3LTB5ejlQdVk2Y1JpVXhpd01pWlc2ajE0clNkTkIyTWQtbmpoN0NyYnc?oc=5",
+"outlet":"글로벌이코노믹",
+"via":"google",
+"date":"2026-11-05T18:17+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"파업"
+]
+}
+],
+"ai":{
+"link":"9장 · 공공부문 쟁의행위와 준법투쟁 / 8장 · 노동조합의 쟁의 전략",
+"qs":[
+"준법투쟁은 파업과 비교하여 공공서비스 이용자에게 어떤 영향을 주며 노조의 정당한 수단인가?",
+"공공부문 노조의 쟁의행위는 시민의 이동권 보장과 노동권 중 어느 쪽에 우선순위를 두어야 하는가?",
+"파업 전 단계의 준법투쟁이 노사 협상에 주는 압력은 어떤 방식으로 평가될 수 있는가?"
+]
+},
+"orig":"https://www.g-enews.com/article/Real-Estate/2026/11/202611051816097059153ddfb15a_1",
+"chk":1,
+"img":"https://nimage.g-enews.com/phpwas/restmb_allidxmake.php?idx=5&simg=2026110518164109546153ddfb15a582918814.jpg"
 },
 {
 "id":"b4f85a3f82",
@@ -10536,7 +12959,10 @@
 "지역 발전 정책을 추진할 때 노동계는 어떤 방식으로 참여해야 하는가?",
 "특혜 논란을 줄이기 위해 정책 설계 단계에서 어떤 기준과 절차가 필요한가?"
 ]
-}
+},
+"orig":"https://www.newsis.com/view/NISX20261105_0003856779",
+"chk":1,
+"img":"https://img1.newsis.com/2026/10/27/NISI20261027_0021506284_web.jpg"
 },
 {
 "id":"e10e4ffc59",
@@ -11055,7 +13481,8 @@
 "법 해석이 불분명할 때 현장의 노사는 행정과 법원 중 어느 기관의 판단을 기준으로 삼아야 한다고 보는가?",
 "노란봉투법이 노사 교섭 질서에 미치는 영향은 긍정적으로 보는가, 아니면 혼란을 키운다고 보는가?"
 ]
-}
+},
+"orig":"https://www.metroseoul.co.kr/article/20261105500424"
 },
 {
 "id":"2ffd7efb87",
@@ -11503,6 +13930,31 @@
 }
 },
 {
+"id":"132974e1ec",
+"title":"李대통령 “성장이 일자리로 못 이어져…국민 창업 시대로”",
+"url":"https://news.google.com/rss/articles/CBMiW0FVX3lxTE54NGJyUkVuTmZ1MmZpbjl2cWVuZWhwRkZIN2hwUDFfWmo2bTJDWTRxU09pSzM1dXA0LXBvbXoxeWU3T3o0YUl1WEhqek85a0V2NlU5ZXcyOVZfdkk?oc=5",
+"outlet":"경기일보",
+"via":"google",
+"date":"2026-11-05T15:10+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 성장과 일자리의 연결 / 2장 · 창업 확대와 고용형태 다양화",
+"qs":[
+"경제성장이 일자리 증가로 이어지지 않는 이유는 무엇이며, 창업 확대가 이를 해결할 수 있는가?",
+"창업 중심 정책은 임금노동자의 고용 안정과 비교해 어떤 장단점을 가지는가?",
+"창업이 늘어날 때 고용관계와 노동자 보호는 어떻게 함께 설계되어야 하는가?"
+]
+}
+},
+{
 "id":"ecb24edfb2",
 "title":"삼성전자 '제6노조' 설립신고... 내년 임금교섭 구도 '안갯속'",
 "url":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE5DMDZiZldVZHl0YU1FaXNOQi1XdUJWS3VEazVjV09HMXdNeWd0LWpJOTNQSDBoLWhxUTZqbWN1OWJ0T0k2dTFzeEFRSlFzMTQzWEpQYWxaYjg4OVV1aDJwNlNPclg?oc=5",
@@ -11580,6 +14032,31 @@
 "모빌리티 산업 전환 과정에서 새로 생기는 일자리는 어떤 고용형태로 나타날 가능성이 큰가?",
 "지역 일자리 생태계를 구축할 때 원청, 협력업체, 근로자 사이의 고용관계는 어떻게 설계되어야 하는가?",
 "산업 전환으로 일자리가 바뀌는 과정에서 근로자의 고용 안정을 지키기 위해 어떤 제도가 필요한가?"
+]
+}
+},
+{
+"id":"50056d20fe",
+"title":"인천 E1·한진 컨테이너터미널 잇단 항만사고에 “중대재해처벌법 적용해야”",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE1qLTFHNGt5ZWpnVXRlVjU2QTdlUF9PSTd3bzMwOE5TUm5zNWE1eUFLck90SDI3VTMxMGk2a1hENDBMZ2xaQzJfZWFyNFZ0VlA3b0FIaF81cEdfY2dKcTM1RVBCeVhQX05heTlxSmhibkM?oc=5",
+"outlet":"인천투데이",
+"via":"google",
+"date":"2026-11-05T15:04+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"중대재해"
+]
+}
+],
+"ai":{
+"link":"1장 · 환경 변화와 사업주 안전 책임 / 6장 · 일터 안전과 책임 관계",
+"qs":[
+"항만과 같은 위험 작업장에 중대재해처벌법을 적용하는 것은 사고 예방에 실질적 효과가 있는가?",
+"원청과 하청이 함께 얽힌 항만 사고에서 책임 주체는 어떻게 가려져야 하는가?",
+"법 적용을 둘러싼 논란을 줄이려면 현장 안전 관리 체계에 어떤 변화가 필요한가?"
 ]
 }
 },
@@ -18237,6 +20714,31 @@
 }
 },
 {
+"id":"23a69bed44",
+"title":"주택관리사협회, 건물관리업 산재 예방 제도개선 촉구…전담조직 설치 제안",
+"url":"https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EUFJTWlZObkQxR0lwdTN1eExvNmpXYS1nMjZqa0ZrQkh0N3JTRmFnOUVLMEJwZkZGZzIyaHcyaHdkQ01pdlN2WlFGZFZBQTNPLTgxajdEYWxJLXhQYldXWFRVUWktQQ?oc=5",
+"outlet":"건설이코노미뉴스",
+"via":"google",
+"date":"2026-11-04T11:43+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산재"
+]
+}
+],
+"ai":{
+"link":"1장 · 환경 변화와 안전 책임 / 4장 · 산업재해 예방과 관리 체계",
+"qs":[
+"건물관리업처럼 여러 주체가 얽힌 업종의 산재 예방은 전담 조직을 두는 방식이 효과적인가?",
+"건물 소유자, 관리업체, 근로자 사이에서 산재 예방 책임은 어떻게 나누어야 하는가?",
+"산재 예방 제도 개선을 위해 정부와 업계 단체는 각각 어떤 역할을 맡아야 하는가?"
+]
+}
+},
+{
 "id":"fbef57b2fc",
 "title":"보은군, 산업·농공단지 안전관리자 70여 명 중대재해 예방교육",
 "url":"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5mblhxUjlIQm9sOE9NeWw2Z0JHblNBWERvVk5LVjdjbmdRR21SS0g1bF9FMWJ0NVNtVWw0Q0tkeEZVYnJaU2Nlbm9seG9YM2ZkV1c0UHdobEUteExxTUY2bk9B?oc=5",
@@ -18340,6 +20842,31 @@
 "합의 원칙을 재확인하는 것은 노사 신뢰 형성에 어떤 역할을 하는가?",
 "노사 합의를 법안에 반영하는 과정에서 정부가 맡아야 할 역할은 무엇인가?",
 "합의 원칙이 지켜지지 않았다고 판단할 기준은 무엇이어야 하는가?"
+]
+}
+},
+{
+"id":"593dc09928",
+"title":"재택근무 3일 주차권 안 빌려줬더니 직장 내 왕따…\"규정 위반 시 박탈\" 해외 직장인 사연",
+"url":"https://news.google.com/rss/articles/CBMiYkFVX3lxTE5kTjNnQ1F6MUhoS3dlY2EwYk5NcFpZN212Rk5XQlh4a1Ayd0dia1k0TEJaOUVhNFNtejg0eGxRSGtLZWdka2syamNOUnhKbWN4enR1WlVMTVpBUm1NckV6NWtB?oc=5",
+"outlet":"매일신문",
+"via":"google",
+"date":"2026-11-04T10:46+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"직장 내 괴롭힘"
+]
+}
+],
+"ai":{
+"link":"5장 · 근무 규정과 직장 내 관계 / 6장 · 일터 차별과 괴롭힘",
+"qs":[
+"재택근무 규정 위반에 따른 혜택 박탈은 정당한 인사 관리인가, 아니면 불이익 처분인가?",
+"직장 내 따돌림이 발생했을 때 규정 적용과 괴롭힘 예방 사이의 경계는 어디에 있는가?",
+"재택근무 환경에서 동료 간 갈등을 예방하기 위해 기업은 어떤 규정을 마련해야 하는가?"
 ]
 }
 },
@@ -18523,7 +21050,10 @@
 "공직사회에 특화된 괴롭힘 금지 규정은 민간 사업장의 규정과 달라야 하는가?",
 "법제화만으로 조직 내 괴롭힘이 줄어들 것이라고 보는가?"
 ]
-}
+},
+"orig":"https://www.newswhoplus.com/news/articleView.html?idxno=73444",
+"chk":1,
+"img":"https://cdn.newswhoplus.com/news/thumbnail/202611/73444_112460_2829_v150.jpg"
 },
 {
 "id":"1e5f838261",
@@ -18652,7 +21182,9 @@
 "쟁송의 빈도와 결과가 노사관계의 성격을 어떻게 규정한다고 보는가?"
 ]
 },
-"orig":"https://www.newsian.co.kr/news/articleView.html?idxno=100573"
+"orig":"https://www.newsian.co.kr/news/articleView.html?idxno=100573",
+"chk":1,
+"img":"https://cdn.newsian.co.kr/news/photo/202611/100573_100710_3214.jpg"
 },
 {
 "id":"7fd4d3cd75",
@@ -19792,6 +22324,31 @@
 }
 },
 {
+"id":"ed1a04854f",
+"title":"재취업지원서비스, 내년 7월부터 500인 이상 기업으로 확대",
+"url":"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9POExSRjJlNHJmcmdyM3BSVEdWY2lObUdJSlIwbHpBcUJVX3VXMzMzSkFYOTljLU9LSktkaE1ORXVIT1J4MHRHRV9IUnA4WEF0QWxfTFNRYk9JVE1FR0E?oc=5",
+"outlet":"한국방송뉴스",
+"via":"google",
+"date":"2026-11-03T18:28+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":5,
+"kw":[
+"직장 내 성희롱"
+]
+}
+],
+"ai":{
+"link":"1장 · 정년 후 고용 서비스 환경 / 5장 · 퇴직 전후 인사관리",
+"qs":[
+"재취업지원 서비스의 대상을 500인 이상 기업으로 넓히는 것은 중소기업 노동자의 전환을 충분히 돕는가?",
+"재취업지원 서비스의 실효성을 높이기 위해 기업과 정부는 각각 어떤 책임을 나눠야 하는가?",
+"퇴직 전후 지원이 고용 안정에 기여하려면 어떤 기준으로 성과를 평가해야 하는가?"
+]
+}
+},
+{
 "id":"59f2b4da1e",
 "title":"경비노동자 쪼개기 계약과 부당해고 대책 마련 촉구 기자회견",
 "url":"https://news.google.com/rss/articles/CBMia0FVX3lxTE9nTVNjdV9QUUkybzhmNmZuMGZXNjhISXJzX244Sko1Z2J2cWMyVENmaHBYdzhMWGVjSHFHbjVtRXhJU2Y5N1FldGljTW4yRFBlSS1wUlJFdU5OZHA4OGJIdXZHMWp4WjVWdXNr?oc=5",
@@ -20551,6 +23108,37 @@
 "공무직위원회를 상설화하는 것이 공공부문 비정규직 차별 해소에 효과적인가?",
 "공공부문 비정규직의 차별 시정은 임금, 복리후생, 고용안정 중 무엇을 우선해야 하는가?",
 "공공기관 노사 교섭에서 정부와 기관장의 책임 범위는 어디까지여야 하는가?"
+]
+}
+},
+{
+"id":"eff4889afb",
+"title":"서울 지하철 노조 파업 만지작…노사 협상 쟁점은 '인력 채용' - 머니투데이",
+"url":"https://news.google.com/rss/articles/CBMiakFVX3lxTFBiVl96QzNDdnFKbjhiRGJTbUd2TWRBVllydlNfQ3VlcFNURTBreU13V0JZczlmdGdLdzV6SktCaFZaUVhYbWNsLWdpNkU0azRnR2loWkd2Y0puNExrMHFUUGhfTEpQR05WZmfSAW9BVV95cUxQYWYtUkNhYWZmeTVnZnJlWk56dUhuS2NEeXYzbXgzMmxMb1huVlJQdmRNazFjM1NVMm12ZEFZZXNHdWdPUWFoOHJ3eTBOSWRxWGFsZmVUcDFOSEY4Snk0b3BhZkJHMk9vOVZ2blp2YVE?oc=5",
+"outlet":"머니투데이",
+"via":"google",
+"date":"2026-11-03T16:29+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"파업"
+]
+},
+{
+"ch":5,
+"kw":[
+"채용"
+]
+}
+],
+"ai":{
+"link":"9장 · 단체교섭의 쟁점과 쟁의행위 / 8장 · 노사 교섭의 이해관계자",
+"qs":[
+"인력 채용이 파업의 쟁점이 될 때 노사는 교섭에서 어떤 기준으로 합의점을 찾을 수 있는가?",
+"공공부문 인력 충원 문제는 노사 교섭 사항으로 다루는 것이 적절한가, 정책 결정 사항으로 다루는 것이 적절한가?",
+"인력 채용을 둘러싼 갈등이 파업으로 이어지지 않도록 하려면 어떤 교섭 구조가 필요한가?"
 ]
 }
 },
@@ -21627,7 +24215,9 @@
 "노사 갈등을 법정이 아닌 단체교섭에서 풀려면 어떤 제도적 장치가 필요할까?"
 ]
 },
-"orig":"https://www.fnnews.com/news/202611030928162528"
+"orig":"https://www.fnnews.com/news/202611030928162528",
+"chk":1,
+"img":"https://image.fnnews.com/resource/media/image/2026/11/02/202611021103410767_e.jpg"
 },
 {
 "id":"d65cacc6b1",
@@ -21929,7 +24519,9 @@
 "우려를 제기하는 토론회에서 가장 중요하게 다뤄야 할 쟁점은 무엇인가?"
 ]
 },
-"orig":"https://www.globalnewsagency.kr/news/articleView.html?idxno=502739"
+"orig":"https://www.globalnewsagency.kr/news/articleView.html?idxno=502739",
+"chk":1,
+"img":"https://cdn.globalnewsagency.kr/news/photo/202611/502739_521108_2626.jpg"
 },
 {
 "id":"41a31e12ba",
@@ -22691,6 +25283,31 @@
 }
 },
 {
+"id":"7992d55967",
+"title":"김천시시설관리공단, 산업재해 제로(Zero) 달성 공모전 개최",
+"url":"https://news.google.com/rss/articles/CBMiUEFVX3lxTE9iZGlBa3hEOHRJUlFqd2tXdGVacmZLMGVGX0cxc0xneXNLcnpFSVpuU3BTMVlDM0I4dENsRVkxX0RxVVFWckFUTmlEUmFqOWRL?oc=5",
+"outlet":"새김천신문",
+"via":"google",
+"date":"2026-11-03T11:38+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":4,
+"kw":[
+"산업재해"
+]
+}
+],
+"ai":{
+"link":"4장 · 산업재해 예방과 복리후생 / 1장 · 안전 관리 환경의 변화",
+"qs":[
+"산업재해 제로를 목표로 한 공모전은 근로자의 안전 의식을 높이는 데 효과적인가?",
+"공모 방식의 안전 활동은 장기적인 재해 예방 체계로 이어질 수 있는가?",
+"안전 성과를 포상하는 방식이 근로자의 신고와 보고 행동에 어떤 영향을 줄 수 있는가?"
+]
+}
+},
+{
 "id":"826de2fa19",
 "title":"임금 체불·산재에도 지원금 받았다···'일학습병행제' 부실 관리 도마 위",
 "url":"https://news.google.com/rss/articles/CBMiTEFVX3lxTFBtbEc0VmVEckR5NkVoUUVfc0NLdW1pTkpaY3VTSmtzdk9QeVhRdTZiWUNDY25xMVNXZkZubklpVGMzNk9sRXFZMWRVekY?oc=5",
@@ -23246,6 +25863,31 @@
 }
 },
 {
+"id":"f52ba80ce4",
+"title":"아세안+3 인적자원개발 포럼 개최…각국 AI 직업훈련 설계 도움",
+"url":"https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MRTBXQzdLNmxxSjFtYlFHQVRuR3NUUEFESWJvcnBNUWlOTTlNQkk2QU4yejQ1QjY3QldlNFFtVEJ2TW9ITkEyZ1MxVUxrd1p3Ymc3dG5adVpwX3fSAWBBVV95cUxOMjhfcmh2RVUwN2ZZdXdhQ0ZMVnpkeXlBSTdJejZGSktqQlFzcjhfQ3lvYktyVGx3MG9MSXdvT1Y1cnBMZ01vSGpjWjZzN1hiYm4zN2s3YVh5SHlVRDdqbE4?oc=5",
+"outlet":"연합뉴스",
+"via":"google",
+"date":"2026-11-03T09:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":1,
+"kw":[
+"AI 일자리"
+]
+}
+],
+"ai":{
+"link":"1장 · 기술 변화와 직업훈련 / 2장 · AI 시대의 고용형태 변화",
+"qs":[
+"AI 기술 변화에 맞춘 직업훈련은 노동자의 고용 안정에 충분한 대응인가?",
+"직업훈련 설계는 정부, 기업, 노동조합 중 누가 주도하는 것이 바람직한가?",
+"국가 간 직업훈련 협력은 각국 노동시장의 차이를 어떻게 반영해야 하는가?"
+]
+}
+},
+{
 "id":"861af71023",
 "title":"[박효주 노무사]과도한 직장 내 괴롭힘 신고 남용에 관하여",
 "url":"https://news.google.com/rss/articles/CBMiaEFVX3lxTE9IZ1hITXBQYjMtRWg2WEFVa0VQZlFFcHVJRUFZU00tYWZHMk5YdURJZ0dhUmROSDZzYXNCR1k1d1duT1V6NHRDUU5BcHpHdTlCbVFJazVhN2t6dWxZcXBxdmc4TFZna0Fu0gFsQVVfeXFMTU44VjhtOE5jdVo5SVRKVXFrRTNVZEdGUlVBSGpFRDYzTmh6eDdiRXl4MnBOemV3bFl0WkNLdVhxUkd6ekw2WF8zWFpRNWJLN3YwNkh4XzF5cjFtWE1jNGdPQTlDaW9yMVA2MlhQ?oc=5",
@@ -23548,7 +26190,8 @@
 "정년 연장을 추진할 때 임금체계 개편이나 고용 유연성 같은 조건을 함께 논의해야 하는가?",
 "정년 연장의 혜택이 청년 채용이나 기업 인력 구조에 미칠 영향을 어떻게 평가해야 하는가?"
 ]
-}
+},
+"orig":"https://www.hankookilbo.com/news/article/A2026110213090003008"
 },
 {
 "id":"55193ba937",
@@ -23636,7 +26279,9 @@
 "근로자성 판단 기준을 법으로 명확히 하는 방식과 사례별 판단에 맡기는 방식 중 어느 쪽이 더 바람직한가?"
 ]
 },
-"orig":"http://m.ignnews.kr/news/articleView.html?idxno=16401"
+"orig":"http://m.ignnews.kr/news/articleView.html?idxno=16401",
+"chk":1,
+"img":"http://www.ignnews.kr/news/photo/202611/16401_16853_110.jpg"
 },
 {
 "id":"44fe80cd8b",
@@ -23705,7 +26350,10 @@
 "60대 재취업자가 임시·일용직에 몰리는 이유를 기업과 노동자 입장에서 각각 어떻게 설명할 수 있는가?",
 "정년 이후 고용을 안정시키기 위해 국가, 기업, 노동조합이 나눠 맡아야 할 역할은 무엇인가?"
 ]
-}
+},
+"orig":"https://newneek.co/@newneek/article/48320",
+"chk":1,
+"img":"https://d2phebdq64jyfk.cloudfront.net/media/article/41012f941cdf437b9fbdbd546ba76bc8.webp"
 },
 {
 "id":"5aef42a892",
@@ -23902,6 +26550,34 @@
 }
 },
 {
+"id":"8105a61c1a",
+"title":"정년 후 긴 소득 공백, 재취업도 임시·일용직 대부분",
+"url":"https://news.google.com/rss/articles/CBMifEFVX3lxTFAyaGlITFNOZ0J0Y3VHSW84M0xEeDM5cUZLclMwVnZzNXFQR0ZmbUo3XzZUa2dvSFVhQVBNQ2NEbUJsampaNlh2ZUtqNlhPUWpWeFZTbFVkbzZMaDh4aEVwelB0aGIwTGk3UjVUWFVjRFJteWtRRmxMd21ESVE?oc=5",
+"outlet":"부산일보",
+"via":"google",
+"date":"2026-11-02T18:21+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+],
+"ai":{
+"link":"2장 · 고용형태 다양화와 정년 후 노동 / 1장 · 고령화 환경 변화",
+"qs":[
+"정년 이후 재취업이 임시직이나 일용직에 몰리는 현상은 개인의 선택인가, 구조적 문제인가?",
+"정년 후 소득 공백을 줄이기 위해 어떤 고용형태의 확대가 필요한가?",
+"고령 노동자의 임시·일용직 고용을 안정적 일자리로 바꾸기 위해 어떤 제도가 필요한가?"
+]
+},
+"orig":"https://mobile.busan.com/view/youngman/view.php?code=2026110218154303623",
+"chk":1,
+"img":"https://www.busan.com/nas/wcms/wcms_data/photos/2026/11/02/2026110218211737573_l.png"
+},
+{
 "id":"fef961a006",
 "title":"장애인고용공단, ‘장애인 관점서 본 고용서비스 효과’ 학술대회",
 "url":"https://www.laborplus.co.kr/news/articleView.html?idxno=41756",
@@ -24069,7 +26745,9 @@
 "노동조합이 법안 철회를 요구하는 농성과 선전전은 입법 과정에서 어떤 효과를 낼 수 있는가?",
 "선택적 근로시간제의 정산기간을 늘리는 방안은 노사 모두에게 어떤 이익과 부담을 줄 수 있는가?"
 ]
-}
+},
+"chk":1,
+"img":"https://cdn.laborplus.co.kr/news/photo/202611/41753_74800_5039.jpg"
 },
 {
 "id":"2cb8e1239b",
@@ -24194,6 +26872,34 @@
 "오늘날 플랫폼이나 비정규직 노동에서도 과거와 비슷한 주거·생활 문제가 나타나는가?"
 ]
 }
+},
+{
+"id":"1e9364f877",
+"title":"박수민 의원, “일하는 사람 기본법·근로자 추정제, ‘노란봉투법 시즌2’ 우려”",
+"url":"https://news.google.com/rss/articles/CBMiWEFVX3lxTE8zZzJrR3VwMC1lRXlQLUlhaWMzMjJ3NzM1aDRNRGhtaktfV1UwY0FwVEJGdXlOdFdtbFduNWZOMFNGZ1U1bnB4OXFVenNrRFE5RnlWLXBVY0jSAVNBVV95cUxQOXF0cTBoQlhYVkVrdnZ3Tm10MGU3NEVtNW5xcDhaQXFhRmFoY2dBSDQyYnY4aGo0cFFBZFdNZTBBdGQxUGJ5LXhzTDQ5ZXhRcjh5dw?oc=5",
+"outlet":"조세플러스",
+"via":"google",
+"date":"2026-11-02T17:25+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":9,
+"kw":[
+"노란봉투법"
+]
+}
+],
+"ai":{
+"link":"3장 · 근로자 개념과 근로계약 / 2장 · 플랫폼 노동과 고용형태 다양화",
+"qs":[
+"근로자 추정제는 특수고용과 플랫폼 노동자의 노동자성 인정에 어떤 역할을 할 수 있는가?",
+"일하는 사람 기본법은 근로기준법 적용 범위를 넓히는 방식과 어떤 차이가 있는가?",
+"근로자 추정제가 도입될 경우 사용자가 제기할 수 있는 우려와 노동자 보호 효과는 어떻게 비교될 수 있는가?"
+]
+},
+"orig":"https://joseplus.com/article/1065601539022695",
+"chk":1,
+"img":"https://joseplus.com/news/data/2026/11/02/p1065601539022695_915_h2.jpg"
 },
 {
 "id":"e3f6f6be3f",
@@ -24437,6 +27143,31 @@
 }
 },
 {
+"id":"9db877519c",
+"title":"노동·시민사회 “대법원, 옵티칼 해고 사건 심리해야”",
+"url":"https://news.google.com/rss/articles/CBMicEFVX3lxTE9QaFBpNlU5SFVCQ3Q4WGJHM3pXMHV6bVM2WjI4S21FZHFGRzJPcnJGQlE5S0NpdHdWMlB6cTBqX3BkTm5LM3E4Y3VNNERGaVdtTzltYXRpTF8wMzN5UVlLUmtETDNNM0l6OE9mMDliZGo?oc=5",
+"outlet":"매일노동뉴스",
+"via":"google",
+"date":"2026-11-02T17:00+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"해고"
+]
+}
+],
+"ai":{
+"link":"6장 · 해고의 정당성과 법원 판단 / 5장 · 해고 관련 근로계약 이슈",
+"qs":[
+"해고 사건에서 법원이 실질적 심리를 해야 하는지는 노동자 권리 보호 측면에서 어떻게 평가될 수 있는가?",
+"해고의 정당성을 판단할 때 사용자의 경영상 판단과 노동자의 생존권 중 무엇을 더 중시해야 하는가?",
+"법원이 해고 사건을 심리하지 않을 경우 노동자에게는 어떤 구제 수단이 남는가?"
+]
+}
+},
+{
 "id":"8d0caea7ce",
 "title":"구직·축제 현장에서 알린 일터 안전…부산 영도구 산업재해 예방 캠페인",
 "url":"https://news.google.com/rss/articles/CBMiWkFVX3lxTE8zakt2OGtrbkR4c3lwVFZZX0VGR2pFeWZ2eWZwNU5xM3JUQnliWG43Q1pERVNrQlhpLWhBeVA3TURtSHdpcGFxUTl0ZjZSd29JbG5NSzV1RGxYQQ?oc=5",
@@ -24510,6 +27241,31 @@
 "직장 내 괴롭힘을 판단할 때 발언의 표현과 맥락 중 무엇을 더 중요하게 봐야 하는가?",
 "행위자의 의도와 피해자가 느낀 정도 중 어느 쪽을 판단의 중심에 두어야 하는가?",
 "괴롭힘 판단 기준이 모호하면 조직 내 소통과 관리 활동에 어떤 영향이 생기는가?"
+]
+}
+},
+{
+"id":"1a7def1016",
+"title":"로펌 파트너 정년 연장 확산…고객 지키기와 세대교체 사이…화우는 65세로 연장…광장은 내년 논의",
+"url":"https://news.google.com/rss/articles/CBMiS0FVX3lxTFBnZlhDajRJTFZpUmE2RDZVYTJFWkxpcXBYWHFjRmZtdXdGWndCcVdxa2VLSkJaZktWYVlsVVp4SHJYWDFiUC1GOXZOaw?oc=5",
+"outlet":"재경일보",
+"via":"google",
+"date":"2026-11-02T16:40+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+}
+],
+"ai":{
+"link":"5장 · 정년 연장과 세대교체 / 1장 · 환경 변화와 인사관리",
+"qs":[
+"로펌의 파트너 정년 연장은 고객 관계 유지와 세대교체 중 어느 쪽에 더 중요한 의미를 가지는가?",
+"정년 연장이 조직 내 승진과 세대교체를 막는다는 우려에 대해 기업은 어떻게 대응할 수 있는가?",
+"정년 연장 여부를 결정할 때 개인의 역량과 조직의 필요를 어떤 기준으로 비교해야 하는가?"
 ]
 }
 },
@@ -24896,7 +27652,8 @@
 "고령 노동자의 소득 유지 문제는 기업의 복리후생과 국가 연금 중 어느 쪽 책임으로 보는 것이 적절한가?",
 "정년 연장이나 임금체계 개편이 고령층 소득 공백을 줄이는 데 어떤 효과와 한계가 있다고 생각하는가?"
 ]
-}
+},
+"orig":"https://www.news2day.co.kr/article/20261102500005"
 },
 {
 "id":"6ad94be64f",
@@ -25059,7 +27816,10 @@
 "연금 수령 전 소득 공백을 줄이기 위해 어떤 고용 정책이 필요한가?",
 "고령 임시직 노동자의 고용 안정을 위해 어떤 근로계약 기준이 필요한가?"
 ]
-}
+},
+"orig":"https://www.newsis.com/view/NISX20261102_0003851139",
+"chk":1,
+"img":"https://img1.newsis.com/2025/03/28/NISI20250328_0020751160_web.jpg"
 },
 {
 "id":"c6c85c827f",
@@ -25502,6 +28262,37 @@
 "AI 도입으로 일자리가 줄어든다는 청년의 우려에 정부는 어떤 방식으로 응답해야 할까?",
 "국가발전전략을 세울 때 청년 의견을 반영하는 방식은 실제 정책 결정에 얼마나 영향을 줄 수 있을까?",
 "기술 변화에 따른 고용 충격을 완화하기 위해 노동자 재교육과 사회 안전망 중 무엇이 더 중요할까?"
+]
+}
+},
+{
+"id":"38ab49a4ec",
+"title":"정년~국민연금 3년 '소득 크레바스'…재취업 60% 임시·일용직 허덕",
+"url":"https://news.google.com/rss/articles/CBMibkFVX3lxTE94N1pTMkZVdU5QbTVTMWRSRlY1WGpOZVdpZ1BwdTNJNU1henJZeEdBcWdqM2RrbDZZMHl4dWV5VEFDTzA5dmlpMXN6LTNyWUo0cS1JTG5Oc0FTZlpvM2FSWnhNUUQyTVhjcjFaSlhR?oc=5",
+"outlet":"서울이코노미뉴스",
+"via":"google",
+"date":"2026-11-02T11:46+09:00",
+"seen":"2026-11-09",
+"tags":[
+{
+"ch":6,
+"kw":[
+"정년"
+]
+},
+{
+"ch":4,
+"kw":[
+"국민연금"
+]
+}
+],
+"ai":{
+"link":"4장 · 4대보험(국민연금) 공백과 재취업 후 고용형태",
+"qs":[
+"정년 이후 국민연금 수급 전까지의 소득 공백은 어떤 방식으로 메워져야 한다고 생각하는가?",
+"재취업자 중 임시·일용직 비중이 높다는 현상은 고용형태 다양화의 문제인가, 고용안정 정책의 문제인가?",
+"고령 근로자의 재취업을 돕기 위해 정부, 기업, 노동조합 각각이 맡을 수 있는 역할은 무엇인가?"
 ]
 }
 },
@@ -28457,143 +31248,528 @@
 }
 },
 "events":{
-"generated":"2026-11-08T18:56+09:00",
+"generated":"2026-11-09T10:24+09:00",
 "items":[
 {
-"id":"e67765d681",
-"name":"이탈리아 셰프, 파인애플 피자 조리 거부 후 해고",
+"id":"effbd9c9b7",
+"name":"고용보험 부정수급 자진신고 시 추가징수 면제",
 "ids":[
-"ac9e61286c",
-"e1402fe274",
-"5cf13f5af9",
-"d8f8bda037",
-"4156aea725"
+"d34e71343d",
+"278a0dbc84",
+"2b8d7eb424",
+"65be5fba3c",
+"ef997bc4a7",
+"c9245901e3",
+"8d85083f5a",
+"7f5a1c28cf",
+"49ec8295bf",
+"f0134ae265",
+"c750e94ea0",
+"285a9101d6",
+"a7aa770fa5",
+"537ce94434",
+"fa79eddd3d",
+"cdf0b682d7",
+"a538ecdaac",
+"c549f825fb",
+"aeb43b4cf3",
+"dbf8b24434",
+"a7f741662c",
+"4fd034647e",
+"8259d65f6f",
+"cd66d4dba7",
+"800c41602e",
+"6f357a0d08",
+"1b04121f89",
+"4010b3c672",
+"80a1a121e5",
+"bee87e0536",
+"8b04a32fb7",
+"20f5ea60f9",
+"3dab5990ac",
+"4851da289a",
+"ea479fe83c"
 ],
-"summary":"이탈리아 주방장이 파인애플 토핑 피자 조리를 모욕적이라며 거부하다 해고됐다는 보도가 나왔다. 호주에서 일어난 일로 전해졌다.",
-"sumN":4,
-"first":"2026-11-05T17:27+09:00",
-"last":"2026-11-08T18:31+09:00",
-"chs":[
-6
-],
-"src":0,
-"sv":2,
-"table":{
-"parties":[
-"요리사",
-"사업주"
-],
-"rows":[
-{
-"issue":"조리 지시",
-"cells":[
-"피자 전통을 모독하는 토핑은 조리할 수 없다",
-""
-],
-"from":"호주 톱뉴스"
-}
-]
-},
-"concepts":[
-{
-"ch":6,
-"name":"징계사유",
-"why":"해고 사유인 조리 거부가 실제 잘못인지 따져볼 대목이다"
-},
-{
-"ch":6,
-"name":"노동위원회 구제신청",
-"why":"조리 거부를 이유로 한 해고가 부당한지 다툴 수 있는 대목이다"
-}
-]
-},
-{
-"id":"eb870cddd1",
-"name":"전태일 열사, 근로기준법에 49.9점 평가",
-"ids":[
-"2456993bf3",
-"0502edb855",
-"9009e8a0f3",
-"c83728acf8"
-],
-"summary":"직장갑질119가 노무사, 변호사, 활동가 102명을 상대로 설문한 결과, 현행 근로기준법은 100점 만점에 평균 49.9점을 받았다. 응답자의 80.4%는 법이 현장에서 지켜지지 않는다고 답했고, 96.1%는 5인 미만 사업장과 특수고용·플랫폼 노동자가 사각지대에 있다고 봤다. 단체는 근로기준법 전면 개정과 초광역특구법 철회를 요구했다.",
-"sumN":4,
-"first":"2026-11-08T12:00+09:00",
-"last":"2026-11-08T18:23+09:00",
-"chs":[
-3,
-7
-],
-"src":2,
-"sv":2,
-"table":{
-"parties":[
-"직장갑질119",
-"정부"
-],
-"rows":[
-{
-"issue":"법 적용 확대",
-"cells":[
-"사각지대 해소를 최우선으로 전면 개정 요구",
-""
-],
-"from":"한국경제TV"
-},
-{
-"issue":"초광역특구법",
-"cells":[
-"노동 특례 도입으로 노동자 보호 약화 우려",
-""
-],
-"from":"한국경제TV"
-},
-{
-"issue":"노동정책 평가",
-"cells":[
-"이재명 정부 노동정책 부정 평가 69.6%",
-""
-],
-"from":"한국경제TV"
-}
-]
-},
-"concepts":[
-{
-"ch":3,
-"name":"5인 미만 사업장",
-"why":"5인 미만 노동자가 근로기준법 보호에서 빠진다는 문제 제기"
-}
-]
-},
-{
-"id":"e6aa58ee3a",
-"name":"김영훈 장관, 중대재해 반복 기업 특별감독 방침",
-"ids":[
-"3395d11bbc",
-"7e8b21b989",
-"f392d59302",
-"846fce8501",
-"190340a3c2",
-"bf75c6ad5b"
-],
-"summary":"김영훈 노동장관이 중대재해가 반복되는 기업을 특별감독 수준으로 엄중히 다루겠다고 밝혔다. 산업안전 불시 재점검을 지시하고 긴급 기관장 회의를 열었으며, 위반 시 엄중 조치 방침을 강조했다. 제목에서 확인되는 내용만 정리했다.",
-"sumN":5,
-"first":"2026-11-07T10:00+09:00",
-"last":"2026-11-08T17:08+09:00",
+"summary":"고용노동부가 9일부터 12월 31일까지 고용보험 부정수급 집중신고기간을 운영한다. 조사가 시작되기 전에 자진신고하고 성실히 밝히면 추가징수를 면제받을 수 있고, 제보하면 신고포상금도 받을 수 있다.",
+"sumN":35,
+"first":"2026-11-08T05:27+09:00",
+"last":"2026-11-09T09:53+09:00",
 "chs":[
 4
 ],
-"src":0,
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"실업급여 부정수급",
+"why":"취업 사실을 숨기거나 이직 사유를 꾸며 받은 급여를 자진신고하면 추가징수를 면제받는다"
+},
+{
+"ch":4,
+"name":"고용안정·직능개발사업",
+"why":"고용안정·직업능력개발사업도 자진신고 시 추가징수 면제와 지급제한기간 감경이 적용된다"
+}
+]
+},
+{
+"id":"ee0255dd98",
+"name":"월 300만원 미만 산재노동자 무료 법률 지원",
+"ids":[
+"a9eae50dfb",
+"364101a37e",
+"2d65b61d38",
+"51760c569b",
+"c45ad6a51a",
+"3f92880e6f",
+"6fed915562",
+"c2030d7ec7",
+"89d95240af",
+"08b409a8b1",
+"81c771d3d6",
+"5b41308346",
+"8fc3ec92d8",
+"bb2a92c2ef"
+],
+"summary":"근로복지공단은 내년 3월 30일부터 월평균 보수 300만원 미만 노동자와 유족에게 산재보상 청구부터 심사, 재심사까지 변호사와 공인노무사의 조력을 무료로 제공한다고 밝혔다. 운영 예산 39억원이 정부안에 반영됐다.",
+"sumN":14,
+"first":"2026-11-06T17:49+09:00",
+"last":"2026-11-09T09:46+09:00",
+"chs":[
+4
+],
+"src":3,
 "again":true,
 "sv":2,
 "concepts":[
 {
 "ch":4,
-"name":"중대재해처벌법",
-"why":"반복된 중대재해 기업에 특별감독과 엄중 조치를 예고한 대목이 경영책임자 처벌 취지와 맞닿는다"
+"name":"산재보험",
+"why":"산재 피해 노동자가 근로복지공단에 보험급여를 청구할 때 법률 조력을 국가가 지원한다"
+},
+{
+"ch":4,
+"name":"산업재해",
+"why":"난청과 진폐를 제외한 업무상 질병에 대한 청구와 이의제기가 지원 대상이다"
 }
 ]
+},
+{
+"id":"e8d9d85454",
+"name":"국회입법조사처, 자발적 퇴사 청년 구직급여 검토",
+"ids":[
+"bc2d7625c1",
+"487b55446a"
+],
+"summary":"국회입법조사처가 자발적으로 퇴사한 청년에게도 생애 한 차례 구직급여를 지급하는 방안을 검토했다는 보도다. 기사들은 도덕적 해이 우려가 크지 않다는 판단을 전한다.",
+"sumN":2,
+"first":"2026-11-09T08:28+09:00",
+"last":"2026-11-09T09:46+09:00",
+"chs":[
+4
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"실업급여",
+"why":"자발적 퇴사자에게도 구직급여를 주는 방안이 검토되는 대목"
+},
+{
+"ch":4,
+"name":"실업급여 부정수급",
+"why":"자발적 퇴사자에게 주면 도덕적 해이가 생길지가 쟁점"
+}
+]
+},
+{
+"id":"ea092c84eb",
+"name":"베트남 최저임금 4.5배 급등, 한국 기업 92% 잔류",
+"ids":[
+"d2a92a2c6f",
+"d706654af2"
+],
+"summary":"베트남의 올해 최저임금이 205.3달러로 14년 만에 4.5배 급등했다는 소식이다. 베트남에 진출한 한국 기업 92%는 철수하지 않겠다고 답했다. 노사가 맞서는 내용이 아니라 통계와 기업 조사 결과를 전하는 기사다.",
+"sumN":2,
+"first":"2026-11-08T13:18+09:00",
+"last":"2026-11-09T09:35+09:00",
+"chs":[
+3
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":3,
+"name":"최저임금",
+"why":"임금 하한이 급등해 기업 부담이 커지는 상황을 다루는 대목"
+}
+]
+},
+{
+"id":"e691c5c050",
+"name":"정부, 내년 일자리 예산 25조 1484억 편성",
+"ids":[
+"d6eb97286f",
+"a33be7ca78",
+"f32309f433",
+"7988c0982c"
+],
+"summary":"정부는 2027년도 재정지원 일자리사업 예산안을 25조1484억원으로 편성했다고 밝혔다. 청년 첫 취업지원제 신설과 AI·첨단산업 직업훈련 확대에 재정을 집중한다는 내용이다. 다만 예산이 실제 고용 성과로 이어질지가 과제로 남아 있다.",
+"sumN":4,
+"first":"2026-11-06T12:00+09:00",
+"last":"2026-11-09T09:24+09:00",
+"chs":[
+1
+],
+"src":1,
+"again":true,
+"sv":2,
+"concepts":[
+{
+"ch":1,
+"name":"제4차 산업혁명과 일자리",
+"why":"AI와 첨단산업 인력 수요 변화에 맞춰 직업훈련을 확대한다는 대목"
+},
+{
+"ch":1,
+"name":"좋은 일자리",
+"why":"청년 첫 취업과 안정적 경력 형성을 정책 목표로 삼음"
+}
+]
+},
+{
+"id":"eb27ece096",
+"name":"인천항 잇단 산업재해, 중대재해법 적용 요구",
+"ids":[
+"50056d20fe",
+"640838a7ed",
+"6d415369f1",
+"52956de6e8",
+"047498cd43"
+],
+"summary":"인천지역 노동·시민단체는 인천항 E1컨테이너터미널과 한진터미널에서 잇따른 산재에 대해 터미널 운영사의 책임을 규명하고 중대재해처벌법을 적용하라고 촉구했다. 이들은 직접 도급관계가 없어도 작업장을 실질적으로 지배·관리하는 주체가 책임져야 한다고 주장했다. 쟁점은 화물노동자 등 외주 작업자의 안전 책임을 누구에게 물을지다.",
+"sumN":5,
+"first":"2026-11-05T15:04+09:00",
+"last":"2026-11-09T09:22+09:00",
+"chs":[
+4
+],
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"중대재해처벌법",
+"why":"사고 책임자를 가려 처벌하는 법 적용을 노동계가 요구"
+}
+],
+"table":{
+"parties":[
+"노동·시민단체",
+"터미널 운영사"
+],
+"rows":[
+{
+"issue":"책임 주체",
+"cells":[
+"형식적 계약보다 실질적 지배·관리 주체가 책임져야",
+"받은 글에 입장 없음"
+],
+"from":"해사신문"
+},
+{
+"issue":"중대재해법 적용",
+"cells":[
+"중대재해처벌법 적용 여부를 검토하고 철저히 수사하라",
+"받은 글에 입장 없음"
+],
+"from":"해사신문"
+},
+{
+"issue":"항만 안전 대책",
+"cells":[
+"해수청 특별점검과 시 합동점검단 구성 요구",
+"받은 글에 입장 없음"
+],
+"from":"해사신문"
+}
+]
+}
+},
+{
+"id":"ed47005ec6",
+"name":"음성군, 외국인 근로자 산재예방 스티커 보급",
+"ids":[
+"aad3defdb1",
+"20cbe88ac5"
+],
+"summary":"음성군이 외국인 근로자의 산업재해를 막기 위해 안전보건 픽토그램과 다국어 스티커를 보급했다는 지자체 사업 소식이다. 기사에 맞서는 당사자나 입장 차이는 나오지 않는다.",
+"sumN":2,
+"first":"2026-11-08T21:37+09:00",
+"last":"2026-11-09T08:47+09:00",
+"chs":[
+4,
+5
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"산업재해",
+"why":"외국인 근로자의 일터 사고와 재해를 예방하려는 사업"
+}
+]
+},
+{
+"id":"e2f9860add",
+"name":"학비노조, 11월 27일 총파업 예고",
+"ids":[
+"ab46cc4808",
+"a852a9ea16",
+"915dcca768",
+"1b13d0c9a2",
+"7453a3aca8",
+"75cbbea8d9",
+"dc8cabbde3"
+],
+"summary":"전국학교비정규직연대회의가 임금 인상과 처우 개선을 요구하며 11월 27일 총파업을 예고했다. 교육당국이 기본급 2.3% 인상안만 내놓아 임금교섭 조정회의가 결렬됐고, 찬반투표에서 92.5%가 찬성했다.",
+"sumN":7,
+"first":"2026-11-03T07:10+09:00",
+"last":"2026-11-09T07:30+09:00",
+"chs":[
+9,
+2,
+6
+],
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":2,
+"name":"비정규직",
+"why":"급식·돌봄 노동자가 비정규직이라 전국 단위 임금차별 해소가 요구됨"
+},
+{
+"ch":9,
+"name":"공공부문 교섭과 예산",
+"why":"교육부와 시도교육청이 공동 사용자로 임금 인상률을 정하고 예산은 교육청이 부담"
+},
+{
+"ch":9,
+"name":"쟁의행위 찬반투표",
+"why":"찬반투표 92.5% 찬성으로 파업이 가결돼 합법적 파업권을 확보함"
+}
+],
+"table":{
+"parties":[
+"학교 비정규직 노조",
+"교육당국"
+],
+"rows":[
+{
+"issue":"임금 인상률",
+"cells":[
+"기본급 약 4.9%(월 10만5000원) 인상 요구",
+"기본급 2.3%(월 4만9300원) 인상안 제시"
+],
+"from":"머니투데이"
+},
+{
+"issue":"명절휴가비·근속수당",
+"cells":[
+"명절휴가비 차별 해소, 근속수당 확대 요구",
+"다른 처우 개선 요구는 수용 불가 입장"
+],
+"from":"삼다일보"
+},
+{
+"issue":"인건비 부담",
+"cells":[
+"",
+"임금 인상은 경직성 경비라 재정 부담이 큼"
+],
+"from":"머니투데이"
+}
+]
+}
+},
+{
+"id":"e774fa9934",
+"name":"양대노총, 도심 노동자대회 정년연장 촉구",
+"ids":[
+"0653c5cc91",
+"e36b15d4d6",
+"17a75a18b2",
+"d3e64106f4",
+"857ae80a8e",
+"86172042cd"
+],
+"summary":"한국노총과 민주노총이 7일 서울 도심에서 전국노동자대회를 열고 65세 정년 연장 입법, 원청 교섭 쟁취, 초광역특구법 철회를 정부와 국회에 촉구했다. 한국노총은 정년 입법이 연말까지 이뤄지지 않으면 정책연대를 깨고 투쟁하겠다고 밝혔다. 정부가 정년 연장을 약속하고도 실제 추진이 늦어지면서 노정 관계가 경색되고 있다는 것이 쟁점이다.",
+"sumN":6,
+"first":"2026-11-07T16:34+09:00",
+"last":"2026-11-09T06:30+09:00",
+"chs":[
+7,
+6,
+9
+],
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":7,
+"name":"노정관계",
+"why":"정년연장 미이행과 초광역법을 두고 노정 관계가 경색"
+},
+{
+"ch":6,
+"name":"정년 연장",
+"why":"법정 정년 65세 연장 입법을 연내 요구하는 대목"
+},
+{
+"ch":9,
+"name":"원청 사용자성",
+"why":"원청이 교섭에 나오지 않아 교섭이 꼬인 쟁점"
+}
+],
+"table":{
+"parties":[
+"한국노총",
+"민주노총",
+"정부"
+],
+"rows":[
+{
+"issue":"정년 연장",
+"cells":[
+"65세 정년 연장 연내 입법, 미이행 시 정책연대 파기",
+"",
+"법정 정년 65세 밝혔으나 실제 추진은 버팀"
+],
+"from":"시민의소리"
+},
+{
+"issue":"원청 교섭",
+"cells":[
+"원청 교섭 연내 쟁취 요구",
+"원청 교섭 쟁취 촉구, 교섭 회피 시행령과 지침 비판",
+"법률·예산 사업은 정부 사용자성 부정 단서"
+],
+"from":"참여와혁신"
+},
+{
+"issue":"초광역특구법",
+"cells":[
+"초광역 노동특례 철회 촉구",
+"초광역특구법 철회 촉구, 거대한 노동개악이라 비판",
+"여당은 연말까지 법안 처리 추진"
+],
+"from":"시민의소리"
+}
+]
+}
+},
+{
+"id":"e4b7ac71e3",
+"name":"노동계, 초광역특구 사회적대화 본격화 논의",
+"ids":[
+"876467d421",
+"c2f82998ae"
+],
+"summary":"매일노동뉴스와 뉴시스는 초광역특구를 둘러싼 사회적 대화가 본격화된다고 전했다. 뉴시스는 연내 합의는 미지수라고 보도했다. 받은 글이 제목뿐이라 노사 각각의 구체적 입장은 확인할 수 없다.",
+"sumN":2,
+"first":"2026-11-03T06:30+09:00",
+"last":"2026-11-09T06:01+09:00",
+"chs":[
+7
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":7,
+"name":"사회적 대화(경사노위)",
+"why":"노사정이 위원회에 모여 큰 합의를 시도하는 자리가 초광역특구 대화의 형식과 닿는다"
+},
+{
+"ch":7,
+"name":"노정관계",
+"why":"정부 정책을 두고 노동계와 정부가 대화하는 관계가 쟁점의 중심이다"
+}
+]
+},
+{
+"id":"ec49a62e2a",
+"name":"강원연구원 직장 내 괴롭힘 사건 신속 처리 촉구",
+"ids":[
+"cbdbd07b57",
+"60710a9734",
+"c3d6603916",
+"41ff9e867f",
+"c95cc1cf25",
+"3a41816f71"
+],
+"summary":"강원연구원의 직장 내 괴롭힘 사건에서 외부 조사단은 중징계를 요구했지만 1차 인사위원회는 감봉 3개월을 의결했다. 이어 열린 2차 인사위원회는 위원 이탈로 의결정족수를 채우지 못해 무산됐다. 이승진 도의원과 정의당 도당은 공정하고 신속한 처리와 피해자 보호를 요구했다.",
+"sumN":6,
+"first":"2026-11-04T21:15+09:00",
+"last":"2026-11-09T05:42+09:00",
+"chs":[
+5
+],
+"src":3,
+"again":true,
+"sv":2,
+"concepts":[
+{
+"ch":5,
+"name":"직장 내 괴롭힘",
+"why":"지위를 이용한 괴롭힘을 외부 조사단이 인정함"
+},
+{
+"ch":5,
+"name":"신고 뒤 사업주 조치의무",
+"why":"피해 직원 보호와 복귀 대책을 요구하는 대목"
+}
+],
+"table":{
+"parties":[
+"정의당 도당",
+"이승진 도의원",
+"강원연구원"
+],
+"rows":[
+{
+"issue":"징계 수위",
+"cells":[
+"외부 조사단 중징계 요구에 비해 경징계 의결 문제 제기",
+"외부 조사단 중징계 의견에 대한 대응 점검",
+"1차 인사위 감봉 3개월 의결 후 재심의 요청"
+],
+"from":"헤럴드경제"
+},
+{
+"issue":"인사위 회의록",
+"cells":[
+"회의록과 위원 이탈 경위 즉각 공개 요구",
+"회의록 제출과 재심의 경과 보고 요구",
+"위원 퇴장으로 재심의 불성립, 재개최 요청"
+],
+"from":"헤럴드경제"
+},
+{
+"issue":"피해자 보호",
+"cells":[
+"피해자 보호와 재발 방지 대책 촉구",
+"신속한 심의와 안전한 복귀 대책 당부",
+""
+],
+"from":"헤럴드경제"
+}
+]
+}
 },
 {
 "id":"eaa457359e",
@@ -28661,18 +31837,31 @@
 "f1eefb48b2",
 "af2367ea34",
 "06ef1fed67",
-"f751cb2a3e"
+"f751cb2a3e",
+"b9ea43fd46"
 ],
-"summary":"삼성바이오로직스 노조가 6일부터 약 3주간 400명 규모의 부분파업에 들어갔다. 임금 인상률과 인사제도를 둘러싸고 노사가 입장차를 보이며 교섭도 열리지 않았다고 노조는 주장한다. 회사는 대화 창구를 열어두고 있다고 밝혔다.",
-"sumN":58,
+"summary":"삼성바이오로직스 상생노동조합이 6일부터 약 3주간 400명 안팎이 참여하는 부분파업에 들어갔다. 노조는 경영진의 교섭 참여를 촉구하며 임금 인상과 인사제도 개선을 요구하고, 회사는 대화 창구를 열어뒀다고 밝혔다.",
+"sumN":64,
 "first":"2026-11-04T18:35+09:00",
-"last":"2026-11-08T16:15+09:00",
+"last":"2026-11-09T05:00+09:00",
 "chs":[
 9,
 8
 ],
 "src":3,
 "sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"부분파업",
+"why":"전체 조합원이 아니라 원자재시험, 물류 등 일부 부서만 골라 파업하고 있다"
+},
+{
+"ch":9,
+"name":"임금협약과 단체협약",
+"why":"임금 인상과 임단협 타결을 두고 교섭이 막혀 파업이 벌어졌다"
+}
+],
 "table":{
 "parties":[
 "노조",
@@ -28682,8 +31871,16 @@
 {
 "issue":"임금 인상률",
 "cells":[
-"임금 9.5% 인상, 정액 300만원 추가, 영업이익 15% 성과급 요구",
+"임금 9.5% 인상과 정액 300만원 추가 인상 요구",
 "임금 6.2% 인상과 일시금 지급 제시"
+],
+"from":"인천일보"
+},
+{
+"issue":"성과급",
+"cells":[
+"영업이익 15% 성과급 지급 요구",
+""
 ],
 "from":"인천일보"
 },
@@ -28691,67 +31888,348 @@
 "issue":"교섭 참여",
 "cells":[
 "경영진이 책임지고 교섭에 나서야 한다고 촉구",
-"대화 창구를 열어두고 합의 의지에 변함없다고 밝힘"
+"대화 창구를 열어두고 합의 의지에 변함 없다고 밝힘"
 ],
 "from":"인천일보"
 },
 {
 "issue":"파업 범위",
 "cells":[
-"교섭에 진전이 없으면 파업 범위를 넓히겠다",
-"환자와 고객사 피해 방지에 최선을 다하겠다"
+"교섭 진전이 없으면 파업 범위를 넓히겠다는 방침",
+"환자와 고객사 피해가 없도록 공정 운영에 최선"
 ],
 "from":"인천일보"
 }
 ]
+}
 },
+{
+"id":"e2834004fc",
+"name":"포스코 노조, 임단협 잠정합의안 부결",
+"ids":[
+"9417789d4e",
+"257f094416",
+"687556b3c8",
+"ba399aa74a",
+"8ec1e697b8",
+"d0f7873521"
+],
+"summary":"포스코 노사가 마련한 2026년 임금협약 잠정합의안이 11월 7일 조합원 찬반투표에서 반대 51.69%로 부결됐다. 노조는 교섭과 쟁의를 재개하겠다고 밝혔고, 노사는 재교섭을 다시 해야 하는 상황이 됐다. 기본급 인상률과 보상 규모를 두고 이견이 좁혀지지 않은 것이 쟁점이다.",
+"sumN":6,
+"first":"2026-11-06T06:30+09:00",
+"last":"2026-11-09T00:00+09:00",
+"chs":[
+9
+],
+"src":3,
+"sv":2,
 "concepts":[
 {
 "ch":9,
+"name":"잠정합의 인준투표",
+"why":"조합원 찬반투표에서 과반 반대로 잠정합의안이 부결"
+},
+{
+"ch":9,
 "name":"부분파업",
-"why":"전체 조합원이 아니라 원자재시험, 물류 등 일부 부서만 골라 파업한다"
+"why":"9월 부분파업 뒤 11월 무기한 파업을 예고함"
 },
 {
 "ch":9,
-"name":"쟁의행위 정당성",
-"why":"법원이 9개 주요 공정의 쟁의행위를 금지해 파업 범위가 제한됐다"
+"name":"교섭력",
+"why":"무기한 파업으로 제철소 가동과 출하가 흔들릴 수 있음"
+}
+],
+"table":{
+"parties":[
+"포스코 노조",
+"회사(사측)"
+],
+"rows":[
+{
+"issue":"임금 인상",
+"cells":[
+"소급분 제외와 성과급 없는 600만원 보상은 부족",
+"기본급 2.6%, 특별승호 3호봉, 격려금 600만원 제시"
+],
+"from":"매일노동뉴스"
 },
 {
-"ch":9,
-"name":"임금협약과 단체협약",
-"why":"임금 인상률과 단체협약 타결을 두고 임단협 교섭이 멈춰 있다"
+"issue":"교섭·쟁의 재개",
+"cells":[
+"교섭과 쟁의를 다시 재개, 쟁의지침 즉각 하달",
+""
+],
+"from":"페로타임즈"
+},
+{
+"issue":"교섭 자세",
+"cells":[
+"",
+"원만한 합의점을 찾도록 최선을 다하겠다"
+],
+"from":"브릿지경제"
+}
+]
+}
+},
+{
+"id":"e1634fb527",
+"name":"광주 북구, 하반기 중대재해 예방 이행 실태 점검",
+"ids":[
+"d801152612",
+"d50f4a5945",
+"b1ecd858d7",
+"51a9538303"
+],
+"summary":"광주 북구는 9일부터 다음 달 24일까지 전 부서를 대상으로 2026년 하반기 중대재해 예방 의무 이행 실태를 점검한다. 중대재해처벌법에 따른 안전·보건 관리체계의 실효성을 확인하고 잠재 위험을 미리 없애는 것이 목적이다. 노사가 맞서는 사안이 아닌 행정 내부 점검 소식이다.",
+"sumN":4,
+"first":"2026-11-08T11:40+09:00",
+"last":"2026-11-08T21:38+09:00",
+"chs":[
+4
+],
+"src":1,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"중대재해처벌법",
+"why":"법에 따른 안전 의무 이행과 관리체계를 점검하는 대목"
 }
 ]
 },
 {
-"id":"ee0255dd98",
-"name":"월 300만원 미만 산재노동자 무료 법률 지원",
+"id":"e92714313e",
+"name":"경남도, 교섭 의제 범위 두고 노사 대치",
 "ids":[
-"a9eae50dfb",
-"364101a37e",
-"2d65b61d38",
-"51760c569b",
-"c45ad6a51a",
-"3f92880e6f",
-"6fed915562",
-"c2030d7ec7",
-"89d95240af"
+"8af40afd93",
+"baf36e2165",
+"f3aba3fbbf"
 ],
-"summary":"2027년 3월 30일부터 월평균 보수 300만원 미만인 저소득 산재 노동자와 유족은 산재보상 청구부터 이의제기까지 무료 법률 지원을 받는다. 근로복지공단은 관련 예산 39억원이 2027년도 정부안에 반영됐다고 밝혔다. 대리인 보수는 사건당 최대 70만원 수준이다.",
-"sumN":9,
-"first":"2026-11-06T17:49+09:00",
-"last":"2026-11-08T16:08+09:00",
+"summary":"경남 지역 금속노조 하청지회는 원청인 한화오션과의 교섭에서 요구안 36개 조항 전체를 다뤄야 한다고 주장한다. 한화오션은 시설 개선과 노동안전 등 6개 조항만 교섭하겠다는 입장이라 의제 범위를 두고 대립하고 있다. 쟁점은 노란봉투법 시행 뒤 원청의 사용자성과 교섭 의제 범위다.",
+"sumN":3,
+"first":"2026-11-01T21:07+09:00",
+"last":"2026-11-08T20:51+09:00",
+"chs":[
+9,
+2
+],
+"src":1,
+"sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"노란봉투법",
+"why":"하청 노조가 원청과 교섭할 길이 열린 뒤 의제 범위를 다투는 대목"
+},
+{
+"ch":9,
+"name":"원청 사용자성",
+"why":"원청이 하청 노동자의 시설과 근로조건에 어디까지 책임지는지 다투는 대목"
+}
+],
+"again":true,
+"table":{
+"parties":[
+"하청노조",
+"원청 한화오션"
+],
+"rows":[
+{
+"issue":"교섭 의제 범위",
+"cells":[
+"요구안 36개 조항 전체를 논의해야 한다",
+"작업장 시설 개선·노동안전 등 6개 조항만 교섭"
+],
+"from":"경남매일"
+},
+{
+"issue":"사용자성 판단 범위",
+"cells":[
+"사용자성 판단이 의제까지 정하지 않아 노사자치로 정해야 한다",
+"노동위 판단을 근거로 교섭 의제를 한정"
+],
+"from":"경남매일"
+}
+]
+}
+},
+{
+"id":"e67765d681",
+"name":"이탈리아 셰프, 파인애플 피자 조리 거부 후 해고",
+"ids":[
+"ac9e61286c",
+"e1402fe274",
+"5cf13f5af9",
+"d8f8bda037",
+"4156aea725",
+"6bfcee7d79"
+],
+"summary":"호주 브리즈번 레스토랑의 이탈리아 출신 셰프가 파인애플 피자 주문을 문화적 모욕이라며 거부했다가 해고됐고, 공정근로위원회에 부당해고 구제를 신청했다. 신청은 기한을 넘겼다는 이유로 기각됐으며, 식당 측은 토핑 거부 외에 업무 태도와 직장 내 마찰도 해고 사유라고 주장했다.",
+"sumN":6,
+"first":"2026-11-05T17:27+09:00",
+"last":"2026-11-08T19:13+09:00",
+"chs":[
+6
+],
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":6,
+"name":"노동위원회 구제신청",
+"why":"부당해고 구제 신청이 기한 초과로 기각되며 본안 판단에 이르지 못함"
+},
+{
+"ch":6,
+"name":"징계사유",
+"why":"식당 측이 토핑 거부 외에 업무 태도와 직장 내 마찰을 징계 사유로 제시함"
+}
+],
+"table":{
+"parties":[
+"셰프",
+"식당 측"
+],
+"rows":[
+{
+"issue":"파인애플 피자 주문",
+"cells":[
+"문화적 모욕이라 조리를 거부함",
+"고객 요청을 따르지 않은 것을 해고 사유로 봄"
+],
+"from":"위클리코리아"
+},
+{
+"issue":"해고 사유",
+"cells":[
+"해고는 부당하다며 구제를 신청함",
+"토핑 거부 외에 감정적 대응 등 여러 징계 사유가 있음"
+],
+"from":"위클리코리아"
+}
+]
+}
+},
+{
+"id":"eb870cddd1",
+"name":"전태일 열사, 근로기준법에 49.9점 평가",
+"ids":[
+"2456993bf3",
+"0502edb855",
+"f98020cab7",
+"9009e8a0f3",
+"c83728acf8"
+],
+"summary":"직장갑질119가 노무사, 변호사, 활동가 102명을 대상으로 한 설문에서 현행 근로기준법에 평균 49.9점을 줬다. 응답자 80.4%는 법이 현장에서 지켜지지 않는다고 답했고, 96.1%는 5인 미만 사업장과 특수고용·플랫폼 노동자의 사각지대를 지적했다. 오진호 집행위원장은 초광역특구법 철회와 근로기준법 전면 개정을 촉구했다.",
+"sumN":5,
+"first":"2026-11-08T12:00+09:00",
+"last":"2026-11-08T18:23+09:00",
+"chs":[
+3,
+7
+],
+"src":2,
+"sv":2,
+"concepts":[
+{
+"ch":3,
+"name":"5인 미만 사업장",
+"why":"설문에서 5인 미만 노동자가 보호에서 빠진 사각지대로 지목"
+},
+{
+"ch":7,
+"name":"노정관계",
+"why":"정부 노동정책을 부정 평가한 응답이 69.6%에 달함"
+}
+]
+},
+{
+"id":"ecd8e5ec98",
+"name":"메트로신문, 노란봉투법 교섭 범위 카드뉴스",
+"ids":[
+"5c147291bf",
+"96b14f8cf4"
+],
+"summary":"메트로신문과 ZUM 뉴스가 노란봉투법으로 넓어진 교섭 길과 원청 책임의 범위를 카드뉴스로 다뤘다. 받은 글이 제목뿐이라 구체 조항과 노사 입장은 확인되지 않는다.",
+"sumN":2,
+"first":"2026-11-08T16:53+09:00",
+"last":"2026-11-08T17:23+09:00",
+"chs":[
+9
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"노란봉투법",
+"why":"카드뉴스의 주제인 넓어진 교섭 길이 이 법 개정의 내용과 같다"
+},
+{
+"ch":9,
+"name":"원청 사용자성",
+"why":"원청 책임이 어디까지인지 묻는 대목이 하청 노동자 교섭 상대와 맞닿는다"
+}
+]
+},
+{
+"id":"e6aa58ee3a",
+"name":"김영훈 장관, 중대재해 반복 기업 특별감독 방침",
+"ids":[
+"3395d11bbc",
+"7e8b21b989",
+"f392d59302",
+"2df1d91dc1",
+"846fce8501",
+"190340a3c2",
+"bf75c6ad5b"
+],
+"summary":"김영훈 고용노동부 장관이 7일 전국 49개 지방관서장 긴급 회의에서 중대재해가 반복되는 기업을 특별감독에 준하게 감독하고, 기존 감독 사업장의 위반 개선 여부를 불시에 점검하라고 지시했다. 대불산단에서 지난해 1월부터 올해 9월까지 노동자 11명이 숨진 사례를 들어 사고 예방을 강조했다.",
+"sumN":7,
+"first":"2026-11-07T10:00+09:00",
+"last":"2026-11-08T17:08+09:00",
 "chs":[
 4
 ],
-"src":2,
+"src":3,
 "again":true,
 "sv":2,
 "concepts":[
 {
 "ch":4,
-"name":"산재보험",
-"why":"다친 노동자가 근로복지공단에서 보상받는 제도의 지원 대상"
+"name":"중대재해처벌법",
+"why":"사망사고 뒤에도 비용 절감을 우선하는 사업주의 책임을 강조함"
+},
+{
+"ch":4,
+"name":"산업재해",
+"why":"대불산단에서 중대재해가 반복되고 노동자가 숨진 사건이 배경"
+}
+]
+},
+{
+"id":"e4ee3ee5ee",
+"name":"창녕군시설관리공단, 갑질·괴롭힘 예방 교육 실시",
+"ids":[
+"2f5144eec5",
+"06b126bc3e"
+],
+"summary":"창녕군시설관리공단이 2026년도 갑질·직장 내 괴롭힘 예방 교육을 실시했다는 소식이다. 받은 글이 제목뿐이라 교육 대상과 구체 내용은 확인되지 않는다. 맞서는 노사 당사자나 입장이 드러나지 않는 행사 소식이다.",
+"sumN":2,
+"first":"2026-11-07T12:50+09:00",
+"last":"2026-11-08T16:49+09:00",
+"chs":[
+5
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":5,
+"name":"직장 내 괴롭힘",
+"why":"예방 교육의 주제인 갑질·직장 내 괴롭힘이 이 개념의 정의와 맞닿는다"
 }
 ]
 },
@@ -28841,153 +32319,6 @@
 ]
 },
 {
-"id":"e2f9860add",
-"name":"학비노조, 11월 27일 총파업 예고",
-"ids":[
-"ab46cc4808",
-"a852a9ea16",
-"915dcca768",
-"1b13d0c9a2",
-"7453a3aca8",
-"75cbbea8d9"
-],
-"summary":"학교 비정규직 노동자들이 임금 차별 해소를 요구하며 11월 27일 전국 총파업을 예고했다. 임금교섭 조정회의에서 합의를 이루지 못했고, 노조는 기본급 인상 폭을 두고 교육청과 맞서고 있다. 쟁점은 임금 인상률, 방학 중 무임금과 명절휴가비 차별, 교육재정 문제다.",
-"sumN":5,
-"first":"2026-11-03T07:10+09:00",
-"last":"2026-11-08T15:30+09:00",
-"chs":[
-9,
-2,
-6
-],
-"src":2,
-"sv":2,
-"table":{
-"parties":[
-"노조",
-"교육부·교육청"
-],
-"rows":[
-{
-"issue":"임금 인상률",
-"cells":[
-"기본급 약 4.9%(월 10만5000원) 인상 요구",
-"기본급 2.3%(월 4만9300원) 인상안 제시"
-],
-"from":"머니투데이"
-},
-{
-"issue":"파업 예고",
-"cells":[
-"쟁의 찬반투표 92.5% 찬성, 27일 총파업 예고",
-""
-],
-"from":"제주의소리"
-},
-{
-"issue":"무임금·수당 차별",
-"cells":[
-"방학 중 무임금 해결, 명절휴가비 차별 해소 요구",
-""
-],
-"from":"제주의소리"
-},
-{
-"issue":"교육재정",
-"cells":[
-"지방교육재정교부금 개편 반대, 교육재정 사수 투쟁",
-"교부금 개편으로 내년 재정 여건 불확실해 신중 입장"
-],
-"from":"머니투데이"
-}
-]
-},
-"concepts":[
-{
-"ch":9,
-"name":"쟁의행위 찬반투표",
-"why":"조합원 찬반투표에서 92.5% 찬성을 얻어 파업 절차를 마쳤다"
-},
-{
-"ch":9,
-"name":"공공부문 교섭과 예산",
-"why":"전국 공통으로 정한 임금을 시도교육청 예산이 부담하는 구조다"
-},
-{
-"ch":9,
-"name":"대체근로 금지",
-"why":"학교는 필수공익사업장이 아니라 파업 때 외부 대체인력 투입이 제한된다"
-}
-]
-},
-{
-"id":"e92714313e",
-"name":"경남도, 교섭 의제 범위 두고 노사 대치",
-"ids":[
-"8af40afd93",
-"baf36e2165"
-],
-"summary":"노란봉투법 시행 후 경남의 원청-하청 교섭과 공공부문 용역노조 교섭 모두에서 의제 범위를 두고 노사가 맞서고 있다. 노조는 임금과 복지를 포함한 전체 의제를 요구하지만, 회사와 경남도는 노동위원회가 인정한 범위로 의제를 한정하려 한다. 쟁점은 노동위의 사용자성 판단이 교섭 의제까지 정하는지다.",
-"sumN":2,
-"first":"2026-11-01T21:07+09:00",
-"last":"2026-11-08T15:27+09:00",
-"chs":[
-9,
-2
-],
-"src":1,
-"sv":2,
-"concepts":[
-{
-"ch":9,
-"name":"원청 사용자성",
-"why":"원청이 임금·복지를 결정하므로 교섭에 나와야 한다는 노조 주장이 쟁점이다"
-},
-{
-"ch":9,
-"name":"교섭창구 단일화",
-"why":"교섭 요구 노조 확정 과정에서 웰리브지회를 제외했다가 노동위가 포함을 명령했다"
-}
-],
-"again":true,
-"table":{
-"parties":[
-"노조",
-"한화오션",
-"경남도"
-],
-"rows":[
-{
-"issue":"교섭 의제 범위",
-"cells":[
-"36개 조항 전체를 논의해야 한다고 요구",
-"작업장 시설 개선·노동안전 등 6개 조항만 교섭 가능",
-"노동위 인정 범위로 의제를 한정하는 공고"
-],
-"from":"경남매일"
-},
-{
-"issue":"임금·복지 의제",
-"cells":[
-"임금·복지도 포함한 의제 요구",
-"",
-""
-],
-"from":"경남매일"
-},
-{
-"issue":"사용자성 판단의 효과",
-"cells":[
-"교섭 절차상 판단이 의제를 확정하지 않는다고 주장",
-"노동위 판단을 근거로 교섭 의제를 한정",
-"노동위 판단은 나머지 의제를 대화로 정하라는 취지"
-],
-"from":"경남매일"
-}
-]
-}
-},
-{
 "id":"e71c20f30f",
 "name":"노란봉투법 첫해 분규 감소, 근로손실 45% 증가",
 "ids":[
@@ -29041,53 +32372,6 @@
 }
 ]
 }
-},
-{
-"id":"effbd9c9b7",
-"name":"고용보험 부정수급 자진신고 시 추가징수 면제",
-"ids":[
-"d34e71343d",
-"278a0dbc84",
-"2b8d7eb424",
-"65be5fba3c",
-"ef997bc4a7",
-"c9245901e3",
-"8d85083f5a",
-"7f5a1c28cf",
-"49ec8295bf",
-"f0134ae265",
-"c750e94ea0",
-"285a9101d6",
-"a7aa770fa5",
-"537ce94434",
-"fa79eddd3d",
-"a538ecdaac",
-"c549f825fb",
-"aeb43b4cf3",
-"dbf8b24434",
-"a7f741662c"
-],
-"summary":"고용노동부는 11월 9일부터 12월 31일까지 2026년 하반기 고용보험 부정수급 집중신고기간을 운영한다. 자진신고하면 실업급여와 모성보호급여의 추가징수가 면제되고, 제보자에게는 부정수급액의 20~30%를 포상금으로 준다. 실업급여 반복수급과 해외 체류 사례는 특별점검 대상이다.",
-"sumN":19,
-"first":"2026-11-08T05:27+09:00",
-"last":"2026-11-08T14:14+09:00",
-"chs":[
-4
-],
-"src":3,
-"sv":2,
-"concepts":[
-{
-"ch":4,
-"name":"실업급여 부정수급",
-"why":"취업 사실을 숨기거나 이직 사유를 꾸며 받은 급여를 자진신고하면 추가징수가 면제된다"
-},
-{
-"ch":4,
-"name":"실업급여",
-"why":"동일 사업장 반복수급과 실업인정일 해외 출국이 특별점검 대상이다"
-}
-]
 },
 {
 "id":"ede4939928",
@@ -29194,59 +32478,52 @@
 ]
 },
 {
-"id":"e774fa9934",
-"name":"양대노총, 도심 노동자대회 정년연장 촉구",
+"id":"ec6eecfe6e",
+"name":"현대차 노조, 성과급·정년연장 요구 임단협",
 "ids":[
-"0653c5cc91",
-"e36b15d4d6",
-"17a75a18b2",
-"d3e64106f4",
-"857ae80a8e"
+"ae8d28fcfd",
+"c5132cffe1"
 ],
-"summary":"양대노총이 7일 서울 등에서 전국노동자대회를 열어 정년 연장, 원청 교섭, 초광역특구법 철회를 정부와 국회에 촉구했다. 노동계는 정부가 노동권 확대보다 기업 이익에 치우친다고 비판하며 연내 입법 시한을 제시했다.",
-"sumN":4,
-"first":"2026-11-07T16:34+09:00",
-"last":"2026-11-08T12:05+09:00",
+"summary":"현대차 노조가 성과급 인상과 정년 연장, 신규채용과 신기술 적용 합의를 요구하며 임단협이 긴장되고 있다. 회사 측 입장은 받은 글에 나오지 않는다.",
+"sumN":2,
+"first":"2026-11-04T19:34+09:00",
+"last":"2026-11-08T11:39+09:00",
 "chs":[
-7,
 6,
+8,
 9
 ],
-"src":2,
+"src":0,
 "sv":2,
 "table":{
 "parties":[
-"한국노총",
-"민주노총",
-"정부"
+"노조",
+"회사"
 ],
 "rows":[
 {
+"issue":"성과급",
+"cells":[
+"성과급 인상 요구",
+""
+],
+"from":"dt.co.kr"
+},
+{
 "issue":"정년 연장",
 "cells":[
-"65세 정년 연장 연내 입법 촉구",
-"",
+"정년 연장까지 합의 요구",
 ""
 ],
-"from":"참여와혁신"
+"from":"dt.co.kr"
 },
 {
-"issue":"원청 교섭",
+"issue":"신규채용·신기술",
 "cells":[
-"원청 교섭 쟁취 촉구",
-"원청 교섭 쟁취 촉구",
+"신규채용과 신기술 적용 합의 요구",
 ""
 ],
-"from":"참여와혁신"
-},
-{
-"issue":"초광역특구법",
-"cells":[
-"철회 촉구",
-"철회 촉구, 저지 투쟁",
-"법안 추진 중(심사 진행)"
-],
-"from":"매일노동뉴스"
+"from":"dt.co.kr"
 }
 ]
 },
@@ -29254,17 +32531,17 @@
 {
 "ch":6,
 "name":"정년 연장",
-"why":"한국노총이 법정 정년을 65세로 넘기는 입법을 연내에 하라고 요구한 대목이다"
-},
-{
-"ch":7,
-"name":"노정관계",
-"why":"정부 노동정책을 두고 노동계가 정부와 충돌하며 정책연대 파기까지 언급한 대목이 노정 관계와 맞닿는다"
+"why":"노조가 임단협 요구에 정년 연장을 넣은 대목이 이 개념에 해당한다"
 },
 {
 "ch":9,
-"name":"원청 사용자성",
-"why":"하청 노동자의 교섭을 원청이 응하게 하라는 요구가 원청이 교섭에 나와야 하는가의 쟁점과 닿는다"
+"name":"고용안정과 구조조정",
+"why":"신규채용 확대 요구가 임금과 나란히 교섭 쟁점이 되고 있다"
+},
+{
+"ch":9,
+"name":"임금협약과 단체협약",
+"why":"성과급과 정년 등을 함께 묶은 임단협 교섭이 이 개념의 사례다"
 }
 ]
 },
@@ -29303,29 +32580,30 @@
 "17963d8c70",
 "4bc0cfbc49",
 "1d6202bb30",
+"1652e3c92b",
 "8d438f4519"
 ],
-"summary":"프랑스 극좌 대권 주자 멜랑숑이 은퇴 나이를 60세로 되돌리고 최저임금을 올리는 경기부양 공약을 발표했다. 마크롱 정부의 정책과 반대 방향이라고 밝혔다. 받은 글이 없어 맞서는 당사자 입장은 싣지 않았다.",
-"sumN":5,
+"summary":"프랑스 극좌 LFI 대표 장뤼크 멜랑숑이 2027년 대선 공약으로 최저임금을 약 15% 올리고 정년을 60세로 되돌리겠다고 발표했다. 마크롱 정부의 긴축과 연금개혁에 반대해 소비 중심의 경기부양과 복지 확대를 내걸었다. 연금과 최저임금이 핵심 노동 쟁점이다.",
+"sumN":6,
 "first":"2026-11-08T00:13+09:00",
 "last":"2026-11-08T07:58+09:00",
 "chs":[
 3,
 6
 ],
-"src":0,
+"src":2,
 "again":true,
 "sv":2,
 "concepts":[
 {
 "ch":3,
 "name":"최저임금",
-"why":"최저임금 인상을 내걸어 시급 하한을 올리겠다는 공약이다"
+"why":"순소득 최저임금을 1,480유로에서 1,700유로로 올리는 공약"
 },
 {
 "ch":6,
 "name":"정년 연장",
-"why":"은퇴 나이를 60세로 복원하자는 공약이 정년 제도 논의와 닿는다"
+"why":"연금개혁을 폐지하고 정년 60세로 되돌리겠다는 공약"
 }
 ]
 },
@@ -29411,67 +32689,6 @@
 "ch":6,
 "name":"정년 연장",
 "why":"법정 정년 65세 연장을 두고 입법이 표류하며 노총이 반발한다"
-}
-]
-},
-{
-"id":"e2834004fc",
-"name":"포스코 노조, 임단협 잠정합의안 부결",
-"ids":[
-"9417789d4e",
-"257f094416",
-"687556b3c8",
-"ba399aa74a",
-"8ec1e697b8"
-],
-"summary":"포스코 노조가 창사 첫 파업 끝에 마련한 2026년 임금협약 잠정합의안이 찬반투표에서 부결됐다. 찬반 차이는 311표로 보도됐고, 노사는 재교섭을 피하기 어려워졌다. 쟁점은 잠정합의 내용을 조합원이 받아들일지와 이후 교섭과 쟁의 재개 여부다.",
-"sumN":5,
-"first":"2026-11-06T06:30+09:00",
-"last":"2026-11-07T22:35+09:00",
-"chs":[
-9
-],
-"src":1,
-"sv":2,
-"table":{
-"parties":[
-"노조",
-"회사"
-],
-"rows":[
-{
-"issue":"잠정합의 내용",
-"cells":[
-"기본급 2.6%·금품 600만 원 상당 잠정합의",
-"기본급 2.6%·금품 600만 원 상당 잠정합의"
-],
-"from":"매일노동뉴스"
-},
-{
-"issue":"부결 후 대응",
-"cells":[
-"합의안 부결, 교섭과 쟁의를 다시 시작하겠다는 방침",
-""
-],
-"from":"철강금속신문"
-}
-]
-},
-"concepts":[
-{
-"ch":9,
-"name":"잠정합의 인준투표",
-"why":"노사 잠정합의안을 조합원 찬반투표에서 받아들이지 않아 부결됐다"
-},
-{
-"ch":9,
-"name":"임금협약과 단체협약",
-"why":"해마다 새로 맺는 2026년 임금협약이 이번 교섭의 대상이다"
-},
-{
-"ch":9,
-"name":"노동쟁의와 쟁의행위",
-"why":"교섭이 깨지자 노조가 쟁의 재개와 추가 파업을 검토하고 있다"
 }
 ]
 },
@@ -29633,7 +32850,7 @@
 "0e25170d19",
 "8914afdb9b"
 ],
-"summary":"정필 칼럼은 청년에게는 AI 일자리를, 취약계층에게는 든든한 고용안전망을 제공해야 한다고 제목에서 주장하는 것으로 보인다. 받은 글이 없어 구체적인 논거와 사례는 확인할 수 없다.",
+"summary":"정필 칼럼은 청년에게는 AI 일자리를, 취약계층에게는 든든한 고용안전망을 마련해야 한다고 제목에서 주장한다. 받은 글이 제목뿐이라 구체적인 정책 방안이나 노사 입장은 확인할 수 없다.",
 "sumN":2,
 "first":"2026-11-07T19:06+09:00",
 "last":"2026-11-07T19:06+09:00",
@@ -29646,14 +32863,15 @@
 {
 "ch":1,
 "name":"제4차 산업혁명과 일자리",
-"why":"AI 일자리 확대를 청년 대책으로 내세운 칼럼 제목"
+"why":"청년의 AI 일자리를 다루며 AI와 자동화가 일자리를 바꾸는 문제를 건드린다"
 },
 {
 "ch":1,
-"name":"좋은 일자리",
-"why":"고용안정과 안전을 갖춘 일자리로 취약계층을 보호하자는 제목"
+"name":"근로의 권리",
+"why":"취약계층에 고용안전망을 마련하자는 주장이 국가의 고용 보장 책임과 닿는다"
 }
-]
+],
+"again":true
 },
 {
 "id":"ef269ff8bf",
@@ -29887,70 +33105,6 @@
 "ch":6,
 "name":"이연보상계약 가설",
 "why":"연공급 임금이 정년과 함께 길어져 인건비 부담이 커진다는 우려가 있다"
-}
-]
-},
-{
-"id":"eb27ece096",
-"name":"인천항 잇단 산업재해, 중대재해법 적용 요구",
-"ids":[
-"640838a7ed",
-"6d415369f1"
-],
-"summary":"인천항에서 화물노동자 사망과 검사원 중상 사고가 이어지자 노동계가 중대재해처벌법 적용과 터미널 운영사 책임 규명을 요구했다. 노조는 하역과 운송이 여러 업체로 나뉘어 있어도 작업 공간과 장비는 운영사가 관리한다고 주장한다. 운영사의 입장은 받은 글에 없다.",
-"sumN":2,
-"first":"2026-11-05T15:25+09:00",
-"last":"2026-11-07T12:01+09:00",
-"chs":[
-4
-],
-"src":2,
-"sv":2,
-"table":{
-"parties":[
-"노동계",
-"터미널 운영사"
-],
-"rows":[
-{
-"issue":"중대재해법 적용",
-"cells":[
-"항만 산재에 중대재해처벌법 적용 촉구",
-""
-],
-"from":"중부일보"
-},
-{
-"issue":"운영사 책임",
-"cells":[
-"공간과 장비를 관리하니 운영사가 책임져야 함",
-""
-],
-"from":"중부일보"
-},
-{
-"issue":"특수고용 안전",
-"cells":[
-"특수고용 화물노동자 안전 사각지대 해소 요구",
-""
-],
-"from":"중부일보"
-},
-{
-"issue":"작업중지권",
-"cells":[
-"실질적인 작업중지권 보장 요구",
-""
-],
-"from":"중부일보"
-}
-]
-},
-"concepts":[
-{
-"ch":4,
-"name":"중대재해처벌법",
-"why":"화물노동자 사망 사고에 중대재해처벌법을 적용하라는 요구가 핵심이다"
 }
 ]
 },
@@ -30213,35 +33367,26 @@
 "again":true
 },
 {
-"id":"ec49a62e2a",
-"name":"강원연구원 직장 내 괴롭힘 사건 신속 처리 촉구",
+"id":"ec7a316c53",
+"name":"거제시·민주노총, 노정협의 12개 안건 논의",
 "ids":[
-"cbdbd07b57",
-"60710a9734",
-"c3d6603916",
-"41ff9e867f",
-"c95cc1cf25"
+"5267656fd4",
+"c79365a3b8"
 ],
-"summary":"강원연구원 직장 내 괴롭힘 사건을 두고 이승진 도의원이 공정하고 신속한 처리를 요구했다. 정의당 도당도 직장 괴롭힘 대책을 촉구했다. 제목에서 확인되는 내용만으로 세부 경위는 알 수 없다.",
-"sumN":5,
-"first":"2026-11-04T21:15+09:00",
-"last":"2026-11-06T20:42+09:00",
+"summary":"거제시가 11월 6일 민주노총과 노정협의를 열어 생활임금, 비정규직 고용 등 12개 안건을 논의했다. 받은 글에는 각 안건에 대한 노사 입장이 나오지 않는다.",
+"sumN":2,
+"first":"2026-11-06T18:50+09:00",
+"last":"2026-11-06T20:01+09:00",
 "chs":[
-5
+2
 ],
 "src":0,
-"again":true,
 "sv":2,
 "concepts":[
 {
-"ch":5,
-"name":"직장 내 괴롭힘",
-"why":"강원연구원에서 문제가 된 사건이 직장 내 괴롭힘 신고와 처리 문제에 해당하는지가 쟁점이다"
-},
-{
-"ch":5,
-"name":"신고 뒤 사업주 조치의무",
-"why":"사건을 공정하고 신속하게 처리하라는 요구가 신고 뒤 사업주의 조사 의무와 닿는다"
+"ch":2,
+"name":"비정규직",
+"why":"노정협의 안건 가운데 비정규직 고용 문제가 이 개념에 해당한다"
 }
 ]
 },
@@ -30267,16 +33412,33 @@
 "65ca2e64b4",
 "134a4a793a"
 ],
-"summary":"효성중공업 사무기술직 노조가 임금·단체협약 교섭 결렬을 이유로 4일부터 사흘간 72시간 파업을 예고했다. 노조는 기본급 10% 인상과 성과급 기준 마련을 요구하며, 영업이익 106% 증가에도 보상이 반영되지 않았다고 주장했다. 회사는 노조가 임금안을 확인하지 않고 교섭을 끊었다며 유감을 표하고 창원공장은 정상 가동한다고 밝혔다.",
-"sumN":14,
+"summary":"효성중공업 사무기술직 노조가 임금·단체협약 교섭 결렬을 이유로 4일부터 72시간 파업에 들어갔다. 노조는 기본급 10% 인상과 성과급 기준 마련을 요구했고, 회사는 노조가 임금안을 확인하지 않고 교섭을 끊었다며 유감을 밝혔다.",
+"sumN":17,
 "first":"2026-11-03T09:43+09:00",
 "last":"2026-11-06T19:37+09:00",
 "chs":[
 9,
 8
 ],
-"src":3,
+"src":2,
 "sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"조정전치주의",
+"why":"노조는 경남지방노동위원회의 조정 중지 결정을 받은 뒤 쟁의권을 확보해 파업에 나섰다"
+},
+{
+"ch":9,
+"name":"준법투쟁",
+"why":"노조는 72시간 파업 뒤 2주 업무 중단 전 준법투쟁 계획을 내놓았다"
+},
+{
+"ch":9,
+"name":"임금협약과 단체협약",
+"why":"기본급 인상과 성과급을 두고 임금·단체협약 교섭이 결렬되었다"
+}
+],
 "table":{
 "parties":[
 "노조",
@@ -30286,46 +33448,37 @@
 {
 "issue":"임금 인상률",
 "cells":[
-"기본급 10% 인상 요구",
-"임금안에 대한 협의조차 거치지 않았다고 반박"
+"기본급 연간 10% 인상 요구",
+"단체협약안과 임금안을 제시했다고 밝힘"
 ],
 "from":"부산일보"
 },
 {
-"issue":"교섭 경과",
+"issue":"성과급 기준",
 "cells":[
-"8차례 교섭에도 쟁점에서 합의하지 못해 파업을 예고",
-"6차례 교섭과 실무협의를 거쳐 단체협약안을 제시"
+"연결 영업이익 106% 증가에 맞는 보상 요구",
+"원칙 없는 양보나 파업 압박에 따른 수용은 없다고 밝힘"
 ],
 "from":"부산일보"
 },
 {
-"issue":"파업 대상과 생산",
+"issue":"교섭 결렬 책임",
 "cells":[
-"전향적 교섭안이 없으면 파업 수위를 높이겠다",
-"생산현장 기능직은 파업 대상이 아니며 공장은 정상 가동"
+"사측이 불성실 교섭을 했다고 주장",
+"노조가 임금안을 확인하지 않고 교섭을 결렬시켰다고 반박"
+],
+"from":"부산일보"
+},
+{
+"issue":"생산 차질",
+"cells":[
+"",
+"창원공장은 정상 가동되며 생산 차질은 없다고 밝힘"
 ],
 "from":"부산일보"
 }
 ]
-},
-"concepts":[
-{
-"ch":9,
-"name":"노동쟁의와 쟁의행위",
-"why":"교섭 결렬 뒤 조정 중지 결정을 받아 쟁의권을 얻고 파업을 예고했다"
-},
-{
-"ch":9,
-"name":"부분파업",
-"why":"사무직 노조만 파업하고 생산현장 기능직은 대상에서 빠진다"
-},
-{
-"ch":9,
-"name":"임금협약과 단체협약",
-"why":"임금 인상과 단체협약 교섭이 결렬된 것이 파업의 발단이다"
 }
-]
 },
 {
 "id":"e7864e4c08",
@@ -30643,33 +33796,26 @@
 ]
 },
 {
-"id":"e691c5c050",
-"name":"정부, 내년 일자리 예산 25조 1484억 편성",
+"id":"e6de0a9bdc",
+"name":"국회, 장애인 최저임금 적용제외 폐지 법안 발의",
 "ids":[
-"d6eb97286f",
-"a33be7ca78",
-"f32309f433"
+"524a07f4f2",
+"b811b19c1d"
 ],
-"summary":"정부가 내년 재정지원 일자리 예산을 25조 1484억 원으로 편성했다고 밝혔다. 청년 첫 취업 지원과 AI 등 첨단 분야 직업훈련 확대에 중점을 둔다. 받은 원문이 없어 세부 사업 내용은 제목 범위에서만 확인된다.",
-"sumN":3,
-"first":"2026-11-06T12:00+09:00",
-"last":"2026-11-06T17:26+09:00",
+"summary":"장애인의 최저임금 적용제외 조항을 폐지하는 법안이 국회에 여러 건 발의되었다는 소식이다. 기사들은 최저임금이 오르는 상황에서 장애인의 소득 기반도 함께 바뀌어야 한다고 짚는다.",
+"sumN":2,
+"first":"2026-11-06T17:37+09:00",
+"last":"2026-11-06T17:37+09:00",
 "chs":[
-1
+3
 ],
 "src":0,
-"again":true,
 "sv":2,
 "concepts":[
 {
-"ch":1,
-"name":"근로의 권리",
-"why":"국가가 재정으로 고용을 늘리려 일자리 예산을 편성하는 사례"
-},
-{
-"ch":1,
-"name":"제4차 산업혁명과 일자리",
-"why":"AI 직업훈련 확대가 기술 변화에 따른 일자리 대응으로 제시됨"
+"ch":3,
+"name":"최저임금",
+"why":"장애인 최저임금 적용제외를 없애는 법안이 쟁점"
 }
 ]
 },
@@ -30714,72 +33860,72 @@
 "bb7b4dfac9",
 "1cdabcc51f"
 ],
-"summary":"철도·지하철 노조 11곳이 안전인력 확보와 도시철도 PSO 정부 지원을 요구하며 공동파업을 예고했다. 찬반투표를 거친 노조들은 20일 이후 동시다발 파업에 나설 계획이다. 노조는 정부와 지자체가 요구를 수용하지 않으면 파업하겠다고 밝혔다.",
-"sumN":3,
+"summary":"전국 철도·도시철도 노조(궤도협의회)는 안전인력 확보와 PSO 정부 지원을 요구하며 20일 이후 공동파업을 예고했다. 수도권 6개 노조가 쟁의행위 찬반투표를 가결했고, 서울교통공사 노조는 인력 감축을 두고 서울시와 맞서고 있다. 쟁점은 인력 충원과 정부 재정 지원이다.",
+"sumN":4,
 "first":"2026-11-05T21:41+09:00",
 "last":"2026-11-06T16:57+09:00",
 "chs":[
 9
 ],
-"src":1,
+"src":3,
 "sv":2,
-"table":{
-"parties":[
-"노조",
-"정부·지자체"
-],
-"rows":[
-{
-"issue":"안전인력 확보",
-"cells":[
-"2인1조 근무를 위한 안전인력 확보 요구",
-""
-],
-"from":"매일노동뉴스"
-},
-{
-"issue":"도시철도 PSO 지원",
-"cells":[
-"법정 무임승차 등에 정부 재정 지원 요구",
-""
-],
-"from":"매일노동뉴스"
-},
-{
-"issue":"총인건비 제도",
-"cells":[
-"통상임금 증가분을 총인건비에 반영 요구",
-""
-],
-"from":"매일노동뉴스"
-},
-{
-"issue":"인력감축과 재정난",
-"cells":[
-"재정난을 핑계로 한 인력감축 강요를 비판",
-""
-],
-"from":"매일노동뉴스"
-}
-]
-},
 "concepts":[
 {
 "ch":9,
 "name":"쟁의행위 찬반투표",
-"why":"여러 노조가 찬반투표에서 파업을 가결해 파업 절차를 밟음"
+"why":"수도권 6개 노조가 투표를 거쳐 파업 쟁의권을 확보함"
 },
 {
 "ch":9,
-"name":"필수유지업무",
-"why":"철도와 도시철도는 파업 중에도 운행을 지켜야 하는 필수공익사업"
+"name":"준법투쟁",
+"why":"공항철도 등이 준법투쟁을 하고 20일부터 준법운행에 들어감"
 },
 {
 "ch":9,
 "name":"공공부문 교섭과 예산",
-"why":"도시철도 PSO와 인건비 재원을 정부·지자체 예산에 묻는 요구"
+"why":"PSO 재정 지원과 인건비 예산을 정부·지자체에 요구함"
+}
+],
+"table":{
+"parties":[
+"노조",
+"서울시"
+],
+"rows":[
+{
+"issue":"인력 감축·충원",
+"cells":[
+"1313명 연내 신규 채용이 필요하다고 주장",
+"적자 개선을 위해 인력 운영 효율화가 필요하다고 입장"
+],
+"from":"아이뉴스24"
+},
+{
+"issue":"PSO 재정 지원",
+"cells":[
+"도시철도 PSO 정부 재정 지원 법제화 요구",
+"받은 글에 입장 없음"
+],
+"from":"매일노동뉴스"
+},
+{
+"issue":"2인 1조 근무",
+"cells":[
+"위험작업 2인 1조 의무화 법제화 요구",
+"받은 글에 입장 없음"
+],
+"from":"매일노동뉴스"
+},
+{
+"issue":"임금 인상",
+"cells":[
+"정부 지침에 따른 3.5% 임금 인상 요구",
+"받은 글에 입장 없음"
+],
+"from":"아이뉴스24"
 }
 ]
+}
 },
 {
 "id":"e9915776ea",
@@ -30852,6 +33998,37 @@
 }
 ],
 "again":true
+},
+{
+"id":"e3804be538",
+"name":"육아휴직 신청 노동자 해고, 5인 미만 사각지대",
+"ids":[
+"e26e33c8f8",
+"052a43857e"
+],
+"summary":"육아휴직을 쓰겠다고 알리자 해고 통보를 받은 노동자의 사례가 보도되었다. 기사들은 5인 미만 사업장은 근로기준법상 부당해고 구제 등 보호가 적용되지 않아 육아휴직을 써도 구제받기 어려운 사각지대라고 지적한다.",
+"sumN":2,
+"first":"2026-11-06T12:00+09:00",
+"last":"2026-11-06T14:57+09:00",
+"chs":[
+4,
+3,
+6
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":3,
+"name":"5인 미만 사업장",
+"why":"5인 미만 사업장이라 부당해고 구제 등 근로기준법 보호가 빠지는 대목"
+},
+{
+"ch":6,
+"name":"노동위원회 구제신청",
+"why":"부당해고를 다투는 구제 절차에 들어갈 수 없다는 점이 쟁점"
+}
+]
 },
 {
 "id":"e81a450d90",
@@ -30969,6 +34146,77 @@
 }
 ],
 "again":true
+},
+{
+"id":"ed0a022e1f",
+"name":"삼성바이오 노조, 법적 쟁송 잇달아 기각",
+"ids":[
+"e6134e92d5",
+"39c7af85e0",
+"144b080100",
+"fc86225854",
+"10aacd1b21"
+],
+"summary":"삼성바이오로직스 노조는 올해 법적 대응을 15건 이상 제기했으나 결론이 난 7건은 모두 노조 주장이 받아들여지지 않았다. 노조는 끝장 교섭이 아니면 파업한다고 압박했지만 회사는 교섭 연기를 제안했다. 쟁점은 교섭 갈등과 파업 중 보안작업의 범위다.",
+"sumN":5,
+"first":"2026-11-03T10:16+09:00",
+"last":"2026-11-06T10:40+09:00",
+"chs":[
+8,
+9,
+6
+],
+"src":3,
+"sv":2,
+"concepts":[
+{
+"ch":8,
+"name":"부당노동행위",
+"why":"교섭해태와 지배개입을 이유로 낸 고소와 구제신청이 기각됨"
+},
+{
+"ch":8,
+"name":"단체교섭 거부·해태",
+"why":"노사 교섭이 연기되고 교섭 진정성을 두고 다툼"
+},
+{
+"ch":9,
+"name":"필수유지업무",
+"why":"파업 중에도 가동해야 하는 보안작업 범위가 쟁점"
+}
+],
+"table":{
+"parties":[
+"노조",
+"회사"
+],
+"rows":[
+{
+"issue":"교섭 진정성",
+"cells":[
+"회사가 교섭에 진정성이 없다며 대화를 요구",
+"교섭을 그대로 진행하면 신뢰가 더 훼손된다고 우려"
+],
+"from":"뉴시안"
+},
+{
+"issue":"교섭 일정",
+"cells":[
+"끝장 교섭이 아니면 파업하겠다는 입장",
+"3일 교섭 대신 2주 연기를 제안"
+],
+"from":"파이낸셜뉴스"
+},
+{
+"issue":"보안작업 범위",
+"cells":[
+"항고심이 보안작업을 넓혀 파업권을 사실상 박탈했다고 반발",
+"생산라인 9개 작업의 보안작업 지정을 가처분으로 요청"
+],
+"from":"시장경제신문"
+}
+]
+}
 },
 {
 "id":"e4b0fea3af",
@@ -31097,7 +34345,9 @@
 "id":"e4eb7934d2",
 "name":"서울교통공사 노조, 쟁의행위 가결",
 "ids":[
+"eff4889afb",
 "925e58e1f7",
+"9c7f764c61",
 "3dd25549a2",
 "ff5d4e5c01",
 "e9118ab7eb",
@@ -31105,65 +34355,65 @@
 "77d7b0ce9f",
 "ff44968071"
 ],
-"summary":"서울교통공사 노조 3곳이 모두 쟁의행위 찬반투표를 가결했다. 인력 감축과 신규 채용을 두고 노사가 맞서 있으며, 노조는 교섭이 진전되지 않으면 준법투쟁과 파업으로 수위를 높이겠다고 밝혔다.",
-"sumN":7,
-"first":"2026-11-05T17:28+09:00",
+"summary":"서울교통공사 노조 3곳이 모두 쟁의행위 찬반투표를 가결했다. 노조는 신규 채용 확대를, 공사와 서울시는 정원 감축과 재정 건전성을 내세우고 있어 교섭이 결렬되면 파업으로 이어질 가능성이 제기된다.",
+"sumN":9,
+"first":"2026-11-03T16:29+09:00",
 "last":"2026-11-06T07:32+09:00",
 "chs":[
-9
+9,
+5
 ],
-"src":1,
+"src":3,
 "again":true,
 "sv":2,
-"table":{
-"parties":[
-"노조",
-"서울시·공사"
-],
-"rows":[
-{
-"issue":"신규 채용",
-"cells":[
-"올해 1313명 신규 채용이 필요하다고 주장",
-"올해 공고한 신규 채용 규모는 794명"
-],
-"from":"문화일보"
-},
-{
-"issue":"인력 감축",
-"cells":[
-"현장 인력 부족을 이유로 채용 확대를 요구",
-"정원 2212명 감축 계획을 추진하며 재정 건전성 확보가 불가피하다고 주장"
-],
-"from":"문화일보"
-},
-{
-"issue":"쟁의 일정",
-"cells":[
-"교섭이 진전되지 않으면 20일부터 준법투쟁에 돌입할 예정",
-""
-],
-"from":"문화일보"
-}
-]
-},
 "concepts":[
 {
 "ch":9,
-"name":"고용안정과 구조조정",
-"why":"정원 감축과 신규 채용 확대 요구가 임금만큼 큰 교섭 쟁점이 됐다"
-},
-{
-"ch":9,
 "name":"쟁의행위 찬반투표",
-"why":"3개 노조 모두 80% 이상 찬성으로 쟁의행위를 가결했다"
+"why":"세 노조 모두 조합원 투표에서 찬성률 80%를 넘겨 쟁의행위를 가결했다"
 },
 {
 "ch":9,
-"name":"준법투쟁",
-"why":"노조가 20일부터 준법투쟁에 들어갈 계획을 밝혔다"
+"name":"고용안정과 구조조정",
+"why":"정원 감축과 신규 채용 중 어느 쪽을 택할지가 임금과 맞먹는 핵심 쟁점이다"
+}
+],
+"table":{
+"parties":[
+"노조",
+"서울교통공사",
+"서울시"
+],
+"rows":[
+{
+"issue":"인력 채용",
+"cells":[
+"올해 1313명 신규 채용이 필요하다고 주장",
+"올해 794명 채용을 공고하고 노조와 교섭을 이어가겠다고 밝힘",
+"정원 2212명 감축 계획을 세우고 중복 인력은 줄여야 한다고 강조"
+],
+"from":"문화일보"
+},
+{
+"issue":"쟁의 수위",
+"cells":[
+"20일부터 준법투쟁에 들어가고 교섭 진전이 없으면 수위를 높이겠다는 방침",
+"교섭을 이어가며 이견을 좁혀 나가겠다는 입장",
+""
+],
+"from":"문화일보"
+},
+{
+"issue":"재정·구조조정",
+"cells":[
+"",
+"",
+"누적결손금 19조7490억원으로 구조조정이 불가피하다는 입장"
+],
+"from":"문화일보"
 }
 ]
+}
 },
 {
 "id":"e87cb758a3",
@@ -31232,62 +34482,80 @@
 "id":"eeddbbfb34",
 "name":"초광역특구법 특위 구성 두고 노동계 반발",
 "ids":[
+"521de0de5b",
+"b067988437",
 "a3fdba7fe2",
+"8f8a5009ea",
 "4f3719d92d"
 ],
-"summary":"국회는 5일 본회의에서 초광역특구법 심사를 맡을 특별위원회 구성결의안을 가결했다. 노동계는 원포인트 사회적 대화가 진행 중인데 특위를 세우면 논의가 무력화될 수 있다며 반발했다.",
-"sumN":2,
-"first":"2026-11-05T16:42+09:00",
+"summary":"국회는 5일 본회의에서 초광역특구법 심사를 위한 특별위원회 구성결의안을 의결했다. 민주노총과 한국노총 등 노동계는 노동특례 조항과 진행 중인 사회적 대화가 무력화될 수 있다며 반발했다. 쟁점은 노동시간 특례와 사회적 대화 결과의 반영 여부다.",
+"sumN":5,
+"first":"2026-11-02T17:35+09:00",
 "last":"2026-11-06T06:30+09:00",
 "chs":[
+2,
+3,
 7
 ],
-"src":1,
+"src":3,
 "sv":2,
+"concepts":[
+{
+"ch":7,
+"name":"사회적 대화(경사노위)",
+"why":"노동특례를 두고 진행 중인 원포인트 사회적 대화 결과 반영이 쟁점"
+},
+{
+"ch":3,
+"name":"탄력적 근로시간제",
+"why":"선택적 근로시간제 정산기간 확대가 장시간 노동 우려를 낳음"
+},
+{
+"ch":7,
+"name":"노정관계",
+"why":"정부와 여당의 사회적 대화 존중 약속과 노동계 요구가 맞물림"
+}
+],
 "table":{
 "parties":[
 "노동계",
-"정부·여당"
+"국민의힘"
 ],
 "rows":[
 {
-"issue":"특위 구성 시점",
+"issue":"특위 구성 절차",
 "cells":[
-"특위가 사회적 대화를 형식적 절차로 만들 수 있다고 우려",
-"사회적 대화 결과를 입법 과정에 반영하겠다는 입장"
+"사회적 대화 존중 없는 특위 구성은 형식적 절차라고 비판",
+"충분한 사전 설명과 검토 기회 없었다며 반발"
 ],
 "from":"매일노동뉴스"
 },
 {
 "issue":"노동특례 조항",
 "cells":[
-"노동개악 특례를 담은 법안의 추진 중단을 요구",
+"노동시간 규제 완화 등 노동특례 철회 요구",
 "받은 글에 입장 없음"
 ],
-"from":"매일노동뉴스"
+"from":"뉴시스"
 },
 {
-"issue":"입법 절차",
+"issue":"근로시간 특례",
 "cells":[
-"원점에서 재논의하고 노동계와 시민사회와 함께할 것을 촉구",
-"사회적 대화에서 합의한 결과를 토대로 추진한다는 원칙을 전달"
+"연구개발 노동자 근로시간 적용 제외 등에 반대",
+"받은 글에 입장 없음"
 ],
-"from":"매일노동뉴스"
-}
-]
-},
-"concepts":[
-{
-"ch":7,
-"name":"사회적 대화(경사노위)",
-"why":"특위 구성이 노사정 사회적 대화의 결과를 입법에 어떻게 반영할지 충돌"
+"from":"참여와혁신"
 },
 {
-"ch":7,
-"name":"노정관계",
-"why":"정부·여당의 대화 존중 약속과 노동계의 반발이 맞서는 구도"
+"issue":"법안 처리 방향",
+"cells":[
+"법안 철회 후 원점에서 재논의 요구",
+"받은 글에 입장 없음"
+],
+"from":"뉴시스"
 }
 ]
+}
 },
 {
 "id":"e3d8d06041",
@@ -31866,6 +35134,36 @@
 "again":true
 },
 {
+"id":"e0d538e509",
+"name":"메트로신문, 노란봉투법 7개월 현장 실태 연재",
+"ids":[
+"e83dd1f28a",
+"e77eebbcb4",
+"f51f20420c"
+],
+"summary":"메트로신문은 노란봉투법 시행 7개월을 맞아 현장 실태를 세 편으로 연재했다. 첫 편은 원청과 대화의 문은 열렸지만 첫 교섭 시점이 제각각이라고 전했다. 둘째 편은 교섭 범위와 책임을 두고 현장의 엇갈린 입장을, 셋째 편은 법을 만든 국회가 현장 혼선을 풀어야 한다는 문제를 다뤘다.",
+"sumN":3,
+"first":"2026-11-02T15:18+09:00",
+"last":"2026-11-05T15:47+09:00",
+"chs":[
+9
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"노란봉투법",
+"why":"법 시행 뒤 원청과의 교섭 문이 열리며 생긴 현장 혼선을 다루는 대목"
+},
+{
+"ch":9,
+"name":"원청 사용자성",
+"why":"교섭 범위와 책임이 원청에 어디까지 미치는지 현장에서 엇갈리는 대목"
+}
+]
+},
+{
 "id":"e647bfd293",
 "name":"요양시설, 최저임금 인상 뒤 간호사 대신 조무사 채용",
 "ids":[
@@ -32053,6 +35351,30 @@
 }
 ],
 "again":true
+},
+{
+"id":"e2887b485e",
+"name":"정동수 강원도의원, 직장 내 괴롭힘 대응체계 촉구",
+"ids":[
+"12336c7865",
+"16efc7848a"
+],
+"summary":"강원도의원 정동수가 직장 내 괴롭힘에 대응할 체계를 마련하고 다면평가 방식을 개선해야 한다고 촉구했다. 제목에 따르면 다면평가에 피감기관이 참여하는 문제도 거론됐다. 맞서는 당사자의 입장은 받은 글에 없다.",
+"sumN":2,
+"first":"2026-11-04T20:30+09:00",
+"last":"2026-11-05T10:21+09:00",
+"chs":[
+5
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":5,
+"name":"직장 내 괴롭힘",
+"why":"괴롭힘 대응체계 마련을 요구한 대목이 이 개념의 문제의식과 맞닿는다"
+}
+]
 },
 {
 "id":"e0311ec483",
@@ -32569,80 +35891,29 @@
 "ids":[
 "d17c1b50a3",
 "2446dad1ad",
+"ad7d8bbd30",
 "7eae7fb533"
 ],
-"summary":"공노총은 공무원 노동자의 직장 내 괴롭힘과 악성민원을 막는 국가·지방공무원법 개정안 발의를 환영하는 성명을 냈다. 여러 기사가 이 법안을 공직사회 인권 보호 강화 흐름으로 소개했다. 맞서는 입장은 받은 글에 없다.",
-"sumN":3,
+"summary":"공노총은 박덕흠 국회부의장이 발의한 국가공무원법·지방공무원법 일부개정법률안을 환영하며 조속한 국회 통과를 촉구했다. 개정안은 공무원 인권침해 금지 규정을 신설하고 소속기관장에게 예방과 피해자 보호 책임을 주는 내용이다. 쟁점은 인권침해 판단 기준과 악성민원에서 정당한 민원 제기를 구분하는 문제다.",
+"sumN":4,
 "first":"2026-11-03T15:06+09:00",
 "last":"2026-11-04T10:30+09:00",
 "chs":[
 5
 ],
-"src":0,
+"src":1,
 "again":true,
 "sv":2,
 "concepts":[
 {
 "ch":5,
 "name":"직장 내 괴롭힘",
-"why":"공무원 노동자의 직장 내 괴롭힘을 법으로 막자는 개정안이 이 개념의 대상이다"
-}
-]
+"why":"지위 우위를 이용한 고통 행위를 공무원 인권침해 금지 규정으로 보호하려는 대목"
 },
 {
-"id":"ed0a022e1f",
-"name":"삼성바이오 노조, 법적 쟁송 잇달아 기각",
-"ids":[
-"e6134e92d5",
-"39c7af85e0",
-"144b080100",
-"fc86225854"
-],
-"summary":"삼성바이오로직스 노조가 올해 고소와 구제신청 등 17건의 법적 대응을 냈지만 결론이 난 7건은 모두 노조 주장이 받아들여지지 않았다. 노사는 교섭 재개를 앞두고 있었으나 사측이 노조의 파업 준비와 압박을 이유로 교섭을 2주 미루자고 제안한 상태다.",
-"sumN":4,
-"first":"2026-11-03T10:16+09:00",
-"last":"2026-11-04T10:08+09:00",
-"chs":[
-8,
-6,
-9
-],
-"src":2,
-"sv":2,
-"table":{
-"parties":[
-"노조",
-"사측"
-],
-"rows":[
-{
-"issue":"교섭 재개",
-"cells":[
-"끝장 교섭이 아니면 파업을 내걸고 대화를 요구",
-"교섭을 그대로 진행하면 신뢰가 훼손될 우려가 있어 2주 연기 제안"
-],
-"from":"파이낸셜뉴스"
-},
-{
-"issue":"법적 대응",
-"cells":[
-"법적 절차로 권리 구제에 나서며 올해 17건을 제기",
-""
-],
-"from":"뉴시안"
-}
-]
-},
-"concepts":[
-{
-"ch":8,
-"name":"부당노동행위",
-"why":"노조가 교섭해태와 지배개입을 이유로 낸 고소가 잇따라 기각되거나 불기소됐다"
-},
-{
-"ch":6,
-"name":"노동위원회 구제신청",
-"why":"노조가 낸 교섭해태와 지배개입 구제신청이 지방노동위원회에서 기각됐다"
+"ch":5,
+"name":"신고 뒤 사업주 조치의무",
+"why":"소속기관장에게 예방과 피해자 보호조치를 이행하도록 하는 대목"
 }
 ]
 },
@@ -32882,11 +36153,12 @@
 "467d66f0a0",
 "30bffbb35f",
 "e3f6f6be3f",
+"1e9364f877",
 "9fdb233776",
 "ae51501725"
 ],
-"summary":"국민의힘 박수민 의원과 경제사회연구원이 11월 2일 '노란봉투법 시즌2' 세미나를 열어 근로자 추정제와 일하는 사람 기본법의 부작용을 논의했다. 박 의원은 좋은 취지만으로 법안 부작용 검증을 대신할 수 없다고 주장했다.",
-"sumN":8,
+"summary":"국민의힘 박수민 의원과 경제사회연구원이 11월 2일 국회에서 '노란봉투법 시즌2' 세미나를 열고, 정부·여당이 추진 중인 근로자 추정제와 일하는 사람 기본법을 검토했다. 노무제공자 보호의 필요성에는 공감하지만, 근로자성 판단의 불확실성이 산업현장의 분쟁과 부담을 키울 수 있다는 우려가 제기됐다.",
+"sumN":9,
 "first":"2026-11-01T15:14+09:00",
 "last":"2026-11-03T13:54+09:00",
 "chs":[
@@ -32894,37 +36166,45 @@
 ],
 "src":3,
 "sv":2,
+"concepts":[
+{
+"ch":9,
+"name":"노란봉투법",
+"why":"사용자성 확대 이후 근로자성 판단까지 불확실해진다는 우려가 토론의 출발점"
+},
+{
+"ch":9,
+"name":"원청 사용자성",
+"why":"노란봉투법 이후 사용자성 판단과 책임 범위를 둘러싼 혼란이 언급됨"
+}
+],
 "table":{
 "parties":[
-"박수민 의원 측",
-"정부·여당"
+"정부·여당",
+"경영계",
+"소상공인"
 ],
 "rows":[
 {
 "issue":"근로자 추정제",
 "cells":[
-"근로자성 판단의 불확실성이 더해지면 우려를 가볍게 넘길 수 없다고 주장",
-"근로자 추정제를 추진 중이다"
+"근로자 추정제 추진 중",
+"법률상 추정은 오분류와 분쟁을 부를 수 있다",
+"사후 근로자성 인정 땐 금품·보험료 부담이 커진다"
 ],
-"from":"강남포스트"
+"from":"글로벌뉴스통신GNA"
 },
 {
-"issue":"입법 일정",
+"issue":"일하는 사람 기본법",
 "cells":[
-"입법 시한을 앞세우기보다 현장의 우려에 구체적으로 답해야 한다고 주장",
+"기본법안 추진 중",
+"",
 ""
 ],
-"from":"강남포스트"
+"from":"글로벌뉴스통신GNA"
 }
 ]
-},
-"concepts":[
-{
-"ch":9,
-"name":"노란봉투법",
-"why":"노란봉투법 시즌2라는 우려를 중심으로 세미나가 열렸다"
 }
-]
 },
 {
 "id":"e24f20c8fe",
@@ -32950,6 +36230,31 @@
 }
 ],
 "again":true
+},
+{
+"id":"eec90ae86b",
+"name":"김천시시설관리공단, 산재 제로 공모전 개최",
+"ids":[
+"f3536e4ee9",
+"7992d55967"
+],
+"summary":"김천시시설관리공단이 산업재해 제로 달성을 위해 아차사고 사례와 안전보건 정책을 공모한다는 소식이다. 기사에 맞서는 당사자나 입장 차이는 나오지 않는다.",
+"sumN":2,
+"first":"2026-11-03T09:37+09:00",
+"last":"2026-11-03T11:38+09:00",
+"chs":[
+4,
+5
+],
+"src":0,
+"sv":2,
+"concepts":[
+{
+"ch":4,
+"name":"산업재해",
+"why":"아차사고 사례를 모아 산재를 줄이려는 공단의 공모전"
+}
+]
 },
 {
 "id":"e65e4044b8",
@@ -33147,33 +36452,41 @@
 "ids":[
 "780b66bfb0",
 "c34663c9dc",
+"38ab49a4ec",
 "c6c85c827f",
 "ff26315fd0",
 "99cbbfd33a",
+"8105a61c1a",
 "914bb70df6",
 "10a1a2101f"
 ],
-"summary":"정년 후 연금을 받기까지 생기는 소득 공백과 그 사이 재취업의 질을 다룬 보도들이다. 제목에 따르면 재취업자 대부분이 임시·일용직으로 가고, 소득이 유지되는 가구와 급감하는 가구의 차이가 크다. 받은 글이 없어 당사자 입장은 싣지 않았다.",
-"sumN":7,
+"summary":"한국보건사회연구원 보고서에 따르면 정년 퇴직 후 국민연금을 받을 때까지 최대 3년의 소득 공백이 생기고, 60세 이후 재취업자의 61.3%가 임시·일용직이다. 연구진은 단계적 정년 연장, 중소기업 재고용 제도, 국민연금 가입 상한 연령 연장을 대안으로 제안했다.",
+"sumN":9,
 "first":"2026-11-02T06:11+09:00",
 "last":"2026-11-03T00:10+09:00",
 "chs":[
 6,
+4,
 1
 ],
-"src":0,
+"src":3,
 "again":true,
 "sv":2,
 "concepts":[
 {
-"ch":1,
-"name":"좋은 일자리",
-"why":"재취업이 임시·일용직에 몰려 고용안정이 약한 점이 좋은 일자리 기준과 맞닿는다"
+"ch":6,
+"name":"정년 연장",
+"why":"법정 정년 60세와 연금 개시 63세 사이 공백을 메울 방안이 핵심"
 },
 {
 "ch":6,
-"name":"정년 연장",
-"why":"정년 이후 소득 공백을 두고 정년 연장 논의가 함께 다뤄졌다"
+"name":"이연보상계약 가설",
+"why":"연공서열형 임금체계 때문에 정년을 늘리면 인건비 부담이 커진다는 지적"
+},
+{
+"ch":4,
+"name":"국민연금 보험료율",
+"why":"연금 수급 개시 연령과 국민연금 가입 상한 연령 조정이 노후소득 문제와 맞닿음"
 }
 ]
 },
@@ -33514,8 +36827,8 @@
 "noimg":[]
 },
 "keywords":{
-"generated":"2026-11-08T18:56+09:00",
-"range":"11/01~11/08",
+"generated":"2026-11-09T10:24+09:00",
+"range":"11/02~11/09",
 "alias":{
 "산업재해":"산재",
 "노동조합 설립":"노조 설립",
@@ -33524,53 +36837,53 @@
 "items":[
 {
 "kw":"파업",
-"n":131,
-"summary":"이번 주 삼성바이오로직스 노조는 400명 규모 부분파업에 들어가 약 3주간 이어가며 임금과 인사제도를 두고 교섭을 촉구했다. 효성중공업 사무기술직 노조는 4일부터 72시간 파업을 예고했고, 철도노조는 쟁의행위 가결 후 12월 총파업을 예고했다. 포스코 노조는 잠정합의안이 부결되며 재교섭 가능성이 커졌다."
+"n":138,
+"summary":"삼성바이오로직스 상생노동조합은 6일부터 약 3주간 400명 안팎이 참여하는 2차 부분파업에 들어갔다. 효성중공업 사무기술직 노조는 교섭 결렬로 4일부터 72시간 파업을 벌였다. 공항철도 노조는 11월 13일 경고파업을 예고했고, 전국철도노조는 12월 총파업을 예고했다."
 },
 {
 "kw":"산재",
-"n":106,
-"summary":"월평균 보수 300만원 미만 산재 노동자에게 2027년 3월부터 무료 법률 지원을 하는 방안이 예산 반영 소식과 함께 전해졌다. 경총은 조선·타이어 산재 장기요양 실태를 발표하며 요양관리 제도 개선을 요구했다. 경사노위는 소규모 사업장 안전보건 인력 확충에 노사정 합의했다."
+"n":120,
+"summary":"근로복지공단은 내년 3월 30일부터 월평균 보수 300만원 미만 노동자와 유족에게 산재 법률 지원을 무료로 제공한다고 밝혔다. 경총은 조선·타이어 산재 승인자 중 1년 이상 장기요양 비율을 발표하며 요양관리 제도 개선을 요구했다. 경사노위는 소규모 사업장 안전보건 인력을 늘리는 합의문을 채택했다."
 },
 {
 "kw":"교섭",
-"n":91,
-"summary":"HD현대중공업과 사내하청 노조가 노란봉투법 시행 후 20년 만에 첫 교섭 상견례를 가졌다. 한화오션은 교섭 의제 범위를 두고 공전 중이며 하청 노조는 고공농성을 이어가고 있다. 광주글로벌모터스는 단체협약을 체결했고, 현대차는 중노위 판정에도 원청교섭을 거부한다는 비판을 받았다."
+"n":97,
+"summary":"HD현대중공업과 사내하청 노조가 노란봉투법 시행 후 약 8개월 만에 첫 단체교섭 상견례를 열었다. 한화오션은 교섭 의제 범위를 두고 하청노조와 대치 중이며 고공농성도 이어지고 있다. 포스코 노조는 임단협 잠정합의안이 부결돼 재교섭 상황에 들어갔다."
+},
+{
+"kw":"AI 일자리",
+"n":77,
+"summary":"정부는 2027년도 재정지원 일자리사업 예산을 25조1484억원으로 편성하고 AI·첨단산업 직업훈련 확대에 집중한다고 밝혔다. 서울시는 11월 9일 DDP에서 AI·바이오 등 미래산업 기업 약 100곳이 참여하는 일자리박람회를 연다. 지자체들은 AI 면접과 AI 취업 컨설팅을 활용한 취업 지원 행사를 열었다."
 },
 {
 "kw":"노조 설립",
 "n":73,
-"summary":"삼성전자에서 여섯 번째 노조인 '삼성전자 유니온샵 노동조합' 설립신고서가 접수됐다. 설립을 주도한 인물과 배경을 두고 기존 노조 간 공방이 이어지고 있다."
-},
-{
-"kw":"AI 일자리",
-"n":66,
-"summary":"지자체와 대학 일자리박람회에서 AI 면접과 AI 취업 컨설팅이 확대됐고, 서울시는 11월 9일 AI·바이오 기업 100곳이 참여하는 일자리박람회를 연다고 밝혔다. 정부는 내년 재정 일자리 예산 25조 1484억 원을 편성했으며, AI 시대 청년 취업과 창업 전략에 관한 논의도 이어졌다."
+"summary":"삼성전자에서 여섯 번째 노조인 '삼성전자 유니온샵 노동조합' 설립신고서가 고용노동부 구미지청에 접수됐다. 설립을 주도한 인물은 동행노조와 초기업노조 출신으로 파악됐다. 설립 배경이 노조 내부 갈등인지를 두고 노조 간 공방이 이어지고 있다."
 },
 {
 "kw":"정년",
-"n":62,
-"summary":"한국노총은 65세 법정 정년연장의 연내 입법을 요구하며 정부·여당과의 정책연대를 재검토하겠다고 경고했다. 여당은 2029년 61세부터 2037년 65세까지 단계 연장하는 안을 추진하고 있으며, 노동계와 경영계는 시기와 임금체계를 두고 입장이 엇갈린다."
+"n":63,
+"summary":"한국노총은 7일 전국노동자대회에서 65세 정년연장의 연내 입법을 요구하며 성과가 없으면 정책연대를 재검토하겠다고 경고했다. 더불어민주당은 정년 65세 법안 발의를 준비 중이며, 여당은 2029년 61세부터 단계적으로 늘리는 안을 추진한다. 노동계와 경영계는 연장 시기와 임금체계를 두고 맞서고 있다."
 },
 {
 "kw":"근로기준법",
-"n":51,
-"summary":"민주노총은 특수고용·플랫폼 노동자의 노동자성 인정과 근로기준법 전면 적용을 요구하며 청와대 앞 결의대회를 열었다. 직장갑질119 설문에서 근로기준법은 100점 만점에 49.9점을 받았고, 고용노동부는 전국 100개 사업장 장시간 노동 기획감독을 시작했다."
+"n":54,
+"summary":"민주노총은 11월 4일 청와대 앞에서 특수고용·플랫폼 노동자 결의대회를 열어 근로기준법 전면 적용과 노동자성 인정을 요구했다. 고용노동부는 3일부터 전국 100개 사업장을 대상으로 장시간 노동 기획감독을 시작했다. 직장갑질119는 설문에서 응답자 80.4%가 근로기준법이 현장에서 지켜지지 않는다고 답했다고 발표했다."
 },
 {
-"kw":"노란봉투법",
-"n":44,
-"summary":"노란봉투법 시행 후 HD현대중공업 하청노조 첫 교섭이 열렸고, 경총은 시행 첫해 제조업 노사분규 건수는 줄었지만 근로손실일수는 45.2% 늘었다고 발표했다. 국회에서는 박수민 의원 주최 세미나와 야권·학계의 보완 입법 촉구가 이어졌고, 근로자 추정제를 두고 소상공인의 우려도 제기됐다."
-},
-{
-"kw":"성희롱",
-"n":43,
-"summary":"11월 27일부터 직장 내 성희롱 행위자가 사업주의 친족인 경우에도 과태료가 부과된다. 대전여민회 실태조사에서는 직장 내 성희롱 피해자 79.8%가 참고 넘겼고 공식 신고는 9%에 그쳤다."
+"kw":"고용보험",
+"n":50,
+"summary":"고용노동부는 9일부터 12월 31일까지 고용보험 부정수급 집중신고기간을 운영하며 자진신고 시 추가징수를 면제한다고 밝혔다. 2026년 직업계고 졸업자 취업률은 55.8%로 4년 만에 반등했다. 국회예산정책처는 노동부 예산안의 두루누리 보험료 지원율 하향 폭이 적정한지 검토해야 한다고 지적했다."
 },
 {
 "kw":"괴롭힘",
-"n":42,
-"summary":"광주지방고용노동청이 사업주 폭행과 욕설 사건을 직장 내 괴롭힘으로 인정하지 않아 재조사 요구가 나왔고, 고용노동부는 직권조사에 나서겠다고 밝혔다. 강원연구원 괴롭힘 사건 처리를 요구하는 목소리와 파마리서치 연구원 추락사 관련 경찰 조사도 함께 보도됐다."
+"n":45,
+"summary":"광주지방고용노동청은 나주 한식뷔페 사업주의 폭행과 욕설을 직장 내 괴롭힘으로 인정하지 않아 논란이 됐고, 고용노동부는 직권조사에 나서겠다고 밝혔다. 강원연구원 직장 내 괴롭힘 사건은 인사위원회 의결이 무산되며 신속 처리 요구가 커졌다. 공노총은 공무원 괴롭힘·악성민원 방지법 개정안을 환영하며 국회 통과를 촉구했다."
+},
+{
+"kw":"노란봉투법",
+"n":45,
+"summary":"HD현대중공업과 하청노조가 노란봉투법 시행 후 첫 교섭 상견례를 열며 원청교섭 사례가 나왔다. 국민의힘 박수민 의원 등은 근로자 추정제와 일하는 사람 기본법을 검토하는 세미나를 열었다. 경총은 시행 첫해 제조업 노사분규 건수는 줄었지만 근로손실 일수는 45.2% 늘었다고 보고했다."
 }
 ]
 }
